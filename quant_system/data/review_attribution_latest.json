@@ -1,0 +1,1902 @@
+{
+  "review_date": "2026-08-25",
+  "prev_trade_date": "2026-08-24",
+  "next_trade_date": "2026-08-26",
+  "review_time": "2026-08-25 19:25:13",
+  "market_summary": {
+    "sentiment_state": "震荡/分化期",
+    "sentiment_score": 69.5,
+    "total_limit_up_count": 77,
+    "consecutive_limit_up_count": 5,
+    "max_consecutive_boards": 5,
+    "total_limit_down_count": 3,
+    "broken_up_count": 70,
+    "advance_ratio": 76.09,
+    "up_count": 3966,
+    "down_count": 1177,
+    "top4_hit_rate": "2026-08-25 盘后优选 4 只优质标的 (全市场共 77 只涨停，筛选通过率 5.2%)",
+    "total_portfolio_floating_pnl": null,
+    "total_portfolio_floating_pnl_pct": null,
+    "target_position_ratio": 0.65
+  },
+  "prev_day_candidates_review": {
+    "prev_trade_date": "2026-08-24",
+    "review_trade_date": "2026-08-25",
+    "total_reviewed": 6,
+    "success_consecutive_board_count": 2,
+    "win_count": 3,
+    "loss_count": 1,
+    "hit_rate_pct": 50.0,
+    "avg_pnl_pct": 4.37,
+    "items": [
+      {
+        "code": "603958",
+        "name": "哈森股份",
+        "sector": "服装家纺",
+        "prev_day_quant_score": 66.07,
+        "prev_day_rank": 5,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 3,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 53.55,
+            "weight": 0.15,
+            "weighted_score": 8.03,
+            "seal_ratio": 0.0545,
+            "first_seal_time": "09:31:38"
+          },
+          "chip_structure": {
+            "score": 30.97,
+            "weight": 0.3,
+            "weighted_score": 9.29,
+            "turnover_rate": 19.91,
+            "high_60d_breakout": false,
+            "broken_count": 3
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "服装家纺",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 3,
+        "prev_day_close_price": 22.61,
+        "buy_price": 22.61,
+        "buy_reason": "T+1 量化首板建仓 (量化得分 71.49 分)",
+        "from_portfolio_buy": true,
+        "today_close_price": null,
+        "today_change_pct": null,
+        "today_consecutive_boards": null,
+        "today_rank_in_candidates": null,
+        "today_seal_ratio_pct": null,
+        "today_turnover_rate": null,
+        "today_broken_count": null,
+        "today_first_seal_time": null,
+        "today_factor_breakdown": null,
+        "pnl_amount": 2334.76,
+        "pnl_pct": 4.95,
+        "outcome": "HOLDING_NORMAL",
+        "outcome_cn": "仍持有中 / 正常波动",
+        "still_holding": false,
+        "exit_logs": [
+          {
+            "alert_id": "ALERT_603958_144031",
+            "code": "603958",
+            "name": "哈森股份",
+            "time": "14:40:31",
+            "date": "2026-08-25",
+            "sell_price": 22.51,
+            "shares": 1100,
+            "entry_price": 22.61,
+            "realized_pnl": -166.94,
+            "realized_pnl_pct": -0.67,
+            "rule_type": "TRAILING_STOP",
+            "reason": "移动止盈触发 (自最高价 ¥24.44 回撤 7.90% >= 2.5%)",
+            "details": {
+              "high_price": 24.44,
+              "pullback_pct": 7.9,
+              "stop_price": 21.68,
+              "holding_days": 1
+            }
+          },
+          {
+            "alert_id": "ALERT_603958_111905",
+            "code": "603958",
+            "name": "哈森股份",
+            "time": "11:19:05",
+            "date": "2026-08-25",
+            "sell_price": 23.82,
+            "shares": 1100,
+            "entry_price": 21.51,
+            "realized_pnl": 2501.7,
+            "realized_pnl_pct": 10.57,
+            "rule_type": "TRAILING_STOP",
+            "reason": "移动止盈触发 (自最高价 ¥24.44 回撤 2.54% >= 2.5%)",
+            "details": {
+              "high_price": 24.44,
+              "pullback_pct": 2.54,
+              "stop_price": 20.62,
+              "holding_days": 2
+            }
+          }
+        ]
+      },
+      {
+        "code": "002412",
+        "name": "汉森制药",
+        "sector": "中药Ⅱ",
+        "prev_day_quant_score": 94.77,
+        "prev_day_rank": 1,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 97.0,
+            "weight": 0.35,
+            "weighted_score": 33.95,
+            "consecutive_boards": 4,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 12.0,
+            "is_spatial_leader": true
+          },
+          "seal_strength": {
+            "score": 92.26,
+            "weight": 0.15,
+            "weighted_score": 13.84,
+            "seal_ratio": 0.618,
+            "first_seal_time": "09:30:06"
+          },
+          "chip_structure": {
+            "score": 93.28,
+            "weight": 0.3,
+            "weighted_score": 27.98,
+            "turnover_rate": 7.33,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "中药Ⅱ",
+            "sector_zt_count": 2,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 4,
+        "prev_day_close_price": 11.21,
+        "buy_price": 10.9,
+        "buy_reason": "2026-08-24 TOP1 (量化92.38分) · 板块：中药Ⅱ · 以 2026-08-24 盘后收盘 ¥10.90 作为参考价建仓 (无真实开盘撮合数据，仅供演示等权分配)",
+        "from_portfolio_buy": true,
+        "today_close_price": 12.33,
+        "today_change_pct": 9.99,
+        "today_consecutive_boards": 5,
+        "today_rank_in_candidates": 1,
+        "today_seal_ratio_pct": 9.49,
+        "today_turnover_rate": 21.27,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:45:36",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 100.0,
+            "weight": 0.35,
+            "weighted_score": 35.0,
+            "consecutive_boards": 5,
+            "base_board_score": 100.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 12.0,
+            "is_spatial_leader": true
+          },
+          "seal_strength": {
+            "score": 53.04,
+            "weight": 0.15,
+            "weighted_score": 7.96,
+            "seal_ratio": 0.0949,
+            "first_seal_time": "09:45:36"
+          },
+          "chip_structure": {
+            "score": 65.66,
+            "weight": 0.3,
+            "weighted_score": 19.7,
+            "turnover_rate": 21.27,
+            "high_60d_breakout": false,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "中药Ⅱ",
+            "sector_zt_count": 2,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "pnl_amount": 3126.2,
+        "pnl_pct": 13.03,
+        "outcome": "SUCCESS_CONSECUTIVE_BOARD",
+        "outcome_cn": "成功连板晋级",
+        "still_holding": true,
+        "exit_logs": null
+      },
+      {
+        "code": "002038",
+        "name": "双鹭药业",
+        "sector": null,
+        "prev_day_quant_score": null,
+        "prev_day_rank": null,
+        "prev_day_factor_breakdown": null,
+        "prev_day_consecutive_boards": null,
+        "prev_day_close_price": null,
+        "buy_price": 6.93,
+        "buy_reason": "2026-08-24 TOP2 (量化76.05分) · 板块：化学制药 · 以 2026-08-24 盘后收盘 ¥6.93 作为参考价建仓 (无真实开盘撮合数据，仅供演示等权分配)",
+        "from_portfolio_buy": true,
+        "today_close_price": null,
+        "today_change_pct": null,
+        "today_consecutive_boards": null,
+        "today_rank_in_candidates": null,
+        "today_seal_ratio_pct": null,
+        "today_turnover_rate": null,
+        "today_broken_count": null,
+        "today_first_seal_time": null,
+        "today_factor_breakdown": null,
+        "pnl_amount": -2589.59,
+        "pnl_pct": -10.38,
+        "outcome": "LOSS_EXIT",
+        "outcome_cn": "止损/止盈亏损离场",
+        "still_holding": false,
+        "exit_logs": [
+          {
+            "alert_id": "ALERT_002038_111831",
+            "code": "002038",
+            "name": "双鹭药业",
+            "time": "11:18:31",
+            "date": "2026-08-25",
+            "sell_price": 6.22,
+            "shares": 3600,
+            "entry_price": 6.93,
+            "realized_pnl": -2589.59,
+            "realized_pnl_pct": -10.38,
+            "rule_type": "TRAILING_STOP",
+            "reason": "移动止盈触发 (自最高价 ¥7.08 回撤 12.15% >= 2.5%)",
+            "details": {
+              "high_price": 7.08,
+              "pullback_pct": 12.15,
+              "stop_price": 6.64,
+              "holding_days": 2
+            }
+          }
+        ]
+      },
+      {
+        "code": "000017",
+        "name": "深中华A",
+        "sector": "饰品",
+        "prev_day_quant_score": 83.38,
+        "prev_day_rank": 2,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 3,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 98.06,
+            "weight": 0.15,
+            "weighted_score": 14.71,
+            "seal_ratio": 2.6127,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.3,
+            "weighted_score": 19.92,
+            "turnover_rate": 2.01,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "饰品",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 3,
+        "prev_day_close_price": 7.82,
+        "buy_price": 7.82,
+        "buy_reason": "2026-08-24 TOP3 (量化74.29分) · 板块：饰品 · 以 2026-08-24 盘后收盘 ¥7.82 作为参考价建仓 (无真实开盘撮合数据，仅供演示等权分配)",
+        "from_portfolio_buy": true,
+        "today_close_price": 8.6,
+        "today_change_pct": 9.97,
+        "today_consecutive_boards": 4,
+        "today_rank_in_candidates": 2,
+        "today_seal_ratio_pct": 24.69,
+        "today_turnover_rate": 13.12,
+        "today_broken_count": 1,
+        "today_first_seal_time": "09:25:00",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 4,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 76.52,
+            "weight": 0.15,
+            "weighted_score": 11.48,
+            "seal_ratio": 0.2469,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 64.95,
+            "weight": 0.3,
+            "weighted_score": 19.48,
+            "turnover_rate": 13.12,
+            "high_60d_breakout": false,
+            "broken_count": 1
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "饰品",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "pnl_amount": 2399.4,
+        "pnl_pct": 9.89,
+        "outcome": "SUCCESS_CONSECUTIVE_BOARD",
+        "outcome_cn": "成功连板晋级",
+        "still_holding": true,
+        "exit_logs": null
+      },
+      {
+        "code": "000931",
+        "name": "中关村",
+        "sector": "化学制药",
+        "prev_day_quant_score": 78.19,
+        "prev_day_rank": 3,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 3,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 69.03,
+            "weight": 0.15,
+            "weighted_score": 10.35,
+            "seal_ratio": 0.1443,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 63.61,
+            "weight": 0.3,
+            "weighted_score": 19.08,
+            "turnover_rate": 14.99,
+            "high_60d_breakout": false,
+            "broken_count": 1
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "化学制药",
+            "sector_zt_count": 2,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 3,
+        "prev_day_close_price": 5.6,
+        "buy_price": null,
+        "buy_reason": "2026-08-24 TOP3 候选 (量化78.19分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": null,
+        "today_change_pct": null,
+        "today_consecutive_boards": null,
+        "today_rank_in_candidates": null,
+        "today_seal_ratio_pct": null,
+        "today_turnover_rate": null,
+        "today_broken_count": null,
+        "today_first_seal_time": null,
+        "today_factor_breakdown": null,
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "600785",
+        "name": "新华百货",
+        "sector": "一般零售",
+        "prev_day_quant_score": 72.78,
+        "prev_day_rank": 4,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 73.0,
+            "weight": 0.35,
+            "weighted_score": 25.55,
+            "consecutive_boards": 2,
+            "base_board_score": 70.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 3.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 90.32,
+            "weight": 0.15,
+            "weighted_score": 13.55,
+            "seal_ratio": 0.4371,
+            "first_seal_time": "09:25:01"
+          },
+          "chip_structure": {
+            "score": 75.61,
+            "weight": 0.3,
+            "weighted_score": 22.68,
+            "turnover_rate": 5.02,
+            "high_60d_breakout": true,
+            "broken_count": 1
+          },
+          "sector_resonance": {
+            "score": 55.0,
+            "weight": 0.2,
+            "weighted_score": 11.0,
+            "sector_name": "一般零售",
+            "sector_zt_count": 2,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 10.71,
+        "buy_price": null,
+        "buy_reason": "2026-08-24 TOP4 候选 (量化72.78分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 11.78,
+        "today_change_pct": 9.99,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 6,
+        "today_seal_ratio_pct": 4.09,
+        "today_turnover_rate": 22.6,
+        "today_broken_count": 1,
+        "today_first_seal_time": "09:56:50",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 3,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 37.22,
+            "weight": 0.15,
+            "weighted_score": 5.58,
+            "seal_ratio": 0.0409,
+            "first_seal_time": "09:56:50"
+          },
+          "chip_structure": {
+            "score": 48.38,
+            "weight": 0.3,
+            "weighted_score": 14.51,
+            "turnover_rate": 22.6,
+            "high_60d_breakout": false,
+            "broken_count": 1
+          },
+          "sector_resonance": {
+            "score": 88.0,
+            "weight": 0.2,
+            "weighted_score": 17.6,
+            "sector_name": "一般零售",
+            "sector_zt_count": 3,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      }
+    ]
+  },
+  "closed_positions_attribution": {
+    "attribution_date": "2026-08-25",
+    "total_exits": 3,
+    "loss_exit_count": 2,
+    "items": [
+      {
+        "code": "603958",
+        "name": "哈森股份",
+        "sell_time": "14:40:31",
+        "sell_price": 22.51,
+        "realized_pnl": -166.94,
+        "realized_pnl_pct": -0.67,
+        "exit_rule_type": "TRAILING_STOP",
+        "exit_reason": "移动止盈触发 (自最高价 ¥24.44 回撤 7.90% >= 2.5%)",
+        "prev_day_quant_score": 66.07,
+        "prev_day_rank": 5,
+        "prev_day_factor_breakdown_snapshot": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 3,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 53.55,
+            "weight": 0.15,
+            "weighted_score": 8.03,
+            "seal_ratio": 0.0545,
+            "first_seal_time": "09:31:38"
+          },
+          "chip_structure": {
+            "score": 30.97,
+            "weight": 0.3,
+            "weighted_score": 9.29,
+            "turnover_rate": 19.91,
+            "high_60d_breakout": false,
+            "broken_count": 3
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "服装家纺",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "today_factor_breakdown_snapshot": null,
+        "is_loss_exit": true,
+        "evidence": {
+          "today_in_limit_up_pool": false
+        },
+        "attribution_reasons": [
+          "T 日未能进入涨停池，已脱离连板接力候选池"
+        ],
+        "attribution_summary": "【亏损离场归因】哈森股份（T-1 得分 66.07 / 排名第 5） → T 日 14:40:31 因 TRAILING_STOP 以 ¥22.51 平仓（PnL -0.67%）。 根因：T 日未能进入涨停池，已脱离连板接力候选池。"
+      },
+      {
+        "code": "603958",
+        "name": "哈森股份",
+        "sell_time": "11:19:05",
+        "sell_price": 23.82,
+        "realized_pnl": 2501.7,
+        "realized_pnl_pct": 10.57,
+        "exit_rule_type": "TRAILING_STOP",
+        "exit_reason": "移动止盈触发 (自最高价 ¥24.44 回撤 2.54% >= 2.5%)",
+        "prev_day_quant_score": 66.07,
+        "prev_day_rank": 5,
+        "prev_day_factor_breakdown_snapshot": {
+          "consecutive_board_sentiment": {
+            "score": 85.0,
+            "weight": 0.35,
+            "weighted_score": 29.75,
+            "consecutive_boards": 3,
+            "base_board_score": 85.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 53.55,
+            "weight": 0.15,
+            "weighted_score": 8.03,
+            "seal_ratio": 0.0545,
+            "first_seal_time": "09:31:38"
+          },
+          "chip_structure": {
+            "score": 30.97,
+            "weight": 0.3,
+            "weighted_score": 9.29,
+            "turnover_rate": 19.91,
+            "high_60d_breakout": false,
+            "broken_count": 3
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.2,
+            "weighted_score": 19.0,
+            "sector_name": "服装家纺",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "today_factor_breakdown_snapshot": null,
+        "is_loss_exit": false,
+        "evidence": {
+          "today_in_limit_up_pool": false
+        },
+        "attribution_reasons": [
+          "T 日未能进入涨停池，已脱离连板接力候选池"
+        ],
+        "attribution_summary": "【离场复盘】哈森股份（T-1 得分 66.07 / 排名第 5） → T 日 11:19:05 因 TRAILING_STOP 以 ¥23.82 平仓（PnL 10.57%）。 根因：T 日未能进入涨停池，已脱离连板接力候选池。"
+      },
+      {
+        "code": "002038",
+        "name": "双鹭药业",
+        "sell_time": "11:18:31",
+        "sell_price": 6.22,
+        "realized_pnl": -2589.59,
+        "realized_pnl_pct": -10.38,
+        "exit_rule_type": "TRAILING_STOP",
+        "exit_reason": "移动止盈触发 (自最高价 ¥7.08 回撤 12.15% >= 2.5%)",
+        "prev_day_quant_score": null,
+        "prev_day_rank": null,
+        "prev_day_factor_breakdown_snapshot": null,
+        "today_factor_breakdown_snapshot": null,
+        "is_loss_exit": true,
+        "evidence": {
+          "today_in_limit_up_pool": false
+        },
+        "attribution_reasons": [
+          "T 日未能进入涨停池，已脱离连板接力候选池"
+        ],
+        "attribution_summary": "【亏损离场归因】双鹭药业（T-1 得分 —） → T 日 11:18:31 因 TRAILING_STOP 以 ¥6.22 平仓（PnL -10.38%）。 根因：T 日未能进入涨停池，已脱离连板接力候选池。"
+      }
+    ]
+  },
+  "consecutive_board_success_analysis": {
+    "total_success": 4,
+    "items": [
+      {
+        "code": "002412",
+        "name": "汉森制药",
+        "sector": "中药Ⅱ",
+        "prev_day_consecutive_boards": 4,
+        "today_consecutive_boards": 5,
+        "board_advancement": "4 → 5 连板",
+        "today_quant_score": 81.65,
+        "today_rank": 1,
+        "today_price": 12.33,
+        "today_change_pct": 9.99,
+        "today_amount": 1236227040.0,
+        "today_turnover_rate": 21.27,
+        "today_seal_ratio_pct": 9.49,
+        "today_first_seal_time": "09:45:36",
+        "today_last_seal_time": "09:45:36",
+        "today_broken_count": 0,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 100.0,
+          "seal_strength": 53.04,
+          "chip_structure": 65.66,
+          "sector_resonance": 95.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": true,
+          "sentiment_adjustment": 12.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.0949,
+          "first_seal_time": "09:45:36",
+          "turnover_rate": 21.27,
+          "high_60d_breakout": false,
+          "broken_count": 0,
+          "sector_name": "中药Ⅱ",
+          "sector_zt_count": 2,
+          "has_true_resonance": true
+        },
+        "verdict": "T-1 4 连板 → T 日 5 连板成功晋级（今日量化得分 81.65，排第 1 名）"
+      },
+      {
+        "code": "000017",
+        "name": "深中华A",
+        "sector": "饰品",
+        "prev_day_consecutive_boards": 3,
+        "today_consecutive_boards": 4,
+        "board_advancement": "3 → 4 连板",
+        "today_quant_score": 79.71,
+        "today_rank": 2,
+        "today_price": 8.6,
+        "today_change_pct": 9.97,
+        "today_amount": 497483920.0,
+        "today_turnover_rate": 13.12,
+        "today_seal_ratio_pct": 24.69,
+        "today_first_seal_time": "09:25:00",
+        "today_last_seal_time": "09:58:12",
+        "today_broken_count": 1,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 85.0,
+          "seal_strength": 76.52,
+          "chip_structure": 64.95,
+          "sector_resonance": 95.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.2469,
+          "first_seal_time": "09:25:00",
+          "turnover_rate": 13.12,
+          "high_60d_breakout": false,
+          "broken_count": 1,
+          "sector_name": "饰品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false
+        },
+        "verdict": "T-1 3 连板 → T 日 4 连板成功晋级（今日量化得分 79.71，排第 2 名）"
+      },
+      {
+        "code": "003040",
+        "name": "楚天龙",
+        "sector": "通信设备",
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 76.58,
+        "today_rank": 3,
+        "today_price": 15.48,
+        "today_change_pct": 10.02,
+        "today_amount": 678449056.0,
+        "today_turnover_rate": 9.91,
+        "today_seal_ratio_pct": 23.71,
+        "today_first_seal_time": "09:35:48",
+        "today_last_seal_time": "09:35:48",
+        "today_broken_count": 0,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 85.0,
+          "seal_strength": 72.61,
+          "chip_structure": 83.14,
+          "sector_resonance": 55.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.2371,
+          "first_seal_time": "09:35:48",
+          "turnover_rate": 9.91,
+          "high_60d_breakout": false,
+          "broken_count": 0,
+          "sector_name": "通信设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": true
+        },
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 76.58，排第 3 名）"
+      },
+      {
+        "code": "600785",
+        "name": "新华百货",
+        "sector": "一般零售",
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 67.45,
+        "today_rank": 6,
+        "today_price": 11.78,
+        "today_change_pct": 9.99,
+        "today_amount": 783600368.0,
+        "today_turnover_rate": 22.6,
+        "today_seal_ratio_pct": 4.09,
+        "today_first_seal_time": "09:56:50",
+        "today_last_seal_time": "14:00:08",
+        "today_broken_count": 1,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 85.0,
+          "seal_strength": 37.22,
+          "chip_structure": 48.38,
+          "sector_resonance": 88.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.0409,
+          "first_seal_time": "09:56:50",
+          "turnover_rate": 22.6,
+          "high_60d_breakout": false,
+          "broken_count": 1,
+          "sector_name": "一般零售",
+          "sector_zt_count": 3,
+          "has_true_resonance": true
+        },
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 67.45，排第 6 名）"
+      }
+    ]
+  },
+  "next_day_prediction": {
+    "prediction_for_trade_date": "T+1（下一交易日）",
+    "prevailing_sentiment_state": "震荡/分化期",
+    "prevailing_sentiment_score": 69.5,
+    "market_level_prediction": "情绪处于震荡/分化区，T+1 预期结构化行情，封板结构健康 + 板块共振的标的更容易延续。",
+    "item_predictions": [
+      {
+        "code": "002412",
+        "name": "汉森制药",
+        "sector": "中药Ⅱ",
+        "rank": 1,
+        "today_quant_score": 81.65,
+        "today_consecutive_boards": 5,
+        "today_close_price": 12.33,
+        "today_change_pct": 9.99,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 67,
+        "key_drivers": [
+          "T 日 5 连板",
+          "封板强度 53.0 分（中）",
+          "筹码结构 65.7 分",
+          "板块 2 家涨停共振",
+          "换手率 21.27%（偏高）"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 100.0,
+          "seal_strength": 53.04,
+          "chip_structure": 65.66,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": 21.27,
+          "low_seal_ratio": 0.0949
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "汉森制药 T+1 预测【谨慎看涨】 (置信度 67%)——关键因子: T 日 5 连板；封板强度 53.0 分（中）；筹码结构 65.7 分；板块 2 家涨停共振；换手率 21.27%（偏高）。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "000017",
+        "name": "深中华A",
+        "sector": "饰品",
+        "rank": 2,
+        "today_quant_score": 79.71,
+        "today_consecutive_boards": 4,
+        "today_close_price": 8.6,
+        "today_change_pct": 9.97,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 70,
+        "key_drivers": [
+          "T 日 4 连板",
+          "封板强度 76.5 分（强）",
+          "筹码结构 65.0 分",
+          "板块 1 家涨停共振",
+          "T 日炸板 1 次（风险）"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 85.0,
+          "seal_strength": 76.52,
+          "chip_structure": 64.95,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": 1,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "深中华A T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 4 连板；封板强度 76.5 分（强）；筹码结构 65.0 分；板块 1 家涨停共振；T 日炸板 1 次（风险）。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "003040",
+        "name": "楚天龙",
+        "sector": "通信设备",
+        "rank": 3,
+        "today_quant_score": 76.58,
+        "today_consecutive_boards": 3,
+        "today_close_price": 15.48,
+        "today_change_pct": 10.02,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 70,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 72.6 分（强）",
+          "筹码结构 83.1 分",
+          "板块 2 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 85.0,
+          "seal_strength": 72.61,
+          "chip_structure": 83.14,
+          "sector_resonance": 55.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "楚天龙 T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 3 连板；封板强度 72.6 分（强）；筹码结构 83.1 分；板块 2 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "603079",
+        "name": "圣达生物",
+        "sector": "化学制品",
+        "rank": 4,
+        "today_quant_score": 69.18,
+        "today_consecutive_boards": 1,
+        "today_close_price": 13.89,
+        "today_change_pct": 9.98,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 65,
+        "key_drivers": [
+          "T 日 1 连板",
+          "封板强度 94.8 分（强）",
+          "筹码结构 94.0 分",
+          "板块 2 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 45.0,
+          "seal_strength": 94.78,
+          "chip_structure": 94.05,
+          "sector_resonance": 55.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "圣达生物 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 1 连板；封板强度 94.8 分（强）；筹码结构 94.0 分；板块 2 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      }
+    ]
+  },
+  "top_candidate_evaluations": [
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "review_rank": 1,
+      "quant_score": 81.65,
+      "consecutive_boards": 5,
+      "sector": "中药Ⅱ",
+      "price": 12.33,
+      "change_pct": 9.99,
+      "amount": 1236227040.0,
+      "float_market_cap": 6138428850.0,
+      "turnover_rate": 21.27,
+      "seal_amount": 117349788.0,
+      "seal_ratio_pct": 9.49,
+      "first_seal_time": "09:45:36",
+      "last_seal_time": "09:45:36",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 81.65 (排名 1)",
+      "detailed_analysis": "综合量化打分 81.65 (排第 1 名)。首次封板 09:45:36。换手率 21.27%。中药Ⅱ 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 100.0,
+          "weight": 0.35,
+          "weighted_score": 35.0,
+          "consecutive_boards": 5,
+          "base_board_score": 100.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
+          "is_spatial_leader": true
+        },
+        "seal_strength": {
+          "score": 53.04,
+          "weight": 0.15,
+          "weighted_score": 7.96,
+          "seal_ratio": 0.0949,
+          "first_seal_time": "09:45:36"
+        },
+        "chip_structure": {
+          "score": 65.66,
+          "weight": 0.3,
+          "weighted_score": 19.7,
+          "turnover_rate": 21.27,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "中药Ⅱ",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "review_rank": 2,
+      "quant_score": 79.71,
+      "consecutive_boards": 4,
+      "sector": "饰品",
+      "price": 8.6,
+      "change_pct": 9.97,
+      "amount": 497483920.0,
+      "float_market_cap": 3791068778.6,
+      "turnover_rate": 13.12,
+      "seal_amount": 122828863.0,
+      "seal_ratio_pct": 24.69,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:58:12",
+      "broken_count": 1,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 79.71 (排名 2)",
+      "detailed_analysis": "综合量化打分 79.71 (排第 2 名)。首次封板 09:25:00。换手率 13.12%。饰品 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 4,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 76.52,
+          "weight": 0.15,
+          "weighted_score": 11.48,
+          "seal_ratio": 0.2469,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 64.95,
+          "weight": 0.3,
+          "weighted_score": 19.48,
+          "turnover_rate": 13.12,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "饰品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "003040",
+      "name": "楚天龙",
+      "review_rank": 3,
+      "quant_score": 76.58,
+      "consecutive_boards": 3,
+      "sector": "通信设备",
+      "price": 15.48,
+      "change_pct": 10.02,
+      "amount": 678449056.0,
+      "float_market_cap": 7072041993.84,
+      "turnover_rate": 9.91,
+      "seal_amount": 160849088.0,
+      "seal_ratio_pct": 23.71,
+      "first_seal_time": "09:35:48",
+      "last_seal_time": "09:35:48",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 76.58 (排名 3)",
+      "detailed_analysis": "综合量化打分 76.58 (排第 3 名)。首次封板 09:35:48。换手率 9.91%。通信设备 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 72.61,
+          "weight": 0.15,
+          "weighted_score": 10.89,
+          "seal_ratio": 0.2371,
+          "first_seal_time": "09:35:48"
+        },
+        "chip_structure": {
+          "score": 83.14,
+          "weight": 0.3,
+          "weighted_score": 24.94,
+          "turnover_rate": 9.91,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "通信设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "603079",
+      "name": "圣达生物",
+      "review_rank": 4,
+      "quant_score": 69.18,
+      "consecutive_boards": 1,
+      "sector": "化学制品",
+      "price": 13.89,
+      "change_pct": 9.98,
+      "amount": 213084522.0,
+      "float_market_cap": 2625621477.36,
+      "turnover_rate": 8.4,
+      "seal_amount": 93712357.0,
+      "seal_ratio_pct": 43.98,
+      "first_seal_time": "09:42:29",
+      "last_seal_time": "09:42:29",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 69.18 (排名 4)",
+      "detailed_analysis": "综合量化打分 69.18 (排第 4 名)。首次封板 09:42:29。换手率 8.4%。化学制品 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 94.78,
+          "weight": 0.15,
+          "weighted_score": 14.22,
+          "seal_ratio": 0.4398,
+          "first_seal_time": "09:42:29"
+        },
+        "chip_structure": {
+          "score": 94.05,
+          "weight": 0.3,
+          "weighted_score": 28.21,
+          "turnover_rate": 8.4,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "化学制品",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    }
+  ],
+  "lower_ranked_attributions": [
+    {
+      "code": "600838",
+      "name": "上海九百",
+      "sector": "一般零售",
+      "quant_score": 67.53,
+      "rank": 5,
+      "consecutive_boards": 1,
+      "change_pct": 10.01,
+      "factor_rejection_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "上海九百 综合得分 67.53 (排第 5 名)，主要扣分点：连板阶梯得分仅 45.0 (低于60门槛)。"
+    },
+    {
+      "code": "600785",
+      "name": "新华百货",
+      "sector": "一般零售",
+      "quant_score": 67.45,
+      "rank": 6,
+      "consecutive_boards": 3,
+      "change_pct": 9.99,
+      "factor_rejection_breakdown": {
+        "seal_strength": {
+          "score": 37.2,
+          "weight": 0.15,
+          "details": {
+            "seal_ratio": 0.0409,
+            "first_seal_time": "09:56:50"
+          }
+        },
+        "chip_structure": {
+          "score": 48.4,
+          "weight": 0.3,
+          "details": {
+            "turnover_rate": 22.6,
+            "high_60d_breakout": false,
+            "broken_count": 1
+          }
+        }
+      },
+      "why_not_in_topN": "新华百货 综合得分 67.45 (排第 6 名)，主要扣分点：封板强度得分仅 37.2 (低于60门槛)；筹码结构得分仅 48.4 (低于60门槛)。"
+    },
+    {
+      "code": "002686",
+      "name": "亿利达",
+      "sector": "通用设备",
+      "quant_score": 65.66,
+      "rank": 7,
+      "consecutive_boards": 1,
+      "change_pct": 10.0,
+      "factor_rejection_breakdown": {
+        "seal_strength": {
+          "score": 52.9,
+          "weight": 0.15,
+          "details": {
+            "seal_ratio": 0.1455,
+            "first_seal_time": "10:19:39"
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "亿利达 综合得分 65.66 (排第 7 名)，主要扣分点：封板强度得分仅 52.9 (低于60门槛)；连板阶梯得分仅 45.0 (低于60门槛)。"
+    },
+    {
+      "code": "300642",
+      "name": "透景生命",
+      "sector": "医疗器械",
+      "quant_score": 64.36,
+      "rank": 8,
+      "consecutive_boards": 1,
+      "change_pct": 20.0,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "details": {
+            "sector_name": "医疗器械",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "透景生命 综合得分 64.36 (排第 8 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 45.0 (低于60门槛)。"
+    },
+    {
+      "code": "600470",
+      "name": "六国化工",
+      "sector": "农化制品",
+      "quant_score": 64.24,
+      "rank": 9,
+      "consecutive_boards": 1,
+      "change_pct": 10.02,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.2,
+          "details": {
+            "sector_name": "农化制品",
+            "sector_zt_count": 3,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "六国化工 综合得分 64.24 (排第 9 名)，主要扣分点：板块共振得分仅 58.0 (低于60门槛)；连板阶梯得分仅 45.0 (低于60门槛)。"
+    }
+  ],
+  "next_day_recommended_candidates": [
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "price": 12.33,
+      "change_pct": 9.99,
+      "consecutive_boards": 5,
+      "sector": "中药Ⅱ",
+      "quant_score": 81.65,
+      "turnover_rate": 21.27,
+      "seal_ratio_pct": 9.49,
+      "first_seal_time": "09:45:36",
+      "recommend_reason": "综合量化得分 81.65 (排第 1 名)。首次封板 09:45:36。所属板块：中药Ⅱ。",
+      "operation_guide": null
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "price": 8.6,
+      "change_pct": 9.97,
+      "consecutive_boards": 4,
+      "sector": "饰品",
+      "quant_score": 79.71,
+      "turnover_rate": 13.12,
+      "seal_ratio_pct": 24.69,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 79.71 (排第 2 名)。首次封板 09:25:00。所属板块：饰品。",
+      "operation_guide": null
+    },
+    {
+      "code": "003040",
+      "name": "楚天龙",
+      "price": 15.48,
+      "change_pct": 10.02,
+      "consecutive_boards": 3,
+      "sector": "通信设备",
+      "quant_score": 76.58,
+      "turnover_rate": 9.91,
+      "seal_ratio_pct": 23.71,
+      "first_seal_time": "09:35:48",
+      "recommend_reason": "综合量化得分 76.58 (排第 3 名)。首次封板 09:35:48。所属板块：通信设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "603079",
+      "name": "圣达生物",
+      "price": 13.89,
+      "change_pct": 9.98,
+      "consecutive_boards": 1,
+      "sector": "化学制品",
+      "quant_score": 69.18,
+      "turnover_rate": 8.4,
+      "seal_ratio_pct": 43.98,
+      "first_seal_time": "09:42:29",
+      "recommend_reason": "综合量化得分 69.18 (排第 4 名)。首次封板 09:42:29。所属板块：化学制品。",
+      "operation_guide": null
+    }
+  ],
+  "aug21_top4_evaluations": [
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "review_rank": 1,
+      "quant_score": 81.65,
+      "consecutive_boards": 5,
+      "sector": "中药Ⅱ",
+      "price": 12.33,
+      "change_pct": 9.99,
+      "amount": 1236227040.0,
+      "float_market_cap": 6138428850.0,
+      "turnover_rate": 21.27,
+      "seal_amount": 117349788.0,
+      "seal_ratio_pct": 9.49,
+      "first_seal_time": "09:45:36",
+      "last_seal_time": "09:45:36",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 81.65 (排名 1)",
+      "detailed_analysis": "综合量化打分 81.65 (排第 1 名)。首次封板 09:45:36。换手率 21.27%。中药Ⅱ 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 100.0,
+          "weight": 0.35,
+          "weighted_score": 35.0,
+          "consecutive_boards": 5,
+          "base_board_score": 100.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
+          "is_spatial_leader": true
+        },
+        "seal_strength": {
+          "score": 53.04,
+          "weight": 0.15,
+          "weighted_score": 7.96,
+          "seal_ratio": 0.0949,
+          "first_seal_time": "09:45:36"
+        },
+        "chip_structure": {
+          "score": 65.66,
+          "weight": 0.3,
+          "weighted_score": 19.7,
+          "turnover_rate": 21.27,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "中药Ⅱ",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "review_rank": 2,
+      "quant_score": 79.71,
+      "consecutive_boards": 4,
+      "sector": "饰品",
+      "price": 8.6,
+      "change_pct": 9.97,
+      "amount": 497483920.0,
+      "float_market_cap": 3791068778.6,
+      "turnover_rate": 13.12,
+      "seal_amount": 122828863.0,
+      "seal_ratio_pct": 24.69,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:58:12",
+      "broken_count": 1,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 79.71 (排名 2)",
+      "detailed_analysis": "综合量化打分 79.71 (排第 2 名)。首次封板 09:25:00。换手率 13.12%。饰品 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 4,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 76.52,
+          "weight": 0.15,
+          "weighted_score": 11.48,
+          "seal_ratio": 0.2469,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 64.95,
+          "weight": 0.3,
+          "weighted_score": 19.48,
+          "turnover_rate": 13.12,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "饰品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "003040",
+      "name": "楚天龙",
+      "review_rank": 3,
+      "quant_score": 76.58,
+      "consecutive_boards": 3,
+      "sector": "通信设备",
+      "price": 15.48,
+      "change_pct": 10.02,
+      "amount": 678449056.0,
+      "float_market_cap": 7072041993.84,
+      "turnover_rate": 9.91,
+      "seal_amount": 160849088.0,
+      "seal_ratio_pct": 23.71,
+      "first_seal_time": "09:35:48",
+      "last_seal_time": "09:35:48",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 76.58 (排名 3)",
+      "detailed_analysis": "综合量化打分 76.58 (排第 3 名)。首次封板 09:35:48。换手率 9.91%。通信设备 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 72.61,
+          "weight": 0.15,
+          "weighted_score": 10.89,
+          "seal_ratio": 0.2371,
+          "first_seal_time": "09:35:48"
+        },
+        "chip_structure": {
+          "score": 83.14,
+          "weight": 0.3,
+          "weighted_score": 24.94,
+          "turnover_rate": 9.91,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "通信设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "603079",
+      "name": "圣达生物",
+      "review_rank": 4,
+      "quant_score": 69.18,
+      "consecutive_boards": 1,
+      "sector": "化学制品",
+      "price": 13.89,
+      "change_pct": 9.98,
+      "amount": 213084522.0,
+      "float_market_cap": 2625621477.36,
+      "turnover_rate": 8.4,
+      "seal_amount": 93712357.0,
+      "seal_ratio_pct": 43.98,
+      "first_seal_time": "09:42:29",
+      "last_seal_time": "09:42:29",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 69.18 (排名 4)",
+      "detailed_analysis": "综合量化打分 69.18 (排第 4 名)。首次封板 09:42:29。换手率 8.4%。化学制品 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 94.78,
+          "weight": 0.15,
+          "weighted_score": 14.22,
+          "seal_ratio": 0.4398,
+          "first_seal_time": "09:42:29"
+        },
+        "chip_structure": {
+          "score": 94.05,
+          "weight": 0.3,
+          "weighted_score": 28.21,
+          "turnover_rate": 8.4,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "化学制品",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    }
+  ],
+  "aug24_consecutive_board_attributions": [
+    {
+      "code": "600838",
+      "name": "上海九百",
+      "sector": "一般零售",
+      "quant_score": 67.53,
+      "rank": 5,
+      "consecutive_boards": 1,
+      "change_pct": 10.01,
+      "factor_rejection_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "上海九百 综合得分 67.53 (排第 5 名)，主要扣分点：连板阶梯得分仅 45.0 (低于60门槛)。"
+    },
+    {
+      "code": "600785",
+      "name": "新华百货",
+      "sector": "一般零售",
+      "quant_score": 67.45,
+      "rank": 6,
+      "consecutive_boards": 3,
+      "change_pct": 9.99,
+      "factor_rejection_breakdown": {
+        "seal_strength": {
+          "score": 37.2,
+          "weight": 0.15,
+          "details": {
+            "seal_ratio": 0.0409,
+            "first_seal_time": "09:56:50"
+          }
+        },
+        "chip_structure": {
+          "score": 48.4,
+          "weight": 0.3,
+          "details": {
+            "turnover_rate": 22.6,
+            "high_60d_breakout": false,
+            "broken_count": 1
+          }
+        }
+      },
+      "why_not_in_topN": "新华百货 综合得分 67.45 (排第 6 名)，主要扣分点：封板强度得分仅 37.2 (低于60门槛)；筹码结构得分仅 48.4 (低于60门槛)。"
+    },
+    {
+      "code": "002686",
+      "name": "亿利达",
+      "sector": "通用设备",
+      "quant_score": 65.66,
+      "rank": 7,
+      "consecutive_boards": 1,
+      "change_pct": 10.0,
+      "factor_rejection_breakdown": {
+        "seal_strength": {
+          "score": 52.9,
+          "weight": 0.15,
+          "details": {
+            "seal_ratio": 0.1455,
+            "first_seal_time": "10:19:39"
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "亿利达 综合得分 65.66 (排第 7 名)，主要扣分点：封板强度得分仅 52.9 (低于60门槛)；连板阶梯得分仅 45.0 (低于60门槛)。"
+    },
+    {
+      "code": "300642",
+      "name": "透景生命",
+      "sector": "医疗器械",
+      "quant_score": 64.36,
+      "rank": 8,
+      "consecutive_boards": 1,
+      "change_pct": 20.0,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "details": {
+            "sector_name": "医疗器械",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "透景生命 综合得分 64.36 (排第 8 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 45.0 (低于60门槛)。"
+    },
+    {
+      "code": "600470",
+      "name": "六国化工",
+      "sector": "农化制品",
+      "quant_score": 64.24,
+      "rank": 9,
+      "consecutive_boards": 1,
+      "change_pct": 10.02,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.2,
+          "details": {
+            "sector_name": "农化制品",
+            "sector_zt_count": 3,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 45.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "六国化工 综合得分 64.24 (排第 9 名)，主要扣分点：板块共振得分仅 58.0 (低于60门槛)；连板阶梯得分仅 45.0 (低于60门槛)。"
+    }
+  ],
+  "aug25_recommended_candidates": [
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "price": 12.33,
+      "change_pct": 9.99,
+      "consecutive_boards": 5,
+      "sector": "中药Ⅱ",
+      "quant_score": 81.65,
+      "turnover_rate": 21.27,
+      "seal_ratio_pct": 9.49,
+      "first_seal_time": "09:45:36",
+      "recommend_reason": "综合量化得分 81.65 (排第 1 名)。首次封板 09:45:36。所属板块：中药Ⅱ。",
+      "operation_guide": null
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "price": 8.6,
+      "change_pct": 9.97,
+      "consecutive_boards": 4,
+      "sector": "饰品",
+      "quant_score": 79.71,
+      "turnover_rate": 13.12,
+      "seal_ratio_pct": 24.69,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 79.71 (排第 2 名)。首次封板 09:25:00。所属板块：饰品。",
+      "operation_guide": null
+    },
+    {
+      "code": "003040",
+      "name": "楚天龙",
+      "price": 15.48,
+      "change_pct": 10.02,
+      "consecutive_boards": 3,
+      "sector": "通信设备",
+      "quant_score": 76.58,
+      "turnover_rate": 9.91,
+      "seal_ratio_pct": 23.71,
+      "first_seal_time": "09:35:48",
+      "recommend_reason": "综合量化得分 76.58 (排第 3 名)。首次封板 09:35:48。所属板块：通信设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "603079",
+      "name": "圣达生物",
+      "price": 13.89,
+      "change_pct": 9.98,
+      "consecutive_boards": 1,
+      "sector": "化学制品",
+      "quant_score": 69.18,
+      "turnover_rate": 8.4,
+      "seal_ratio_pct": 43.98,
+      "first_seal_time": "09:42:29",
+      "recommend_reason": "综合量化得分 69.18 (排第 4 名)。首次封板 09:42:29。所属板块：化学制品。",
+      "operation_guide": null
+    }
+  ]
+}

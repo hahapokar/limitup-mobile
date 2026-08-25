@@ -1,0 +1,51 @@
+{
+  "trade_date": "2026-08-21",
+  "sentiment_score": 66.88,
+  "sentiment_state": "震荡/分化期",
+  "sentiment_level": "偏暖积极",
+  "sentiment_circuit_breaker": false,
+  "target_position_ratio": 0.65,
+  "components": {
+    "yesterday_zt_premium": {
+      "raw_value": null,
+      "score": 50.0,
+      "weight": 0.35,
+      "weighted_score": 17.5,
+      "unit": "%",
+      "description": "昨日涨停个股今日平均溢价率"
+    },
+    "market_limit_down": {
+      "raw_value": 3,
+      "score": 85.0,
+      "weight": 0.25,
+      "weighted_score": 21.25,
+      "unit": "家",
+      "description": "全市场跌停家数 (>15家重度扣分)"
+    },
+    "max_consecutive_boards": {
+      "raw_value": 3,
+      "broken_rate_pct": 37.21,
+      "score": 52.5,
+      "weight": 0.25,
+      "weighted_score": 13.12,
+      "unit": "连板",
+      "description": "最高连板高度(3板)与真实炸板率(37.2%)"
+    },
+    "advance_decline_ratio": {
+      "raw_value": 76.15,
+      "score": 100.0,
+      "weight": 0.15,
+      "weighted_score": 15.0,
+      "unit": "%",
+      "description": "全市场红盘上涨家数占比"
+    }
+  },
+  "market_summary": {
+    "limit_up_count": 54,
+    "broken_up_count": 32,
+    "limit_down_count": 3,
+    "up_count": 3966,
+    "down_count": 1177,
+    "activity_pct": 76.09
+  }
+}

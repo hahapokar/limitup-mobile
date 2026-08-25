@@ -1,0 +1,6 @@
+{
+  "name": "A-Share Limit-Up Quant Trading System",
+  "description": "Automated A-share limit-up quant review, 4-factor scoring stock selection, and paper trading engine with multi-source fallback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

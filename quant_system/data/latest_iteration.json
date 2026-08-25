@@ -1,0 +1,46 @@
+{
+  "trade_date": "2026-08-25",
+  "has_recommendation": false,
+  "status": "NOT_RUN",
+  "last_evaluated": "2026-08-25 19:13:47",
+  "summary": null,
+  "config_diff": [
+    {
+      "param_key": "limit_seal_ratio",
+      "param_name": "首板封单占比门槛",
+      "current_value": null,
+      "suggested_value": null,
+      "min_bound": 0.1,
+      "max_bound": 0.35,
+      "step": 0.01,
+      "unit": "%",
+      "reason": null
+    },
+    {
+      "param_key": "open_turnover_rate",
+      "param_name": "开盘换手率下限",
+      "current_value": null,
+      "suggested_value": null,
+      "min_bound": 0.015,
+      "max_bound": 0.06,
+      "step": 0.005,
+      "unit": "%",
+      "reason": null
+    },
+    {
+      "param_key": "hard_stop_loss_pct",
+      "param_name": "防洗盘硬止损线",
+      "current_value": -0.0413,
+      "suggested_value": null,
+      "min_bound": -0.06,
+      "max_bound": -0.025,
+      "step": 0.002,
+      "unit": "%",
+      "reason": null
+    }
+  ],
+  "metrics": {},
+  "equity_curve": [],
+  "impacted_trades": [],
+  "note": "影子回测引擎尚未接入真实行情回测模块，因此本页不展示任何伪造的胜率、净值曲线或受影响股票明细。配置项 current_value 均从 quant_system.config 实时读取，未配置的阈值参数 (由百分位打分管理) 显示为 null。"
+}
