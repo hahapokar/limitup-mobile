@@ -67,32 +67,47 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
   }
 
   const {
-    initial_capital,
-    cash,
-    market_value,
-    total_asset,
-    nav,
-    total_pnl,
+    initial_capital = 0,
+    cash = 0,
+    market_value = 0,
+    total_asset = 0,
+    nav = 1.0,
+    total_pnl = 0,
     holdings = [],
     trade_history = [],
     nav_history = []
   } = portfolio;
 
-  // Safe number formatter for nullable numeric fields
-  const fmtNum = (v: number | null | undefined, digits = 2, prefix = "") =>
-    v != null && typeof v === "number" && !isNaN(v)
-      ? `${prefix}${v.toLocaleString("zh-CN", { minimumFractionDigits: digits, maximumFractionDigits: digits })}`
-      : "--";
+  // ✅ 彻底安全的格式化函数：严格校验 TypeScript/JavaScript 中的 undefined、null 和 NaN
+  const fmtNum = (v: number | null | undefined, digits = 2, prefix = "") => {
+    if (v == null || typeof v !== "number" || isNaN(v)) return "--";
+    try {
+      return `${prefix}${v.toLocaleString("zh-CN", { 
+        minimumFractionDigits: digits, 
+        maximumFractionDigits: digits 
+      })}`;
+    } catch {
+      return `${prefix}${v.toFixed(digits)}`;
+    }
+  };
+
   const fmtPct = (v: number | null | undefined, digits = 2, signed = false) =>
     v != null && typeof v === "number" && !isNaN(v)
       ? `${signed && v >= 0 ? "+" : ""}${v.toFixed(digits)}%`
       : "--";
 
-  const pnlPercent = initial_capital > 0 ? (total_pnl / initial_capital) * 100 : 0;
+  const safeInitialCapital = initial_capital ?? 0;
+  const safeTotalPnl = total_pnl ?? 0;
+  const safeTotalAsset = total_asset ?? 0;
+  const safeCash = cash ?? 0;
+  const safeMarketValue = market_value ?? 0;
+  const safeNav = nav ?? 1.0;
+
+  const pnlPercent = safeInitialCapital > 0 ? (safeTotalPnl / safeInitialCapital) * 100 : 0;
 
   // Chart data format
   const chartData = (nav_history && nav_history.length > 0) ? nav_history : [
-    { date: "—", nav: 1.0000, total_asset: initial_capital }
+    { date: "—", nav: 1.0000, total_asset: safeInitialCapital }
   ];
 
   const handleSellClick = async (code: string, name: string) => {
@@ -130,7 +145,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
             </p>
             <span className="text-[11px] text-emerald-300">
               行情状态：实时行情优先，失败时仅保留旧值展示并标记为 STALE
-              {holdings.length > 0 && ` · 最近更新 ${holdings[0].quote_status_at || "—"}`}
+              {holdings.length > 0 && ` · 最近更新 ${holdings[0]?.quote_status_at || "—"}`}
             </span>
           </div>
         </div>
@@ -162,8 +177,8 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
         {/* NAV */}
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm">
           <div className="text-xs font-semibold text-slate-400">模拟盘净值 (NAV)</div>
-          <div className={`text-2xl font-black font-mono mt-1 ${nav >= 1.0 ? "text-red-400" : "text-emerald-400"}`}>
-            {nav.toFixed(4)}
+          <div className={`text-2xl font-black font-mono mt-1 ${safeNav >= 1.0 ? "text-red-400" : "text-emerald-400"}`}>
+            {safeNav.toFixed(4)}
           </div>
           <div className="text-[11px] text-slate-500 mt-1 font-mono">
             基准初始: 1.0000
@@ -174,10 +189,10 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm">
           <div className="text-xs font-semibold text-slate-400">账户总资产</div>
           <div className="text-2xl font-bold font-mono text-slate-100 mt-1">
-            ¥{total_asset.toLocaleString("zh-CN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            {fmtNum(safeTotalAsset, 2, "¥")}
           </div>
           <div className="text-[11px] text-slate-500 mt-1 font-mono">
-            初始本金: ¥{initial_capital.toLocaleString()}
+            初始本金: {fmtNum(safeInitialCapital, 2, "¥")}
           </div>
         </div>
 
@@ -185,11 +200,11 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm">
           <div className="text-xs font-semibold text-slate-400">累计浮动盈亏</div>
           <div className={`text-2xl font-bold font-mono mt-1 flex items-center gap-1 ${
-            total_pnl >= 0 ? "text-red-400" : "text-emerald-400"
+            safeTotalPnl >= 0 ? "text-red-400" : "text-emerald-400"
           }`}>
-            {total_pnl >= 0 ? "+" : ""}¥{total_pnl.toLocaleString("zh-CN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            {safeTotalPnl >= 0 ? "+" : ""}{fmtNum(safeTotalPnl, 2, "¥")}
           </div>
-          <div className={`text-[11px] font-mono mt-1 font-semibold ${total_pnl >= 0 ? "text-red-400" : "text-emerald-400"}`}>
+          <div className={`text-[11px] font-mono mt-1 font-semibold ${safeTotalPnl >= 0 ? "text-red-400" : "text-emerald-400"}`}>
             {pnlPercent >= 0 ? "+" : ""}{pnlPercent.toFixed(2)}%
           </div>
         </div>
@@ -198,10 +213,10 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm">
           <div className="text-xs font-semibold text-slate-400">可用现金</div>
           <div className="text-2xl font-bold font-mono text-slate-100 mt-1">
-            ¥{cash.toLocaleString("zh-CN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            {fmtNum(safeCash, 2, "¥")}
           </div>
           <div className="text-[11px] text-slate-500 mt-1 font-mono">
-            现金占比: {((cash / total_asset) * 100).toFixed(1)}%
+            现金占比: {safeTotalAsset > 0 ? ((safeCash / safeTotalAsset) * 100).toFixed(1) : "0.0"}%
           </div>
         </div>
 
@@ -209,7 +224,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm col-span-2 lg:col-span-1">
           <div className="text-xs font-semibold text-slate-400">持仓总市值</div>
           <div className="text-2xl font-bold font-mono text-slate-100 mt-1">
-            ¥{market_value.toLocaleString("zh-CN", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            {fmtNum(safeMarketValue, 2, "¥")}
           </div>
           <div className="text-[11px] text-slate-500 mt-1 font-mono">
             持仓数: {holdings.length} 只标的
@@ -255,7 +270,9 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
               <CheckCircle2 className="w-7 h-7" />
             </div>
             <div>
-              <div className="text-base font-bold text-slate-200">模拟盘资金已清空就绪 (¥{cash.toLocaleString("zh-CN", { minimumFractionDigits: 2 })}) · 空仓待命</div>
+              <div className="text-base font-bold text-slate-200">
+                模拟盘资金已清空就绪 ({fmtNum(safeCash, 2, "¥")}) · 空仓待命
+              </div>
               <p className="text-xs text-slate-400 max-w-lg mx-auto mt-1.5 leading-relaxed">
                 已按要求清空上一轮模拟持仓数据。系统将在下一个开盘日（09:15 早盘集合竞价 ~ 09:30 开盘）自动监控候选标的池，按照集合竞价开盘偏离度与四大因子评分自动撮合建仓！
               </p>
@@ -263,7 +280,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
             <div className="flex flex-wrap items-center justify-center gap-3 pt-2 text-xs">
               <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
                 <Shield className="w-3.5 h-3.5 text-emerald-400" />
-                <span>100% 纯现金待命 (¥100,000)</span>
+                <span>100% 纯现金待命 ({fmtNum(safeCash, 2, "¥")})</span>
               </span>
               <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 flex items-center gap-1.5">
                 <Clock className="w-3.5 h-3.5 text-indigo-400" />
@@ -400,7 +417,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                         <div className="text-slate-200 font-bold">
                           {fmtNum(h.market_value, 2, "¥")}
                         </div>
-                        <div className="text-[10px] text-slate-400">{h.shares.toLocaleString()} 股</div>
+                        <div className="text-[10px] text-slate-400">{(h.shares ?? 0).toLocaleString()} 股</div>
                       </td>
 
                       {/* Unrealized PnL */}
@@ -424,14 +441,16 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                       {/* Trailing Stop Line */}
                       <td className="py-3.5 px-3">
                         <div className="text-amber-300 font-bold">{fmtNum(trailingStopLine, 2, "¥")}</div>
-                        <div className="text-[10px] text-slate-500">距现价: {h.current_price != null ? fmtNum(h.current_price - trailingStopLine, 2) : "--"}</div>
+                        <div className="text-[10px] text-slate-500">
+                          距现价: {h.current_price != null ? fmtNum(h.current_price - trailingStopLine, 2) : "--"}
+                        </div>
                       </td>
 
                       {/* Hard Stop Line */}
                       <td className="py-3.5 px-3">
                         <div className="text-rose-300">{fmtNum(h.hard_stop_price, 2, "¥")}</div>
                         <div className="text-[10px] text-slate-500">
-                          防洗盘: {h.anti_shakeout_count > 0 ? `${h.anti_shakeout_count}/3次` : "安全"}
+                          防洗盘: {(h.anti_shakeout_count ?? 0) > 0 ? `${h.anti_shakeout_count}/3次` : "安全"}
                         </div>
                       </td>
 
@@ -450,14 +469,14 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                         ) : (
                           <div>
                             <span className={`px-2 py-0.5 rounded text-[11px] font-semibold flex items-center gap-1 w-fit ${
-                              h.holding_days >= 2 
+                              (h.holding_days ?? 0) >= 2 
                                 ? "bg-purple-950/80 text-purple-300 border border-purple-800" 
                                 : "bg-emerald-950/80 text-emerald-300 border border-emerald-800"
                             }`}>
                               <Unlock className="w-3 h-3" />
                               <span>T+{h.holding_days} (可卖出)</span>
                             </span>
-                            {h.holding_days >= 2 && (
+                            {(h.holding_days ?? 0) >= 2 && (
                               <div className="text-[10px] text-purple-400 mt-0.5">
                                 尾盘强制平仓预警
                               </div>
@@ -478,7 +497,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                         {h.holding_days === 0 || h.can_sell === false ? (
                           <span 
                             className="px-2.5 py-1 rounded bg-slate-800/60 text-slate-500 border border-slate-800 text-[11px] cursor-not-allowed flex items-center gap-1 justify-end"
-                            title="A股T+1制度：8月24日买入锁仓中，最早在8月25日才能卖出"
+                            title="A股T+1制度：买入当日锁仓，次日可卖出"
                           >
                             <Lock className="w-3 h-3 text-slate-500" />
                             <span>T+1锁仓</span>
@@ -529,7 +548,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                 stroke="#64748b" 
                 fontSize={11} 
                 domain={['auto', 'auto']} 
-                tickFormatter={(v) => v.toFixed(3)}
+                tickFormatter={(v) => (typeof v === 'number' ? v.toFixed(3) : v)}
                 tickLine={false} 
               />
               <Tooltip 
@@ -540,7 +559,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                   fontSize: '12px',
                   color: '#f8fafc'
                 }}
-                formatter={(value: any) => [`${Number(value).toFixed(4)}`, "NAV净值"]}
+                formatter={(value: any) => [`${Number(value || 0).toFixed(4)}`, "NAV净值"]}
                 labelFormatter={(label) => `交易日: ${label}`}
               />
               <ReferenceLine y={1.0000} stroke="#64748b" strokeDasharray="4 4" label={{ value: "基准 1.0", fill: "#64748b", fontSize: 10 }} />
@@ -590,47 +609,51 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/80 font-mono">
-                {trade_history.map((t) => (
-                  <tr key={t.order_id} className="hover:bg-slate-800/30 transition">
-                    <td className="py-2.5 px-3 text-slate-400">
-                      {t.date} {t.time}
-                    </td>
-                    <td className="py-2.5 px-3">
-                      {t.type === "BUY" ? (
-                        <span className="px-2 py-0.5 rounded bg-red-950/60 text-red-400 border border-red-800/40 text-[11px] font-bold">
-                          买入建仓
-                        </span>
-                      ) : (
-                        <span className="px-2 py-0.5 rounded bg-indigo-950/60 text-indigo-400 border border-indigo-800/40 text-[11px] font-bold">
-                          平仓离场
-                        </span>
-                      )}
-                    </td>
-                    <td className="py-2.5 px-3">
-                      <span className="font-bold text-slate-200 font-sans">{t.name}</span>
-                      <span className="text-slate-400 ml-1">({t.code})</span>
-                    </td>
-                    <td className="py-2.5 px-3 text-slate-200">¥{t.price.toFixed(2)}</td>
-                    <td className="py-2.5 px-3 text-slate-300">{t.shares.toLocaleString()} 股</td>
-                    <td className="py-2.5 px-3 text-slate-200">¥{t.amount.toLocaleString()}</td>
-                    <td className="py-2.5 px-3 text-slate-400">¥{t.friction.toFixed(2)}</td>
-                    <td className="py-2.5 px-3">
-                      {t.realized_pnl !== undefined ? (
-                        <span className={`font-bold ${t.realized_pnl >= 0 ? "text-red-400" : "text-emerald-400"}`}>
-                          {t.realized_pnl >= 0 ? "+" : ""}¥{t.realized_pnl.toFixed(2)} ({t.realized_pnl_pct! >= 0 ? "+" : ""}{t.realized_pnl_pct?.toFixed(2)}%)
-                        </span>
-                      ) : (
-                        <span className="text-slate-500">--</span>
-                      )}
-                    </td>
-                    <td className="py-2.5 px-3 text-slate-300 font-sans text-[11px]">
-                      {t.strategy_name && (
-                        <div className="text-indigo-300 font-semibold mb-0.5">{t.strategy_name}</div>
-                      )}
-                      <div>{t.reason}</div>
-                    </td>
-                  </tr>
-                ))}
+                {trade_history.map((t, idx) => {
+                  const tradeAmount = t.amount ?? ((t.price ?? 0) * (t.shares ?? 0));
+                  return (
+                    <tr key={t.order_id || idx} className="hover:bg-slate-800/30 transition">
+                      <td className="py-2.5 px-3 text-slate-400">
+                        {t.date} {t.time}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        {t.type === "BUY" ? (
+                          <span className="px-2 py-0.5 rounded bg-red-950/60 text-red-400 border border-red-800/40 text-[11px] font-bold">
+                            买入建仓
+                          </span>
+                        ) : (
+                          <span className="px-2 py-0.5 rounded bg-indigo-950/60 text-indigo-400 border border-indigo-800/40 text-[11px] font-bold">
+                            平仓离场
+                          </span>
+                        )}
+                      </td>
+                      <td className="py-2.5 px-3">
+                        <span className="font-bold text-slate-200 font-sans">{t.name}</span>
+                        <span className="text-slate-400 ml-1">({t.code})</span>
+                      </td>
+                      <td className="py-2.5 px-3 text-slate-200">{fmtNum(t.price, 2, "¥")}</td>
+                      <td className="py-2.5 px-3 text-slate-300">{(t.shares ?? 0).toLocaleString()} 股</td>
+                      {/* ✅ 彻底修复：使用安全防护处理交易金额 */}
+                      <td className="py-2.5 px-3 text-slate-200">{fmtNum(tradeAmount, 2, "¥")}</td>
+                      <td className="py-2.5 px-3 text-slate-400">{fmtNum(t.friction, 2, "¥")}</td>
+                      <td className="py-2.5 px-3">
+                        {t.realized_pnl !== undefined && t.realized_pnl !== null ? (
+                          <span className={`font-bold ${t.realized_pnl >= 0 ? "text-red-400" : "text-emerald-400"}`}>
+                            {t.realized_pnl >= 0 ? "+" : ""}¥{t.realized_pnl.toFixed(2)} ({t.realized_pnl_pct! >= 0 ? "+" : ""}{t.realized_pnl_pct?.toFixed(2)}%)
+                          </span>
+                        ) : (
+                          <span className="text-slate-500">--</span>
+                        )}
+                      </td>
+                      <td className="py-2.5 px-3 text-slate-300 font-sans text-[11px]">
+                        {t.strategy_name && (
+                          <div className="text-indigo-300 font-semibold mb-0.5">{t.strategy_name}</div>
+                        )}
+                        <div>{t.reason}</div>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

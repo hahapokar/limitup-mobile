@@ -797,6 +797,10 @@ class PortfolioEngine:
         1. Trailing Stop: 2.5% pullback from highest price
         2. Anti-Shakeout Stop: -4.13% with 3-minute time & volume confirmation
         3. T+2 Close Forced Liquidation: Exit at 14:45 if not at limit-up
+
+        Trading hours guard: sell execution is ONLY allowed during
+        09:30–15:00. Outside this window, quotes are still refreshed
+        for display but no sell orders are fired.
         """
         state = self.load_state()
         holdings = state.get("holdings", [])
@@ -805,6 +809,9 @@ class PortfolioEngine:
 
         now = datetime.datetime.now()
         cur_time = current_time_str or now.strftime("%H:%M")
+
+        # Trading hours guard: no sells outside 09:30–15:00
+        is_within_trading_hours = ("09:30" <= cur_time <= "15:00")
         
         # Batch fetch real-time prices
         codes = [h["code"] for h in holdings]
@@ -819,6 +826,14 @@ class PortfolioEngine:
             shares = h["shares"]
             entry_price = float(h["entry_price"])
             holding_days = int(h.get("holding_days", 0))
+
+            # T+0 lock check: if entry_date is today, the stock cannot be sold
+            # under any circumstances (A-share T+1 settlement rule).
+            # This is independent of holding_days, which may be incorrectly
+            # incremented by post-market settlement or demo state advancement.
+            entry_date_str = h.get("entry_date", "")
+            today_str = now.strftime("%Y-%m-%d")
+            is_t0_today = (entry_date_str == today_str)
             
             q = quotes.get(code)
             if not q:
@@ -910,8 +925,17 @@ class PortfolioEngine:
             exit_reason = ""
             rule_type = "TRAILING_STOP"
 
-            # Check A-share T+1 rule (cannot sell on T+0 buy day)
-            if holding_days >= 1:
+            # Triple guard: skip ALL sell logic if ANY of these is true:
+            # 1. T+0 lock — stock was bought today (entry_date == today)
+            # 2. Outside trading hours — no sells after 15:00 close
+            # 3. holding_days < 1 — legacy check for T+0 buys
+            if is_t0_today:
+                should_exit = False
+                h["can_sell"] = False
+                h["t1_lock_text"] = "T+0 当日买入锁仓 (下一交易日可卖)"
+            elif not is_within_trading_hours:
+                should_exit = False
+            elif holding_days >= 1:
                 # ---------------------------------------------------------
                 # Rule 1: 移动止盈 (Trailing Stop - 2.5% Pullback from Peak)
                 # ---------------------------------------------------------
@@ -1329,6 +1353,12 @@ class PortfolioEngine:
         market_val = sum([h.get("market_value", 0.0) for h in state.get("holdings", [])])
         cash = float(state.get("cash", 0.0))
         init_cap = float(state.get("initial_capital", INITIAL_CAPITAL))
+
+        # Ensure cash is non-negative
+        if cash < 0:
+            logger.warning(f"Negative cash balance detected (¥{cash:,.2f}), resetting to 0")
+            cash = 0.0
+            state["cash"] = cash
 
         total_asset = cash + market_val
         nav = total_asset / init_cap if init_cap > 0 else 1.0

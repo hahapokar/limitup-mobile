@@ -1,89 +1,5 @@
 [
   {
-    "timestamp": "2026-08-26 14:43:39",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:43:46",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:43:53",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:43:56",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:03",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:10",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:13",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:20",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:28",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:31",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:38",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:46",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
     "timestamp": "2026-08-26 14:44:48",
     "level": "WARNING",
     "category": "Portfolio",
@@ -2097,6 +2013,90 @@
     "level": "INFO",
     "category": "Scheduler",
     "message": "       本次无参数微调建议 (status=NOT_RUN)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 22:52:44",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 22:52:44",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:10:44",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:10:44",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:13:39",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:13:39",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:16:29",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:16:29",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:19:02",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:19:02",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:21:56",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 23:21:56",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
     "details": {}
   }
 ]
