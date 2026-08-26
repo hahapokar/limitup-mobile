@@ -5,6 +5,7 @@ Calculates composite market sentiment score (0-100) and triggers the ice-point c
 
 import json
 import logging
+import datetime
 from typing import Dict, Any, Optional, List, Tuple, Callable
 from pathlib import Path
 
@@ -54,6 +55,18 @@ class SentimentEngine:
         #   Note: raw can be None → scoring neutralizes to 50, raw_value stays None (not a lie).
         # -------------------------------------------------------------
         yesterday_premium_pct = self._calculate_yesterday_zt_premium(prev_date, effective_date, today_zt_pool)
+        required_overview_fields = ("up_count", "down_count", "limit_down_count", "advance_ratio")
+        if (
+            market_overview.get("trade_date") != effective_date
+            or market_overview.get("data_source") is None
+            or any(market_overview.get(field) is None for field in required_overview_fields)
+            or yesterday_premium_pct is None
+        ):
+            record_system_log(
+                "WARNING", "Sentiment",
+                f"{effective_date} 关键实时市场数据不完整，禁止生成可交易情绪结果。"
+            )
+            raise RuntimeError(f"Incomplete live market data for sentiment {effective_date}")
         score_premium = self._score_yesterday_premium(yesterday_premium_pct)
 
         # -------------------------------------------------------------
@@ -147,6 +160,8 @@ class SentimentEngine:
 
         result = {
             "trade_date": effective_date,
+            "snapshot_status": "FINAL",
+            "snapshot_generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "sentiment_score": total_score,
             "sentiment_state": sentiment_state,
             "sentiment_level": sentiment_level,

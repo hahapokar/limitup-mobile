@@ -39,7 +39,6 @@ from quant_system.config import (
     DATA_SOURCE_PRIORITY,
     DATA_REQUEST_TIMEOUT,
     DATA_REQUEST_RETRIES,
-    START_DATE,
     DATA_DIR
 )
 from quant_system.utils.calendar import normalize_to_trade_day, is_trade_day, get_prev_trade_day, get_next_trade_day
@@ -404,8 +403,11 @@ class DataFetcher:
         return f"sz{code_str}"
 
     def get_effective_date(self, target_date: Optional[str] = None) -> str:
-        """Calculate the effective trading day starting from anchor START_DATE or target_date."""
-        query_date = target_date or START_DATE
+        """Resolve a date from an explicit request or the current Beijing date."""
+        if target_date:
+            query_date = target_date
+        else:
+            query_date = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
         return normalize_to_trade_day(query_date)
 
     # -------------------------------------------------------------------------
@@ -450,19 +452,7 @@ class DataFetcher:
                 logger.warning(f"Data source [{source}] failed for limit-up pool: {err}")
                 errors.append(f"{source}: {str(err)}")
 
-        # If cache exists on disk for this date, load it as persistent local store
-        cached_file = DATA_DIR / f"limitup_{effective_date}.json"
-        if cached_file.exists():
-            try:
-                with open(cached_file, "r", encoding="utf-8") as f:
-                    cached_pool = json.load(f)
-                    if cached_pool:
-                        record_system_log("WARNING", "DataFetcher", f"Live feeds failed. Loaded {len(cached_pool)} records from local persistent cache for {effective_date}")
-                        return cached_pool
-            except Exception as e:
-                logger.error(f"Failed to read local cache: {e}")
-
-        # Zero-mock: raise explicit exception
+        # Do not silently downgrade a live model to a prior snapshot.
         err_msg = f"All 4 data sources failed to fetch limit-up pool for date {effective_date}. Errors: {'; '.join(errors)}"
         record_system_log("ERROR", "DataFetcher", err_msg)
         raise RuntimeError(err_msg)
@@ -616,22 +606,9 @@ class DataFetcher:
         except Exception as e:
             logger.debug(f"EastMoney ZTBoomPool failed: {e}")
 
-        # 3. Fallback: check cached broken pool if available
-        cached_file = DATA_DIR / f"broken_limitup_{effective_date}.json"
-        if cached_file.exists():
-            try:
-                with open(cached_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception:
-                pass
-
-        # 4. Fallback: estimate from limit-up pool with broken_count >= 1
-        try:
-            zt_pool = self.get_limit_up_pool(effective_date)
-            broken_stocks = [s for s in zt_pool if s.get("broken_count", 0) >= 1]
-            return broken_stocks
-        except Exception:
-            return []
+        # A broken-board signal must come from a live broken-board endpoint;
+        # do not infer it from an old or sealed-only snapshot.
+        return []
 
     def _infer_sector(self, name: str, code: str) -> str:
         """Infer sector name based on code prefix and keywords."""

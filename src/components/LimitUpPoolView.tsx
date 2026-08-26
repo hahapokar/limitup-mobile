@@ -6,9 +6,10 @@ interface LimitUpPoolViewProps {
   pool: CandidateStock[];
   loading: boolean;
   tradeDate: string;
+  isLive?: boolean;
 }
 
-export const LimitUpPoolView: React.FC<LimitUpPoolViewProps> = ({ pool, loading, tradeDate }) => {
+export const LimitUpPoolView: React.FC<LimitUpPoolViewProps> = ({ pool, loading, tradeDate, isLive = false }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filterTab, setFilterTab] = useState<"all" | "passed" | "st" | "cap" | "price">("all");
   const [sortBy, setSortBy] = useState<"consecutive_boards" | "seal_ratio" | "turnover_rate" | "amount" | "quant_score">("quant_score");
@@ -56,6 +57,10 @@ export const LimitUpPoolView: React.FC<LimitUpPoolViewProps> = ({ pool, loading,
 
   return (
     <div className="space-y-4">
+      <div className={`flex items-center justify-between rounded-lg border px-3 py-2 text-xs ${isLive ? "border-emerald-700/60 bg-emerald-950/30 text-emerald-300" : "border-slate-700 bg-slate-900 text-slate-400"}`}>
+        <span>{isLive ? "LIVE 实时涨停池" : "FINAL 盘后涨停池快照"}</span>
+        <span className="font-mono">数据日期：{tradeDate || "—"}</span>
+      </div>
       {/* Top Search & Filter Control Bar */}
       <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between gap-4">
         {/* Filter Tabs */}

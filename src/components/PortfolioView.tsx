@@ -126,8 +126,12 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
               </span>
             </div>
             <p className="text-xs text-slate-400 mt-0.5">
-              系统每日默认按既定规则进行模拟交易：满足条件的 TOP 3-5 标的自动买入/卖出并实时计算净值
+              系统每日按排名前 8 名候选评估三类买入策略，并实时计算持仓净值
             </p>
+            <span className="text-[11px] text-emerald-300">
+              行情状态：实时行情优先，失败时仅保留旧值展示并标记为 STALE
+              {holdings.length > 0 && ` · 最近更新 ${holdings[0].quote_status_at || "—"}`}
+            </span>
           </div>
         </div>
 
@@ -339,6 +343,9 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                         </div>
                         <div className="text-[11px] text-slate-400 mt-0.5">
                           {h.code} · {h.sector}
+                          <span className={`ml-2 ${h.quote_status === "LIVE" ? "text-emerald-400" : "text-amber-400"}`}>
+                            {h.quote_status === "LIVE" ? "LIVE" : "STALE"}
+                          </span>
                         </div>
                       </td>
 
@@ -437,7 +444,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                               <span>T+0 当日建仓</span>
                             </span>
                             <div className="text-[10px] text-amber-400/80 mt-0.5">
-                              A股T+1锁仓 · 8/25可卖
+                              A股T+1锁仓 · {h.sell_available_date ? h.sell_available_date.slice(5).replace("-", "/") : "下一交易日"}可卖
                             </div>
                           </div>
                         ) : (
@@ -579,7 +586,7 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                   <th className="py-2 px-3">成交金额</th>
                   <th className="py-2 px-3">摩擦成本</th>
                   <th className="py-2 px-3">已实现盈亏</th>
-                  <th className="py-2 px-3">撮合触发原因 (卖出策略)</th>
+                  <th className="py-2 px-3">买入/卖出策略</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/80 font-mono">
@@ -617,7 +624,10 @@ export const PortfolioView: React.FC<PortfolioViewProps> = ({
                       )}
                     </td>
                     <td className="py-2.5 px-3 text-slate-300 font-sans text-[11px]">
-                      {t.reason}
+                      {t.strategy_name && (
+                        <div className="text-indigo-300 font-semibold mb-0.5">{t.strategy_name}</div>
+                      )}
+                      <div>{t.reason}</div>
                     </td>
                   </tr>
                 ))}

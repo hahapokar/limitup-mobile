@@ -19,6 +19,11 @@ from quant_system.config import (
     SKIP_HIGH_CHASE_OPEN_PCT,
     SKIP_BUY_IF_INDEX_OPEN_PCT_BELOW,
     SKIP_BUY_IF_SENTIMENT_IN,
+    BUY_CANDIDATE_MAX_RANK,
+    REBREAK_LIMIT_TOLERANCE_PCT,
+    PULLBACK_MIN_CHANGE_PCT,
+    PULLBACK_MAX_CHANGE_PCT,
+    PULLBACK_FROM_HIGH_PCT,
     TRAILING_STOP_PCT,
     HARD_STOP_PCT,
     ANTI_SHAKEOUT_TIME_WINDOW_MINS,
@@ -27,8 +32,9 @@ from quant_system.config import (
     PORTFOLIO_FILE,
     DATA_DIR
 )
+from quant_system.config import snapshot_manifest_file
 from quant_system.core.data_fetcher import data_fetcher
-from quant_system.utils.calendar import normalize_to_trade_day, get_prev_trade_day
+from quant_system.utils.calendar import normalize_to_trade_day, get_prev_trade_day, get_next_trade_day
 from quant_system.utils.notifier import record_system_log, send_notification
 
 logger = logging.getLogger("QuantTrading.Portfolio")
@@ -226,6 +232,7 @@ class PortfolioEngine:
                     "holding_days": 0,
                     "can_sell": False,
                     "t1_lock_text": f"T+0 当日买入锁仓 (下一交易日可卖)",
+                    "sell_available_date": get_next_trade_day(next_date) if next_date else "",
                     "high_price": None,       # no intraday tape => null
                     "current_price": None,    # no intraday tape => null (do NOT fabricate +16% ZT)
                     "market_value": None,     # unknown without current_price
@@ -374,16 +381,14 @@ class PortfolioEngine:
         effective_date = data_fetcher.get_effective_date(trade_date)
 
         # ---------- TIME-WINDOW GUARD ------------------------------------------
-        # Buy at the opening auction window only. Outside this 20-min slot we
-        # never attempt to deploy new capital — nothing good comes from chasing
-        # mid-day entries, and this avoids wasting 100+ ms on every heartbeat.
         _now_bj = datetime.datetime.utcnow() + datetime.timedelta(hours=8)
         _bj_min = _now_bj.hour * 60 + _now_bj.minute
         _OPEN_START = 9 * 60 + 28   # 09:28 (allow ~2 min pre-open drift)
         _OPEN_END   = 9 * 60 + 50   # 09:50 (hard stop; post-open opportunity gone)
-        if not (_OPEN_START <= _bj_min <= _OPEN_END):
+        _in_open_window = _OPEN_START <= _bj_min <= _OPEN_END
+        _in_continuous_window = (9 * 60 + 50 < _bj_min < 11 * 60 + 30) or (13 * 60 <= _bj_min <= 15 * 60)
+        if not (_in_open_window or _in_continuous_window):
             return []
-        _ = _OPEN_START, _OPEN_END
 
         prev_date = get_prev_trade_day(effective_date)
         state = self.load_state()
@@ -409,7 +414,15 @@ class PortfolioEngine:
 
         s_data = _try_read_sentiment_file(DATA_DIR / f"sentiment_{prev_date}.json")
 
-        if s_data is not None:
+        manifest = _try_read_sentiment_file(snapshot_manifest_file(prev_date))
+        if not manifest or manifest.get("trade_date") != prev_date or manifest.get("snapshot_status") != "FINAL":
+            record_system_log(
+                "WARNING", "Portfolio",
+                f"T-1 快照 {prev_date} 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。"
+            )
+            return []
+
+        if s_data is not None and s_data.get("trade_date") == prev_date and s_data.get("snapshot_status") == "FINAL":
             sentiment_state_val = s_data.get("sentiment_state")
             if s_data.get("sentiment_circuit_breaker", False):
                 record_system_log(
@@ -508,6 +521,12 @@ class PortfolioEngine:
                         f"Candidate file {candidates_file.name} is not the previous trading day's artifact; skipping buys."
                     )
                     return []
+                if c_payload.get("snapshot_status") != "FINAL":
+                    record_system_log(
+                        "WARNING", "Portfolio",
+                        f"候选快照 {prev_date} 尚未标记 FINAL，禁止使用未完成数据建仓。"
+                    )
+                    return []
                 candidates = c_payload.get("all_scored_stocks") or c_payload.get("candidates", [])
         except Exception as e:
             logger.error(f"Failed to read candidates file: {e}")
@@ -521,11 +540,49 @@ class PortfolioEngine:
         candidates = sorted(
             [candidate for candidate in candidates if isinstance(candidate, dict) and candidate.get("code")],
             key=lambda candidate: candidate.get("rank", 10**9),
-        )
+        )[:BUY_CANDIDATE_MAX_RANK]
 
         # Extract codes and fetch live real-time quotes
         codes = [c["code"] for c in candidates]
         quotes = data_fetcher.get_realtime_quotes(codes)
+
+        # Persist observations across the short-lived Python sync processes so
+        # a limit-up break and subsequent re-break can be distinguished.
+        entry_observations = state.setdefault("entry_observations", {})
+        for candidate in candidates:
+            code = candidate["code"]
+            quote = quotes.get(code)
+            if not quote:
+                continue
+            prev_close = float(quote.get("prev_close") or candidate.get("price") or 0)
+            current_price = float(quote.get("price") or 0)
+            if prev_close <= 0 or current_price <= 0:
+                continue
+            limit_rate = 0.05 if candidate.get("is_st") else (0.20 if code.startswith(("300", "688")) else 0.10)
+            limit_price = round(prev_close * (1.0 + limit_rate), 2)
+            observation = entry_observations.setdefault(code, {
+                "date": effective_date,
+                "was_limit_up": False,
+                "was_broken": False,
+                "rebreak_ready": False,
+            })
+            if observation.get("date") != effective_date:
+                observation.clear()
+                observation.update({
+                    "date": effective_date,
+                    "was_limit_up": False,
+                    "was_broken": False,
+                    "rebreak_ready": False,
+                })
+            if current_price >= limit_price - 0.01:
+                if observation.get("was_broken"):
+                    observation["rebreak_ready"] = True
+                observation["was_limit_up"] = True
+            elif observation.get("was_limit_up"):
+                observation["was_broken"] = True
+            observation["last_price"] = current_price
+            observation["last_volume_lots"] = float(quote.get("volume_lots") or 0)
+        self.save_state(state)
 
         # Check available cash and slots
         current_holdings = state.get("holdings", [])
@@ -584,11 +641,39 @@ class PortfolioEngine:
 
             open_price = float(q.get("open", q.get("price", 0)))
             prev_close = float(q.get("prev_close", cand.get("price", open_price)))
+            current_price = float(q.get("price", open_price))
             
             if open_price <= 0 or prev_close <= 0:
                 continue
 
             open_pct = ((open_price - prev_close) / prev_close) * 100.0
+            current_pct = ((current_price - prev_close) / prev_close) * 100.0
+            intraday_high = float(q.get("high", current_price) or current_price)
+            limit_rate = 0.05 if cand.get("is_st") else (0.20 if code.startswith(("300", "688")) else 0.10)
+            limit_price = round(prev_close * (1.0 + limit_rate), 2)
+            observation = entry_observations.get(code, {})
+
+            if _in_open_window:
+                strategy = "OPENING"
+                strategy_name = "开盘竞价买入"
+            elif (
+                observation.get("rebreak_ready")
+                and current_price >= limit_price * (1.0 - REBREAK_LIMIT_TOLERANCE_PCT / 100.0)
+                and float(q.get("sell1_vol") or 0) > 0
+            ):
+                strategy = "REBREAK"
+                strategy_name = "炸板回封买入"
+            elif (
+                PULLBACK_MIN_CHANGE_PCT <= current_pct <= PULLBACK_MAX_CHANGE_PCT
+                and (intraday_high - current_price) / intraday_high * 100.0 >= PULLBACK_FROM_HIGH_PCT
+                and current_price > open_price
+            ):
+                strategy = "PULLBACK"
+                strategy_name = "强势回踩买入"
+            else:
+                continue
+
+            execution_price = open_price if strategy == "OPENING" else current_price
 
             # -------------------------------------------------------------
             # Risk Filter 1: 一字板无法买入 (Open >= 9.8% with heavy buy lock)
@@ -596,7 +681,7 @@ class PortfolioEngine:
             is_chinext_or_star = code.startswith("300") or code.startswith("688")
             zt_threshold = 19.5 if is_chinext_or_star else SKIP_ONE_WORD_ZT_OPEN_PCT
             
-            if open_pct >= zt_threshold:
+            if strategy == "OPENING" and open_pct >= zt_threshold:
                 record_system_log("WARNING", "Portfolio", f"⛔ 标的 [{name}({code})] 开盘涨幅 +{open_pct:.2f}% (一字涨停无法买入)，跳过建仓")
                 continue
 
@@ -605,14 +690,14 @@ class PortfolioEngine:
             #   Avoids the classic "high-open-then-fade" trap where T-day
             #   limit-up euphoria causes T+1 gap-up >6%, then sellers dump.
             # -------------------------------------------------------------
-            if open_pct >= SKIP_HIGH_CHASE_OPEN_PCT:
+            if strategy == "OPENING" and open_pct >= SKIP_HIGH_CHASE_OPEN_PCT:
                 record_system_log("WARNING", "Portfolio", f"⛔ 标的 [{name}({code})] 开盘高开 +{open_pct:.2f}% (≥{SKIP_HIGH_CHASE_OPEN_PCT}%追高阈值)，跳过避免高开低走")
                 continue
 
             # -------------------------------------------------------------
             # Risk Filter 3: 极弱开盘放弃 (Open < -2.5% — tightened from -4.5)
             # -------------------------------------------------------------
-            if open_pct < SKIP_WEAK_OPEN_PCT:
+            if strategy == "OPENING" and open_pct < SKIP_WEAK_OPEN_PCT:
                 record_system_log("WARNING", "Portfolio", f"⛔ 标的 [{name}({code})] 开盘低开 {open_pct:.2f}% (≤{SKIP_WEAK_OPEN_PCT}%弱开盘阈值)，不及预期跳过")
                 continue
 
@@ -620,11 +705,11 @@ class PortfolioEngine:
             # Execute Buy Order
             # -------------------------------------------------------------
             # Shares rounded down to 100 (1 lot)
-            shares = int((alloc_per_position / (open_price * (1.0 + BUY_FRICTION_RATE))) // 100) * 100
+            shares = int((alloc_per_position / (execution_price * (1.0 + BUY_FRICTION_RATE))) // 100) * 100
             if shares < 100:
                 continue
 
-            gross_amount = shares * open_price
+            gross_amount = shares * execution_price
             friction_cost = gross_amount * BUY_FRICTION_RATE
             net_amount = gross_amount + friction_cost
 
@@ -644,35 +729,36 @@ class PortfolioEngine:
                 "code": code,
                 "name": name,
                 "shares": shares,
-                "entry_price": open_price,
+                "entry_price": execution_price,
                 "cost_price": round(net_amount / shares, 3),
                 "entry_date": effective_date,
                 "holding_days": 0,  # 0 on T+0 buy day, 1 on T+1, 2 on T+2
-                "high_price": open_price,
-                "current_price": open_price,
-                "change_pct": round(open_pct, 2),
+                "can_sell": False,
+                "t1_lock_text": f"T+0 当日买入锁仓 (下一交易日可卖)",
+                "sell_available_date": get_next_trade_day(effective_date) if effective_date else "",
+                "high_price": execution_price,
+                "current_price": execution_price,
+                "change_pct": round(((execution_price - prev_close) / prev_close) * 100.0, 2),
                 "pullback_pct": 0.0,
                 "turnover_rate": turnover,
                 "seal_ratio": seal_rat,
-                "trailing_stop_price": round(open_price * (1.0 - TRAILING_STOP_PCT), 2),
+                "trailing_stop_price": round(execution_price * (1.0 - TRAILING_STOP_PCT), 2),
                 "status_tag": "NORMAL",
                 "market_value": gross_amount,
                 "unrealized_pnl": -friction_cost,
                 "unrealized_pnl_pct": round((-BUY_FRICTION_RATE) * 100, 2),
                 "anti_shakeout_count": 0,  # Consecutive minutes below stop line
-                "hard_stop_price": round(open_price * (1.0 + HARD_STOP_PCT), 2),
-                "sector": cand.get("sector", "通用板块")
+                "hard_stop_price": round(execution_price * (1.0 + HARD_STOP_PCT), 2),
+                "sector": cand.get("sector", "通用板块"),
+                "entry_strategy": strategy,
+                "entry_strategy_name": strategy_name,
             }
             state["holdings"].append(holding_entry)
             open_codes.add(code)
 
-            # Trade record timestamp should reflect the EXECUTION semantic:
-            #   T+1 opening call at 09:30 on the effective_date we're trading.
-            # DO NOT use datetime.now() because the python process may launch
-            # at 10:07 / 10:16 etc. — that confuses the portfolio display into
-            # showing "T-day 10:07 bought at limit-up price" instead of the
-            # correct T+1 09:30 open-price purchase.
-            exec_time_str = "09:30:00"
+            # Opening entries use the auction execution time; intraday entries
+            # use the actual live signal time for later strategy evaluation.
+            exec_time_str = "09:30:00" if strategy == "OPENING" else _now_bj.strftime("%H:%M:%S")
             exec_time_tag = exec_time_str.replace(":", "")  # 093000
 
             order_record = {
@@ -682,18 +768,20 @@ class PortfolioEngine:
                 "name": name,
                 "date": effective_date,
                 "time": exec_time_str,
-                "price": open_price,
+                "price": execution_price,
                 "shares": shares,
                 "amount": round(gross_amount, 2),
                 "friction": round(friction_cost, 2),
-                "reason": f"T+1 量化首板建仓 (量化得分 {cand.get('quant_score', 0)} 分)"
+                "strategy": strategy,
+                "strategy_name": strategy_name,
+                "reason": f"{strategy_name} · T+1 量化候选 (排名 {cand.get('rank', '-')}, 得分 {cand.get('quant_score', 0)} 分)"
             }
             state["trade_history"].insert(0, order_record)
             executed_orders.append(order_record)
 
             send_notification(
                 f"🛒 模拟盘买入执行: {name}({code})",
-                f"买入价格: ¥{open_price:.2f}, 数量: {shares} 股, 金额: ¥{gross_amount:,.2f}, 扣除摩擦成本: ¥{friction_cost:.2f}"
+                f"买入价格: ¥{execution_price:.2f}, 数量: {shares} 股, 金额: ¥{gross_amount:,.2f}, 扣除摩擦成本: ¥{friction_cost:.2f}"
             )
 
         self._recalculate_portfolio_totals(state)
@@ -762,9 +850,13 @@ class PortfolioEngine:
                 if not h.get("status_tag"):
                     h["status_tag"] = "NORMAL"
                 surviving_holdings.append(h)
+                h["quote_status"] = "STALE"
+                h["quote_status_at"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 continue
 
             current_price_raw = q.get("price")
+            h["quote_status"] = "LIVE"
+            h["quote_status_at"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             current_price = float(current_price_raw) if current_price_raw not in (None, "") else float(h.get("current_price") or h.get("cost_price") or entry_price)
             if current_price <= 0:
                 current_price = float(h.get("current_price") or h.get("cost_price") or entry_price)
@@ -1053,7 +1145,7 @@ class PortfolioEngine:
         exits = self.monitor_intraday_exits()
         _ = exits  # exits are already persisted inside monitor_intraday_exits()
         
-        # 2. Check if we have room to buy Top 3-5 candidates automatically
+        # 2. Check if we have room to buy the ranked candidate set automatically
         #    - watchlist_only mode: never try buys (mid-day heartbeats).
         #    - otherwise: only the 09:28-09:50 window inside execute_t1_buys
         #      itself will actually perform buys; rest of day is a no-op.

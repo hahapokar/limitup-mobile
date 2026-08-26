@@ -7,6 +7,7 @@ import time
 import logging
 import datetime
 import threading
+import json
 from typing import Optional, Dict, Any, Callable, List
 
 try:
@@ -26,6 +27,7 @@ from quant_system.core.scoring import scoring_engine
 from quant_system.core.portfolio import portfolio_engine
 from quant_system.core.review_attribution import review_attribution_engine
 from quant_system.core.iteration import iteration_engine
+from quant_system.config import DATA_DIR, snapshot_manifest_file
 
 logger = logging.getLogger("QuantTrading.Scheduler")
 
@@ -152,6 +154,10 @@ class QuantScheduler:
         self.is_running = False
         self._setup_jobs()
 
+    @staticmethod
+    def _beijing_today() -> datetime.date:
+        return (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).date()
+
     def _setup_jobs(self) -> None:
         """Register all daily lifecycle tasks.
         Works under APScheduler (real CronTrigger) AND under the SimpleBackgroundScheduler
@@ -263,7 +269,7 @@ class QuantScheduler:
     # JOB HANDLERS
     # -------------------------------------------------------------------------
     def job_pre_market_check(self) -> None:
-        today_date = datetime.date.today()
+        today_date = self._beijing_today()
         if not is_trade_day(today_date):
             record_system_log("INFO", "Scheduler", f"Today ({today_date}) is not an A-share trading day.")
             return
@@ -271,7 +277,7 @@ class QuantScheduler:
         send_notification("🔔 盘前交易系统就绪", f"今日为 A 股交易日 ({today_date})，系统进入盘中实时监控状态。")
 
     def job_morning_open_buy(self) -> None:
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str = self._beijing_today().strftime("%Y-%m-%d")
         if not is_trade_day(today_str):
             return
         record_system_log("INFO", "Scheduler", "🚀 09:30 A股开盘，启动 T+1 模拟盘建仓撮合引擎...")
@@ -280,7 +286,7 @@ class QuantScheduler:
             record_system_log("INFO", "Scheduler", f"09:30 建仓完成，共成交 {len(executed)} 笔订单。")
 
     def job_intraday_monitor(self) -> None:
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str = self._beijing_today().strftime("%Y-%m-%d")
         if not is_trade_day(today_str):
             return
         now_time = datetime.datetime.now().strftime("%H:%M")
@@ -289,14 +295,14 @@ class QuantScheduler:
         portfolio_engine.monitor_intraday_exits(now_time)
 
     def job_t2_forced_exit(self) -> None:
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str = self._beijing_today().strftime("%Y-%m-%d")
         if not is_trade_day(today_str):
             return
         record_system_log("INFO", "Scheduler", "⏰ 14:45 执行 T+2 尾盘强制平仓检测...")
         portfolio_engine.monitor_intraday_exits("14:45")
 
     def job_daily_settlement(self) -> None:
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str = self._beijing_today().strftime("%Y-%m-%d")
         if not is_trade_day(today_str):
             return
         record_system_log("INFO", "Scheduler", "📊 15:02 开始收盘账户结算与 NAV 净值更新...")
@@ -304,7 +310,7 @@ class QuantScheduler:
 
     def job_post_market_review(self) -> Dict[str, Any]:
         """15:30: 盘后全量数据更新 — 涨停池、情绪分、因子选股、复盘评估与连板归因。"""
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str = self._beijing_today().strftime("%Y-%m-%d")
         if not is_trade_day(today_str):
             record_system_log("INFO", "Scheduler", f"今日 ({today_str}) 非交易日，跳过盘后数据更新。")
             return {"skipped": True, "reason": "not_trade_day"}
@@ -316,11 +322,13 @@ class QuantScheduler:
         try:
             zt_pool = data_fetcher.get_limit_up_pool(effective_date)
             broken_pool = data_fetcher.get_broken_limit_up_pool(effective_date)
+            market_snapshot_ready = True
             record_system_log("INFO", "Scheduler", f"       涨停池: {len(zt_pool)} 只，炸板池: {len(broken_pool)} 只")
         except Exception as e:
             record_system_log("ERROR", "Scheduler", f"       涨停池刷新失败: {e}")
             zt_pool = []
             broken_pool = []
+            market_snapshot_ready = False
 
         # 2. 大盘情绪分计算（情绪择时 + 熔断线）
         record_system_log("INFO", "Scheduler", "  [2/5] 计算大盘情绪四维得分...")
@@ -331,6 +339,26 @@ class QuantScheduler:
         record_system_log("INFO", "Scheduler", "  [3/5] 运行四大因子量化选股打分...")
         scoring_res = scoring_engine.run_daily_scoring(effective_date)
         record_system_log("INFO", "Scheduler", f"       共分析 {scoring_res.get('total_limit_up_count')} 只涨停，选出 Top{scoring_res.get('candidates_count')} 候选")
+
+        # Publish the FINAL marker only after live pool, sentiment, and scoring
+        # all succeeded for this exact trading date.
+        if market_snapshot_ready and scoring_res.get("trade_date") == effective_date:
+            manifest = {
+                "trade_date": effective_date,
+                "snapshot_status": "FINAL",
+                "finalized_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "artifacts": [
+                    f"limitup_{effective_date}.json",
+                    f"sentiment_{effective_date}.json",
+                    f"candidates_{effective_date}.json",
+                ],
+            }
+            manifest_path = snapshot_manifest_file(effective_date)
+            manifest_tmp = manifest_path.with_suffix(".tmp")
+            with open(manifest_tmp, "w", encoding="utf-8") as f:
+                json.dump(manifest, f, ensure_ascii=False, indent=2)
+            manifest_tmp.replace(manifest_path)
+            record_system_log("INFO", "Scheduler", f"       {effective_date} FINAL 盘后快照已发布，可供下一交易日使用")
 
         # 4. 盘后复盘评估与连板归因（生成 review_attribution_latest.json）
         record_system_log("INFO", "Scheduler", "  [4/5] 生成盘后复盘评估与连板归因报告...")
@@ -365,7 +393,7 @@ class QuantScheduler:
 
     def job_post_market_iteration(self) -> Dict[str, Any]:
         """15:35: 深度对账 + 策略自迭代（确保复盘归因与影子回测是当日最新数据）。"""
-        today_str = datetime.date.today().strftime("%Y-%m-%d")
+        today_str = self._beijing_today().strftime("%Y-%m-%d")
         if not is_trade_day(today_str):
             return {"skipped": True, "reason": "not_trade_day"}
         effective_date = normalize_to_trade_day(today_str)
@@ -408,7 +436,7 @@ class QuantScheduler:
         """Run full post-market review on-demand for any target date.
         Includes: limit-up pool refresh, sentiment, 4-factor scoring, review attribution, shadow iteration.
         """
-        effective_date = normalize_to_trade_day(target_date or datetime.date.today().strftime("%Y-%m-%d"))
+        effective_date = normalize_to_trade_day(target_date or self._beijing_today().strftime("%Y-%m-%d"))
         record_system_log("INFO", "Scheduler", f"Manual trigger: Running FULL post-market data refresh for {effective_date}")
 
         # 1. 刷新当日全量涨停池缓存
@@ -446,7 +474,7 @@ class QuantScheduler:
 
     def trigger_manual_trading(self, target_date: Optional[str] = None) -> Dict[str, Any]:
         """Run buy execution & intraday monitoring on-demand."""
-        effective_date = normalize_to_trade_day(target_date or datetime.date.today().strftime("%Y-%m-%d"))
+        effective_date = normalize_to_trade_day(target_date or self._beijing_today().strftime("%Y-%m-%d"))
         record_system_log("INFO", "Scheduler", f"Manual trigger: Running trading & exit monitor for {effective_date}")
         buys = portfolio_engine.execute_t1_buys(effective_date)
         exits = portfolio_engine.monitor_intraday_exits()
@@ -460,7 +488,7 @@ class QuantScheduler:
 
     def trigger_manual_shadow_backtest(self, target_date: Optional[str] = None) -> Dict[str, Any]:
         """手动在前端触发影子回测。"""
-        effective_date = normalize_to_trade_day(target_date or datetime.date.today().strftime("%Y-%m-%d"))
+        effective_date = normalize_to_trade_day(target_date or self._beijing_today().strftime("%Y-%m-%d"))
         record_system_log("INFO", "Scheduler", f"Manual trigger: Running shadow backtest for {effective_date}")
         
         try:

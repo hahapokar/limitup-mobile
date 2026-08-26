@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { CandidatesPayload, CandidateStock } from "../types";
+import { CandidatesPayload, CandidateStock, MarketSessionInfo } from "../types";
+import { SentimentView } from "./SentimentView";
 import { 
   Award, 
   Clock, 
@@ -16,9 +17,11 @@ import {
 interface CandidatesViewProps {
   payload: CandidatesPayload | null;
   loading: boolean;
+  sentiment: import("../types").SentimentData | null;
+  marketSession?: MarketSessionInfo | null;
 }
 
-export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading }) => {
+export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading, sentiment, marketSession }) => {
   const [selectedCandidate, setSelectedCandidate] = useState<CandidateStock | null>(null);
 
   if (loading) {
@@ -35,17 +38,32 @@ export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading
   if (!payload || !payload.candidates || payload.candidates.length === 0) {
     return (
       <div className="text-center py-16 text-slate-400">
-        暂无选股结果，请点击右上角【一键盘后复盘】生成。
+        暂无选股结果，系统将在 15:30 盘后自动生成当日 FINAL 选股快照。
       </div>
     );
   }
 
-  const candidates = payload.candidates;
+  const candidates = payload.all_scored_stocks?.length
+    ? payload.all_scored_stocks.slice(0, 8)
+    : payload.candidates;
   const currentSelected = selectedCandidate || candidates[0];
   const stats = payload.filter_stats;
 
   return (
     <div className="space-y-6">
+      <section className="border-b border-slate-800 pb-6">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h2 className="text-lg font-bold text-slate-100">实时情绪与四大因子选股</h2>
+            <p className="text-xs text-slate-400 mt-1">
+              情绪择时作为四大因子选股的前置风控，数据日期：{sentiment?.trade_date || "—"}
+              {marketSession?.today_date && <span className="ml-2 text-amber-300">将于 {marketSession.today_date} 15:30 更新</span>}
+            </p>
+          </div>
+          <span className="text-[11px] px-2 py-1 rounded border border-emerald-700/50 bg-emerald-950/40 text-emerald-300">盘后 FINAL</span>
+        </div>
+        <SentimentView sentiment={sentiment} loading={false} />
+      </section>
       {/* Top Filter Stats Banner */}
       <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
@@ -57,7 +75,7 @@ export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading
               今日涨停排雷与四大因子打分结果 ({payload.trade_date})
             </h3>
             <p className="text-xs text-slate-400">
-              全量涨停池共 <span className="text-slate-200 font-mono font-semibold">{payload.total_limit_up_count}</span> 只标的，经基础排雷硬过滤后剩余 <span className="text-emerald-400 font-mono font-semibold">{payload.passed_filter_count}</span> 只，最终推荐 Top {candidates.length}。
+              全量涨停池共 <span className="text-slate-200 font-mono font-semibold">{payload.total_limit_up_count}</span> 只标的，经基础排雷硬过滤后剩余 <span className="text-emerald-400 font-mono font-semibold">{payload.passed_filter_count}</span> 只，当前展示量化排名前 {candidates.length} 名，买入策略按排名顺序评估。
             </p>
           </div>
         </div>
@@ -77,7 +95,7 @@ export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading
 
       {/* Main Grid: Candidates List + Factor Deep Dive Inspector */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Left: Top 3-5 Candidates Cards (5 cols) */}
+        {/* Left: Top 8 candidate cards */}
         <div className="lg:col-span-5 space-y-3">
           <div className="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center justify-between">
             <span>量化推荐标的清单 (Top {candidates.length})</span>

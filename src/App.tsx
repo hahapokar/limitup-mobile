@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Header } from "./components/Header";
-import { SentimentView } from "./components/SentimentView";
 import { CandidatesView } from "./components/CandidatesView";
 import { PortfolioView } from "./components/PortfolioView";
 import { LimitUpPoolView } from "./components/LimitUpPoolView";
@@ -31,11 +30,13 @@ export function App() {
   const [firstLoadDone, setFirstLoadDone] = useState<boolean>(false);
   // Guards against overlapping ticks inside the 3s / 15s loop.
   const pollInFlightRef = useRef<boolean>(false);
+  const lastLivePoolFetchRef = useRef<number>(0);
   
   // Data States
   const [sentiment, setSentiment] = useState<SentimentData | null>(null);
   const [candidatesPayload, setCandidatesPayload] = useState<CandidatesPayload | null>(null);
   const [limitupPool, setLimitupPool] = useState<CandidateStock[]>([]);
+  const [limitupPoolStatus, setLimitupPoolStatus] = useState<"LIVE" | "FINAL" | "UNAVAILABLE">("FINAL");
   const [portfolio, setPortfolio] = useState<PortfolioState | null>(null);
   const [iteration, setIteration] = useState<IterationData | null>(null);
   const [iterationLoading, setIterationLoading] = useState<boolean>(false);
@@ -54,10 +55,10 @@ export function App() {
   //    don't need 3s churn. Buying happens only at 09:30 (scheduler fires it).
   // -------------------------------------------------------------------------
   const computeIntervalMs = useCallback((): number | null => {
-    if (!marketSession?.is_trading_active) return null; // off-hours: no tick
+    if (!marketSession?.today_date || marketSession.current_time_beijing >= "15:30:00") return null;
     const holdings = portfolio?.holdings || [];
-    return holdings.length > 0 ? 6000 : 45000;
-  }, [marketSession?.is_trading_active, portfolio?.holdings]);
+    return holdings.length > 0 ? 6000 : 15000;
+  }, [marketSession?.today_date, marketSession?.current_time_beijing, portfolio?.holdings]);
 
   // Dismissed alert IDs to prevent repetitive alerts
   const [dismissedAlerts, setDismissedAlerts] = useState<Set<string>>(() => {
@@ -107,14 +108,23 @@ export function App() {
       } catch { /* swallow; setters below use best-effort data */ }
 
       // ---- 2) Everything else in parallel (total time = max single endpoint) ---
+      // Resolve effective date: prefer today_date (calendar), fall back to
+      // trade_date (last trading day) so the pool fetch is never skipped.
+      const effectiveDate = currentSession?.today_date || currentSession?.trade_date || "";
+      const isBeforeClose = (currentSession?.current_time_beijing || "") < "15:30:00";
       const [sentimentJson, candJson, poolJson, portJson, iterJson, reviewJson] =
         await Promise.all([
           fetch("/api/sentiment", { signal }).then((r) => r.json()).catch(() => ({ success: false })),
           fetch("/api/candidates", { signal }).then((r) => r.json()).catch(() => ({ success: false })),
-          fetch("/api/limitup-pool", { signal }).then((r) => r.json()).catch(() => ({ success: false })),
+            (effectiveDate
+              ? (isBeforeClose
+                ? fetch(`/api/limitup-pool/live?date=${effectiveDate}`, { signal }).then((r) => r.json()).catch(() => ({ success: false }))
+                : fetch(`/api/limitup-pool?date=${effectiveDate}`, { signal }).then((r) => r.json()).catch(() => ({ success: false })))
+              : Promise.resolve({ success: false })
+            ),
           // Portfolio: active session => sync (blocking, user-visible load so ok)
           //            else          => pure cache GET
-          (currentSession?.is_trading_active
+          (currentSession?.today_date && currentSession.current_time_beijing < "15:30:00"
             ? fetch("/api/portfolio/sync", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -129,7 +139,30 @@ export function App() {
 
       if (sentimentJson.success) setSentiment(sentimentJson.data);
       if (candJson.success) setCandidatesPayload(candJson.data);
-      if (poolJson.success) setLimitupPool(poolJson.data);
+      if (poolJson.success) {
+        setLimitupPool(poolJson.data);
+        setLimitupPoolStatus(poolJson.data_status === "LIVE" || poolJson.data_status === "LIVE_CACHED" ? "LIVE" : "FINAL");
+      } else if (isBeforeClose && effectiveDate) {
+        // Live fetch failed during trading hours — fall back to FINAL cache
+        // so the UI shows the most recent snapshot instead of going blank.
+        try {
+          const finalRes = await fetch(`/api/limitup-pool?date=${effectiveDate}`, { signal });
+          const finalJson = await finalRes.json();
+          if (finalJson.success) {
+            setLimitupPool(finalJson.data);
+            setLimitupPoolStatus("FINAL");
+          } else {
+            setLimitupPool([]);
+            setLimitupPoolStatus("UNAVAILABLE");
+          }
+        } catch {
+          setLimitupPool([]);
+          setLimitupPoolStatus("UNAVAILABLE");
+        }
+      } else {
+        setLimitupPool([]);
+        setLimitupPoolStatus("UNAVAILABLE");
+      }
       if (portJson.success) setPortfolio(portJson.data);
       if (iterJson.success) setIteration(iterJson.data);
       if (reviewJson.success) setReviewData(reviewJson.data);
@@ -146,12 +179,9 @@ export function App() {
   // ---------------------------------------------------------------------------
   // SILENT HEARTBEAT — used by the 6s / 45s polling loop.
   // * NEVER shows spinners / skeletons (preserves old UI state while refreshing).
-  // * ZERO holdings + trading session → pure GET /portfolio (cache only, NO
-  //   python fork). There is nothing in the watchlist to watch; new buys fire
-  //   only once at 09:30 via the scheduler.
-  // * NON-ZERO holdings + trading session → POST /sync?watchlist_only (so the
-  //   backend skips candidate reads/sentiment buys, only monitors exits and
-  //   refreshes quotes for active holdings).
+  // * Trading session → POST /sync so the backend monitors holdings and
+  //   evaluates the three ranked-candidate entry strategies.
+  // * Off-hours → pure GET /portfolio (cache only, no Python fork).
   // * Skips sentiment / candidates / limitup / iteration / review because
   //   those are end-of-day artifacts refreshed once at 15:30 + 15:35.
   // ---------------------------------------------------------------------------
@@ -168,16 +198,53 @@ export function App() {
           : null;
       if (currentSession) setMarketSession(currentSession);
 
-      const holdings = portfolio?.holdings || [];
-      const hasOpenPositions = holdings.length > 0;
+      const beforeFinalSnapshot = Boolean(
+        currentSession?.today_date && currentSession.current_time_beijing < "15:30:00"
+      );
 
-      // Off-hours or no-positions with no reason to buy → cheap cache read.
-      if (!currentSession?.is_trading_active || !hasOpenPositions) {
+      // Before 15:30, including the noon break, use the current day's live
+      // pool. After 15:30, use the day's FINAL snapshot.
+      if (beforeFinalSnapshot && Date.now() - lastLivePoolFetchRef.current >= 15000) {
+        lastLivePoolFetchRef.current = Date.now();
+        const livePoolRes = await fetch(`/api/limitup-pool/live?date=${currentSession?.today_date || currentSession?.trade_date || ""}`);
+        const livePoolJson = await livePoolRes.json();
+        if (livePoolJson.success) {
+          setLimitupPool(livePoolJson.data);
+          setLimitupPoolStatus(livePoolJson.data_status === "LIVE" || livePoolJson.data_status === "LIVE_CACHED" ? "LIVE" : "FINAL");
+        } else {
+          // Live fetch failed — fall back to FINAL cache snapshot
+          const effDate = currentSession?.today_date || currentSession?.trade_date || "";
+          if (effDate) {
+            try {
+              const finalRes = await fetch(`/api/limitup-pool?date=${effDate}`);
+              const finalJson = await finalRes.json();
+              if (finalJson.success) {
+                setLimitupPool(finalJson.data);
+                setLimitupPoolStatus("FINAL");
+              } else {
+                setLimitupPool([]);
+                setLimitupPoolStatus("UNAVAILABLE");
+              }
+            } catch {
+              setLimitupPool([]);
+              setLimitupPoolStatus("UNAVAILABLE");
+            }
+          } else {
+            setLimitupPool([]);
+            setLimitupPoolStatus("UNAVAILABLE");
+          }
+        }
+      } else if (!beforeFinalSnapshot && !currentSession?.is_trading_active) {
         const portRes = await fetch("/api/portfolio");
         const portJson = await portRes.json();
         if (portJson.success) setPortfolio(portJson.data);
         return;
       }
+        if (!currentSession?.today_date && !currentSession?.trade_date) {
+          setLimitupPool([]);
+          setLimitupPoolStatus("UNAVAILABLE");
+          return;
+        }
 
       // 2. We have something in the watchlist → background watchlist refresh.
       //    Server replies in <50ms with last-known-good cache; python refreshes
@@ -187,9 +254,9 @@ export function App() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            date: sentiment?.trade_date || "",
+            date: currentSession.today_date || "",
             blocking: false,
-            watchlist_only: true,
+            watchlist_only: false,
           }),
         });
         const syncJson = await syncRes.json();
@@ -236,7 +303,7 @@ export function App() {
       const res = await fetch("/api/portfolio/sync", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ date: sentiment?.trade_date || "" })
+        body: JSON.stringify({ date: marketSession?.today_date || "" })
       });
       const json = await res.json();
       if (json.success) {
@@ -370,6 +437,12 @@ export function App() {
   }, [fetchAllData]);
 
   useEffect(() => {
+    // Do not start another full fetch while the initial request is still in flight.
+    // The heartbeat becomes eligible only after the first load has completed.
+    if (!firstLoadDone) {
+      return;
+    }
+
     const intervalMs = computeIntervalMs();
 
     // Off-hours: kill the timer (satisfies "非交易时间/无持仓 → 不轮询").
@@ -378,11 +451,7 @@ export function App() {
     }
 
     const interval = setInterval(() => {
-      if (firstLoadDone) {
-        pollSilentTick();
-      } else {
-        fetchAllData();
-      }
+      pollSilentTick();
     }, intervalMs);
 
     return () => clearInterval(interval);
@@ -394,25 +463,6 @@ export function App() {
   ]);
 
   // Action Handlers
-  const handleRunReview = async () => {
-    setLoadingAction("review");
-    try {
-      const res = await fetch("/api/action/run-review", { method: "POST" });
-      const json = await res.json();
-      if (json.success) {
-        showToast("✓ 盘后大盘情绪与四大因子量化选股复盘完成！");
-        await fetchAllData();
-        setActiveTab("aug24review");
-      } else {
-        showToast(`❌ 复盘失败: ${json.error}`);
-      }
-    } catch (err: any) {
-      showToast(`❌ 异常: ${err.message}`);
-    } finally {
-      setLoadingAction(null);
-    }
-  };
-
   const handleResetAccount = async () => {
     if (!window.confirm("确定要清空模拟盘数据并重置为 10 万元本金吗？")) {
       return;
@@ -466,7 +516,6 @@ export function App() {
         circuitBreaker={sentiment?.sentiment_circuit_breaker ?? false}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onRunReview={handleRunReview}
         onResetAccount={handleResetAccount}
         loadingAction={loadingAction}
         marketSession={marketSession}
@@ -497,7 +546,7 @@ export function App() {
         )}
 
         {activeTab === "candidates" && (
-          <CandidatesView payload={candidatesPayload} loading={!firstLoadDone && !candidatesPayload} />
+          <CandidatesView payload={candidatesPayload} sentiment={sentiment} marketSession={marketSession} loading={!firstLoadDone && !candidatesPayload} />
         )}
 
         {activeTab === "iteration" && (
@@ -511,15 +560,13 @@ export function App() {
           />
         )}
 
-        {activeTab === "sentiment" && (
-          <SentimentView sentiment={sentiment} loading={!firstLoadDone && !sentiment} />
-        )}
 
         {activeTab === "limitup" && (
           <LimitUpPoolView
             pool={limitupPool}
             loading={!firstLoadDone && limitupPool.length === 0}
-            tradeDate={sentiment?.trade_date || ""}
+            tradeDate={limitupPoolStatus === "LIVE" ? (marketSession?.today_date || "") : (sentiment?.trade_date || "")}
+            isLive={limitupPoolStatus === "LIVE"}
           />
         )}
 

@@ -1,7 +1,7 @@
 {
   "trade_date": "2026-08-25",
-  "generate_time": "2026-08-25 19:13:47",
-  "sentiment_state": "震荡/分化期",
+  "generate_time": "2026-08-25 19:55:39",
+  "sentiment_state": "主升/强势期",
   "total_limit_up_count": 65,
   "passed_filter_count": 47,
   "filter_stats": {
@@ -46,8 +46,8 @@
           "weighted_score": 35.0,
           "consecutive_boards": 5,
           "base_board_score": 100.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 12.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
         },
         "seal_strength": {
@@ -107,7 +107,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 4,
           "base_board_score": 85.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -168,7 +168,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -229,7 +229,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -292,8 +292,8 @@
           "weighted_score": 35.0,
           "consecutive_boards": 5,
           "base_board_score": 100.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 12.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
         },
         "seal_strength": {
@@ -353,7 +353,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 4,
           "base_board_score": 85.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -414,7 +414,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -475,7 +475,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -536,7 +536,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -597,7 +597,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -658,7 +658,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -719,7 +719,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -780,7 +780,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -841,7 +841,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -902,7 +902,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -963,7 +963,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1024,7 +1024,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1057,67 +1057,6 @@
       "rank": 13
     },
     {
-      "code": "600508",
-      "name": "上海能源",
-      "price": 10.87,
-      "change_pct": 10.02,
-      "amount": 423240480.0,
-      "turnover_rate": 3.86,
-      "float_market_cap": 10998322524.0,
-      "total_market_cap": 10998322524.0,
-      "seal_amount": 33752002.0,
-      "seal_ratio": 0.0797,
-      "first_seal_time": "09:30:29",
-      "last_seal_time": "10:25:44",
-      "broken_count": 1,
-      "consecutive_boards": 2,
-      "sector": "煤炭开采",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": false,
-      "trade_date": "2026-08-25",
-      "data_source": "akshare",
-      "quant_score": 60.87,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 73.0,
-          "weight": 0.35,
-          "weighted_score": 25.55,
-          "consecutive_boards": 2,
-          "base_board_score": 70.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 51.74,
-          "weight": 0.15,
-          "weighted_score": 7.76,
-          "seal_ratio": 0.0797,
-          "first_seal_time": "09:30:29"
-        },
-        "chip_structure": {
-          "score": 55.2,
-          "weight": 0.3,
-          "weighted_score": 16.56,
-          "turnover_rate": 3.86,
-          "high_60d_breakout": false,
-          "broken_count": 1
-        },
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "煤炭开采",
-          "sector_zt_count": 1,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      },
-      "rank": 14
-    },
-    {
       "code": "002907",
       "name": "华森制药",
       "price": 15.74,
@@ -1146,7 +1085,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1176,7 +1115,7 @@
           "is_solo_zone": true
         }
       },
-      "rank": 15
+      "rank": 14
     },
     {
       "code": "603113",
@@ -1207,7 +1146,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1237,7 +1176,7 @@
           "is_solo_zone": true
         }
       },
-      "rank": 16
+      "rank": 15
     },
     {
       "code": "002081",
@@ -1268,7 +1207,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1296,6 +1235,67 @@
           "has_true_resonance": false,
           "is_overcrowded": false,
           "is_solo_zone": false
+        }
+      },
+      "rank": 16
+    },
+    {
+      "code": "600508",
+      "name": "上海能源",
+      "price": 10.87,
+      "change_pct": 10.02,
+      "amount": 423240480.0,
+      "turnover_rate": 3.86,
+      "float_market_cap": 10998322524.0,
+      "total_market_cap": 10998322524.0,
+      "seal_amount": 33752002.0,
+      "seal_ratio": 0.0797,
+      "first_seal_time": "09:30:29",
+      "last_seal_time": "10:25:44",
+      "broken_count": 1,
+      "consecutive_boards": 2,
+      "sector": "煤炭开采",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-25",
+      "data_source": "akshare",
+      "quant_score": 59.82,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 70.0,
+          "weight": 0.35,
+          "weighted_score": 24.5,
+          "consecutive_boards": 2,
+          "base_board_score": 70.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 51.74,
+          "weight": 0.15,
+          "weighted_score": 7.76,
+          "seal_ratio": 0.0797,
+          "first_seal_time": "09:30:29"
+        },
+        "chip_structure": {
+          "score": 55.2,
+          "weight": 0.3,
+          "weighted_score": 16.56,
+          "turnover_rate": 3.86,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "煤炭开采",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
         }
       },
       "rank": 17
@@ -1329,7 +1329,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1390,7 +1390,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
@@ -1451,7 +1451,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },

@@ -124,7 +124,7 @@ export const SettingsView: React.FC = () => {
               </span>
             </div>
             <p className="text-sm text-slate-300 mt-2 max-w-3xl leading-relaxed">
-              系统严格遵循 A 股超短线打板逻辑与行为金融学统计规律，构建由“大盘情绪周期择时”、“四大因子分位数打分模型”与“T+1 集合竞价/防洗盘实盘风控引擎”组成的全自动化闭环。
+              系统采用“盘中实时数据 + 15:30 当日 FINAL 快照 + 次日严格 T-1 决策”的交易闭环：实时行情只用于当日信号，盘后快照用于四大因子选股，历史数据只用于复盘。
             </p>
           </div>
 
@@ -503,7 +503,7 @@ export const SettingsView: React.FC = () => {
                 三、模拟实盘账户操作规则与交易风控白皮书
               </h3>
             </div>
-            <span className="text-xs text-slate-400 font-mono">T+1 集合竞价撮合 · 防洗盘动态离场</span>
+            <span className="text-xs text-slate-400 font-mono">LIVE 实时行情 · 15:30 FINAL 快照 · T-1 次日决策</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -513,20 +513,20 @@ export const SettingsView: React.FC = () => {
                 <div className="w-6 h-6 rounded-full bg-red-600/20 text-red-400 border border-red-500/40 flex items-center justify-center font-bold text-xs">
                   1
                 </div>
-                <h4 className="text-sm font-bold text-slate-100">T+1 集合竞价撮合买入</h4>
+                <h4 className="text-sm font-bold text-slate-100">第一类：开盘竞价买入</h4>
               </div>
               <ul className="space-y-2 text-xs text-slate-300 list-disc list-inside leading-relaxed">
                 <li>
-                  <strong className="text-slate-100">执行时点：</strong>09:25 - 09:30 集合竞价定盘价。
+                  <strong className="text-slate-100">执行时点：</strong>09:28 - 09:50，使用当日实时开盘价。
                 </li>
                 <li>
-                  <strong className="text-slate-100">仓位均分：</strong>针对前一日打分选出的 Top 3-5 只标的，按可用资金等权分配。
+                  <strong className="text-slate-100">候选范围：</strong>只考虑上一交易日 FINAL 快照中的排名前 8 名。
                 </li>
                 <li>
-                  <strong className="text-rose-400">一字涨停跳过：</strong>开盘价涨幅 ≥ +9.8%（无量顶一字），判定无法买入并跳过。
+                  <strong className="text-rose-400">成交风控：</strong>一字涨停、开盘高开 ≥ +6% 或低开 &lt; -2.5% 时跳过。
                 </li>
                 <li>
-                  <strong className="text-amber-400">超弱低开跳过：</strong>开盘价涨幅 &lt; -4.5%（竞价被核按钮），判定走弱自动放弃。
+                  <strong className="text-amber-400">实时原则：</strong>行情失败时不使用旧文件替代，也不模拟成交。
                 </li>
                 <li>
                   <strong className="text-slate-400">交易滑点摩擦：</strong>包含双边 0.15% 印花税与佣金损耗。
@@ -540,17 +540,17 @@ export const SettingsView: React.FC = () => {
                 <div className="w-6 h-6 rounded-full bg-amber-600/20 text-amber-400 border border-amber-500/40 flex items-center justify-center font-bold text-xs">
                   2
                 </div>
-                <h4 className="text-sm font-bold text-slate-100">盘中防洗盘动态出场</h4>
+                <h4 className="text-sm font-bold text-slate-100">第二类 / 第三类：盘中买入</h4>
               </div>
               <ul className="space-y-2 text-xs text-slate-300 list-disc list-inside leading-relaxed">
                 <li>
-                  <strong className="text-emerald-400">移动止盈 (-2.5%)：</strong>当个股日内盈利从最高点回撤超过 2.5% 时，触发止盈平仓，锁定利润。
+                  <strong className="text-red-400">炸板回封：</strong>必须先实时观测到涨停、再炸板，随后重新接近涨停价且盘口可成交。
                 </li>
                 <li>
-                  <strong className="text-rose-400">防洗盘止损 (-4.13%)：</strong>个股浮亏达到 -4.13% 且连续 3 笔 Tick 无法收回时触发止损，防止主力瞬间向下“假摔插针”。
+                  <strong className="text-amber-400">强势回踩：</strong>实时涨幅 +2% 至 +6%，从日内高点回撤至少 1.5%，且仍高于开盘价。
                 </li>
                 <li>
-                  <strong className="text-slate-100">涨停锁仓：</strong>若盘中牢牢封死涨停，持仓不动，享受次日高开连板溢价。
+                  <strong className="text-slate-100">共同规则：</strong>仅限候选前 8 名，成交价使用实时当前价，订单记录策略名称和触发时间。
                 </li>
               </ul>
             </div>

@@ -30,7 +30,7 @@ import {
   NextDayPredictionItem
 } from "../types";
 
-type DeepReviewTab = "top4_eval" | "runners_attr" | "aug25_rec" | "prev_day_review" | "closed_attr" | "cb_success" | "next_day_pred";
+type DeepReviewTab = "top8_eval" | "runners_attr" | "next_candidates" | "prev_day_review" | "closed_attr" | "cb_success" | "next_day_pred";
 
 interface ReviewAttributionViewProps {
   data: ReviewAttributionPayload | null;
@@ -97,7 +97,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
   };
 
   // Normalize legacy sections
-  const top4Evals = (data.aug21_top4_evaluations || data.top_candidate_evaluations || []).map((item: any) => ({
+  const top8Evals = (data.aug21_top4_evaluations || data.top_candidate_evaluations || []).map((item: any) => ({
     ...item,
     aug21_rank: item.aug21_rank ?? item.review_rank ?? item.rank,
     aug21_score: item.aug21_score ?? item.quant_score,
@@ -141,9 +141,9 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
     { key: "closed_attr", label: `亏损离场归因 (${closedItems.length})`, icon: XCircle },
     { key: "cb_success", label: `连板成功分析 (${cbSuccessItems.length})`, icon: Award },
     { key: "next_day_pred", label: `T+1 表现预测 (${predItems.length})`, icon: Rocket },
-    { key: "top4_eval", label: "当日 TOP4 复盘与开盘监控", icon: CheckCircle2 },
+    { key: "top8_eval", label: `当日 TOP8 复盘与开盘监控 (${top8Evals.length})`, icon: CheckCircle2 },
     { key: "runners_attr", label: `连板漏报归因 (${runnersAttrs.length})`, icon: HelpCircle },
-    { key: "aug25_rec", label: `次日候选池 (${nextDayCands.length})`, icon: Sparkles },
+    { key: "next_candidates", label: `次日候选池 (${nextDayCands.length})`, icon: Sparkles },
   ];
 
   const SentimentChip = ({ state, score }: { state?: string; score?: number }) => {
@@ -166,20 +166,30 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
           <div>
             <div className="flex items-center gap-2 flex-wrap">
               <span className="px-2 py-0.5 rounded bg-red-950/60 border border-red-500/40 text-red-400 font-mono text-xs font-semibold">
-                {reviewDate} 15:30 真实盘后复盘
+                复盘快照：{reviewDate} · 15:30 FINAL
               </span>
               <SentimentChip state={data.market_summary.sentiment_state} score={data.market_summary.sentiment_score} />
               <h2 className="text-lg font-bold text-slate-100">
-                盘后深度复盘、连板归因与次日开盘监控 ({reviewDate})
+                盘后选股复盘与次日交易准备
               </h2>
             </div>
-            <p className="text-xs text-slate-400 mt-1">
-              复盘区间: <span className="text-slate-200 font-mono font-semibold">{prevDate}</span> (选股日)
-              → <span className="text-red-400 font-mono font-semibold">{reviewDate}</span> (交易日)
-              → <span className="text-amber-400 font-mono font-semibold">{nextDate}</span> (预测日)
-              {" · "}初始本金: <span className="text-amber-400 font-mono font-semibold">¥100,000</span>
-              {" · "}A股 T+1 交易锁仓机制
-            </p>
+            <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+              <div className="rounded-lg border border-slate-700 bg-slate-950/60 px-3 py-2">
+                <span className="text-slate-500 block">T-1 选股快照</span>
+                <span className="text-slate-200 font-mono font-semibold">{prevDate}</span>
+                <span className="text-slate-500 ml-1">供本次交易参考</span>
+              </div>
+              <div className="rounded-lg border border-red-900/60 bg-red-950/20 px-3 py-2">
+                <span className="text-slate-500 block">T 日复盘快照</span>
+                <span className="text-red-300 font-mono font-semibold">{reviewDate}</span>
+                <span className="text-slate-500 ml-1">15:30 FINAL</span>
+              </div>
+              <div className="rounded-lg border border-amber-900/60 bg-amber-950/20 px-3 py-2">
+                <span className="text-slate-500 block">T+1 执行日期</span>
+                <span className="text-amber-300 font-mono font-semibold">{nextDate}</span>
+                <span className="text-slate-500 ml-1">使用 T 日候选</span>
+              </div>
+            </div>
           </div>
 
           {/* Timeline Step Buttons */}
@@ -235,7 +245,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
             </div>
             <span className="text-slate-600">|</span>
             <div className="flex items-center gap-1">
-              <span className="text-slate-400">量化选股池:</span>
+              <span className="text-slate-400">Top8 选股池:</span>
               <span className="text-red-400 font-semibold font-mono">{data.market_summary.top4_hit_rate || "—"}</span>
             </div>
             <span className="text-slate-600">|</span>
@@ -363,7 +373,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
                           {it.pnl_amount != null ? <span className="text-xs font-normal text-slate-400 ml-1">({it.pnl_amount >= 0 ? "+" : ""}¥{it.pnl_amount.toFixed(2)})</span> : null}
                         </div>
                       </div>
-                      <div className="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200 max-w-[260px]">
+                      <div className="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200 max-w-65">
                         {it.outcome_cn || "—"}
                       </div>
                     </div>
@@ -860,9 +870,9 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
       )}
 
       {/* ========================================================= */}
-      {/* Legacy Tab: 当日 TOP4 复盘与待办监控                    */}
+      {/* Tab: 当日 Top8 复盘与待办监控 */}
       {/* ========================================================= */}
-      {activeSection === "top4_eval" && (
+      {activeSection === "top8_eval" && (
         <div className="space-y-4">
           <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-4">
             <div className="flex items-center gap-2 text-slate-200 text-sm font-semibold mb-2">
@@ -870,13 +880,13 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
               <span>复盘评估规则说明</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              基于上一交易日 (<strong className="text-slate-200">{reviewDate}</strong>) 盘后量化模型选出的 4 只优质标的，
-              系统将于下一个交易日 (<strong className="text-amber-300">{nextDate} 09:30</strong>) 开盘从 10 万元本金中按每只约 2.5 万元执行市价撮合建仓。
+              基于 T 日 (<strong className="text-slate-200">{reviewDate}</strong>) FINAL 快照选出的 Top8 候选，
+              系统将在下一个交易日 (<strong className="text-amber-300">{nextDate}</strong>) 按排名顺序评估三类买入策略，最多建立 4 个持仓。
               买入当日为 <strong className="text-amber-300">T+0 锁仓</strong>，最早须在 T+1 日方可触发卖出策略。
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4">
-            {top4Evals.map((item: any) => (
+            {top8Evals.map((item: any) => (
               <div key={item.code} className="bg-slate-900 border border-slate-800 rounded-xl p-5 hover:border-slate-700 transition space-y-4">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-800/80 pb-3">
                   <div className="flex items-center gap-3">
@@ -955,7 +965,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
               <span>连板漏报深度归因背景</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              在上一交易日 ({reviewDate}) 盘后，全市场部分连板或大涨标的未进入量化 TOP4 优选池。
+              在 T 日 ({reviewDate}) 盘后，全市场部分连板或大涨标的未进入量化 Top8 优选池。
               量化系统在每日 15:35 自动对这部分标的进行【反向漏报归因审计】，深入分析它们在 4 大因子（连板情绪、封单强度、筹码结构、板块共振）中的具体扣分项，以此验证模型风控边界。
             </p>
           </div>
@@ -975,7 +985,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
                         </span>
                       </div>
                       <div className="text-xs text-slate-400 mt-0.5">
-                        {reviewDate} 首板量化综合得分: <span className="text-amber-400 font-mono font-semibold">{fmt(runner.aug21_score, 2)}分</span> (位列全市场第 {runner.aug21_rank ?? "--"} 名，未进入 TOP 4)
+                        {reviewDate} 量化综合得分: <span className="text-amber-400 font-mono font-semibold">{fmt(runner.aug21_score, 2)}分</span> (位列全市场第 {runner.aug21_rank ?? "--"} 名，未进入 Top8)
                       </div>
                     </div>
                   </div>
@@ -1004,7 +1014,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
                 <div className="bg-slate-800/40 p-3.5 rounded-lg border border-slate-700/60 text-xs text-slate-300 leading-relaxed">
                   <div className="font-semibold text-slate-200 mb-1 flex items-center gap-1.5">
                     <Zap className="w-3.5 h-3.5 text-red-400" />
-                    <span>为什么没有进入 TOP 4 观察池？（算法风控意图）</span>
+                    <span>为什么没有进入 Top8 观察池？（算法风控意图）</span>
                   </div>
                   <p>{runner.why_not_in_top5}</p>
                 </div>
@@ -1017,7 +1027,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
       {/* ========================================================= */}
       {/* Legacy Tab: 次日候选池                                   */}
       {/* ========================================================= */}
-      {activeSection === "aug25_rec" && (
+      {activeSection === "next_candidates" && (
         <div className="space-y-4">
           <div className="bg-slate-900/90 border border-slate-800 rounded-xl p-4">
             <div className="flex items-center gap-2 text-slate-200 text-sm font-semibold mb-2">

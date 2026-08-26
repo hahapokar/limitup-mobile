@@ -18,6 +18,9 @@ SYSTEM_LOGS_FILE = DATA_DIR / "system_logs.json"
 LATEST_SENTIMENT_FILE = DATA_DIR / "latest_sentiment.json"
 LATEST_CANDIDATES_FILE = DATA_DIR / "latest_candidates.json"
 
+def snapshot_manifest_file(trade_date: str) -> Path:
+    return DATA_DIR / f"snapshot_status_{trade_date}.json"
+
 # Web Server & Tailscale Network Configurations
 WEB_HOST: str = "0.0.0.0"
 WEB_PORT: int = 3006
@@ -38,7 +41,8 @@ DATA_FETCH_INTERVAL: float = 0.5    # Seconds between requests to avoid IP throt
 # Account & Capital Allocation
 INITIAL_CAPITAL: float = 100_000.0     # 100,000 RMB (10万元本金)
 MAX_POSITIONS: int = 4                 # Equal-weight portfolio (25% max per stock)
-CANDIDATES_SELECT_COUNT: int = 4       # Select top 3-5 candidates daily
+CANDIDATES_SELECT_COUNT: int = 8       # Publish and evaluate the top eight candidates daily
+BUY_CANDIDATE_MAX_RANK: int = 8        # Only the first eight ranked candidates may be bought
 
 # Refined One-Way Friction Rates (区分买卖费用与印花税)
 BUY_FRICTION_RATE: float = 0.0008      # 0.08% (佣金 + 过户费 + 买入滑点)
@@ -87,6 +91,12 @@ SKIP_ONE_WORD_ZT_OPEN_PCT: float = 9.80   # 一字涨停不可买入过滤 (开�
 SKIP_WEAK_OPEN_PCT: float = -2.50         # 弱开盘放弃过滤 — 从-4.5收紧到-2.5:
                                           #   低开 -2.5% 已经说明不及预期（8-24 圣达/和远/双鹭 都是 -1.9~-2.1 低开, 当日全部-10跌停/大跌）
 SKIP_HIGH_CHASE_OPEN_PCT: float = 6.00   # 追高开盘过滤 NEW: 高开 ≥ +6% 直接跳过, 避免高开低走接盘
+
+# Intraday entry filters for breakout-retest and strong-pullback strategies
+REBREAK_LIMIT_TOLERANCE_PCT: float = 0.20
+PULLBACK_MIN_CHANGE_PCT: float = 2.00
+PULLBACK_MAX_CHANGE_PCT: float = 6.00
+PULLBACK_FROM_HIGH_PCT: float = 1.50
 
 # Global portfolio-level buy kill-switches (NEW): a bad tape day should halt
 # ALL new position entries, even if individual stocks look fine.

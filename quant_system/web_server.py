@@ -317,7 +317,7 @@ def render_html_dashboard(data: Dict[str, Any]) -> str:
       </div>
     </div>
 
-    <!-- Section 2: Top 3-5 Scored Candidates Table -->
+    <!-- Section 2: Top 8 Scored Candidates Table -->
     <div class="bg-slate-900/80 rounded-xl border border-slate-800 overflow-hidden">
       <div class="px-5 py-4 border-b border-slate-800 flex items-center justify-between">
         <div>

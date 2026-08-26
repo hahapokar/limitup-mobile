@@ -98,6 +98,7 @@ export interface HoldingPosition {
   holding_days: number;
   can_sell?: boolean;
   t1_lock_text?: string;
+  sell_available_date?: string;
   high_price: number;
   current_price: number;
   change_pct?: number;
@@ -112,6 +113,10 @@ export interface HoldingPosition {
   anti_shakeout_count: number;
   hard_stop_price: number;
   sector: string;
+  entry_strategy?: string;
+  entry_strategy_name?: string;
+  quote_status?: "LIVE" | "STALE";
+  quote_status_at?: string;
 }
 
 export interface Aug21EvaluationItem {
@@ -371,6 +376,8 @@ export interface TradeOrder {
   realized_pnl_pct?: number;
   holding_days?: number;
   rule_type?: string;
+  strategy?: string;
+  strategy_name?: string;
   reason: string;
 }
 

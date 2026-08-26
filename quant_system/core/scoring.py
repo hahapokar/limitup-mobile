@@ -108,8 +108,8 @@ class ScoringEngine:
         record_system_log("INFO", "Scoring", f"Pool filtered: {len(raw_pool)} -> {len(filtered_pool)} stocks (ST, Cap, Price, Inst filters applied)")
 
         if not filtered_pool:
-            record_system_log("WARNING", "Scoring", "No stocks passed hard filters, relaxing price/cap thresholds for resilience")
-            filtered_pool = [s for s in raw_pool if not s.get("is_st", False)][:15]
+            record_system_log("WARNING", "Scoring", "No stocks passed complete-data and hard-risk filters; no candidates published")
+            raise ValueError(f"No complete eligible stocks for {effective_date}")
 
         # 3. Determine current Market Sentiment State
         sentiment_state = self._get_current_sentiment_state(effective_date)
@@ -148,6 +148,8 @@ class ScoringEngine:
         # Structure final result payload
         result_payload = {
             "trade_date": effective_date,
+            "snapshot_status": "FINAL",
+            "snapshot_generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "generate_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "sentiment_state": sentiment_state,
             "total_limit_up_count": len(raw_pool),
@@ -157,7 +159,6 @@ class ScoringEngine:
             "candidates": top_candidates,
             "all_scored_stocks": scored_stocks[:20]  # Store top 20 for in-depth analysis
         }
-
         # Persist to JSON
         self._save_candidates(effective_date, result_payload)
 
@@ -233,10 +234,16 @@ class ScoringEngine:
             "price_unknown": 0,
             "inst_ratio_high": 0,
             "inst_ratio_unknown": 0,
+            "incomplete_data": 0,
             "passed": 0
         }
 
         for stock in pool:
+            required_fields = ("price", "float_market_cap", "turnover_rate", "seal_ratio", "consecutive_boards", "sector")
+            if any(stock.get(field) is None for field in required_fields):
+                stats["incomplete_data"] += 1
+                continue
+
             # 1. ST filter (non-numeric; safe to apply directly)
             if EXCLUDE_ST and stock.get("is_st", False):
                 stats["st_excluded"] += 1

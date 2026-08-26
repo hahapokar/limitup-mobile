@@ -31,7 +31,7 @@ export const SentimentView: React.FC<SentimentViewProps> = ({ sentiment, loading
   if (!sentiment) {
     return (
       <div className="text-center py-16 text-slate-400">
-        暂无情绪数据，请点击右上角【一键盘后复盘】进行实时计算。
+        暂无情绪数据，系统将在 15:30 盘后自动生成当日 FINAL 情绪快照。
       </div>
     );
   }

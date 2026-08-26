@@ -21,7 +21,6 @@ interface HeaderProps {
   circuitBreaker: boolean;
   activeTab: string;
   setActiveTab: (tab: string) => void;
-  onRunReview: () => void;
   onResetAccount: () => void;
   loadingAction: string | null;
   marketSession?: MarketSessionInfo | null;
@@ -35,19 +34,18 @@ export const Header: React.FC<HeaderProps> = ({
   circuitBreaker,
   activeTab,
   setActiveTab,
-  onRunReview,
   onResetAccount,
   loadingAction,
   marketSession
 }) => {
-  const tabs = [
+  const liveTabs = [
     { id: "portfolio", label: "模拟盘与实时盯盘", icon: Eye },
-    { id: "aug24review", label: "盘后复盘评估与连板归因", icon: Brain },
-    { id: "candidates", label: "四大因子选股池", icon: TrendingUp },
-    { id: "iteration", label: "自迭代与影子回测", icon: RefreshCw },
-    { id: "sentiment", label: "大盘情绪择时", icon: Activity },
     { id: "limitup", label: "全量涨停池", icon: Activity },
-    { id: "settings", label: "设置与模型底层逻辑", icon: Settings },
+  ];
+  const evaluationTabs = [
+    { id: "aug24review", label: "盘后选股", icon: Brain },
+    { id: "candidates", label: "四大因子池", icon: TrendingUp },
+    { id: "iteration", label: "自迭代", icon: RefreshCw },
   ];
 
   const isTrading = marketSession?.is_trading_active ?? false;
@@ -128,16 +126,6 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Quick Action Buttons */}
           <div className="flex items-center gap-1.5">
             <button
-              onClick={onRunReview}
-              disabled={!!loadingAction}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-red-600 hover:bg-red-500 active:scale-95 text-white text-xs font-semibold shadow-sm transition disabled:opacity-50"
-              title="触发 15:30 盘后大盘情绪计算与四大因子选股"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 ${loadingAction === "review" ? "animate-spin" : ""}`} />
-              <span>{loadingAction === "review" ? "复盘计算中..." : "一键盘后复盘"}</span>
-            </button>
-
-            <button
               onClick={onResetAccount}
               disabled={!!loadingAction}
               className="p-1.5 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition"
@@ -145,31 +133,51 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <RotateCcw className="w-3.5 h-3.5" />
             </button>
+            <button
+              onClick={() => setActiveTab("settings")}
+              className={`p-1.5 rounded-md border transition ${activeTab === "settings" ? "bg-indigo-600/20 border-indigo-500 text-indigo-300" : "bg-slate-800 border-slate-700 text-slate-300 hover:text-white"}`}
+              title="设置与模型底层逻辑"
+              aria-label="设置与模型底层逻辑"
+            >
+              <Settings className="w-3.5 h-3.5" />
+            </button>
           </div>
         </div>
       </div>
 
       {/* Navigation Tabs */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <nav className="flex space-x-1 overflow-x-auto no-scrollbar py-2">
-          {tabs.map((tab) => {
-            const Icon = tab.icon;
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium whitespace-nowrap transition-colors ${
-                  isActive
-                    ? "bg-slate-800 text-slate-100 border border-slate-700 shadow-sm"
-                    : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
-                }`}
-              >
-                <Icon className={`w-4 h-4 ${isActive ? "text-indigo-400" : "text-slate-400"}`} />
-                <span>{tab.label}</span>
-              </button>
-            );
-          })}
+        <nav className="flex items-center gap-3 overflow-x-auto no-scrollbar py-2">
+          <div className="flex items-center gap-1.5 shrink-0">
+            <span className="text-[10px] uppercase tracking-widest text-emerald-400/80 px-1">实时更新</span>
+            {liveTabs.map((tab) => {
+              const Icon = tab.icon;
+              const isActive = activeTab === tab.id;
+              return (
+                <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium whitespace-nowrap transition-colors ${isActive ? "bg-slate-800 text-slate-100 border border-slate-700 shadow-sm" : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"}`}>
+                  <Icon className={`w-4 h-4 ${isActive ? "text-emerald-400" : "text-slate-400"}`} />
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </div>
+          <span className="h-6 w-px bg-slate-700 shrink-0" />
+          <div className="flex items-center gap-1.5 shrink-0">
+            <span className="text-[10px] uppercase tracking-widest text-amber-400/80 px-1">盘后评估</span>
+            {evaluationTabs.map((tab) => {
+              const Icon = tab.icon;
+              const isActive = activeTab === tab.id;
+              return (
+                <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium whitespace-nowrap transition-colors ${isActive ? "bg-slate-800 text-slate-100 border border-slate-700 shadow-sm" : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"}`}>
+                  <Icon className={`w-4 h-4 ${isActive ? "text-amber-400" : "text-slate-400"}`} />
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
+          </div>
+          {activeTab === "settings" && (
+            <span className="h-6 w-px bg-slate-700 shrink-0" />
+          )}
         </nav>
       </div>
     </header>

@@ -13,7 +13,7 @@ from pathlib import Path
 # Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from quant_system.config import START_DATE, DATA_DIR, PORTFOLIO_FILE
+from quant_system.config import DATA_DIR, PORTFOLIO_FILE
 from quant_system.utils.calendar import normalize_to_trade_day, is_trade_day
 from quant_system.utils.notifier import record_system_log, send_notification
 from quant_system.core.data_fetcher import data_fetcher
@@ -27,9 +27,9 @@ logger = logging.getLogger("QuantTrading.Main")
 
 
 def run_init_bootstrap() -> None:
-    """Initialize missing data, or catch up a missed post-market run on startup."""
+    """Start without backfilling historical or pre-close data."""
     session = data_fetcher.get_market_session_status()
-    current_trade_date = session.get("latest_trade_date") or normalize_to_trade_day(START_DATE)
+    current_trade_date = session.get("today_date") or ""
 
     latest_candidates_date = ""
     latest_candidates_file = DATA_DIR / "latest_candidates.json"
@@ -41,12 +41,13 @@ def run_init_bootstrap() -> None:
         except (OSError, ValueError, TypeError):
             latest_candidates_date = ""
 
-    # A daemon started after 15:30 must not wait until the next trading day
-    # to produce the pool for tomorrow.
+    # Only catch up the current date after the actual 15:30 close. A morning
+    # restart must leave the previous valid T-1 snapshot untouched.
     if (
         latest_candidates_date != current_trade_date
         and session.get("session_phase") == "CLOSED"
         and session.get("today_date") == current_trade_date
+        and (session.get("current_time_beijing") or "") >= "15:30:00"
     ):
         record_system_log("INFO", "Bootstrap", f"Detected stale candidate pool ({latest_candidates_date or 'missing'}); catching up {current_trade_date} post-market review")
         quant_scheduler.trigger_manual_review(current_trade_date)
@@ -56,19 +57,10 @@ def run_init_bootstrap() -> None:
         record_system_log("INFO", "Bootstrap", f"Keeping existing candidate pool for {latest_candidates_date}; no bootstrap overwrite")
         return
 
-    effective_date = normalize_to_trade_day(START_DATE)
-    record_system_log("INFO", "Bootstrap", f"Initializing missing baseline data with anchor date: {START_DATE} -> Normalized: {effective_date}")
-    
-    # 1. Market Sentiment & Timing
-    sentiment = sentiment_engine.calculate_sentiment(effective_date)
-    
-    # 2. 4-Factor Percentile Scoring
-    scoring = scoring_engine.run_daily_scoring(effective_date)
-    
-    # 3. Portfolio Settle
-    portfolio_engine.settle_daily_nav(effective_date)
-    
-    record_system_log("INFO", "Bootstrap", f"System bootstrap completed successfully for {effective_date}.")
+    record_system_log(
+        "INFO", "Bootstrap",
+        "No current-day candidate snapshot exists; waiting for the real 15:30 post-market run."
+    )
 
 
 def main():

@@ -20,7 +20,6 @@ from typing import Dict, Any, List, Optional
 
 from quant_system.config import (
     DATA_DIR,
-    START_DATE,
     HARD_STOP_PCT,
     LIMIT_SEAL_RATIO_THRESHOLD,
     OPEN_TURNOVER_RATE_THRESHOLD,
@@ -117,7 +116,9 @@ class IterationEngine:
         When a real backtest module is plugged in, this is where you would call it and
         populate summary / metrics / equity_curve / impacted_trades with real results.
         """
-        effective_date = normalize_to_trade_day(trade_date or START_DATE)
+        effective_date = normalize_to_trade_day(
+            trade_date or (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
+        )
         record_system_log(
             "INFO",
             "Iteration",

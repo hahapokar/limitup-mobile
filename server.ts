@@ -137,14 +137,17 @@ app.get("/api/status", async (req, res) => {
     const _isWeekday = _bjDay >= 1 && _bjDay <= 5;
     const _inMorning = _isWeekday && _bjTotalMin >= 555 && _bjTotalMin <= 690;  // 9:15-11:30
     const _inAfternoon = _isWeekday && _bjTotalMin >= 780 && _bjTotalMin <= 930; // 13:00-15:30
-    const _guessedActive = _inMorning || _inAfternoon;
+    // An unverified clock guess must never enable trading. The backend may
+    // continue to show the page, but unknown market status is non-tradable.
+    const _guessedActive = false;
+    const _bjDateStr = _nowBJ.toISOString().slice(0, 10);
     const fallback = {
       current_time_beijing: new Date().toLocaleTimeString("zh-CN", { timeZone: "Asia/Shanghai" }),
-      trade_date: (sentiment?.trade_date as string) || realTradeDate || "",
+      today_date: _bjDateStr,
+      trade_date: (sentiment?.trade_date as string) || realTradeDate || _bjDateStr,
+      latest_trade_date: (sentiment?.trade_date as string) || realTradeDate || _bjDateStr,
       session_phase: _guessedActive ? "TRADING" : "CLOSED",
-      session_name: _guessedActive
-        ? "交易时段 (Python行情超时, 按时钟判断)"
-        : "非交易时段 (行情接口未连接)",
+      session_name: "市场状态未知 (行情接口未连接，禁止交易)",
       is_trading_active: _guessedActive,
       update_interval_sec: _guessedActive ? 3 : 15,
     };
@@ -278,6 +281,35 @@ app.get("/api/limitup-pool", (req, res) => {
   res.json({ success: true, data: merged });
 });
 
+// Live intraday pool: never read a dated file or latest pointer. A failed
+// live request is returned as unavailable instead of being replaced by stale data.
+app.get("/api/limitup-pool/live", async (req, res) => {
+  const nowBeijing = new Date(Date.now() + 8 * 60 * 60 * 1000);
+  const todayBeijing = nowBeijing.toISOString().slice(0, 10);
+  const requestedDate = (req.query.date as string) || todayBeijing;
+  const safeDate = requestedDate.replace(/[^0-9-]/g, "");
+  try {
+    const { stdout } = await execAsync(`python3 -c "
+import json
+from quant_system.core.data_fetcher import data_fetcher
+pool = data_fetcher.get_limit_up_pool('${safeDate}')
+print(json.dumps(pool, ensure_ascii=False))
+"`, { cwd: process.cwd() });
+    const pool = JSON.parse(stdout.trim());
+    res.json({ success: true, data: Array.isArray(pool) ? pool : [], data_date: safeDate, data_status: "LIVE" });
+  } catch (err: any) {
+    // Cache fallback: if live fetch fails (network/DNS/akshare timeout),
+    // return the most recent cached limitup_{date}.json so the UI never
+    // goes blank during trading hours.
+    const cached = readJsonSafe(`limitup_${safeDate}.json`, null);
+    if (cached && Array.isArray(cached) && cached.length > 0) {
+      res.json({ success: true, data: cached, data_date: safeDate, data_status: "LIVE_CACHED" });
+    } else {
+      res.json({ success: false, data: [], data_date: safeDate, data_status: "UNAVAILABLE", error: err.message });
+    }
+  }
+});
+
 // 6. Portfolio State & Live Watchlist Sync
 // ——————————————————————————————————————————————————————————————————————————
 // IMPORTANT: This GET endpoint is a **PURE CACHE READ** and never forks Python.
@@ -308,7 +340,11 @@ const SYNC_TIMEOUT_MS = 2500;
 const syncInFlightRef: { promise: Promise<any> | null } = { promise: null };
 
 app.post("/api/portfolio/sync", async (req, res) => {
-  const date = (req.body?.date as string) || "";
+  // Empty dates come from the dashboard's live-sync requests. Use today's
+  // Beijing date instead of data_fetcher's historical START_DATE fallback.
+  const nowBeijing = new Date(Date.now() + 8 * 60 * 60 * 1000);
+  const todayBeijing = nowBeijing.toISOString().slice(0, 10);
+  const date = (req.body?.date as string) || todayBeijing;
   const blocking = req.body?.blocking !== false; // default true for manual clicks
   const watchlistOnly = req.body?.watchlist_only === true;
   const safeDate = date.replace(/'/g, "''");
@@ -522,7 +558,7 @@ portfolio_engine.reset_account(${capital})
 // 10.1 Daily Post-Market Deep Evaluation & Limit-Up Attribution Analysis
 app.get("/api/review/aug24-evaluation", async (req, res) => {
   try {
-    let reviewData = readJsonSafe("review_attribution_latest.json") || readJsonSafe("review_attribution_aug24.json");
+    let reviewData = readJsonSafe("review_attribution_latest.json");
     if (!reviewData) {
       // HARD CAP 1500ms on-demand generation. If review engine stalls on first
       // launch, return null immediately — the UI shows a "click 复盘 to run"
@@ -545,7 +581,7 @@ review_attribution_engine.generate_review_and_attribution()
       } finally {
         if (t) clearTimeout(t);
       }
-      reviewData = readJsonSafe("review_attribution_latest.json") || readJsonSafe("review_attribution_aug24.json");
+      reviewData = readJsonSafe("review_attribution_latest.json");
     }
     res.json({ success: true, data: reviewData });
   } catch (err: any) {
@@ -557,6 +593,7 @@ review_attribution_engine.generate_review_and_attribution()
 app.post("/api/timeline/step", async (req, res) => {
   try {
     const { step } = req.body;
+    const demoPortfolioFile = "demo_portfolio_state.json";
     let pythonCmd = "";
     if (step === "RESET_100K") {
       pythonCmd = "portfolio_engine.reset_account(100000.0)";
@@ -572,12 +609,12 @@ app.post("/api/timeline/step", async (req, res) => {
 import json
 from quant_system.core.portfolio import portfolio_engine
 from quant_system.core.review_attribution import review_attribution_engine
+  portfolio_engine.state_file = portfolio_engine.state_file.with_name('${demoPortfolioFile}')
 ${pythonCmd}
-review_attribution_engine.generate_review_and_attribution()
 "`, { cwd: process.cwd() });
 
-    const portfolio = readJsonSafe("portfolio_state.json");
-    const reviewData = readJsonSafe("review_attribution_latest.json") || readJsonSafe("review_attribution_aug24.json");
+    const portfolio = readJsonSafe(demoPortfolioFile);
+    const reviewData = readJsonSafe("review_attribution_latest.json");
     res.json({
       success: true,
       message: `Timeline switched to ${step}`,
@@ -746,7 +783,12 @@ print(json.dumps(iteration_engine.reject_recommendation('${reason}')))
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: {
+        middlewareMode: true,
+        watch: {
+          ignored: ["**/quant_system/data/**"],
+        },
+      },
       appType: "spa",
     });
     app.use(vite.middlewares);

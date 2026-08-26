@@ -1,2102 +1,2102 @@
 [
   {
-    "timestamp": "2026-08-25 14:56:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:37",
+    "timestamp": "2026-08-26 14:43:39",
     "level": "WARNING",
     "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:56:40",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:40",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:40",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:40",
+    "timestamp": "2026-08-26 14:43:46",
     "level": "WARNING",
     "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:56:43",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:43",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:43",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:43",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:46",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:49",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:49",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:49",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:49",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:52",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:56:55",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:57:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:57:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:57:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:57:46",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:58:26",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:58:26",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:58:26",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:58:26",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:00",
-    "level": "INFO",
-    "category": "Bootstrap",
-    "message": "Initializing quant system with anchor date: 2026-08-22 -> Normalized: 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:00",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:04",
+    "timestamp": "2026-08-26 14:43:53",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:59:08",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:08",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:08",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:08",
+    "timestamp": "2026-08-26 14:43:56",
     "level": "WARNING",
     "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:59:09",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:11",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 66.88 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:11",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:12",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 54 -> 35 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:12",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:12",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-21): 市场情绪状态: [震荡/分化期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 92.38分), 双鹭药业(002038, 76.05分), 深中华A(000017, 74.29分), 哈森股份(603958, 71.49分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:14",
-    "level": "INFO",
+    "timestamp": "2026-08-26 14:44:03",
+    "level": "WARNING",
     "category": "Portfolio",
-    "message": "Daily settlement completed for 2026-08-21. Total Asset: ¥105,231.61, NAV: 1.0523, Daily PnL: ¥-167.04",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:59:14",
+    "timestamp": "2026-08-26 14:44:10",
     "level": "INFO",
-    "category": "Bootstrap",
-    "message": "System bootstrap completed successfully for 2026-08-21.",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:59:14",
+    "timestamp": "2026-08-26 14:44:13",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:20",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:28",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:31",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:38",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:46",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:48",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:44:55",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:45:03",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:45:06",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:45:13",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:45:20",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:45:21",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "message": "[FallbackTimer] firing '14:45 T+2 尾盘未涨停强制清仓' at 14:45 Beijing",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 14:59:15",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:15",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:15",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:15",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:19",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:19",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:19",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:19",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:23",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:23",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:23",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:23",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:28",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:32",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:37",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:41",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:41",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:41",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:41",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:46",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:50",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:55",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:59",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:59",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:59",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 14:59:59",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:04",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:04",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:04",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:04",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:09",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:09",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:09",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:09",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:14",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:14",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:14",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:14",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:19",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:19",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:19",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:19",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:23",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:23",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:23",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:23",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:28",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:33",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:33",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:33",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:33",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:37",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:37",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:41",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:41",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:41",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:41",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:42",
+    "timestamp": "2026-08-26 14:45:21",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-21",
+    "message": "⏰ 14:45 执行 T+2 尾盘强制平仓检测...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:00:45",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:47",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:47",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:47",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:47",
+    "timestamp": "2026-08-26 14:45:23",
     "level": "WARNING",
     "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:00:48",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:48",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:52",
+    "timestamp": "2026-08-26 14:45:30",
     "level": "WARNING",
     "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:00:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:55",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:55",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:57",
+    "timestamp": "2026-08-26 14:45:40",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 77 limit-up stocks via [Sina Finance] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:00:58",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 62.5 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:58",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:59",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.48% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:59",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-0.80% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:59",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-0.84% (阈值-0.8%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:00:59",
+    "timestamp": "2026-08-26 14:45:43",
     "level": "WARNING",
     "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -0.8% (大盘系统性弱势), 跳过今日所有建仓",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:01:00",
+    "timestamp": "2026-08-26 14:45:50",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:01",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:01:00",
+    "timestamp": "2026-08-26 14:46:04",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:11",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:18",
     "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 54 -> 35 stocks (ST, Cap, Price, Inst filters applied)",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:01:00",
+    "timestamp": "2026-08-26 14:46:21",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:28",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:36",
     "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:01:00",
+    "timestamp": "2026-08-26 14:46:39",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:46",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:46:54",
     "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-21): 市场情绪状态: [震荡/分化期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 92.38分), 双鹭药业(002038, 76.05分), 深中华A(000017, 74.29分), 哈森股份(603958, 71.49分)",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:01:00",
+    "timestamp": "2026-08-26 14:46:57",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:04",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:12",
     "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:01:00",
+    "timestamp": "2026-08-26 14:47:15",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:22",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:30",
     "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-21 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:02:14",
+    "timestamp": "2026-08-26 14:47:33",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:40",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:48",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:51",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:47:59",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:07",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:10",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:18",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:29",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:31",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:39",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:49",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:52",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:48:59",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:08",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:10",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:18",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:27",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:29",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:37",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:45",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:48",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:49:55",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:04",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:06",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:14",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:22",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "[FallbackTimer] firing '盘中巡检 14:50' at 14:50 Beijing",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:22",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:25",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:32",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:41",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:43",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:51",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:50:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:02",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:10",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:19",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:22",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:29",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:39",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:42",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:49",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:51:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:00",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:07",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:18",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:26",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:37",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:44",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:47",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:52:58",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:06",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:17",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:25",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:39",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:46",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:53:59",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:02",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:10",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:12",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:20",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:28",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:31",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:39",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:47",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:51",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:54:58",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:06",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:09",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:17",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:26",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:28",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:36",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:45",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:48",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:55:55",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:08",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:11",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:18",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:29",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:31",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:39",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:48",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:51",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:56:58",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:08",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:11",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:18",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:26",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:29",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:37",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:48",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:51",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:57:58",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:06",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:09",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:16",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:25",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:27",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:35",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:43",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:45",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:58:53",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:03",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:11",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:19",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:22",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:29",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:39",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:42",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 14:59:49",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:03",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:10",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:18",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:20",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:28",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:39",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:47",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:55",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:00:59",
+    "level": "WARNING",
+    "category": "Portfolio",
+    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:01:13",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:01:32",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:01:56",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:02:07",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:02:24",
     "level": "INFO",
     "category": "Scheduler",
     "message": "[FallbackTimer] firing '15:02 收盘模拟盘结算与NAV净值更新' at 15:02 Beijing",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:02:14",
+    "timestamp": "2026-08-26 15:02:24",
     "level": "INFO",
     "category": "Scheduler",
     "message": "📊 15:02 开始收盘账户结算与 NAV 净值更新...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:02:16",
+    "timestamp": "2026-08-26 15:02:26",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "Daily settlement completed for 2026-08-25. Total Asset: ¥105,231.61, NAV: 1.0523, Daily PnL: ¥0.00",
+    "message": "Daily settlement completed for 2026-08-26. Total Asset: ¥107,138.75, NAV: 1.0714, Daily PnL: ¥1,907.14",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:10:43",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:10:46",
-    "level": "INFO",
+    "timestamp": "2026-08-26 15:02:32",
+    "level": "ERROR",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:10:51",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:10:51",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:10:53",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:10:57",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:10:59",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 66.88 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:10:59",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:11:01",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:11:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 54 -> 35 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:11:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:11:01",
+    "timestamp": "2026-08-26 15:02:35",
     "level": "INFO",
     "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-21): 市场情绪状态: [震荡/分化期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 92.38分), 双鹭药业(002038, 76.05分), 深中华A(000017, 74.29分), 哈森股份(603958, 71.49分)",
+    "message": "📢 📤 模拟盘平仓执行: 圣达生物(603079): 移动止盈触发 (自最高价 ¥14.59 回撤 3.50% >= 2.5%)\n卖出价格: ¥14.08, 盈亏: ¥-327.82 (-1.28%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:11:01",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:11:01",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-21 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:26",
-    "level": "INFO",
-    "category": "Bootstrap",
-    "message": "Initializing quant system with anchor date: 2026-08-22 -> Normalized: 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:26",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:28",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:33",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:39",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 54.88 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:39",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:41",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:41",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 54 -> 35 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:41",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:41",
+    "timestamp": "2026-08-26 15:02:35",
     "level": "INFO",
     "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-21): 市场情绪状态: [震荡/分化期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 92.38分), 双鹭药业(002038, 76.05分), 深中华A(000017, 74.29分), 哈森股份(603958, 71.49分)",
+    "message": "📢 📤 模拟盘平仓执行: 透景生命(300642): 移动止盈触发 (自最高价 ¥18.81 回撤 8.35% >= 2.5%)\n卖出价格: ¥17.24, 盈亏: +¥60.21 (+0.23%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:12:42",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "Daily settlement completed for 2026-08-21. Total Asset: ¥105,231.61, NAV: 1.0523, Daily PnL: ¥0.00",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:42",
-    "level": "INFO",
-    "category": "Bootstrap",
-    "message": "System bootstrap completed successfully for 2026-08-21.",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:42",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:12:56",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:13:02",
+    "timestamp": "2026-08-26 15:02:46",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:06",
+    "timestamp": "2026-08-26 15:03:04",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:06",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:13:08",
+    "timestamp": "2026-08-26 15:03:22",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:11",
+    "timestamp": "2026-08-26 15:03:41",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:14",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 66.88 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:13:14",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:13:18",
+    "timestamp": "2026-08-26 15:03:59",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:18",
+    "timestamp": "2026-08-26 15:04:17",
     "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 54 -> 35 stocks (ST, Cap, Price, Inst filters applied)",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:18",
+    "timestamp": "2026-08-26 15:04:38",
     "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:18",
+    "timestamp": "2026-08-26 15:04:56",
     "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-21): 市场情绪状态: [震荡/分化期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 92.38分), 双鹭药业(002038, 76.05分), 深中华A(000017, 74.29分), 哈森股份(603958, 71.49分)",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:18",
+    "timestamp": "2026-08-26 15:05:13",
     "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:13:18",
+    "timestamp": "2026-08-26 15:05:31",
     "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-21 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:12",
+    "timestamp": "2026-08-26 15:05:50",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:06:09",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:06:27",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:06:49",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:07:08",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:07:25",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:07:44",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:08:03",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:08:22",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:08:40",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:08:58",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:09:17",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:09:41",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:10:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:10:18",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:10:37",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:10:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:11:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:11:35",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:11:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:12:17",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:12:35",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:12:54",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:13:13",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:13:35",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:13:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:14:11",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:14:31",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:14:49",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:15:07",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:15:24",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:15:44",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:16:01",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:16:19",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:16:39",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:16:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:17:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:17:35",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:17:52",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:18:14",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:18:33",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:18:50",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:19:09",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:19:28",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:19:46",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:20:05",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:20:23",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:20:40",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:20:58",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:21:16",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:21:35",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:21:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:22:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:22:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:22:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:23:12",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:23:30",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:23:48",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:24:10",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:24:31",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:24:52",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:25:09",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:25:30",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:25:48",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:26:07",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:26:25",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:26:43",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:27:01",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:27:20",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:27:38",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:28:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:28:18",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:28:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:28:54",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:29:12",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:29:32",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:29:49",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:30:26",
     "level": "INFO",
     "category": "Scheduler",
     "message": "[FallbackTimer] firing '15:30 盘后全量数据更新（情绪/选股/复盘/涨停池）' at 15:30 Beijing",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:12",
+    "timestamp": "2026-08-26 15:30:26",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "🎯 15:30 启动盘后全量数据更新流程 (交易日: 2026-08-25)...",
+    "message": "🎯 15:30 启动盘后全量数据更新流程 (交易日: 2026-08-26)...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:12",
+    "timestamp": "2026-08-26 15:30:26",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [1/5] 刷新当日全量涨停池缓存...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:12",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:30:14",
+    "timestamp": "2026-08-26 15:30:31",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:21",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:30:21",
+    "timestamp": "2026-08-26 15:30:33",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "       涨停池: 65 只，炸板池: 28 只",
+    "message": "       涨停池: 52 只，炸板池: 0 只",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:21",
+    "timestamp": "2026-08-26 15:30:33",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [2/5] 计算大盘情绪四维得分...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:21",
+    "timestamp": "2026-08-26 15:30:33",
     "level": "INFO",
     "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-25 (Prev: 2026-08-24)",
+    "message": "Calculating market sentiment for trading date: 2026-08-26 (Prev: 2026-08-25)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:23",
+    "timestamp": "2026-08-26 15:30:34",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:25",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:30:29",
+    "timestamp": "2026-08-26 15:30:47",
     "level": "INFO",
     "category": "Sentiment",
-    "message": "Market sentiment score: 77.0 (偏暖积极), Target Position Limit: 100%",
+    "message": "Market sentiment score: 83.0 (极度狂热), Target Position Limit: 100%",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:29",
+    "timestamp": "2026-08-26 15:30:47",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "       情绪分: 77.0 (偏暖积极)，熔断: False",
+    "message": "       情绪分: 83.0 (极度狂热)，熔断: False",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:29",
+    "timestamp": "2026-08-26 15:30:47",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [3/5] 运行四大因子量化选股打分...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:29",
+    "timestamp": "2026-08-26 15:30:47",
     "level": "INFO",
     "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-25",
+    "message": "Executing 4-factor quant scoring for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scoring",
-    "message": "Pool filtered: 65 -> 47 stocks (ST, Cap, Price, Inst filters applied)",
+    "message": "Pool filtered: 52 -> 34 stocks (ST, Cap, Price, Inst filters applied)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scoring",
     "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-25): 市场情绪状态: [主升/强势期]，共分析 65 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 85.37分), 深中华A(000017, 81.87分), 楚天龙(003040, 78.93分), 亿利达(002686, 68.79分)",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-26): 市场情绪状态: [主升/强势期]，共分析 52 只涨停标的，排雷筛选后推荐 Top 8:\n青岛金王(002094, 75.69分), 深中华A(000017, 72.52分), 捷荣技术(002855, 70.42分), 冀衡医药(002742, 70.15分), 法尔胜(000890, 65.89分), 新农股份(002942, 65.62分), 豪尔赛(002963, 64.22分), 楚天龙(003040, 63.59分)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "       共分析 65 只涨停，选出 Top4 候选",
+    "message": "       共分析 52 只涨停，选出 Top8 候选",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "       2026-08-26 FINAL 盘后快照已发布，可供下一交易日使用",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [4/5] 生成盘后复盘评估与连板归因报告...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
+    "message": "2026-08-26 post-market review generated from real data files",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "       复盘报告已生成: Top4 评估 / 5 落选归因",
+    "message": "       复盘报告已生成: Top8 评估 / 5 落选归因",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [5/5] 运行盘后影子回测自迭代初评...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-25 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-08-26 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Scheduler",
     "message": "       影子回测状态: NOT_RUN",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:30:30",
+    "timestamp": "2026-08-26 15:30:49",
     "level": "INFO",
     "category": "Notifier",
-    "message": "📢 🎯 盘后全量数据更新完成 (2026-08-25): 情绪分: 77.0 (偏暖积极)\n涨停: 65 只 / 炸板: 28 只\n选股 Top4: 汉森制药(002412), 深中华A(000017), 楚天龙(003040)",
+    "message": "📢 🎯 盘后全量数据更新完成 (2026-08-26): 情绪分: 83.0 (极度狂热)\n涨停: 52 只 / 炸板: 0 只\n选股 Top8: 青岛金王(002094), 深中华A(000017), 捷荣技术(002855)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:00",
+    "timestamp": "2026-08-26 15:35:19",
     "level": "INFO",
     "category": "Scheduler",
     "message": "[FallbackTimer] firing '15:35 盘后深度归因与影子回测自迭代' at 15:35 Beijing",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:00",
+    "timestamp": "2026-08-26 15:35:19",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "🧠 15:35 启动深度归因对账与影子回测二次评估 (2026-08-25)...",
+    "message": "🧠 15:35 启动深度归因对账与影子回测二次评估 (2026-08-26)...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:00",
+    "timestamp": "2026-08-26 15:35:19",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [1/3] 二次确认涨停池最终数据（含封单/炸板明细）...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:03",
-    "level": "INFO",
+    "timestamp": "2026-08-26 15:35:25",
+    "level": "ERROR",
     "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:11",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
+    "timestamp": "2026-08-26 15:35:25",
+    "level": "WARNING",
+    "category": "Scheduler",
+    "message": "       二次涨停池确认跳过: All 4 data sources failed to fetch limit-up pool for date 2026-08-26. Errors: ",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:11",
+    "timestamp": "2026-08-26 15:35:25",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [2/3] 基于最终涨停池数据重算盘后复盘与连板归因...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:11",
+    "timestamp": "2026-08-26 15:35:25",
     "level": "INFO",
     "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
+    "message": "2026-08-26 post-market review generated from real data files",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:11",
+    "timestamp": "2026-08-26 15:35:25",
     "level": "INFO",
     "category": "Scheduler",
     "message": "  [3/3] 运行真实影子回测与参数微调建议...",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:11",
+    "timestamp": "2026-08-26 15:35:25",
     "level": "INFO",
     "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-25 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-08-26 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-25 15:35:11",
+    "timestamp": "2026-08-26 15:35:25",
     "level": "INFO",
     "category": "Scheduler",
     "message": "       本次无参数微调建议 (status=NOT_RUN)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:36:28",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:37:05",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:11",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:14",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:18",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:18",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:22",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:25",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:27",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 66.88 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:27",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:31",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:31",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 54 -> 35 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:31",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:31",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-21): 市场情绪状态: [震荡/分化期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 92.38分), 双鹭药业(002038, 76.05分), 深中华A(000017, 74.29分), 哈森股份(603958, 71.49分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:31",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:32",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-21 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:53",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:38:55",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:04",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:04",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-21 (Prev: 2026-08-20)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:05",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:08",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:10",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 66.88 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:10",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:17",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 77 limit-up stocks via [Sina Finance] for 2026-08-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:17",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 77 -> 50 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 15:39:17",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:38",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:41",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:46",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:46",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-25 (Prev: 2026-08-24)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:47",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:54",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 77.0 (偏暖积极), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:12:54",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:02",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 77 limit-up stocks via [Sina Finance] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:02",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 77 -> 50 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:02",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:22",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:24",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:28",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:28",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-25 (Prev: 2026-08-24)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:36",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 77 limit-up stocks via [Sina Finance] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:42",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 77 limit-up stocks via [Sina Finance] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:45",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 69.5 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:45",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:47",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-25",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:47",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 65 -> 47 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:47",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:47",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-25): 市场情绪状态: [震荡/分化期]，共分析 65 只涨停标的，排雷筛选后推荐 Top 4:\n汉森制药(002412, 81.65分), 深中华A(000017, 79.71分), 楚天龙(003040, 76.58分), 圣达生物(603079, 69.18分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:47",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:13:47",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-25 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:14:04",
-    "level": "INFO",
-    "category": "Bootstrap",
-    "message": "Keeping existing candidate pool for 2026-08-25; no bootstrap overwrite",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:14:43",
-    "level": "INFO",
-    "category": "Bootstrap",
-    "message": "Keeping existing candidate pool for 2026-08-25; no bootstrap overwrite",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:14:43",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-25 19:25:13",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-25 post-market review generated from real data files",
     "details": {}
   }
 ]
