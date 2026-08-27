@@ -1,537 +1,5 @@
 [
   {
-    "timestamp": "2026-08-26 14:44:48",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:44:55",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:03",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:06",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:13",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:20",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:21",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "[FallbackTimer] firing '14:45 T+2 尾盘未涨停强制清仓' at 14:45 Beijing",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:21",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "⏰ 14:45 执行 T+2 尾盘强制平仓检测...",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:23",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:30",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:40",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:43",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:45:50",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:01",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:04",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:11",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:18",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:21",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:28",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:36",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:39",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:46",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:54",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:46:57",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:04",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:15",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:22",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:30",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:33",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:40",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:48",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:51",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:47:59",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:07",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:10",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:18",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:29",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:31",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:39",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:49",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:52",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:48:59",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:08",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:10",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:18",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:27",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:29",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:37",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:45",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:48",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:49:55",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:04",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:06",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:14",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:22",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "[FallbackTimer] firing '盘中巡检 14:50' at 14:50 Beijing",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:22",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:25",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:32",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:41",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:43",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:51",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:50:59",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:02",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:10",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:19",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:22",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:29",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:39",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:42",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:49",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:51:57",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:52:00",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:52:07",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:52:15",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-08-26",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-26 14:52:18",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "T-1 快照 2026-08-25 未完成 FINAL 发布，禁止使用旧/半成品数据建仓。",
-    "details": {}
-  },
-  {
     "timestamp": "2026-08-26 14:52:26",
     "level": "WARNING",
     "category": "Portfolio",
@@ -2097,6 +1565,538 @@
     "level": "INFO",
     "category": "Scheduler",
     "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:13:34",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:13:42",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-27. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:13:44",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:13:49",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:14:08",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:14:28",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:14:49",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:15:08",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:15:27",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:15:46",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:16:04",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:16:28",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-27. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:16:40",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:17:01",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:17:23",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:17:43",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:18:04",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:18:24",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:18:43",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:19:01",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:19:21",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:19:40",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:19:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:20:18",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:20:37",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:20:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:21:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:21:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:21:58",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:22:17",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:22:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:22:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:23:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:23:34",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:23:44",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:23:47",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:23:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:15",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:34",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:41",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:45",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:51",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Keeping existing candidate pool for 2026-08-26; no bootstrap overwrite",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:51",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:24:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:25:04",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:25:10",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:25:33",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-27. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:25:50",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:26:10",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:26:30",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:26:50",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:27:07",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:27:24",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:27:42",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:27:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:28:16",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:28:36",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:28:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:29:10",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:29:27",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:29:46",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:30:06",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:30:25",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:30:44",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:31:06",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:31:27",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:31:45",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:32:05",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:32:30",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-27. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:32:44",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:33:03",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:33:22",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:33:42",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:33:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:34:21",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-08-27. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-27 12:34:38",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-08-27",
     "details": {}
   }
 ]

@@ -404,14 +404,19 @@ class ScoringEngine:
 
             factor_consecutive_board = round(max(0.0, min(100.0, base_board_score + sentiment_adj)), 2)
 
-            # -------------------------------------------------------------
+# -------------------------------------------------------------
             # Factor 2: 封板强度因子 (Seal Strength - 25%)
             # -------------------------------------------------------------
             seal_pct_score = seal_ratio_percentiles[i]  # already neutralized to 50 if missing
-            # If first_seal_time is unknown → neutral 50 time score, NOT 10:00:00.
             fst = s.get("first_seal_time")
             time_score = self._score_seal_time(fst) if fst else 50.0
             factor_seal = round(min(100.0, seal_pct_score * 0.6 + time_score * 0.4), 2)
+
+            # 🔴【新增烂板/假强板风控惩罚】
+            # 封成比 < 10% 且 非高位龙头 (连板 < 4板) 直接扣除 30 分封板强度分
+            seal_ratio_val = s.get("seal_ratio")
+            if seal_ratio_val is not None and seal_ratio_val < 0.10 and consec < 4:
+                factor_seal = max(0.0, factor_seal - 30.0)
 
             # -------------------------------------------------------------
             # Factor 3: 筹码结构与炸板惩罚 (Chip Structure & Broken Penalty - 25%)
