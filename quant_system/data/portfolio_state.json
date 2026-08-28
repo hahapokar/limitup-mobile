@@ -4,7 +4,7 @@
   "market_value": 0,
   "total_asset": 109933.7,
   "nav": 1.0993,
-  "daily_pnl": 1907.14,
+  "daily_pnl": 2794.95,
   "total_pnl": 9933.7,
   "current_step": "DEMO_TOP4_BOUGHT",
   "current_step_name": "参考上一交易日盘后候选 TOP4 等权建仓演示 (无真实 2026-08-24 开盘撮合数据) · T+0 当日锁仓",
@@ -296,6 +296,13 @@
       "nav": 1.0714,
       "cash": 28686.75,
       "market_value": 78452.0
+    },
+    {
+      "date": "2026-08-28",
+      "total_asset": 109933.7,
+      "nav": 1.0993,
+      "cash": 109933.7,
+      "market_value": 0
     }
   ],
   "recent_sell_alerts": [
@@ -360,7 +367,7 @@
       }
     }
   ],
-  "last_update": "2026-08-28 11:29:59",
+  "last_update": "2026-08-28 15:02:14",
   "entry_observations": {
     "002412": {
       "date": "2026-08-26",
@@ -376,7 +383,7 @@
       "was_broken": true,
       "rebreak_ready": true,
       "last_price": 11.45,
-      "last_volume_lots": 764651.0
+      "last_volume_lots": 1105705.0
     },
     "003040": {
       "date": "2026-08-27",
@@ -440,31 +447,31 @@
       "was_broken": false,
       "rebreak_ready": false,
       "last_price": 14.64,
-      "last_volume_lots": 35050.0
+      "last_volume_lots": 51251.0
     },
     "002742": {
       "date": "2026-08-28",
       "was_limit_up": true,
-      "was_broken": false,
-      "rebreak_ready": false,
+      "was_broken": true,
+      "rebreak_ready": true,
       "last_price": 6.24,
-      "last_volume_lots": 1068930.0
+      "last_volume_lots": 2199019.0
     },
     "000890": {
       "date": "2026-08-28",
       "was_limit_up": false,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 8.51,
-      "last_volume_lots": 932976.0
+      "last_price": 8.6,
+      "last_volume_lots": 1260000.0
     },
     "002942": {
       "date": "2026-08-28",
-      "was_limit_up": false,
+      "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 20.38,
-      "last_volume_lots": 207348.0
+      "last_price": 20.91,
+      "last_volume_lots": 255169.0
     },
     "002963": {
       "date": "2026-08-27",
@@ -480,7 +487,7 @@
       "was_broken": false,
       "rebreak_ready": false,
       "last_price": 11.54,
-      "last_volume_lots": 42184.0
+      "last_volume_lots": 49086.0
     },
     "002084": {
       "date": "2026-08-28",
@@ -488,7 +495,7 @@
       "was_broken": false,
       "rebreak_ready": false,
       "last_price": 5.8,
-      "last_volume_lots": 50396.0
+      "last_volume_lots": 67245.0
     },
     "000712": {
       "date": "2026-08-28",
@@ -496,7 +503,7 @@
       "was_broken": false,
       "rebreak_ready": false,
       "last_price": 11.8,
-      "last_volume_lots": 129002.0
+      "last_volume_lots": 151564.0
     }
   },
   "total_market_value": 78602.0,
