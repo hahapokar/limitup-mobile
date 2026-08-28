@@ -30,6 +30,13 @@ from quant_system.config import (
     ANTI_SHAKEOUT_VOLUME_RATIO,
     T2_FORCED_EXIT_TIME,
     PORTFOLIO_FILE,
+    MIN_OPENING_AMOUNT,       # 优化1：竞价无量过滤
+    REBREAK_MIN_VOL_RATIO,    # 优化2：回封量比过滤
+    TRAILING_TIER1_PROFIT,    # 优化3：阶梯止盈
+    TRAILING_TIER1_STOP, 
+    TRAILING_TIER2_PROFIT, 
+    TRAILING_TIER2_STOP,
+    BROKEN_ZT_EXIT_MINS,       # 优化4：炸板超时风控
     DATA_DIR
 )
 from quant_system.config import snapshot_manifest_file
@@ -660,11 +667,15 @@ class PortfolioEngine:
                 observation.get("rebreak_ready")
                 and current_price >= limit_price * (1.0 - REBREAK_LIMIT_TOLERANCE_PCT / 100.0)
                 and float(q.get("sell1_vol") or 0) > 0
+                # ----------------- 【新增】优化2: 回封动能验证 -----------------
+                and float(q.get("volume_ratio", 1.0)) >= REBREAK_MIN_VOL_RATIO # 要求量比放大，证明有承接资金
+                    # -----------------------------------------------------------------
             ):
                 strategy = "REBREAK"
                 strategy_name = "炸板回封买入"
             elif (
                 PULLBACK_MIN_CHANGE_PCT <= current_pct <= PULLBACK_MAX_CHANGE_PCT
+                and intraday_high > 0
                 and (intraday_high - current_price) / intraday_high * 100.0 >= PULLBACK_FROM_HIGH_PCT
                 and current_price > open_price
             ):
@@ -700,7 +711,14 @@ class PortfolioEngine:
             if strategy == "OPENING" and open_pct < SKIP_WEAK_OPEN_PCT:
                 record_system_log("WARNING", "Portfolio", f"⛔ 标的 [{name}({code})] 开盘低开 {open_pct:.2f}% (≤{SKIP_WEAK_OPEN_PCT}%弱开盘阈值)，不及预期跳过")
                 continue
-
+# ----------------- 【新增】优化1: 竞价无量放弃 -----------------
+                # 需确保 q 中有 open_amount 或通过 volume_lots * open_price 估算
+                # 假设 q.get("open_amount") 存在，或退一步用首分钟 volume_lots 估算
+                open_amount = float(q.get("open_amount", q.get("volume_lots", 0) * 100 * open_price))
+                if strategy == "OPENING" and open_amount < MIN_OPENING_AMOUNT:
+                    record_system_log("WARNING", "Portfolio", f"标的 [{name} ({code})] 竞价金额 {open_amount/10000:.0f}万 (<{MIN_OPENING_AMOUNT/10000:.0f}万最低阈值),无量不接力跳过")
+                    continue
+                # -----------------------------------------------------------------
             # -------------------------------------------------------------
             # Execute Buy Order
             # -------------------------------------------------------------
@@ -825,15 +843,34 @@ class PortfolioEngine:
             name = h["name"]
             shares = h["shares"]
             entry_price = float(h["entry_price"])
-            holding_days = int(h.get("holding_days", 0))
-
-            # T+0 lock check: if entry_date is today, the stock cannot be sold
-            # under any circumstances (A-share T+1 settlement rule).
-            # This is independent of holding_days, which may be incorrectly
-            # incremented by post-market settlement or demo state advancement.
             entry_date_str = h.get("entry_date", "")
             today_str = now.strftime("%Y-%m-%d")
             is_t0_today = (entry_date_str == today_str)
+
+            # Dynamic holding_days: compute from entry_date to today by
+            # counting trading days, so sell logic works even if
+            # settle_daily_nav (15:30 post-market) was never called.
+            if is_t0_today:
+                holding_days = 0
+            else:
+                _count = 0
+                _cursor = today_str
+                for _ in range(10):  # safety limit
+                    _prev = get_prev_trade_day(_cursor)
+                    if _prev <= entry_date_str:
+                        break
+                    _count += 1
+                    _cursor = _prev
+                holding_days = _count + 1  # T+1 on first post-entry trading day
+
+            # T+0 lock check: if entry_date is today, the stock cannot be sold
+            # under any circumstances (A-share T+1 settlement rule).
+            # Also sync can_sell so the UI reflects the correct T+1 status.
+            if is_t0_today:
+                h["can_sell"] = False
+            else:
+                h["can_sell"] = (holding_days >= 1)
+            h["holding_days"] = holding_days
             
             q = quotes.get(code)
             if not q:
@@ -909,7 +946,18 @@ class PortfolioEngine:
             h["trailing_stop_price"] = trailing_stop_line
             h["hard_stop_price"] = hard_stop_line
 
-            # Determine Health / Watch Status Tag
+            # Determine Health / Watch Status Tag[cite: 1]
+            is_currently_zt = (change_pct >= 9.8 and seal_ratio >= 1.0)
+                
+            # ----------------- 【新增】优化4: 涨停与炸板状态追踪 -----------------
+            if is_currently_zt:
+                    h["was_zt_today"] = True
+                    h["zt_broken_time"] = None # 封死状态，清空炸板时间
+            elif h.get("was_zt_today") and not is_currently_zt:
+                    # 曾经涨停，现在没涨停 -> 刚炸板，记录时间
+                    if not h.get("zt_broken_time"):
+                        h["zt_broken_time"] = now.timestamp()
+                # -----------------------------------------------------------------
             if change_pct >= 9.8 and seal_ratio >= 3.0:
                 h["status_tag"] = "LOCKED_ZT"  # 牢牢封死涨停
             elif pullback_pct >= 1.8 and high_price > entry_price * 1.015:
@@ -939,12 +987,26 @@ class PortfolioEngine:
                 # ---------------------------------------------------------
                 # Rule 1: 移动止盈 (Trailing Stop - 2.5% Pullback from Peak)
                 # ---------------------------------------------------------
+               # pullback_ratio = (high_price - current_price) / high_price if high_price > 0 else 0.0
+                #if high_price > entry_price * 1.015 and pullback_ratio >= TRAILING_STOP_PCT:
+                    #should_exit = True
+                    #rule_type = "TRAILING_STOP"
+                    #exit_reason = f"移动止盈触发 (自最高价 ¥{high_price:.2f} 回撤 {pullback_ratio * 100:.2f}% >= {TRAILING_STOP_PCT * 100:.1f}%)"
+# ----------------- 【修改为】优化3: 阶梯式移动止盈 -----------------
                 pullback_ratio = (high_price - current_price) / high_price if high_price > 0 else 0.0
-                if high_price > entry_price * 1.015 and pullback_ratio >= TRAILING_STOP_PCT:
+                max_profit_pct = (high_price - entry_price) / entry_price if entry_price > 0 else 0.0
+                
+                dynamic_trailing_stop = 1.0 # 默认不触发
+                if max_profit_pct >= TRAILING_TIER1_PROFIT:
+                    dynamic_trailing_stop = TRAILING_TIER1_STOP
+                elif max_profit_pct >= TRAILING_TIER2_PROFIT:
+                    dynamic_trailing_stop = TRAILING_TIER2_STOP
+                    
+                if max_profit_pct > 0.015 and pullback_ratio >= dynamic_trailing_stop and dynamic_trailing_stop < 1.0:
                     should_exit = True
                     rule_type = "TRAILING_STOP"
-                    exit_reason = f"移动止盈触发 (自最高价 ¥{high_price:.2f} 回撤 {pullback_ratio * 100:.2f}% >= {TRAILING_STOP_PCT * 100:.1f}%)"
-
+                    exit_reason = f"分层移动止盈触发(最高利润{max_profit_pct*100:.1f}%, 回撤 {pullback_ratio*100:.2f}% >= {dynamic_trailing_stop*100:.1f}%)"
+                # -----------------------------------------------------------------
                 # ---------------------------------------------------------
                 # Rule 2: 防洗盘硬止损 (Anti-Shakeout Hard Stop at -4.13%)
                 # ---------------------------------------------------------
@@ -965,7 +1027,15 @@ class PortfolioEngine:
                 else:
                     if drop_from_entry > HARD_STOP_PCT:
                         h["anti_shakeout_count"] = 0  # Reset if recovered
-
+# ----------------- 【新增】优化4: 炸板不回封止损执行 -----------------
+                # Rule 4: 涨停炸板超时风控 (Broken Limit-Up Exit)
+                if not should_exit and holding_days >= 1 and h.get("was_zt_today") and not is_currently_zt:
+                    broken_time = h.get("zt_broken_time")
+                    if broken_time and (now.timestamp() - broken_time) >= BROKEN_ZT_EXIT_MINS * 60:
+                        should_exit = True
+                        rule_type = "BROKEN_ZT_EXIT"
+                        exit_reason = f"炸板超时风控触发(盘中炸板超过{BROKEN_ZT_EXIT_MINS}分钟未回封，规避大面)"
+                # -----------------------------------------------------------------
                 # ---------------------------------------------------------
                 # Rule 3: T+2 尾盘强制平仓 (14:45 Close If Not at Limit-Up)
                 # ---------------------------------------------------------
@@ -1169,24 +1239,23 @@ class PortfolioEngine:
         exits = self.monitor_intraday_exits()
         _ = exits  # exits are already persisted inside monitor_intraday_exits()
         
-        # 2. Check if we have room to buy the ranked candidate set automatically
-        #    - watchlist_only mode: never try buys (mid-day heartbeats).
-        #    - otherwise: only the 09:28-09:50 window inside execute_t1_buys
-        #      itself will actually perform buys; rest of day is a no-op.
-        if not watchlist_only:
-            session = data_fetcher.get_market_session_status()
-            is_trading = session.get("is_trading_active", False)
+        # 2. Attempt buys when there is room and cash.
+        #    execute_t1_buys has its own time-window guard (09:28-09:50 opening
+        #    or continuous session) and returns [] outside those windows, so
+        #    calling it unconditionally is safe — no wasted I/O off-hours.
+        session = data_fetcher.get_market_session_status()
+        is_trading = session.get("is_trading_active", False)
 
-            current_holdings = state.get("holdings", [])
-            if is_trading and len(current_holdings) < MAX_POSITIONS and state.get("cash", 0) >= 20000.0:
-                buys = self.execute_t1_buys(effective_date)
-                if buys and state.get("current_step") == "WAITING_NEXT_OPEN":
-                    state["current_step"] = "INTRADAY_WATCHLIST"
-                    state["current_step_name"] = "盘中盯盘池 (T+0 锁仓)"
-                    self.save_state(state)
-            else:
-                buys = []
-            _ = buys
+        current_holdings = state.get("holdings", [])
+        if is_trading and len(current_holdings) < MAX_POSITIONS and state.get("cash", 0) >= 20000.0:
+            buys = self.execute_t1_buys(effective_date)
+            if buys and state.get("current_step") == "WAITING_NEXT_OPEN":
+                state["current_step"] = "INTRADAY_WATCHLIST"
+                state["current_step_name"] = "盘中盯盘池 (T+0 锁仓)"
+                self.save_state(state)
+        else:
+            buys = []
+        _ = buys
 
         # 3. Enrich remaining active holdings with live quote snapshot
         updated_state = self.load_state()

@@ -1,103 +1,66 @@
 {
   "initial_capital": 100000.0,
-  "cash": 28686.75,
-  "market_value": 79813.0,
-  "total_asset": 108499.75,
-  "nav": 1.085,
+  "cash": 109933.69649999999,
+  "market_value": 0,
+  "total_asset": 109933.7,
+  "nav": 1.0993,
   "daily_pnl": 1907.14,
-  "total_pnl": 8499.75,
+  "total_pnl": 9933.7,
   "current_step": "DEMO_TOP4_BOUGHT",
-  "current_step_name": "参考 2026-08-24 盘后候选 TOP4 等权建仓演示 (无真实 2026-08-24 开盘撮合数据) · T+0 当日锁仓",
-  "holdings": [
+  "current_step_name": "参考上一交易日盘后候选 TOP4 等权建仓演示 (无真实 2026-08-24 开盘撮合数据) · T+0 当日锁仓",
+  "holdings": [],
+  "trade_history": [
     {
-      "code": "003040",
-      "name": "楚天龙",
-      "shares": 1600,
-      "entry_price": 17.03,
-      "cost_price": 17.044,
-      "entry_date": "2026-08-26",
-      "holding_days": 0,
-      "high_price": 18.73,
-      "current_price": 18.73,
-      "change_pct": 9.98,
-      "pullback_pct": 0.0,
-      "turnover_rate": 17.92,
-      "seal_ratio": 5.91,
-      "trailing_stop_price": 18.26,
-      "status_tag": "LOCKED_ZT",
-      "market_value": 29968.0,
-      "unrealized_pnl": 2697.6,
-      "unrealized_pnl_pct": 9.89,
-      "anti_shakeout_count": 0,
-      "hard_stop_price": 16.33,
-      "sector": "通信设备",
-      "entry_strategy": "REBREAK",
-      "entry_strategy_name": "炸板回封买入",
-      "quote_status": "LIVE",
-      "quote_status_at": "2026-08-27 12:34:49",
-      "can_sell": false,
-      "t1_lock_text": "T+0 当日买入锁仓 (下一交易日可卖)"
-    },
-    {
-      "code": "300642",
-      "name": "透景生命",
-      "shares": 1500,
-      "entry_price": 17.16,
-      "cost_price": 17.16,
-      "entry_date": "2026-08-26",
-      "holding_days": 0,
-      "can_sell": false,
-      "t1_lock_text": "T+0 当日买入锁仓 (下一交易日可卖)",
-      "high_price": 18.81,
-      "current_price": 16.67,
-      "market_value": 25005.0,
-      "unrealized_pnl": -735.0,
-      "unrealized_pnl_pct": -2.86,
-      "change_pct": -3.31,
-      "pullback_pct": 11.38,
-      "turnover_rate": 18.21,
-      "seal_ratio": 0.02,
-      "status_tag": "TRAILING_WARN",
-      "anti_shakeout_count": 0,
-      "hard_stop_price": 16.45,
-      "trailing_stop_price": 18.34,
-      "sector": "—",
-      "entry_strategy": "OPENING",
-      "entry_strategy_name": "",
-      "quote_status": "LIVE",
-      "quote_status_at": "2026-08-27 12:34:49"
-    },
-    {
+      "order_id": "SELL_603079_100116",
+      "type": "SELL",
       "code": "603079",
       "name": "圣达生物",
+      "date": "2026-08-28",
+      "time": "10:01:16",
+      "price": 13.3,
       "shares": 1800,
-      "entry_price": 14.23,
-      "cost_price": 14.23,
-      "entry_date": "2026-08-26",
-      "holding_days": 0,
-      "can_sell": false,
-      "t1_lock_text": "T+0 当日买入锁仓 (下一交易日可卖)",
-      "high_price": 14.59,
-      "current_price": 13.8,
-      "market_value": 24840.0,
-      "unrealized_pnl": -774.0,
-      "unrealized_pnl_pct": -3.02,
-      "change_pct": -1.99,
-      "pullback_pct": 5.41,
-      "turnover_rate": 7.13,
-      "seal_ratio": 0.01,
-      "status_tag": "TRAILING_WARN",
-      "anti_shakeout_count": 0,
-      "hard_stop_price": 13.64,
-      "trailing_stop_price": 14.23,
-      "sector": "—",
-      "entry_strategy": "OPENING",
-      "entry_strategy_name": "",
-      "quote_status": "LIVE",
-      "quote_status_at": "2026-08-27 12:34:49"
-    }
-  ],
-  "trade_history": [
+      "amount": 23940.0,
+      "friction": 35.91,
+      "realized_pnl": -1709.91,
+      "realized_pnl_pct": -6.68,
+      "holding_days": 2,
+      "rule_type": "TRAILING_STOP",
+      "reason": "移动止盈触发 (自最高价 ¥14.59 回撤 8.84% >= 2.5%)"
+    },
+    {
+      "order_id": "SELL_300642_100116",
+      "type": "SELL",
+      "code": "300642",
+      "name": "透景生命",
+      "date": "2026-08-28",
+      "time": "10:01:16",
+      "price": 17.87,
+      "shares": 1500,
+      "amount": 26805.0,
+      "friction": 40.21,
+      "realized_pnl": 1024.79,
+      "realized_pnl_pct": 3.98,
+      "holding_days": 2,
+      "rule_type": "TRAILING_STOP",
+      "reason": "移动止盈触发 (自最高价 ¥18.81 回撤 5.00% >= 2.5%)"
+    },
+    {
+      "order_id": "SELL_003040_100116",
+      "type": "SELL",
+      "code": "003040",
+      "name": "楚天龙",
+      "date": "2026-08-28",
+      "time": "10:01:16",
+      "price": 19.14,
+      "shares": 1600,
+      "amount": 30624.0,
+      "friction": 45.94,
+      "realized_pnl": 3307.66,
+      "realized_pnl_pct": 12.13,
+      "holding_days": 2,
+      "rule_type": "TRAILING_STOP",
+      "reason": "移动止盈触发 (自最高价 ¥19.71 回撤 2.89% >= 2.5%)"
+    },
     {
       "order_id": "BUY_003040_103724",
       "type": "BUY",
@@ -335,8 +298,69 @@
       "market_value": 78452.0
     }
   ],
-  "recent_sell_alerts": [],
-  "last_update": "2026-08-27 12:34:49",
+  "recent_sell_alerts": [
+    {
+      "alert_id": "ALERT_603079_100116",
+      "code": "603079",
+      "name": "圣达生物",
+      "time": "10:01:16",
+      "date": "2026-08-28",
+      "sell_price": 13.3,
+      "shares": 1800,
+      "entry_price": 14.23,
+      "realized_pnl": -1709.91,
+      "realized_pnl_pct": -6.68,
+      "rule_type": "TRAILING_STOP",
+      "reason": "移动止盈触发 (自最高价 ¥14.59 回撤 8.84% >= 2.5%)",
+      "details": {
+        "high_price": 14.59,
+        "pullback_pct": 8.84,
+        "stop_price": 13.64,
+        "holding_days": 2
+      }
+    },
+    {
+      "alert_id": "ALERT_300642_100116",
+      "code": "300642",
+      "name": "透景生命",
+      "time": "10:01:16",
+      "date": "2026-08-28",
+      "sell_price": 17.87,
+      "shares": 1500,
+      "entry_price": 17.16,
+      "realized_pnl": 1024.79,
+      "realized_pnl_pct": 3.98,
+      "rule_type": "TRAILING_STOP",
+      "reason": "移动止盈触发 (自最高价 ¥18.81 回撤 5.00% >= 2.5%)",
+      "details": {
+        "high_price": 18.81,
+        "pullback_pct": 5.0,
+        "stop_price": 16.45,
+        "holding_days": 2
+      }
+    },
+    {
+      "alert_id": "ALERT_003040_100116",
+      "code": "003040",
+      "name": "楚天龙",
+      "time": "10:01:16",
+      "date": "2026-08-28",
+      "sell_price": 19.14,
+      "shares": 1600,
+      "entry_price": 17.03,
+      "realized_pnl": 3307.66,
+      "realized_pnl_pct": 12.13,
+      "rule_type": "TRAILING_STOP",
+      "reason": "移动止盈触发 (自最高价 ¥19.71 回撤 2.89% >= 2.5%)",
+      "details": {
+        "high_price": 19.71,
+        "pullback_pct": 2.89,
+        "stop_price": 16.33,
+        "holding_days": 2
+      }
+    }
+  ],
+  "last_update": "2026-08-28 11:29:59",
   "entry_observations": {
     "002412": {
       "date": "2026-08-26",
@@ -347,20 +371,20 @@
       "last_volume_lots": 1158124.0
     },
     "000017": {
-      "date": "2026-08-26",
-      "was_limit_up": true,
-      "was_broken": false,
-      "rebreak_ready": false,
-      "last_price": 9.46,
-      "last_volume_lots": 1036036.0
-    },
-    "003040": {
-      "date": "2026-08-26",
+      "date": "2026-08-28",
       "was_limit_up": true,
       "was_broken": true,
       "rebreak_ready": true,
-      "last_price": 17.03,
-      "last_volume_lots": 960916.0
+      "last_price": 11.45,
+      "last_volume_lots": 764651.0
+    },
+    "003040": {
+      "date": "2026-08-27",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 18.73,
+      "last_volume_lots": 942425.0
     },
     "603079": {
       "date": "2026-08-26",
@@ -401,6 +425,78 @@
       "rebreak_ready": false,
       "last_price": 17.23,
       "last_volume_lots": 298041.0
+    },
+    "002094": {
+      "date": "2026-08-27",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 5.64,
+      "last_volume_lots": 1334570.0
+    },
+    "002855": {
+      "date": "2026-08-28",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 14.64,
+      "last_volume_lots": 35050.0
+    },
+    "002742": {
+      "date": "2026-08-28",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 6.24,
+      "last_volume_lots": 1068930.0
+    },
+    "000890": {
+      "date": "2026-08-28",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 8.51,
+      "last_volume_lots": 932976.0
+    },
+    "002942": {
+      "date": "2026-08-28",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 20.38,
+      "last_volume_lots": 207348.0
+    },
+    "002963": {
+      "date": "2026-08-27",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 21.13,
+      "last_volume_lots": 275202.0
+    },
+    "600371": {
+      "date": "2026-08-28",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 11.54,
+      "last_volume_lots": 42184.0
+    },
+    "002084": {
+      "date": "2026-08-28",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 5.8,
+      "last_volume_lots": 50396.0
+    },
+    "000712": {
+      "date": "2026-08-28",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 11.8,
+      "last_volume_lots": 129002.0
     }
   },
   "total_market_value": 78602.0,

@@ -90,10 +90,17 @@ FACTOR_WEIGHTS: Dict[str, float] = {
 SKIP_ONE_WORD_ZT_OPEN_PCT: float = 9.80   # 一字涨停不可买入过滤 (开盘涨幅 >= 9.8%)
 SKIP_WEAK_OPEN_PCT: float = -2.50         # 弱开盘放弃过滤 — 从-4.5收紧到-2.5:
                                           #   低开 -2.5% 已经说明不及预期（8-24 圣达/和远/双鹭 都是 -1.9~-2.1 低开, 当日全部-10跌停/大跌）
-SKIP_HIGH_CHASE_OPEN_PCT: float = 6.00   # 追高开盘过滤 NEW: 高开 ≥ +6% 直接跳过, 避免高开低走接盘
+SKIP_HIGH_CHASE_OPEN_PCT: float = 6.00    # 追高开盘过滤 NEW: 高开 ≥ +6% 直接跳过, 避免高开低走接盘
+
+# --- 【新增 1】竞价量能风控 ---
+MIN_OPENING_AMOUNT: float = 10_000_000.0  # 竞价买入最低成交额要求（千万级别），无量不接力
 
 # Intraday entry filters for breakout-retest and strong-pullback strategies
 REBREAK_LIMIT_TOLERANCE_PCT: float = 0.20
+
+# --- 【新增 2】炸板回封动能风控 ---
+REBREAK_MIN_VOL_RATIO: float = 1.20       # 回封买入时盘中量比要求（要求量比>1.2倍，确认有资金承接）
+
 PULLBACK_MIN_CHANGE_PCT: float = 2.00
 PULLBACK_MAX_CHANGE_PCT: float = 6.00
 PULLBACK_FROM_HIGH_PCT: float = 1.50
@@ -106,10 +113,22 @@ SKIP_BUY_IF_SENTIMENT_IN: set = {                 # 情绪处于弱势期 → �
     "熔断状态",
 }
 
-TRAILING_STOP_PCT: float = 0.025         # 移动止盈: 最高价回撤 2.5%
+# --- 止盈止损模块优化 ---
+TRAILING_STOP_PCT: float = 0.025         # (保留该变量作为基础/兜底策略) 移动止盈: 最高价回撤 2.5%
+
+# --- 【新增 3】阶梯式移动止盈 ---
+TRAILING_TIER1_PROFIT: float = 0.08      # 利润阶梯1: 盈利 > 8%
+TRAILING_TIER1_STOP: float = 0.025       # 回撤阈值1: 从最高点回撤 2.5% 止盈（保住大部分利润）
+TRAILING_TIER2_PROFIT: float = 0.04      # 利润阶梯2: 盈利 > 4%
+TRAILING_TIER2_STOP: float = 0.04        # 回撤阈值2: 从最高点回撤 4.0% 止盈（给足洗盘空间）
+
 HARD_STOP_PCT: float = -0.0413           # 防扫损硬止损: -4.13%
 ANTI_SHAKEOUT_TIME_WINDOW_MINS: int = 3  # 连续 3 分钟未收回
 ANTI_SHAKEOUT_VOLUME_RATIO: float = 2.0  # 爆量 2.0x 过去 20 分钟均量
+
+# --- 【新增 4】盘中炸板超时即时风控 ---
+BROKEN_ZT_EXIT_MINS: int = 5             # 炸板后超过 5 分钟未回封，强制平仓出局
+
 T2_FORCED_EXIT_TIME: str = "14:45"       # T+2 尾盘强制平仓时间
 
 # --- Iteration / Self-Tuning Parameter Thresholds (IterationEngine reads these for config_diff.current_value) ---
