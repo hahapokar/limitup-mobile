@@ -107,7 +107,7 @@ PULLBACK_FROM_HIGH_PCT: float = 1.50
 
 # Global portfolio-level buy kill-switches (NEW): a bad tape day should halt
 # ALL new position entries, even if individual stocks look fine.
-SKIP_BUY_IF_INDEX_OPEN_PCT_BELOW: float = -0.80   # 上证指数低开 < -0.8% → 今天不建仓
+SKIP_BUY_IF_INDEX_OPEN_PCT_BELOW: float = -1.50   # 指数低开 < -1.5% → 视为系统性弱势，今天不建仓
 SKIP_BUY_IF_SENTIMENT_IN: set = {                 # 情绪处于弱势期 → 今天不建仓
     "退潮/弱势期",
     "熔断状态",

@@ -292,9 +292,14 @@ app.get("/api/limitup-pool/live", async (req, res) => {
     const { stdout } = await execAsync(`python3 -c "
 import json
 from quant_system.core.data_fetcher import data_fetcher
+from quant_system.core.scoring import scoring_engine
 pool = data_fetcher.get_limit_up_pool('${safeDate}')
-print(json.dumps(pool, ensure_ascii=False))
-"`, { cwd: process.cwd() });
+scored = scoring_engine.score_intraday_pool(pool, '${safeDate}')
+# Merge: scored stocks first, then unscored raw stocks
+scored_codes = {s['code'] for s in scored}
+merged = scored + [r for r in pool if r.get('code') and r.get('code') not in scored_codes]
+print(json.dumps(merged, ensure_ascii=False))
+"`, { cwd: process.cwd(), timeout: 15000 });
     const pool = JSON.parse(stdout.trim());
     res.json({ success: true, data: Array.isArray(pool) ? pool : [], data_date: safeDate, data_status: "LIVE" });
   } catch (err: any) {

@@ -584,6 +584,72 @@ class ScoringEngine:
         except Exception:
             return 10 * 60
 
+    def score_intraday_pool(
+        self,
+        pool: List[Dict[str, Any]],
+        effective_date: Optional[str] = None,
+    ) -> List[Dict[str, Any]]:
+        """盘中轻量打分：对实时涨停池执行硬性过滤 + 四因子打分。
+
+        与盘后 run_daily_scoring 的区别：
+          - 不拉取涨停池（由调用方传入）
+          - 情绪状态读 T-1 缓存，不重算
+          - 板块共振用当前池子本身分析（轻量）
+          - 不保存 candidates_*.json，不影响盘后产物
+        """
+        if not pool:
+            return []
+
+        if not effective_date:
+            effective_date = data_fetcher.get_effective_date()
+
+        # 1. 硬性过滤
+        filtered_pool, filter_stats = self._apply_hard_filters(pool)
+        if not filtered_pool:
+            return []
+
+        # 2. 情绪状态：读 T-1 缓存，不调 calculate_sentiment
+        from quant_system.utils.calendar import get_prev_trade_day
+        prev_date = get_prev_trade_day(effective_date)
+        sentiment_state = "震荡/中性期"  # 默认值
+        sent_file = DATA_DIR / f"sentiment_{prev_date}.json"
+        if sent_file.exists():
+            try:
+                with open(sent_file, "r", encoding="utf-8") as f:
+                    s_data = json.load(f)
+                    if s_data.get("sentiment_state"):
+                        sentiment_state = s_data["sentiment_state"]
+            except Exception:
+                pass
+
+        # 3. 板块共振分析（用当前池子）
+        sector_stats = self._analyze_sector_resonance(pool)
+
+        # 4. 市场最高连板
+        market_max_boards = max([item.get("consecutive_boards", 1) for item in pool] + [1])
+
+        # 5. 四因子打分
+        scored_stocks = self._compute_factor_scores(
+            stocks=filtered_pool,
+            sector_stats=sector_stats,
+            sentiment_state=sentiment_state,
+            market_max_boards=market_max_boards,
+        )
+
+        # 6. 排序 + rank
+        scored_stocks.sort(
+            key=lambda x: (
+                float(x.get("quant_score", 0.0)),
+                -float(self._time_to_minutes(x.get("first_seal_time", "15:00:00"))),
+                float(x.get("seal_ratio") or 0.0),
+            ),
+            reverse=True,
+        )
+        for idx, s in enumerate(scored_stocks):
+            s["rank"] = idx + 1
+
+        return scored_stocks
+
     def _save_candidates(self, trade_date: str, payload: Dict[str, Any]) -> None:
         """Persist candidates payload to candidates_YYYYMMDD.json and latest_candidates.json."""
         try:

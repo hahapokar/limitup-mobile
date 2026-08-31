@@ -367,7 +367,7 @@
       }
     }
   ],
-  "last_update": "2026-08-28 15:02:14",
+  "last_update": "2026-08-31 14:15:57",
   "entry_observations": {
     "002412": {
       "date": "2026-08-26",
@@ -378,12 +378,12 @@
       "last_volume_lots": 1158124.0
     },
     "000017": {
-      "date": "2026-08-28",
-      "was_limit_up": true,
-      "was_broken": true,
-      "rebreak_ready": true,
-      "last_price": 11.45,
-      "last_volume_lots": 1105705.0
+      "date": "2026-08-31",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 11.14,
+      "last_volume_lots": 932711.0
     },
     "003040": {
       "date": "2026-08-27",
@@ -442,12 +442,12 @@
       "last_volume_lots": 1334570.0
     },
     "002855": {
-      "date": "2026-08-28",
+      "date": "2026-08-31",
       "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 14.64,
-      "last_volume_lots": 51251.0
+      "last_price": 16.1,
+      "last_volume_lots": 354943.0
     },
     "002742": {
       "date": "2026-08-28",
@@ -482,28 +482,52 @@
       "last_volume_lots": 275202.0
     },
     "600371": {
-      "date": "2026-08-28",
+      "date": "2026-08-31",
       "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 11.54,
-      "last_volume_lots": 49086.0
+      "last_price": 12.69,
+      "last_volume_lots": 78889.0
     },
     "002084": {
-      "date": "2026-08-28",
+      "date": "2026-08-31",
       "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 5.8,
-      "last_volume_lots": 67245.0
+      "last_price": 6.38,
+      "last_volume_lots": 57746.0
     },
     "000712": {
-      "date": "2026-08-28",
+      "date": "2026-08-31",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 12.13,
+      "last_volume_lots": 2158331.0
+    },
+    "002279": {
+      "date": "2026-08-31",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 6.99,
+      "last_volume_lots": 730912.0
+    },
+    "600540": {
+      "date": "2026-08-31",
       "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 11.8,
-      "last_volume_lots": 151564.0
+      "last_price": 5.56,
+      "last_volume_lots": 60247.0
+    },
+    "002886": {
+      "date": "2026-08-31",
+      "was_limit_up": true,
+      "was_broken": true,
+      "rebreak_ready": true,
+      "last_price": 29.04,
+      "last_volume_lots": 642826.0
     }
   },
   "total_market_value": 78602.0,
