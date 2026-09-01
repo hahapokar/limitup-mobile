@@ -1,2102 +1,2102 @@
 [
   {
-    "timestamp": "2026-08-31 13:52:46",
+    "timestamp": "2026-09-01 11:11:37",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:52:46",
+    "timestamp": "2026-09-01 11:11:37",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:53:03",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:05",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:05",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:05",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:25",
+    "timestamp": "2026-09-01 11:11:50",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 66 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:53:28",
+    "timestamp": "2026-09-01 11:11:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:53:28",
+    "timestamp": "2026-09-01 11:11:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:53:28",
+    "timestamp": "2026-09-01 11:11:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:53:47",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:53:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:54:07",
+    "timestamp": "2026-09-01 11:12:00",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 66 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:09",
+    "timestamp": "2026-09-01 11:12:03",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:09",
+    "timestamp": "2026-09-01 11:12:03",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:09",
+    "timestamp": "2026-09-01 11:12:03",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:27",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:54:29",
+    "timestamp": "2026-09-01 11:12:11",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:29",
+    "timestamp": "2026-09-01 11:12:11",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:29",
+    "timestamp": "2026-09-01 11:12:11",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:47",
+    "timestamp": "2026-09-01 11:12:19",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:49",
+    "timestamp": "2026-09-01 11:12:22",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:49",
+    "timestamp": "2026-09-01 11:12:22",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:54:49",
+    "timestamp": "2026-09-01 11:12:22",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:07",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:55:10",
+    "timestamp": "2026-09-01 11:12:30",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:10",
+    "timestamp": "2026-09-01 11:12:30",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:10",
+    "timestamp": "2026-09-01 11:12:30",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:27",
+    "timestamp": "2026-09-01 11:12:38",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:30",
+    "timestamp": "2026-09-01 11:12:41",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:30",
+    "timestamp": "2026-09-01 11:12:41",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:30",
+    "timestamp": "2026-09-01 11:12:41",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:47",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:55:50",
+    "timestamp": "2026-09-01 11:12:49",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:50",
+    "timestamp": "2026-09-01 11:12:49",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:55:50",
+    "timestamp": "2026-09-01 11:12:49",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:07",
+    "timestamp": "2026-09-01 11:12:57",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:09",
+    "timestamp": "2026-09-01 11:13:00",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:09",
+    "timestamp": "2026-09-01 11:13:00",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:09",
+    "timestamp": "2026-09-01 11:13:00",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:27",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:56:29",
+    "timestamp": "2026-09-01 11:13:08",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:29",
+    "timestamp": "2026-09-01 11:13:08",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:29",
+    "timestamp": "2026-09-01 11:13:08",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:47",
+    "timestamp": "2026-09-01 11:13:16",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 81 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:49",
+    "timestamp": "2026-09-01 11:13:19",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:49",
+    "timestamp": "2026-09-01 11:13:19",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:56:49",
+    "timestamp": "2026-09-01 11:13:19",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:07",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 82 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:57:09",
+    "timestamp": "2026-09-01 11:13:27",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:09",
+    "timestamp": "2026-09-01 11:13:27",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:09",
+    "timestamp": "2026-09-01 11:13:27",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:27",
+    "timestamp": "2026-09-01 11:13:35",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 81 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:29",
+    "timestamp": "2026-09-01 11:13:38",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:29",
+    "timestamp": "2026-09-01 11:13:38",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:29",
+    "timestamp": "2026-09-01 11:13:38",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:47",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 81 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:57:49",
+    "timestamp": "2026-09-01 11:13:49",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:49",
+    "timestamp": "2026-09-01 11:13:49",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:57:49",
+    "timestamp": "2026-09-01 11:13:49",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:09",
+    "timestamp": "2026-09-01 11:13:56",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:11",
+    "timestamp": "2026-09-01 11:13:59",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:11",
+    "timestamp": "2026-09-01 11:13:59",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:11",
+    "timestamp": "2026-09-01 11:13:59",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:28",
+    "timestamp": "2026-09-01 11:14:07",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:07",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:07",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:15",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:30",
+    "timestamp": "2026-09-01 11:14:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:30",
+    "timestamp": "2026-09-01 11:14:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:30",
+    "timestamp": "2026-09-01 11:14:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:48",
+    "timestamp": "2026-09-01 11:14:26",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:26",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:26",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:34",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:50",
+    "timestamp": "2026-09-01 11:14:37",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:50",
+    "timestamp": "2026-09-01 11:14:37",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:58:50",
+    "timestamp": "2026-09-01 11:14:37",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:08",
+    "timestamp": "2026-09-01 11:14:46",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:46",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:46",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:14:53",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:11",
+    "timestamp": "2026-09-01 11:14:56",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:11",
+    "timestamp": "2026-09-01 11:14:56",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:11",
+    "timestamp": "2026-09-01 11:14:56",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:28",
+    "timestamp": "2026-09-01 11:15:04",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:15:04",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:15:04",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:15:12",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:31",
+    "timestamp": "2026-09-01 11:15:15",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:31",
+    "timestamp": "2026-09-01 11:15:15",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:31",
+    "timestamp": "2026-09-01 11:15:15",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 13:59:48",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 81 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:59:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:59:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 13:59:50",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:08",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:28",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:31",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:31",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:31",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:49",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:00:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:09",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:29",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:31",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:31",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:31",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:49",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:51",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:51",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:01:51",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:09",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:11",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:29",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:53",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:53",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:02:53",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:10",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:12",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:12",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:12",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:30",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:03:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:10",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:30",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:32",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:33",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:33",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:04:52",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:05:05",
+    "timestamp": "2026-09-01 11:15:23",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "[FallbackTimer] firing '盘中巡检 14:05' at 14:05 Beijing",
+    "message": "[FallbackTimer] firing '盘中巡检 11:15' at 11:15 Beijing",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:10",
+    "timestamp": "2026-09-01 11:15:24",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:15:24",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:15:24",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:15:31",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:13",
+    "timestamp": "2026-09-01 11:15:34",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:13",
+    "timestamp": "2026-09-01 11:15:34",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:13",
+    "timestamp": "2026-09-01 11:15:34",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:32",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 81 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:05:35",
+    "timestamp": "2026-09-01 11:15:42",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:35",
+    "timestamp": "2026-09-01 11:15:42",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:35",
+    "timestamp": "2026-09-01 11:15:42",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:52",
+    "timestamp": "2026-09-01 11:15:50",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:54",
+    "timestamp": "2026-09-01 11:15:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:54",
+    "timestamp": "2026-09-01 11:15:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:05:54",
+    "timestamp": "2026-09-01 11:15:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:06:15",
+    "timestamp": "2026-09-01 11:16:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:15",
+    "timestamp": "2026-09-01 11:16:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:15",
+    "timestamp": "2026-09-01 11:16:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:32",
+    "timestamp": "2026-09-01 11:16:09",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:35",
+    "timestamp": "2026-09-01 11:16:12",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:35",
+    "timestamp": "2026-09-01 11:16:12",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:35",
+    "timestamp": "2026-09-01 11:16:12",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:52",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:06:55",
+    "timestamp": "2026-09-01 11:16:20",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:55",
+    "timestamp": "2026-09-01 11:16:20",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:06:55",
+    "timestamp": "2026-09-01 11:16:20",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:12",
+    "timestamp": "2026-09-01 11:16:28",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 80 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:15",
+    "timestamp": "2026-09-01 11:16:31",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:15",
+    "timestamp": "2026-09-01 11:16:31",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:15",
+    "timestamp": "2026-09-01 11:16:31",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:32",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:07:35",
+    "timestamp": "2026-09-01 11:16:39",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:35",
+    "timestamp": "2026-09-01 11:16:39",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:35",
+    "timestamp": "2026-09-01 11:16:39",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:52",
+    "timestamp": "2026-09-01 11:16:49",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:55",
+    "timestamp": "2026-09-01 11:16:52",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:55",
+    "timestamp": "2026-09-01 11:16:52",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:07:55",
+    "timestamp": "2026-09-01 11:16:52",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 79 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:08:14",
+    "timestamp": "2026-09-01 11:16:59",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:14",
+    "timestamp": "2026-09-01 11:16:59",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:14",
+    "timestamp": "2026-09-01 11:16:59",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:32",
+    "timestamp": "2026-09-01 11:17:07",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 82 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:35",
+    "timestamp": "2026-09-01 11:17:10",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:35",
+    "timestamp": "2026-09-01 11:17:10",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:35",
+    "timestamp": "2026-09-01 11:17:10",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:52",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 82 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 14:08:54",
+    "timestamp": "2026-09-01 11:17:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:54",
+    "timestamp": "2026-09-01 11:17:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:08:54",
+    "timestamp": "2026-09-01 11:17:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:12",
+    "timestamp": "2026-09-01 11:17:26",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 82 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:14",
+    "timestamp": "2026-09-01 11:17:29",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:14",
+    "timestamp": "2026-09-01 11:17:29",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:14",
+    "timestamp": "2026-09-01 11:17:29",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:33",
+    "timestamp": "2026-09-01 11:17:37",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:17:37",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:17:37",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:17:45",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 83 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:35",
+    "timestamp": "2026-09-01 11:17:48",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:35",
+    "timestamp": "2026-09-01 11:17:48",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:35",
+    "timestamp": "2026-09-01 11:17:48",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:53",
+    "timestamp": "2026-09-01 11:17:56",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:17:56",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:17:56",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:04",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 83 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:56",
+    "timestamp": "2026-09-01 11:18:07",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:56",
+    "timestamp": "2026-09-01 11:18:07",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:09:56",
+    "timestamp": "2026-09-01 11:18:07",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:15",
+    "timestamp": "2026-09-01 11:18:15",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:15",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:15",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:23",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 83 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:17",
+    "timestamp": "2026-09-01 11:18:26",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:17",
+    "timestamp": "2026-09-01 11:18:26",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:17",
+    "timestamp": "2026-09-01 11:18:26",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:37",
+    "timestamp": "2026-09-01 11:18:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:42",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:40",
+    "timestamp": "2026-09-01 11:18:45",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:40",
+    "timestamp": "2026-09-01 11:18:45",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:40",
+    "timestamp": "2026-09-01 11:18:45",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:57",
+    "timestamp": "2026-09-01 11:18:53",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:53",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:18:53",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:01",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:59",
+    "timestamp": "2026-09-01 11:19:04",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:59",
+    "timestamp": "2026-09-01 11:19:04",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:10:59",
+    "timestamp": "2026-09-01 11:19:04",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:17",
+    "timestamp": "2026-09-01 11:19:12",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:12",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:12",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:20",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:19",
+    "timestamp": "2026-09-01 11:19:31",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:19",
+    "timestamp": "2026-09-01 11:19:31",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:19",
+    "timestamp": "2026-09-01 11:19:31",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:37",
+    "timestamp": "2026-09-01 11:19:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:39",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:39",
+    "timestamp": "2026-09-01 11:19:42",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:39",
+    "timestamp": "2026-09-01 11:19:42",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:39",
+    "timestamp": "2026-09-01 11:19:42",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:57",
+    "timestamp": "2026-09-01 11:19:50",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:50",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:50",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:19:58",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:59",
+    "timestamp": "2026-09-01 11:20:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:59",
+    "timestamp": "2026-09-01 11:20:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:11:59",
+    "timestamp": "2026-09-01 11:20:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:17",
+    "timestamp": "2026-09-01 11:20:09",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:09",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:09",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:17",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:19",
+    "timestamp": "2026-09-01 11:20:20",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:19",
+    "timestamp": "2026-09-01 11:20:20",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:19",
+    "timestamp": "2026-09-01 11:20:20",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:37",
+    "timestamp": "2026-09-01 11:20:28",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:28",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:28",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:36",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:40",
+    "timestamp": "2026-09-01 11:20:39",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:40",
+    "timestamp": "2026-09-01 11:20:39",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:40",
+    "timestamp": "2026-09-01 11:20:39",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:57",
+    "timestamp": "2026-09-01 11:20:49",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:49",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:49",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:20:58",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:59",
+    "timestamp": "2026-09-01 11:21:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:59",
+    "timestamp": "2026-09-01 11:21:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:12:59",
+    "timestamp": "2026-09-01 11:21:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:16",
+    "timestamp": "2026-09-01 11:21:08",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:08",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:08",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:15",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:19",
+    "timestamp": "2026-09-01 11:21:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:19",
+    "timestamp": "2026-09-01 11:21:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:19",
+    "timestamp": "2026-09-01 11:21:18",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:36",
+    "timestamp": "2026-09-01 11:21:25",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:25",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:25",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:32",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:39",
+    "timestamp": "2026-09-01 11:21:35",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:39",
+    "timestamp": "2026-09-01 11:21:35",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:39",
+    "timestamp": "2026-09-01 11:21:35",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:55",
+    "timestamp": "2026-09-01 11:21:42",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:42",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:42",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:21:50",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:58",
+    "timestamp": "2026-09-01 11:21:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:58",
+    "timestamp": "2026-09-01 11:21:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:13:58",
+    "timestamp": "2026-09-01 11:21:53",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:15",
+    "timestamp": "2026-09-01 11:22:00",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:00",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:00",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:07",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:17",
+    "timestamp": "2026-09-01 11:22:10",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:17",
+    "timestamp": "2026-09-01 11:22:10",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:17",
+    "timestamp": "2026-09-01 11:22:10",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:35",
+    "timestamp": "2026-09-01 11:22:17",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:17",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:17",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:24",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 86 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:38",
+    "timestamp": "2026-09-01 11:22:28",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:38",
+    "timestamp": "2026-09-01 11:22:28",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:38",
+    "timestamp": "2026-09-01 11:22:28",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:54",
+    "timestamp": "2026-09-01 11:22:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:34",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:41",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 86 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:57",
+    "timestamp": "2026-09-01 11:22:44",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:57",
+    "timestamp": "2026-09-01 11:22:44",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:14:57",
+    "timestamp": "2026-09-01 11:22:44",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:15",
+    "timestamp": "2026-09-01 11:22:51",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:51",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:51",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:22:58",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 86 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:17",
+    "timestamp": "2026-09-01 11:23:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:17",
+    "timestamp": "2026-09-01 11:23:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:17",
+    "timestamp": "2026-09-01 11:23:01",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:35",
+    "timestamp": "2026-09-01 11:23:08",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:08",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:08",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:16",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 87 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:38",
+    "timestamp": "2026-09-01 11:23:19",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:38",
+    "timestamp": "2026-09-01 11:23:19",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:38",
+    "timestamp": "2026-09-01 11:23:19",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:54",
+    "timestamp": "2026-09-01 11:23:26",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:26",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:26",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:33",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 87 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:57",
+    "timestamp": "2026-09-01 11:23:36",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.65% (阈值-1.5%)",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:57",
+    "timestamp": "2026-09-01 11:23:36",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.35% (阈值-1.5%)",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 14:15:57",
+    "timestamp": "2026-09-01 11:23:36",
     "level": "INFO",
     "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.68% (阈值-1.5%)",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:34:11",
+    "timestamp": "2026-09-01 11:23:43",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:43",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:43",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:50",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 64 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:53",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 上证指数: 开-0.16% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:53",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 深证成指: 开+0.02% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:23:53",
+    "level": "INFO",
+    "category": "Portfolio",
+    "message": "[买入前指数审查] 创业板指: 开-0.10% (阈值-1.5%)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:47:46",
     "level": "INFO",
     "category": "Bootstrap",
-    "message": "Detected stale candidate pool (2026-08-28); catching up 2026-08-31 post-market review",
+    "message": "Keeping existing candidate pool for 2026-08-31; no bootstrap overwrite",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:34:11",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 88 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:12",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-08-31 (Prev: 2026-08-28)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 88 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 73.5 (偏暖积极), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 88 limit-up stocks via [AkShare] for 2026-08-31",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 88 -> 60 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-08-31): 市场情绪状态: [主升/强势期]，共分析 88 只涨停标的，排雷筛选后推荐 Top 8:\n万向德农(600371, 93.35分), 海鸥住工(002084, 87.52分), 深物业A(000011, 76.26分), 新赛股份(600540, 75.52分), 捷荣技术(002855, 74.72分), 时代出版(600551, 74.49分), 福建金森(002679, 70.12分), 国芳集团(601086, 68.68分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-08-31 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-31 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:34:13",
+    "timestamp": "2026-09-01 11:47:46",
     "level": "INFO",
     "category": "Scheduler",
     "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:35:13",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "[FallbackTimer] firing '15:35 盘后深度归因与影子回测自迭代' at 15:35 Beijing",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:35:13",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "🧠 15:35 启动深度归因对账与影子回测二次评估 (2026-08-31)...",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:35:13",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "  [1/3] 二次确认涨停池最终数据（含封单/炸板明细）...",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:35:13",
+    "timestamp": "2026-09-01 11:47:54",
     "level": "INFO",
     "category": "DataFetcher",
-    "message": "Successfully fetched 88 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:35:13",
+    "timestamp": "2026-09-01 11:47:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:48:03",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:48:21",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:48:38",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 11:48:55",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 65 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:38:55",
+    "level": "INFO",
+    "category": "Bootstrap",
+    "message": "Detected stale candidate pool (2026-08-31); catching up 2026-09-01 post-market review",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:38:55",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "  [2/3] 基于最终涨停池数据重算盘后复盘与连板归因...",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-01",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:35:13",
+    "timestamp": "2026-09-01 16:38:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 83 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:38:59",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-01 (Prev: 2026-08-31)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:01",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 83 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:05",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 84.25 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:05",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:07",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 83 limit-up stocks via [AkShare] for 2026-09-01",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:07",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 83 -> 55 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:07",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:07",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-01): 市场情绪状态: [主升/强势期]，共分析 83 只涨停标的，排雷筛选后推荐 Top 8:\n海鸥住工(002084, 90.47分), 竞业达(003005, 86.98分), 国芳集团(601086, 86.48分), 捷荣技术(002855, 78.49分), 新赛股份(600540, 77.53分), 中广天择(603721, 75.56分), 福建金森(002679, 75.5分), 粤传媒(002181, 71.64分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:07",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-09-01 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-01 16:39:07",
     "level": "INFO",
     "category": "ReviewAttribution",
-    "message": "2026-08-31 post-market review generated from real data files",
+    "message": "2026-09-01 post-market review generated from real data files",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:35:13",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "  [3/3] 运行真实影子回测与参数微调建议...",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:35:13",
+    "timestamp": "2026-09-01 16:39:07",
     "level": "INFO",
     "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-08-31 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-09-01 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   },
   {
-    "timestamp": "2026-08-31 15:35:13",
+    "timestamp": "2026-09-01 16:39:07",
     "level": "INFO",
     "category": "Scheduler",
-    "message": "       本次无参数微调建议 (status=NOT_RUN)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-08-31 15:50:42",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 88 limit-up stocks via [AkShare] for 2026-08-31",
+    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
     "details": {}
   }
 ]

@@ -319,16 +319,21 @@ class QuantScheduler:
 
         # 1. 刷新当日全量涨停池缓存（主动获取最新当日数据并写入 limitup_YYYY-MM-DD.json）
         record_system_log("INFO", "Scheduler", "  [1/5] 刷新当日全量涨停池缓存...")
+        zt_pool = []
+        broken_pool = []
+        market_snapshot_ready = False
         try:
             zt_pool = data_fetcher.get_limit_up_pool(effective_date)
-            broken_pool = data_fetcher.get_broken_limit_up_pool(effective_date)
             market_snapshot_ready = True
-            record_system_log("INFO", "Scheduler", f"       涨停池: {len(zt_pool)} 只，炸板池: {len(broken_pool)} 只")
+            record_system_log("INFO", "Scheduler", f"       涨停池: {len(zt_pool)} 只")
         except Exception as e:
             record_system_log("ERROR", "Scheduler", f"       涨停池刷新失败: {e}")
-            zt_pool = []
-            broken_pool = []
-            market_snapshot_ready = False
+        # 炸板池单独拉取，失败不影响主流程
+        try:
+            broken_pool = data_fetcher.get_broken_limit_up_pool(effective_date)
+            record_system_log("INFO", "Scheduler", f"       炸板池: {len(broken_pool)} 只")
+        except Exception as e:
+            record_system_log("WARNING", "Scheduler", f"       炸板池刷新失败（不影响主流程）: {e}")
 
         # 2. 大盘情绪分计算（情绪择时 + 熔断线）
         record_system_log("INFO", "Scheduler", "  [2/5] 计算大盘情绪四维得分...")
@@ -340,9 +345,17 @@ class QuantScheduler:
         scoring_res = scoring_engine.run_daily_scoring(effective_date)
         record_system_log("INFO", "Scheduler", f"       共分析 {scoring_res.get('total_limit_up_count')} 只涨停，选出 Top{scoring_res.get('candidates_count')} 候选")
 
-        # Publish the FINAL marker only after live pool, sentiment, and scoring
-        # all succeeded for this exact trading date.
-        if market_snapshot_ready and scoring_res.get("trade_date") == effective_date:
+        # Publish the FINAL marker — based on actual sentiment + scoring results,
+        # not on market_snapshot_ready which can be False if only broken_pool failed.
+        sentiment_ok = (
+            sentiment_res.get("trade_date") == effective_date
+            and sentiment_res.get("snapshot_status") == "FINAL"
+        )
+        scoring_ok = (
+            scoring_res.get("trade_date") == effective_date
+            and scoring_res.get("snapshot_status") == "FINAL"
+        )
+        if sentiment_ok and scoring_ok:
             manifest = {
                 "trade_date": effective_date,
                 "snapshot_status": "FINAL",
@@ -442,10 +455,13 @@ class QuantScheduler:
         # 1. 刷新当日全量涨停池缓存
         try:
             zt_pool = data_fetcher.get_limit_up_pool(effective_date)
-            broken_pool = data_fetcher.get_broken_limit_up_pool(effective_date)
         except Exception as e:
             record_system_log("WARNING", "Scheduler", f"Manual review: limit-up pool fetch failed: {e}")
             zt_pool = []
+        try:
+            broken_pool = data_fetcher.get_broken_limit_up_pool(effective_date)
+        except Exception as e:
+            record_system_log("WARNING", "Scheduler", f"Manual review: broken pool fetch failed: {e}")
             broken_pool = []
 
         # 2. 大盘情绪分
@@ -453,6 +469,31 @@ class QuantScheduler:
 
         # 3. 四大因子选股
         scoring_res = scoring_engine.run_daily_scoring(effective_date)
+
+        # 3.5 发布 FINAL manifest（与 job_post_market_review 逻辑一致）
+        sentiment_ok = (
+            sentiment_res.get("trade_date") == effective_date
+            and sentiment_res.get("snapshot_status") == "FINAL"
+        )
+        scoring_ok = (
+            scoring_res.get("trade_date") == effective_date
+            and scoring_res.get("snapshot_status") == "FINAL"
+        )
+        if sentiment_ok and scoring_ok:
+            manifest = {
+                "trade_date": effective_date,
+                "snapshot_status": "FINAL",
+                "finalized_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "artifacts": [
+                    f"limitup_{effective_date}.json",
+                    f"sentiment_{effective_date}.json",
+                    f"candidates_{effective_date}.json",
+                ],
+            }
+            manifest_path = snapshot_manifest_file(effective_date)
+            with open(manifest_path, "w", encoding="utf-8") as f:
+                json.dump(manifest, f, ensure_ascii=False, indent=2)
+            record_system_log("INFO", "Scheduler", f"Manual review: {effective_date} FINAL manifest 已发布")
 
         # 4. 盘后复盘评估与连板归因
         review_res = review_attribution_engine.generate_review_and_attribution()

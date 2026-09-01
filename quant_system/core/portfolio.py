@@ -711,13 +711,13 @@ class PortfolioEngine:
             if strategy == "OPENING" and open_pct < SKIP_WEAK_OPEN_PCT:
                 record_system_log("WARNING", "Portfolio", f"⛔ 标的 [{name}({code})] 开盘低开 {open_pct:.2f}% (≤{SKIP_WEAK_OPEN_PCT}%弱开盘阈值)，不及预期跳过")
                 continue
-# ----------------- 【新增】优化1: 竞价无量放弃 -----------------
-                # 需确保 q 中有 open_amount 或通过 volume_lots * open_price 估算
-                # 假设 q.get("open_amount") 存在，或退一步用首分钟 volume_lots 估算
-                open_amount = float(q.get("open_amount", q.get("volume_lots", 0) * 100 * open_price))
-                if strategy == "OPENING" and open_amount < MIN_OPENING_AMOUNT:
-                    record_system_log("WARNING", "Portfolio", f"标的 [{name} ({code})] 竞价金额 {open_amount/10000:.0f}万 (<{MIN_OPENING_AMOUNT/10000:.0f}万最低阈值),无量不接力跳过")
-                    continue
+                
+            # ----------------- 【新增】优化1: 竞价无量放弃 -----------------
+            # 需确保 q 中有 open_amount 或通过 volume_lots * open_price 估算
+            open_amount = float(q.get("open_amount", q.get("volume_lots", 0) * 100 * open_price))
+            if strategy == "OPENING" and open_amount < MIN_OPENING_AMOUNT:
+                record_system_log("WARNING", "Portfolio", f"标的 [{name} ({code})] 竞价金额 {open_amount/10000:.0f}万 (<{MIN_OPENING_AMOUNT/10000:.0f}万最低阈值),无量不接力跳过")
+                continue
                 # -----------------------------------------------------------------
             # -------------------------------------------------------------
             # Execute Buy Order
