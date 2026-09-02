@@ -1,0 +1,15 @@
+name = "limitup-api"
+main = "src/index.ts"
+compatibility_date = "2026-09-02"
+
+[vars]
+# Set this to a real market-data provider before production deployment.
+DATA_SOURCE = "eastmoney"
+
+[[kv_namespaces]]
+binding = "SNAPSHOTS"
+id = "dd13dd344e294e91a9743a35f397dc91"
+preview_id = "35eb4c8e4e0b4211bcc0032bf92c6f38"
+
+[triggers]
+crons = ["30 7 * * 1-5"] # 15:30 Asia/Shanghai (UTC+8), weekdays

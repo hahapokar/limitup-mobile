@@ -1,48 +1,78 @@
 {
   "initial_capital": 100000.0,
-  "cash": 82849.04609999999,
-  "market_value": 28148.0,
-  "total_asset": 110997.05,
-  "nav": 1.11,
+  "cash": 84361.85169999998,
+  "market_value": 26340.0,
+  "total_asset": 110701.85,
+  "nav": 1.107,
   "daily_pnl": 2794.95,
-  "total_pnl": 10997.05,
+  "total_pnl": 10701.85,
   "current_step": "DEMO_TOP4_BOUGHT",
   "current_step_name": "参考上一交易日盘后候选 TOP4 等权建仓演示 (无真实 2026-08-24 开盘撮合数据) · T+0 当日锁仓",
   "holdings": [
     {
-      "code": "600551",
-      "name": "时代出版",
-      "shares": 3100,
-      "entry_price": 8.73,
-      "cost_price": 8.737,
-      "entry_date": "2026-09-01",
+      "code": "603721",
+      "name": "中广天择",
+      "shares": 1200,
+      "entry_price": 22.04,
+      "cost_price": 22.058,
+      "entry_date": "2026-09-02",
       "holding_days": 0,
       "can_sell": false,
       "t1_lock_text": "T+0 当日买入锁仓 (下一交易日可卖)",
-      "sell_available_date": "2026-09-02",
-      "high_price": 9.08,
-      "current_price": 9.08,
-      "change_pct": 10.06,
-      "pullback_pct": 0.0,
-      "turnover_rate": 15.65,
-      "seal_ratio": 6.32,
-      "trailing_stop_price": 8.85,
-      "status_tag": "LOCKED_ZT",
-      "market_value": 28148.0,
-      "unrealized_pnl": 1063.3,
-      "unrealized_pnl_pct": 3.93,
+      "sell_available_date": "2026-09-03",
+      "high_price": 23.11,
+      "current_price": 21.95,
+      "change_pct": 4.47,
+      "pullback_pct": 5.02,
+      "turnover_rate": 19.95,
+      "seal_ratio": 0.01,
+      "trailing_stop_price": 22.53,
+      "status_tag": "TRAILING_WARN",
+      "market_value": 26340.0,
+      "unrealized_pnl": -129.6,
+      "unrealized_pnl_pct": -0.49,
       "anti_shakeout_count": 0,
-      "hard_stop_price": 8.37,
-      "sector": "出版",
-      "entry_strategy": "OPENING",
-      "entry_strategy_name": "开盘竞价买入",
+      "hard_stop_price": 21.13,
+      "sector": "影视院线",
+      "entry_strategy": "PULLBACK",
+      "entry_strategy_name": "强势回踩买入",
       "quote_status": "LIVE",
-      "quote_status_at": "2026-09-01 11:49:05",
-      "was_zt_today": true,
-      "zt_broken_time": null
+      "quote_status_at": "2026-09-02 12:01:43"
     }
   ],
   "trade_history": [
+    {
+      "order_id": "BUY_603721_100459",
+      "type": "BUY",
+      "code": "603721",
+      "name": "中广天择",
+      "date": "2026-09-02",
+      "time": "10:04:59",
+      "price": 22.04,
+      "shares": 1200,
+      "amount": 26448.0,
+      "friction": 21.16,
+      "strategy": "PULLBACK",
+      "strategy_name": "强势回踩买入",
+      "reason": "强势回踩买入 · T+1 量化候选 (排名 6, 得分 75.56 分)"
+    },
+    {
+      "order_id": "SELL_600551_093001",
+      "type": "SELL",
+      "code": "600551",
+      "name": "时代出版",
+      "date": "2026-09-02",
+      "time": "09:30:01",
+      "price": 9.04,
+      "shares": 3100,
+      "amount": 28024.0,
+      "friction": 42.04,
+      "realized_pnl": 897.26,
+      "realized_pnl_pct": 3.31,
+      "holding_days": 1,
+      "rule_type": "TRAILING_STOP",
+      "reason": "分层移动止盈触发(最高利润14.4%, 回撤 9.51% >= 2.5%)"
+    },
     {
       "order_id": "BUY_600551_093000",
       "type": "BUY",
@@ -355,6 +385,26 @@
   ],
   "recent_sell_alerts": [
     {
+      "alert_id": "ALERT_600551_093001",
+      "code": "600551",
+      "name": "时代出版",
+      "time": "09:30:01",
+      "date": "2026-09-02",
+      "sell_price": 9.04,
+      "shares": 3100,
+      "entry_price": 8.73,
+      "realized_pnl": 897.26,
+      "realized_pnl_pct": 3.31,
+      "rule_type": "TRAILING_STOP",
+      "reason": "分层移动止盈触发(最高利润14.4%, 回撤 9.51% >= 2.5%)",
+      "details": {
+        "high_price": 9.99,
+        "pullback_pct": 9.51,
+        "stop_price": 8.37,
+        "holding_days": 1
+      }
+    },
+    {
       "alert_id": "ALERT_603079_100116",
       "code": "603079",
       "name": "圣达生物",
@@ -415,7 +465,7 @@
       }
     }
   ],
-  "last_update": "2026-09-01 11:49:05",
+  "last_update": "2026-09-02 12:01:43",
   "entry_observations": {
     "002412": {
       "date": "2026-08-26",
@@ -490,12 +540,12 @@
       "last_volume_lots": 1334570.0
     },
     "002855": {
-      "date": "2026-09-01",
-      "was_limit_up": true,
-      "was_broken": true,
-      "rebreak_ready": true,
-      "last_price": 17.71,
-      "last_volume_lots": 242278.0
+      "date": "2026-09-02",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 18.39,
+      "last_volume_lots": 280939.0
     },
     "002742": {
       "date": "2026-08-28",
@@ -538,12 +588,12 @@
       "last_volume_lots": 446607.0
     },
     "002084": {
-      "date": "2026-09-01",
-      "was_limit_up": true,
+      "date": "2026-09-02",
+      "was_limit_up": false,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 7.02,
-      "last_volume_lots": 856650.0
+      "last_price": 7.09,
+      "last_volume_lots": 1459130.0
     },
     "000712": {
       "date": "2026-08-31",
@@ -562,12 +612,12 @@
       "last_volume_lots": 730912.0
     },
     "600540": {
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 6.12,
-      "last_volume_lots": 645656.0
+      "last_price": 6.73,
+      "last_volume_lots": 1125834.0
     },
     "002886": {
       "date": "2026-08-31",
@@ -594,20 +644,44 @@
       "last_volume_lots": 1061227.0
     },
     "002679": {
-      "date": "2026-09-01",
-      "was_limit_up": true,
+      "date": "2026-09-02",
+      "was_limit_up": false,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 12.91,
-      "last_volume_lots": 58135.0
+      "last_price": 12.41,
+      "last_volume_lots": 266618.0
     },
     "601086": {
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "was_limit_up": true,
       "was_broken": false,
       "rebreak_ready": false,
-      "last_price": 10.09,
-      "last_volume_lots": 296321.0
+      "last_price": 11.1,
+      "last_volume_lots": 42706.0
+    },
+    "003005": {
+      "date": "2026-09-02",
+      "was_limit_up": true,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 20.0,
+      "last_volume_lots": 34392.0
+    },
+    "603721": {
+      "date": "2026-09-02",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 22.04,
+      "last_volume_lots": 215319.0
+    },
+    "002181": {
+      "date": "2026-09-02",
+      "was_limit_up": false,
+      "was_broken": false,
+      "rebreak_ready": false,
+      "last_price": 9.7,
+      "last_volume_lots": 884948.0
     }
   },
   "total_market_value": 78602.0,
