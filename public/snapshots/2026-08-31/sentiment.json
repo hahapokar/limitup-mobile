@@ -1,15 +1,15 @@
 {
-  "trade_date": "2026-09-03",
+  "trade_date": "2026-08-31",
   "snapshot_status": "FINAL",
-  "snapshot_generated_at": "2026-09-04 00:46:08",
-  "sentiment_score": 57.5,
-  "sentiment_state": "震荡/分化期",
-  "sentiment_level": "震荡分化",
+  "snapshot_generated_at": "2026-08-31 15:34:13",
+  "sentiment_score": 73.5,
+  "sentiment_state": "主升/强势期",
+  "sentiment_level": "偏暖积极",
   "sentiment_circuit_breaker": false,
-  "target_position_ratio": 0.65,
+  "target_position_ratio": 1.0,
   "components": {
     "yesterday_zt_premium": {
-      "raw_value": 0.19,
+      "raw_value": 0.68,
       "score": 50.0,
       "weight": 0.35,
       "weighted_score": 17.5,
@@ -17,37 +17,37 @@
       "description": "昨日涨停个股今日平均溢价率"
     },
     "market_limit_down": {
-      "raw_value": 11,
-      "score": 50.0,
+      "raw_value": 6,
+      "score": 85.0,
       "weight": 0.25,
-      "weighted_score": 12.5,
+      "weighted_score": 21.25,
       "unit": "家",
       "description": "全市场跌停家数 (>15家重度扣分)"
     },
     "max_consecutive_boards": {
-      "raw_value": 5,
+      "raw_value": 6,
       "broken_rate_pct": 0.0,
-      "score": 95.0,
+      "score": 100.0,
       "weight": 0.25,
-      "weighted_score": 23.75,
+      "weighted_score": 25.0,
       "unit": "连板",
-      "description": "最高连板高度(5板)与真实炸板率(0.0%)"
+      "description": "最高连板高度(6板)与真实炸板率(0.0%)"
     },
     "advance_decline_ratio": {
-      "raw_value": 34.65,
-      "score": 25.0,
+      "raw_value": 57.63,
+      "score": 65.0,
       "weight": 0.15,
-      "weighted_score": 3.75,
+      "weighted_score": 9.75,
       "unit": "%",
       "description": "全市场红盘上涨家数占比"
     }
   },
   "market_summary": {
-    "limit_up_count": 44,
+    "limit_up_count": 88,
     "broken_up_count": 0,
-    "limit_down_count": 11,
-    "up_count": 1805,
-    "down_count": 3275,
-    "activity_pct": 34.61
+    "limit_down_count": 6,
+    "up_count": 3000,
+    "down_count": 2071,
+    "activity_pct": 57.56
   }
 }
