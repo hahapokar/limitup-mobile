@@ -3,7 +3,11 @@
 import argparse
 import json
 import shutil
+import sys
 from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
 
 from quant_system.scheduler.engine import quant_scheduler
 
@@ -15,7 +19,7 @@ def main() -> None:
     args = parser.parse_args()
 
     result = quant_scheduler.trigger_manual_review(args.date)
-    data_dir = Path(__file__).resolve().parents[1] / "quant_system" / "data"
+    data_dir = PROJECT_ROOT / "quant_system" / "data"
     output_dir = Path(args.output)
     date_dir = output_dir / "snapshots" / args.date
     date_dir.mkdir(parents=True, exist_ok=True)
