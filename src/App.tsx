@@ -76,6 +76,10 @@ export default function App() {
           ]);
 
       if (!sentimentRes.ok || !candidatesRes.ok) {
+        if (STATIC_SNAPSHOT_MODE && date === getBeijingDate()) {
+          setCalculation({ status: "PENDING", trade_date: date });
+          return;
+        }
         throw new Error(`数据读取失败（HTTP ${sentimentRes.status}/${candidatesRes.status}）`);
       }
 
@@ -99,7 +103,9 @@ export default function App() {
         }
       }
     } catch (requestError) {
-      setError(requestError instanceof Error ? requestError.message : "请求失败，请检查网络连接");
+      if (!(STATIC_SNAPSHOT_MODE && date === getBeijingDate())) {
+        setError(requestError instanceof Error ? requestError.message : "请求失败，请检查网络连接");
+      }
     } finally {
       setLoading(false);
     }
@@ -124,22 +130,6 @@ export default function App() {
     const timer = window.setInterval(() => setCurrentTime(getBeijingTime()), 1000);
     return () => window.clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    if (!STATIC_SNAPSHOT_MODE) return;
-    const timer = window.setInterval(() => {
-      const today = getBeijingDate();
-      fetch(`${API_BASE_URL}/snapshots/index.json?v=${Date.now()}`, { cache: "no-store" })
-        .then((response) => response.ok ? response.json() : Promise.reject(new Error("日期列表读取失败")))
-        .then((index: { dates?: string[] }) => {
-          const dates = Array.isArray(index.dates) ? index.dates : [];
-          setAvailableDates(dates);
-          if (selectedDate === today && dates.includes(today)) fetchData(today);
-        })
-        .catch(() => undefined);
-    }, 5 * 60 * 1000);
-    return () => window.clearInterval(timer);
-  }, [selectedDate]);
 
   const cards = useMemo(() => (payload?.candidates ?? []).slice(0, 8), [payload]);
   const tradeDate = payload?.trade_date || sentiment?.trade_date || "";
@@ -173,7 +163,7 @@ export default function App() {
               disabled={loading}
               className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-500"
             >
-              {loading ? "正在读取…" : STATIC_SNAPSHOT_MODE ? "刷新今日数据" : "自动刷新数据"}
+              {loading ? "正在读取…" : "自动更新数据"}
             </button>
           </div>
         </div>
@@ -185,7 +175,7 @@ export default function App() {
             <p className="text-xs uppercase tracking-wider text-slate-400">交易日</p>
             <p className="mt-3 text-2xl font-bold text-white">{selectedDate || getBeijingDate()}</p>
             <p className="mt-1 text-xs text-slate-300">当前北京时间 {getBeijingDate()} {currentTime}</p>
-            <p className="mt-1 text-xs text-slate-500">每个交易日 15:30 生成当日盘后分析</p>
+            <p className="mt-1 text-xs text-slate-500">系统将在每个交易日 15:40 更新当天数据；若未更新，请点击“自动更新数据”</p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
             <p className="text-xs uppercase tracking-wider text-slate-400">情绪状态</p>
@@ -215,7 +205,7 @@ export default function App() {
         ) : cards.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900 p-8 text-center text-slate-400">
             {selectedDate === getBeijingDate()
-              ? "今日尚未生成盘后快照，请在15:30后点击“自动刷新数据”开始计算。"
+              ? "系统将在每个交易日15:40更新当天数据；如果尚未更新，请点击“自动更新数据”。"
               : `${selectedDate || "该日期"} 暂无盘后快照。`}
           </div>
         ) : (
