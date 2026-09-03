@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: process.env.VITE_API_MODE === 'static' ? '/limitup-mobile/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
