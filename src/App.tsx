@@ -199,7 +199,7 @@ export default function App() {
         ) : cards.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900 p-8 text-center text-slate-400">
             {selectedDate === getBeijingDate()
-              ? "今日尚未生成盘后快照，请点击“自动刷新数据”开始计算。"
+              ? "今日尚未生成盘后快照，请在15:30后点击“自动刷新数据”开始计算。"
               : `${selectedDate || "该日期"} 暂无盘后快照。`}
           </div>
         ) : (
