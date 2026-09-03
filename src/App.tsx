@@ -43,6 +43,7 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [calculation, setCalculation] = useState<{ status: string; trade_date?: string; candidate_count?: number; completed_at?: string; error?: string } | null>(null);
+  const dateOptions = useMemo(() => Array.from(new Set([getBeijingDate(), ...availableDates])), [availableDates]);
 
   const fetchData = async (date: string, recalculate = false) => {
     setLoading(true);
@@ -146,8 +147,7 @@ export default function App() {
                 }}
                 className="rounded bg-slate-900 px-2 py-1 text-slate-100 outline-none"
               >
-                {availableDates.length === 0 && <option value={selectedDate}>{selectedDate}</option>}
-                {availableDates.map((date) => <option key={date} value={date}>{date}</option>)}
+                {dateOptions.map((date) => <option key={date} value={date}>{date}{date === getBeijingDate() ? "（今天）" : ""}</option>)}
               </select>
             </label>
             <button
