@@ -42,6 +42,10 @@ jobs:
           else
             trade_date="$(date +%F)"
           fi
+          if [ "$(date +%F)" = "$trade_date" ] && [ "$(date +%H%M)" -lt "1530" ]; then
+            echo "${trade_date} has not reached the 15:30 Beijing close; no FINAL snapshot can be published."
+            exit 1
+          fi
           python scripts/publish_snapshot.py --date "$trade_date" --output public
 
       - name: Publish snapshot files
