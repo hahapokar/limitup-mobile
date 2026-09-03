@@ -36,6 +36,7 @@ const buildReason = (stock: CandidateStock) => {
 
 export default function App() {
   const [selectedDate, setSelectedDate] = useState(getBeijingDate());
+  const [availableDates, setAvailableDates] = useState<string[]>([]);
   const [currentTime, setCurrentTime] = useState(getBeijingTime());
   const [sentiment, setSentiment] = useState<SentimentData | null>(null);
   const [payload, setPayload] = useState<CandidatesPayload | null>(null);
@@ -104,7 +105,19 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetchData(getBeijingDate());
+    const today = getBeijingDate();
+    if (STATIC_SNAPSHOT_MODE) {
+      fetch(`${API_BASE_URL}/snapshots/index.json`)
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error("日期列表读取失败")))
+        .then((index: { dates?: string[] }) => {
+          const dates = Array.isArray(index.dates) ? index.dates : [];
+          setAvailableDates(dates);
+          fetchData(today);
+        })
+        .catch(() => fetchData(today));
+    } else {
+      fetchData(today);
+    }
     const timer = window.setInterval(() => setCurrentTime(getBeijingTime()), 1000);
     return () => window.clearInterval(timer);
   }, []);
@@ -124,8 +137,7 @@ export default function App() {
           <div className="flex flex-wrap items-center gap-3">
             <label className="flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-300">
               <span>日期</span>
-              <input
-                type="date"
+              <select
                 value={selectedDate}
                 onChange={(event) => {
                   const date = event.target.value;
@@ -133,7 +145,10 @@ export default function App() {
                   if (date) fetchData(date);
                 }}
                 className="rounded bg-slate-900 px-2 py-1 text-slate-100 outline-none"
-              />
+              >
+                {availableDates.length === 0 && <option value={selectedDate}>{selectedDate}</option>}
+                {availableDates.map((date) => <option key={date} value={date}>{date}</option>)}
+              </select>
             </label>
             <button
               onClick={() => fetchData(getBeijingDate(), true)}

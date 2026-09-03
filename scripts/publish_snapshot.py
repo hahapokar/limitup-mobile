@@ -4,6 +4,7 @@ import argparse
 import json
 import shutil
 import sys
+import re
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +30,18 @@ def main() -> None:
         if source.exists():
             shutil.copyfile(source, date_dir / f"{prefix}.json")
 
+    for source in data_dir.glob("candidates_*.json"):
+        match = re.fullmatch(r"candidates_(\d{4}-\d{2}-\d{2})\.json", source.name)
+        if not match:
+            continue
+        history_dir = output_dir / "snapshots" / match.group(1)
+        history_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, history_dir / "candidates.json")
+        for prefix in ("sentiment", "limitup", "snapshot_status"):
+            history_source = data_dir / f"{prefix}_{match.group(1)}.json"
+            if history_source.exists():
+                shutil.copyfile(history_source, history_dir / f"{prefix}.json")
+
     scoring = result["scoring"]
     manifest = {
         "trade_date": args.date,
@@ -42,6 +55,12 @@ def main() -> None:
     }
     (date_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     (output_dir / "snapshot.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    dates = sorted({
+        match.group(1)
+        for path in (output_dir / "snapshots").glob("*/candidates.json")
+        if (match := re.fullmatch(r"(\d{4}-\d{2}-\d{2})", path.parent.name))
+    }, reverse=True)
+    (output_dir / "snapshots" / "index.json").write_text(json.dumps({"dates": dates}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False))
 
 
