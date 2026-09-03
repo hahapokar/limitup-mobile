@@ -1,8 +1,8 @@
 {
   "trade_date": "2026-09-03",
   "snapshot_status": "FINAL",
-  "snapshot_generated_at": "2026-09-04 00:32:07",
-  "generate_time": "2026-09-04 00:32:07",
+  "snapshot_generated_at": "2026-09-04 00:34:06",
+  "generate_time": "2026-09-04 00:34:06",
   "sentiment_state": "震荡/分化期",
   "total_limit_up_count": 44,
   "passed_filter_count": 32,
