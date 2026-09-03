@@ -4,6 +4,15 @@ type Env = {
   SNAPSHOTS: KVNamespace;
 };
 
+type CalculationStatus = {
+  status: "RUNNING" | "SUCCESS" | "ERROR";
+  trade_date: string;
+  started_at: string;
+  completed_at?: string;
+  candidate_count?: number;
+  error?: string;
+};
+
 const EASTMONEY_BASE = "https://push2ex.eastmoney.com";
 const EASTMONEY_QUERY = "ut=7eea3ed07936ac3c4c830215651a3819&dpt=wz.ztzt&Pageindex=0&pagesize=150&sort=fbt%3Aasc";
 
@@ -105,34 +114,48 @@ async function resolveDate(env: Env, requested?: string): Promise<string> {
 }
 
 async function generateSnapshot(env: Env, tradeDate: string) {
-  const [pool, brokenPool] = await Promise.all([fetchPool(tradeDate), fetchPool(tradeDate, true)]);
-  const sentiment = sentimentSnapshot(tradeDate, pool, brokenPool);
-  const result = scoreTopEight(pool, sentiment.sentiment_state);
-  const candidates = { trade_date: tradeDate, snapshot_status: "FINAL", snapshot_generated_at: new Date().toISOString(), sentiment_state: sentiment.sentiment_state, ...result };
-  await Promise.all([
-    env.SNAPSHOTS.put(`candidates:${tradeDate}`, JSON.stringify(candidates)),
-    env.SNAPSHOTS.put(`sentiment:${tradeDate}`, JSON.stringify(sentiment)),
-    env.SNAPSHOTS.put("latest:candidates", JSON.stringify(candidates)),
-    env.SNAPSHOTS.put("latest:sentiment", JSON.stringify(sentiment)),
-  ]);
-  return candidates;
+  const startedAt = new Date().toISOString();
+  await env.SNAPSHOTS.put("status:calculation", JSON.stringify({ status: "RUNNING", trade_date: tradeDate, started_at: startedAt } satisfies CalculationStatus));
+  try {
+    const [pool, brokenPool] = await Promise.all([fetchPool(tradeDate), fetchPool(tradeDate, true)]);
+    const sentiment = sentimentSnapshot(tradeDate, pool, brokenPool);
+    const result = scoreTopEight(pool, sentiment.sentiment_state);
+    const candidates = { trade_date: tradeDate, snapshot_status: "FINAL", snapshot_generated_at: new Date().toISOString(), sentiment_state: sentiment.sentiment_state, ...result };
+    await Promise.all([
+      env.SNAPSHOTS.put(`candidates:${tradeDate}`, JSON.stringify(candidates)),
+      env.SNAPSHOTS.put(`sentiment:${tradeDate}`, JSON.stringify(sentiment)),
+      env.SNAPSHOTS.put("latest:candidates", JSON.stringify(candidates)),
+      env.SNAPSHOTS.put("latest:sentiment", JSON.stringify(sentiment)),
+      env.SNAPSHOTS.put("status:calculation", JSON.stringify({ status: "SUCCESS", trade_date: tradeDate, started_at: startedAt, completed_at: new Date().toISOString(), candidate_count: candidates.candidates.length } satisfies CalculationStatus)),
+    ]);
+    return candidates;
+  } catch (error) {
+    await env.SNAPSHOTS.put("status:calculation", JSON.stringify({ status: "ERROR", trade_date: tradeDate, started_at: startedAt, completed_at: new Date().toISOString(), error: error instanceof Error ? error.message : "Worker error" } satisfies CalculationStatus));
+    throw error;
+  }
 }
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: { "access-control-allow-origin": "*", "access-control-allow-methods": "GET,OPTIONS" } });
+    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: { "access-control-allow-origin": "*", "access-control-allow-methods": "GET,POST,OPTIONS", "access-control-allow-headers": "Content-Type" } });
     const url = new URL(request.url);
     try {
-      if (url.pathname === "/api/health") return json({ success: true, data: { status: "READY", mode: "cloudflare_worker", latest_trade_date: await resolveDate(env) } });
+      if (url.pathname === "/api/health") return json({ success: true, data: { status: "READY", mode: "cloudflare_worker", latest_trade_date: await resolveDate(env), calculation: await env.SNAPSHOTS.get("status:calculation", "json") } });
+      if (url.pathname === "/api/refresh" && request.method === "POST") {
+        const requestedDate = url.searchParams.get("date") || "";
+        const tradeDate = /^\d{4}-\d{2}-\d{2}$/.test(requestedDate) ? requestedDate : beijingNow().date;
+        const data = await generateSnapshot(env, tradeDate);
+        return json({ success: true, data, calculation: { status: "SUCCESS", trade_date: tradeDate, candidate_count: data.candidates.length, completed_at: data.snapshot_generated_at } });
+      }
       if (url.pathname === "/api/candidates") {
-        const date = await resolveDate(env, url.searchParams.get("date") || undefined);
+        const date = url.searchParams.get("date") || beijingNow().date;
         const value = await env.SNAPSHOTS.get(`candidates:${date}`, "json");
-        return json({ success: true, data: value || await env.SNAPSHOTS.get("latest:candidates", "json") });
+        return json({ success: true, data: value });
       }
       if (url.pathname === "/api/sentiment") {
-        const date = await resolveDate(env, url.searchParams.get("date") || undefined);
+        const date = url.searchParams.get("date") || beijingNow().date;
         const value = await env.SNAPSHOTS.get(`sentiment:${date}`, "json");
-        return json({ success: true, data: value || await env.SNAPSHOTS.get("latest:sentiment", "json") });
+        return json({ success: true, data: value });
       }
       return json({ success: false, error: "Not found" }, 404);
     } catch (error) {

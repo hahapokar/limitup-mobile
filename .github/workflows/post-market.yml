@@ -1,0 +1,61 @@
+name: Daily post-market selection
+
+on:
+  schedule:
+    # 15:40 Beijing time (UTC 07:40), allowing market data to settle.
+    - cron: "40 7 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      trade_date:
+        description: "Optional trading date YYYY-MM-DD"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  calculate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Calculate daily snapshot
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          if [ -n "${{ inputs.trade_date }}" ]; then
+            trade_date="${{ inputs.trade_date }}"
+          else
+            trade_date="$(date +%F)"
+          fi
+          python scripts/publish_snapshot.py --date "$trade_date" --output public
+
+      - name: Publish snapshot files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public quant_system/data
+          git diff --cached --quiet || git commit -m "chore: publish post-market snapshot"
+          git push
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy GitHub Pages
+        uses: actions/deploy-pages@v4

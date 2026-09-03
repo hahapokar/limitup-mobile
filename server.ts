@@ -1,10 +1,13 @@
 import express from "express";
 import fs from "fs";
 import path from "path";
+import { execFile } from "child_process";
+import { promisify } from "util";
 
 const app = express();
 const PORT = Number(process.env.PORT || 3008);
 const DATA_DIR = path.join(process.cwd(), "quant_system", "data");
+const execFileAsync = promisify(execFile);
 
 app.use(express.json());
 
@@ -111,14 +114,14 @@ app.get("/api/status", (_req, res) => {
 });
 
 app.get("/api/sentiment", (req, res) => {
-  const date = resolveTradeDate(req.query.date as string);
-  const data = readJsonSafe(`sentiment_${date}.json`, readJsonSafe("latest_sentiment.json", {}));
+  const date = (req.query.date as string) || getBeijingNow().date;
+  const data = readJsonSafe(`sentiment_${date}.json`);
   res.json({ success: true, data });
 });
 
 app.get("/api/candidates", (req, res) => {
-  const date = resolveTradeDate(req.query.date as string);
-  const data = readJsonSafe(`candidates_${date}.json`, readJsonSafe("latest_candidates.json", {}));
+  const date = (req.query.date as string) || getBeijingNow().date;
+  const data = readJsonSafe(`candidates_${date}.json`);
   res.json({ success: true, data });
 });
 
@@ -131,6 +134,37 @@ app.get("/api/health", (_req, res) => {
       latest_trade_date: resolveTradeDate(),
     },
   });
+});
+
+app.post("/api/refresh", async (req, res) => {
+  const requestedDate = typeof req.query.date === "string" ? req.query.date : "";
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(requestedDate) ? requestedDate : getBeijingNow().date;
+  try {
+    await execFileAsync("python3", ["app.py", "review", "--date", date], {
+      cwd: process.cwd(),
+      timeout: 180000,
+      maxBuffer: 1024 * 1024 * 4,
+    });
+    const candidates = readJsonSafe(`candidates_${date}.json`);
+    const sentiment = readJsonSafe(`sentiment_${date}.json`);
+    if (!candidates || !sentiment) {
+      res.status(502).json({ success: false, error: `本地后端未生成 ${date} 的完整快照` });
+      return;
+    }
+    res.json({
+      success: true,
+      data: candidates,
+      calculation: {
+        status: "SUCCESS",
+        trade_date: date,
+        candidate_count: Array.isArray(candidates.candidates) ? candidates.candidates.length : 0,
+        completed_at: candidates.snapshot_generated_at,
+      },
+    });
+  } catch (error: any) {
+    const detail = error?.stderr || error?.stdout || error?.message || "本地盘后计算失败";
+    res.status(502).json({ success: false, error: String(detail).slice(-2000) });
+  }
 });
 
 app.get("/api/limitup-pool", (req, res) => {

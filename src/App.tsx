@@ -2,6 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import type { CandidateStock, CandidatesPayload, SentimentData } from "./types";
 
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
+const STATIC_SNAPSHOT_MODE = import.meta.env.VITE_API_MODE === "static";
+
+const getBeijingDate = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
+const getBeijingTime = () => new Intl.DateTimeFormat("zh-CN", {
+  timeZone: "Asia/Shanghai", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+}).format(new Date());
 
 const formatPercent = (value: number | null | undefined, digits = 2) => {
   if (typeof value !== "number" || Number.isNaN(value)) return "--";
@@ -29,32 +35,78 @@ const buildReason = (stock: CandidateStock) => {
 };
 
 export default function App() {
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDate, setSelectedDate] = useState(getBeijingDate());
+  const [currentTime, setCurrentTime] = useState(getBeijingTime());
   const [sentiment, setSentiment] = useState<SentimentData | null>(null);
   const [payload, setPayload] = useState<CandidatesPayload | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [calculation, setCalculation] = useState<{ status: string; trade_date?: string; candidate_count?: number; completed_at?: string; error?: string } | null>(null);
 
-  const fetchData = async (date?: string) => {
+  const fetchData = async (date: string, recalculate = false) => {
     setLoading(true);
+    setError(null);
+    setPayload(null);
+    setSentiment(null);
+    setCalculation(null);
     try {
-      const q = date ? `?date=${encodeURIComponent(date)}` : "";
-      const [sentimentRes, candidatesRes] = await Promise.all([
-        fetch(`${API_BASE_URL}/api/sentiment${q}`),
-        fetch(`${API_BASE_URL}/api/candidates${q}`),
-      ]);
+      const q = `?date=${encodeURIComponent(date)}`;
+      if (recalculate) {
+        if (STATIC_SNAPSHOT_MODE) {
+          setCalculation(null);
+        } else {
+          const refreshRes = await fetch(`${API_BASE_URL}/api/refresh${q}`, { method: "POST" });
+          const refreshJson = await refreshRes.json().catch(() => null);
+          if (!refreshRes.ok || refreshJson?.success === false) {
+            throw new Error(refreshJson?.error || `云端刷新失败（HTTP ${refreshRes.status}）`);
+          }
+          setCalculation(refreshJson?.calculation ?? null);
+        }
+      }
+      const [sentimentRes, candidatesRes] = STATIC_SNAPSHOT_MODE
+        ? await Promise.all([
+            fetch(`${API_BASE_URL}/snapshots/${date}/sentiment.json`),
+            fetch(`${API_BASE_URL}/snapshots/${date}/candidates.json`),
+          ])
+        : await Promise.all([
+            fetch(`${API_BASE_URL}/api/sentiment${q}`),
+            fetch(`${API_BASE_URL}/api/candidates${q}`),
+          ]);
+
+      if (!sentimentRes.ok || !candidatesRes.ok) {
+        throw new Error(`数据读取失败（HTTP ${sentimentRes.status}/${candidatesRes.status}）`);
+      }
 
       const sentimentJson = await sentimentRes.json();
       const candidatesJson = await candidatesRes.json();
 
-      setSentiment(sentimentJson?.data ?? null);
-      setPayload(candidatesJson?.data ?? null);
+      setSentiment(STATIC_SNAPSHOT_MODE ? sentimentJson : sentimentJson?.data ?? null);
+      setPayload(STATIC_SNAPSHOT_MODE ? candidatesJson : candidatesJson?.data ?? null);
+      if (!recalculate) {
+        if (STATIC_SNAPSHOT_MODE) {
+          setCalculation({
+            status: "PUBLISHED",
+            trade_date: candidatesJson?.trade_date,
+            candidate_count: candidatesJson?.candidates?.length ?? 0,
+            completed_at: candidatesJson?.snapshot_generated_at,
+          });
+        } else {
+          const healthRes = await fetch(`${API_BASE_URL}/api/health`);
+          const healthJson = await healthRes.json().catch(() => null);
+          setCalculation(healthJson?.data?.calculation ?? null);
+        }
+      }
+    } catch (requestError) {
+      setError(requestError instanceof Error ? requestError.message : "请求失败，请检查网络连接");
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchData();
+    fetchData(getBeijingDate());
+    const timer = window.setInterval(() => setCurrentTime(getBeijingTime()), 1000);
+    return () => window.clearInterval(timer);
   }, []);
 
   const cards = useMemo(() => (payload?.candidates ?? []).slice(0, 8), [payload]);
@@ -75,15 +127,20 @@ export default function App() {
               <input
                 type="date"
                 value={selectedDate}
-                onChange={(event) => setSelectedDate(event.target.value)}
+                onChange={(event) => {
+                  const date = event.target.value;
+                  setSelectedDate(date);
+                  if (date) fetchData(date);
+                }}
                 className="rounded bg-slate-900 px-2 py-1 text-slate-100 outline-none"
               />
             </label>
             <button
-              onClick={() => fetchData(selectedDate || undefined)}
+              onClick={() => fetchData(getBeijingDate(), true)}
+              disabled={loading}
               className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-500"
             >
-              自动刷新数据
+              {loading ? "正在计算…" : "自动刷新数据"}
             </button>
           </div>
         </div>
@@ -93,8 +150,8 @@ export default function App() {
         <section className="mb-6 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
             <p className="text-xs uppercase tracking-wider text-slate-400">交易日</p>
-            <p className="mt-3 text-2xl font-bold text-white">{tradeDate || "--"}</p>
-            <p className="mt-1 text-xs text-slate-500">默认按北京时间 15:30 自动选择</p>
+            <p className="mt-3 text-2xl font-bold text-white">{selectedDate || getBeijingDate()}</p>
+            <p className="mt-1 text-xs text-slate-500">北京时间 {currentTime}</p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
             <p className="text-xs uppercase tracking-wider text-slate-400">情绪状态</p>
@@ -106,13 +163,27 @@ export default function App() {
           </div>
         </section>
 
+        {(calculation?.status === "SUCCESS" || calculation?.status === "PUBLISHED") && (
+          <p className="mb-4 rounded-lg border border-emerald-800 bg-emerald-950/40 px-4 py-3 text-sm text-emerald-300">
+            云端计算完成：{calculation.trade_date || tradeDate}，生成 {calculation.candidate_count ?? payload?.candidates?.length ?? 0} 个候选。
+            {calculation.completed_at ? ` 完成时间 ${new Date(calculation.completed_at).toLocaleString()}` : ""}
+          </p>
+        )}
+        {error && (
+          <p className="mb-4 rounded-lg border border-rose-800 bg-rose-950/40 px-4 py-3 text-sm text-rose-300">
+            {error}
+          </p>
+        )}
+
         {loading ? (
           <div className="flex min-h-[300px] items-center justify-center rounded-2xl border border-slate-800 bg-slate-900 text-slate-400">
             正在加载盘后候选结果…
           </div>
         ) : cards.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900 p-8 text-center text-slate-400">
-            暂无结果，先执行一次盘后评分即可生成 Top 8 候选。
+            {selectedDate === getBeijingDate()
+              ? "今日尚未生成盘后快照，请点击“自动刷新数据”开始计算。"
+              : `${selectedDate || "该日期"} 暂无盘后快照。`}
           </div>
         ) : (
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">

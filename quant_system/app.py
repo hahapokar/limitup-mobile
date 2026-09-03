@@ -7,6 +7,8 @@ and intraday monitoring logic from the active runtime.
 import argparse
 import json
 import sys
+import signal
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -18,10 +20,28 @@ from quant_system.core.scoring import scoring_engine
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Lightweight post-market stock selection")
-    parser.add_argument("command", nargs="?", default="review", choices=["review", "health", "status"], help="Command to execute")
+    parser.add_argument("command", nargs="?", default="review", choices=["review", "health", "status", "daemon"], help="Command to execute")
     parser.add_argument("--date", type=str, default=None, help="Trading date YYYY-MM-DD")
     parser.add_argument("--port", type=int, default=3006, help="Legacy web port (kept for compatibility only)")
     args = parser.parse_args()
+
+    if args.command == "daemon":
+        from quant_system.scheduler.engine import quant_scheduler
+
+        stopping = False
+
+        def stop_daemon(_signum, _frame):
+            nonlocal stopping
+            stopping = True
+
+        signal.signal(signal.SIGINT, stop_daemon)
+        signal.signal(signal.SIGTERM, stop_daemon)
+        quant_scheduler.start()
+        print("Quant scheduler daemon started; post-market review runs at 15:30 Beijing time.", flush=True)
+        while not stopping:
+            time.sleep(1)
+        quant_scheduler.stop()
+        return
 
     if args.command == "health":
         print("\n=== Data sources health ===")
@@ -52,9 +72,11 @@ def main() -> None:
         return
 
     print(f"\nRunning daily post-market review for {target}...")
-    result = scoring_engine.run_daily_scoring(target)
-    print(f"candidates_count: {result['candidates_count']}")
-    for stock in result.get("candidates", [])[:8]:
+    from quant_system.scheduler.engine import quant_scheduler
+    result = quant_scheduler.trigger_manual_review(target)
+    scoring_result = result["scoring"]
+    print(f"candidates_count: {scoring_result['candidates_count']}")
+    for stock in scoring_result.get("candidates", [])[:8]:
         print(f"  - [{stock['code']}] {stock['name']} | score={stock['quant_score']:.2f} | sector={stock['sector']}")
     print("\nReview finished.")
 

@@ -125,9 +125,9 @@ if [ ! -d "node_modules" ]; then
     npm install
 fi
 
-# Python 只跑调度/拉数，不占用 3006（避免覆盖成只有一个 Tab 的简易 HTML）
-echo "启动 Python 量化后台 (不占用 3006)..."
-QUANT_SKIP_WEB=1 python3 app.py &
+# Python 常驻调度/拉数后台：15:30 自动生成当日情绪、四因子 TOP8 和 FINAL 快照。
+echo "启动 Python 量化后台调度器..."
+python3 app.py daemon &
 PY_PID=$!
 cleanup() {
     kill "$PY_PID" >/dev/null 2>&1 || true
