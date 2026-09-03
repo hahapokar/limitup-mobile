@@ -113,7 +113,9 @@ export default function App() {
         .then((index: { dates?: string[] }) => {
           const dates = Array.isArray(index.dates) ? index.dates : [];
           setAvailableDates(dates);
-          fetchData(today);
+          const initialDate = dates.includes(today) ? today : dates[0] || today;
+          setSelectedDate(initialDate);
+          fetchData(initialDate);
         })
         .catch(() => fetchData(today));
     } else {
@@ -166,7 +168,8 @@ export default function App() {
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
             <p className="text-xs uppercase tracking-wider text-slate-400">交易日</p>
             <p className="mt-3 text-2xl font-bold text-white">{selectedDate || getBeijingDate()}</p>
-            <p className="mt-1 text-xs text-slate-500">北京时间 {currentTime}</p>
+            <p className="mt-1 text-xs text-slate-300">当前北京时间 {getBeijingDate()} {currentTime}</p>
+            <p className="mt-1 text-xs text-slate-500">每个交易日 15:30 生成当日盘后分析</p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
             <p className="text-xs uppercase tracking-wider text-slate-400">情绪状态</p>
@@ -180,8 +183,7 @@ export default function App() {
 
         {(calculation?.status === "SUCCESS" || calculation?.status === "PUBLISHED") && (
           <p className="mb-4 rounded-lg border border-emerald-800 bg-emerald-950/40 px-4 py-3 text-sm text-emerald-300">
-            云端计算完成：{calculation.trade_date || tradeDate}，生成 {calculation.candidate_count ?? payload?.candidates?.length ?? 0} 个候选。
-            {calculation.completed_at ? ` 完成时间 ${new Date(calculation.completed_at).toLocaleString()}` : ""}
+            盘后分析快照：{calculation.trade_date || tradeDate}，生成 {calculation.candidate_count ?? payload?.candidates?.length ?? 0} 个候选。
           </p>
         )}
         {error && (
