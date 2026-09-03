@@ -67,8 +67,8 @@ export default function App() {
       }
       const [sentimentRes, candidatesRes] = STATIC_SNAPSHOT_MODE
         ? await Promise.all([
-            fetch(`${API_BASE_URL}/snapshots/${date}/sentiment.json`),
-            fetch(`${API_BASE_URL}/snapshots/${date}/candidates.json`),
+            fetch(`${API_BASE_URL}/snapshots/${date}/sentiment.json?v=${Date.now()}`, { cache: "no-store" }),
+            fetch(`${API_BASE_URL}/snapshots/${date}/candidates.json?v=${Date.now()}`, { cache: "no-store" }),
           ])
         : await Promise.all([
             fetch(`${API_BASE_URL}/api/sentiment${q}`),
@@ -108,7 +108,7 @@ export default function App() {
   useEffect(() => {
     const today = getBeijingDate();
     if (STATIC_SNAPSHOT_MODE) {
-      fetch(`${API_BASE_URL}/snapshots/index.json`)
+      fetch(`${API_BASE_URL}/snapshots/index.json?v=${Date.now()}`, { cache: "no-store" })
         .then((response) => response.ok ? response.json() : Promise.reject(new Error("日期列表读取失败")))
         .then((index: { dates?: string[] }) => {
           const dates = Array.isArray(index.dates) ? index.dates : [];
@@ -124,6 +124,22 @@ export default function App() {
     const timer = window.setInterval(() => setCurrentTime(getBeijingTime()), 1000);
     return () => window.clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    if (!STATIC_SNAPSHOT_MODE) return;
+    const timer = window.setInterval(() => {
+      const today = getBeijingDate();
+      fetch(`${API_BASE_URL}/snapshots/index.json?v=${Date.now()}`, { cache: "no-store" })
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error("日期列表读取失败")))
+        .then((index: { dates?: string[] }) => {
+          const dates = Array.isArray(index.dates) ? index.dates : [];
+          setAvailableDates(dates);
+          if (selectedDate === today && dates.includes(today)) fetchData(today);
+        })
+        .catch(() => undefined);
+    }, 5 * 60 * 1000);
+    return () => window.clearInterval(timer);
+  }, [selectedDate]);
 
   const cards = useMemo(() => (payload?.candidates ?? []).slice(0, 8), [payload]);
   const tradeDate = payload?.trade_date || sentiment?.trade_date || "";
@@ -157,7 +173,7 @@ export default function App() {
               disabled={loading}
               className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-500"
             >
-              {loading ? "正在计算…" : "自动刷新数据"}
+              {loading ? "正在读取…" : STATIC_SNAPSHOT_MODE ? "刷新今日数据" : "自动刷新数据"}
             </button>
           </div>
         </div>
