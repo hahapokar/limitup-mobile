@@ -20,9 +20,10 @@ def main() -> None:
     args = parser.parse_args()
 
     result = quant_scheduler.trigger_manual_review(args.date)
+    effective_date = result.get("trade_date", args.date)
     data_dir = PROJECT_ROOT / "quant_system" / "data"
     output_dir = Path(args.output)
-    date_dir = output_dir / "snapshots" / args.date
+    date_dir = output_dir / "snapshots" / effective_date
     date_dir.mkdir(parents=True, exist_ok=True)
 
     for prefix in ("candidates", "sentiment", "limitup", "snapshot_status"):
@@ -44,7 +45,7 @@ def main() -> None:
 
     scoring = result["scoring"]
     manifest = {
-        "trade_date": args.date,
+        "trade_date": effective_date,
         "snapshot_status": "FINAL",
         "published_at": result["sentiment"].get("snapshot_generated_at"),
         "candidate_count": scoring.get("candidates_count", 0),

@@ -11,6 +11,10 @@ on:
         required: false
         type: string
 
+concurrency:
+  group: post-market-publish
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pages: write
@@ -33,7 +37,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: npm
 
       - name: Build browser application
@@ -49,7 +53,29 @@ jobs:
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
 
+      - name: Check A-share trading day
+        id: trading-day
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          trade_date="${{ inputs.trade_date }}"
+          if [ -z "$trade_date" ]; then
+            trade_date="$(date +%F)"
+          fi
+          python - "$trade_date" <<'PY'
+          import os
+          import sys
+          from quant_system.utils.calendar import is_trade_day
+
+          trade_date = sys.argv[1]
+          should_run = is_trade_day(trade_date)
+          print(f"{trade_date}: {'trading day' if should_run else 'market holiday/weekend'}")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"should_run={'true' if should_run else 'false'}\n")
+          PY
+
       - name: Calculate daily snapshot
+        if: steps.trading-day.outputs.should_run == 'true'
         env:
           TZ: Asia/Shanghai
         run: |
@@ -70,7 +96,19 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public quant_system/data
           git diff --cached --quiet || git commit -m "chore: publish post-market snapshot"
-          git push
+          git fetch origin main
+          git rebase origin/main
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              break
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Unable to push snapshot after ${attempt} attempts."
+              exit 1
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
