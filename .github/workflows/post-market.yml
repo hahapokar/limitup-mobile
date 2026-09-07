@@ -103,12 +103,15 @@ jobs:
           fi
           python scripts/publish_snapshot.py --date "$trade_date" --output public
 
-      - name: Publish snapshot files
+      - name: Sync snapshot to docs and publish
         if: steps.trading-day.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public quant_system/data
+          # Reflect new snapshot files (written to public/ by publish_snapshot.py) into docs/.
+          cp -R public/. docs/
+          rm -f docs/server.cjs docs/server.cjs.map
+          git add public quant_system/data docs
           git diff --cached --quiet || git commit -m "chore: publish post-market snapshot"
           git fetch origin main
           git rebase origin/main
@@ -123,13 +126,3 @@ jobs:
             git fetch origin main
             git rebase origin/main
           done
-
-      - name: Upload GitHub Pages artifact
-        if: steps.trading-day.outputs.should_run == 'true'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-
-      - name: Deploy GitHub Pages
-        if: steps.trading-day.outputs.should_run == 'true'
-        uses: actions/deploy-pages@v4

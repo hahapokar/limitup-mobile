@@ -1,0 +1,1487 @@
+{
+  "trade_date": "2026-08-24",
+  "generate_time": "2026-08-25 11:50:20",
+  "sentiment_state": "震荡/分化期",
+  "total_limit_up_count": 46,
+  "passed_filter_count": 32,
+  "filter_stats": {
+    "total": 46,
+    "st_excluded": 0,
+    "cap_out_of_range": 9,
+    "cap_unknown": 0,
+    "price_out_of_range": 5,
+    "price_unknown": 0,
+    "inst_ratio_high": 0,
+    "inst_ratio_unknown": 32,
+    "passed": 32
+  },
+  "candidates_count": 4,
+  "candidates": [
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "price": 11.21,
+      "change_pct": 10.01,
+      "amount": 403946816.0,
+      "turnover_rate": 7.33,
+      "float_market_cap": 5580842450.0,
+      "total_market_cap": 5640872000.0,
+      "seal_amount": 249630535.0,
+      "seal_ratio": 0.618,
+      "first_seal_time": "09:30:06",
+      "last_seal_time": "09:30:06",
+      "broken_count": 0,
+      "consecutive_boards": 4,
+      "sector": "中药Ⅱ",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 94.77,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 97.0,
+          "weight": 0.35,
+          "weighted_score": 33.95,
+          "consecutive_boards": 4,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
+          "is_spatial_leader": true
+        },
+        "seal_strength": {
+          "score": 92.26,
+          "weight": 0.15,
+          "weighted_score": 13.84,
+          "seal_ratio": 0.618,
+          "first_seal_time": "09:30:06"
+        },
+        "chip_structure": {
+          "score": 93.28,
+          "weight": 0.3,
+          "weighted_score": 27.98,
+          "turnover_rate": 7.33,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "中药Ⅱ",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 1
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "price": 7.82,
+      "change_pct": 9.99,
+      "amount": 69120996.0,
+      "turnover_rate": 2.01,
+      "float_market_cap": 3447227656.82,
+      "total_market_cap": 5389426136.96,
+      "seal_amount": 180589590.0,
+      "seal_ratio": 2.6127,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:25:00",
+      "broken_count": 0,
+      "consecutive_boards": 3,
+      "sector": "饰品",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 83.38,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 98.06,
+          "weight": 0.15,
+          "weighted_score": 14.71,
+          "seal_ratio": 2.6127,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.3,
+          "weighted_score": 19.92,
+          "turnover_rate": 2.01,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "饰品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 2
+    },
+    {
+      "code": "000931",
+      "name": "中关村",
+      "price": 5.6,
+      "change_pct": 10.02,
+      "amount": 616654400.0,
+      "turnover_rate": 14.99,
+      "float_market_cap": 4205765379.2,
+      "total_market_cap": 4217511065.6,
+      "seal_amount": 89005666.0,
+      "seal_ratio": 0.1443,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "14:39:57",
+      "broken_count": 1,
+      "consecutive_boards": 3,
+      "sector": "化学制药",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 78.19,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 69.03,
+          "weight": 0.15,
+          "weighted_score": 10.35,
+          "seal_ratio": 0.1443,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 63.61,
+          "weight": 0.3,
+          "weighted_score": 19.08,
+          "turnover_rate": 14.99,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "化学制药",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 3
+    },
+    {
+      "code": "600785",
+      "name": "新华百货",
+      "price": 10.71,
+      "change_pct": 9.96,
+      "amount": 169637652.0,
+      "turnover_rate": 5.02,
+      "float_market_cap": 3383115412.32,
+      "total_market_cap": 3383115412.32,
+      "seal_amount": 74140264.0,
+      "seal_ratio": 0.4371,
+      "first_seal_time": "09:25:01",
+      "last_seal_time": "09:31:16",
+      "broken_count": 1,
+      "consecutive_boards": 2,
+      "sector": "一般零售",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 72.78,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 73.0,
+          "weight": 0.35,
+          "weighted_score": 25.55,
+          "consecutive_boards": 2,
+          "base_board_score": 70.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 3.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 90.32,
+          "weight": 0.15,
+          "weighted_score": 13.55,
+          "seal_ratio": 0.4371,
+          "first_seal_time": "09:25:01"
+        },
+        "chip_structure": {
+          "score": 75.61,
+          "weight": 0.3,
+          "weighted_score": 22.68,
+          "turnover_rate": 5.02,
+          "high_60d_breakout": true,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "一般零售",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 4
+    }
+  ],
+  "all_scored_stocks": [
+    {
+      "code": "002412",
+      "name": "汉森制药",
+      "price": 11.21,
+      "change_pct": 10.01,
+      "amount": 403946816.0,
+      "turnover_rate": 7.33,
+      "float_market_cap": 5580842450.0,
+      "total_market_cap": 5640872000.0,
+      "seal_amount": 249630535.0,
+      "seal_ratio": 0.618,
+      "first_seal_time": "09:30:06",
+      "last_seal_time": "09:30:06",
+      "broken_count": 0,
+      "consecutive_boards": 4,
+      "sector": "中药Ⅱ",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 94.77,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 97.0,
+          "weight": 0.35,
+          "weighted_score": 33.95,
+          "consecutive_boards": 4,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
+          "is_spatial_leader": true
+        },
+        "seal_strength": {
+          "score": 92.26,
+          "weight": 0.15,
+          "weighted_score": 13.84,
+          "seal_ratio": 0.618,
+          "first_seal_time": "09:30:06"
+        },
+        "chip_structure": {
+          "score": 93.28,
+          "weight": 0.3,
+          "weighted_score": 27.98,
+          "turnover_rate": 7.33,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "中药Ⅱ",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 1
+    },
+    {
+      "code": "000017",
+      "name": "深中华A",
+      "price": 7.82,
+      "change_pct": 9.99,
+      "amount": 69120996.0,
+      "turnover_rate": 2.01,
+      "float_market_cap": 3447227656.82,
+      "total_market_cap": 5389426136.96,
+      "seal_amount": 180589590.0,
+      "seal_ratio": 2.6127,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:25:00",
+      "broken_count": 0,
+      "consecutive_boards": 3,
+      "sector": "饰品",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 83.38,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 98.06,
+          "weight": 0.15,
+          "weighted_score": 14.71,
+          "seal_ratio": 2.6127,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.3,
+          "weighted_score": 19.92,
+          "turnover_rate": 2.01,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "饰品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 2
+    },
+    {
+      "code": "000931",
+      "name": "中关村",
+      "price": 5.6,
+      "change_pct": 10.02,
+      "amount": 616654400.0,
+      "turnover_rate": 14.99,
+      "float_market_cap": 4205765379.2,
+      "total_market_cap": 4217511065.6,
+      "seal_amount": 89005666.0,
+      "seal_ratio": 0.1443,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "14:39:57",
+      "broken_count": 1,
+      "consecutive_boards": 3,
+      "sector": "化学制药",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 78.19,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 69.03,
+          "weight": 0.15,
+          "weighted_score": 10.35,
+          "seal_ratio": 0.1443,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 63.61,
+          "weight": 0.3,
+          "weighted_score": 19.08,
+          "turnover_rate": 14.99,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "化学制药",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 3
+    },
+    {
+      "code": "600785",
+      "name": "新华百货",
+      "price": 10.71,
+      "change_pct": 9.96,
+      "amount": 169637652.0,
+      "turnover_rate": 5.02,
+      "float_market_cap": 3383115412.32,
+      "total_market_cap": 3383115412.32,
+      "seal_amount": 74140264.0,
+      "seal_ratio": 0.4371,
+      "first_seal_time": "09:25:01",
+      "last_seal_time": "09:31:16",
+      "broken_count": 1,
+      "consecutive_boards": 2,
+      "sector": "一般零售",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 72.78,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 73.0,
+          "weight": 0.35,
+          "weighted_score": 25.55,
+          "consecutive_boards": 2,
+          "base_board_score": 70.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 3.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 90.32,
+          "weight": 0.15,
+          "weighted_score": 13.55,
+          "seal_ratio": 0.4371,
+          "first_seal_time": "09:25:01"
+        },
+        "chip_structure": {
+          "score": 75.61,
+          "weight": 0.3,
+          "weighted_score": 22.68,
+          "turnover_rate": 5.02,
+          "high_60d_breakout": true,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "一般零售",
+          "sector_zt_count": 2,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 4
+    },
+    {
+      "code": "603958",
+      "name": "哈森股份",
+      "price": 22.61,
+      "change_pct": 10.02,
+      "amount": 965030064.0,
+      "turnover_rate": 19.91,
+      "float_market_cap": 4959729600.0,
+      "total_market_cap": 4959729600.0,
+      "seal_amount": 52624775.0,
+      "seal_ratio": 0.0545,
+      "first_seal_time": "09:31:38",
+      "last_seal_time": "14:26:46",
+      "broken_count": 3,
+      "consecutive_boards": 3,
+      "sector": "服装家纺",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 66.07,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 85.0,
+          "weight": 0.35,
+          "weighted_score": 29.75,
+          "consecutive_boards": 3,
+          "base_board_score": 85.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 53.55,
+          "weight": 0.15,
+          "weighted_score": 8.03,
+          "seal_ratio": 0.0545,
+          "first_seal_time": "09:31:38"
+        },
+        "chip_structure": {
+          "score": 30.97,
+          "weight": 0.3,
+          "weighted_score": 9.29,
+          "turnover_rate": 19.91,
+          "high_60d_breakout": false,
+          "broken_count": 3
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.2,
+          "weighted_score": 19.0,
+          "sector_name": "服装家纺",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 5
+    },
+    {
+      "code": "002041",
+      "name": "登海种业",
+      "price": 10.19,
+      "change_pct": 10.04,
+      "amount": 450444064.0,
+      "turnover_rate": 5.16,
+      "float_market_cap": 8967200000.0,
+      "total_market_cap": 8967200000.0,
+      "seal_amount": 102201624.0,
+      "seal_ratio": 0.2269,
+      "first_seal_time": "09:44:12",
+      "last_seal_time": "09:44:12",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "种植业",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 62.18,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 76.77,
+          "weight": 0.15,
+          "weighted_score": 11.52,
+          "seal_ratio": 0.2269,
+          "first_seal_time": "09:44:12"
+        },
+        "chip_structure": {
+          "score": 79.72,
+          "weight": 0.3,
+          "weighted_score": 23.92,
+          "turnover_rate": 5.16,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "种植业",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 6
+    },
+    {
+      "code": "002906",
+      "name": "华阳集团",
+      "price": 28.23,
+      "change_pct": 10.02,
+      "amount": 62595480.0,
+      "turnover_rate": 0.42,
+      "float_market_cap": 14812318630.59,
+      "total_market_cap": 14818464499.2,
+      "seal_amount": 325742046.0,
+      "seal_ratio": 5.2039,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:25:00",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "汽车零部",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 61.67,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 100.0,
+          "weight": 0.15,
+          "weighted_score": 15.0,
+          "seal_ratio": 5.2039,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.3,
+          "weighted_score": 19.92,
+          "turnover_rate": 0.42,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "汽车零部",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 7
+    },
+    {
+      "code": "002651",
+      "name": "利君股份",
+      "price": 8.61,
+      "change_pct": 9.96,
+      "amount": 289523776.0,
+      "turnover_rate": 6.12,
+      "float_market_cap": 4868641949.009999,
+      "total_market_cap": 8898090600.0,
+      "seal_amount": 69227594.0,
+      "seal_ratio": 0.2391,
+      "first_seal_time": "09:55:51",
+      "last_seal_time": "09:55:51",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "航空装备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 61.48,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 70.71,
+          "weight": 0.15,
+          "weighted_score": 10.61,
+          "seal_ratio": 0.2391,
+          "first_seal_time": "09:55:51"
+        },
+        "chip_structure": {
+          "score": 80.41,
+          "weight": 0.3,
+          "weighted_score": 24.12,
+          "turnover_rate": 6.12,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "航空装备",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 8
+    },
+    {
+      "code": "603032",
+      "name": "德新科技",
+      "price": 20.22,
+      "change_pct": 10.01,
+      "amount": 171616655.0,
+      "turnover_rate": 3.7,
+      "float_market_cap": 4708865952.0,
+      "total_market_cap": 4715858028.0,
+      "seal_amount": 48995082.0,
+      "seal_ratio": 0.2855,
+      "first_seal_time": "09:37:10",
+      "last_seal_time": "09:37:10",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "电池",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 61.39,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 84.51,
+          "weight": 0.15,
+          "weighted_score": 12.68,
+          "seal_ratio": 0.2855,
+          "first_seal_time": "09:37:10"
+        },
+        "chip_structure": {
+          "score": 71.2,
+          "weight": 0.3,
+          "weighted_score": 21.36,
+          "turnover_rate": 3.7,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.2,
+          "weighted_score": 11.6,
+          "sector_name": "电池",
+          "sector_zt_count": 3,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      },
+      "rank": 9
+    },
+    {
+      "code": "000925",
+      "name": "众合科技",
+      "price": 8.97,
+      "change_pct": 10.06,
+      "amount": 105717890.0,
+      "turnover_rate": 1.76,
+      "float_market_cap": 6020238310.71,
+      "total_market_cap": 6067037608.320001,
+      "seal_amount": 169076265.0,
+      "seal_ratio": 1.5993,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:25:00",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "轨交设备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 61.09,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 96.13,
+          "weight": 0.15,
+          "weighted_score": 14.42,
+          "seal_ratio": 1.5993,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.3,
+          "weighted_score": 19.92,
+          "turnover_rate": 1.76,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "轨交设备",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 10
+    },
+    {
+      "code": "603089",
+      "name": "正裕工业",
+      "price": 10.53,
+      "change_pct": 10.03,
+      "amount": 111102288.0,
+      "turnover_rate": 4.49,
+      "float_market_cap": 2527550312.04,
+      "total_market_cap": 2903323512.96,
+      "seal_amount": 26984441.0,
+      "seal_ratio": 0.2429,
+      "first_seal_time": "09:36:13",
+      "last_seal_time": "09:36:13",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "汽车零部",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 60.21,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 80.64,
+          "weight": 0.15,
+          "weighted_score": 12.1,
+          "seal_ratio": 0.2429,
+          "first_seal_time": "09:36:13"
+        },
+        "chip_structure": {
+          "score": 71.2,
+          "weight": 0.3,
+          "weighted_score": 21.36,
+          "turnover_rate": 4.49,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "汽车零部",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 11
+    },
+    {
+      "code": "001268",
+      "name": "联合精密",
+      "price": 22.42,
+      "change_pct": 10.01,
+      "amount": 129573980.0,
+      "turnover_rate": 6.22,
+      "float_market_cap": 2115049373.14,
+      "total_market_cap": 3378753794.1400003,
+      "seal_amount": 43818993.0,
+      "seal_ratio": 0.3382,
+      "first_seal_time": "09:32:27",
+      "last_seal_time": "11:13:24",
+      "broken_count": 1,
+      "consecutive_boards": 1,
+      "sector": "家电零部",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 59.35,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 88.39,
+          "weight": 0.15,
+          "weighted_score": 13.26,
+          "seal_ratio": 0.3382,
+          "first_seal_time": "09:32:27"
+        },
+        "chip_structure": {
+          "score": 64.48,
+          "weight": 0.3,
+          "weighted_score": 19.34,
+          "turnover_rate": 6.22,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "家电零部",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 12
+    },
+    {
+      "code": "002882",
+      "name": "金龙羽",
+      "price": 23.76,
+      "change_pct": 10.0,
+      "amount": 332816752.0,
+      "turnover_rate": 5.77,
+      "float_market_cap": 5868483302.88,
+      "total_market_cap": 10285704000.0,
+      "seal_amount": 22778712.0,
+      "seal_ratio": 0.0684,
+      "first_seal_time": "09:39:12",
+      "last_seal_time": "09:39:12",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "电网设备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 59.12,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 55.49,
+          "weight": 0.15,
+          "weighted_score": 8.32,
+          "seal_ratio": 0.0684,
+          "first_seal_time": "09:39:12"
+        },
+        "chip_structure": {
+          "score": 80.15,
+          "weight": 0.3,
+          "weighted_score": 24.05,
+          "turnover_rate": 5.77,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "电网设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 13
+    },
+    {
+      "code": "002017",
+      "name": "东信和平",
+      "price": 15.98,
+      "change_pct": 9.98,
+      "amount": 684374144.0,
+      "turnover_rate": 7.45,
+      "float_market_cap": 9271154776.22,
+      "total_market_cap": 9275301825.92,
+      "seal_amount": 51929742.0,
+      "seal_ratio": 0.0759,
+      "first_seal_time": "09:31:00",
+      "last_seal_time": "09:45:18",
+      "broken_count": 5,
+      "consecutive_boards": 2,
+      "sector": "通信设备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 58.77,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 73.0,
+          "weight": 0.35,
+          "weighted_score": 25.55,
+          "consecutive_boards": 2,
+          "base_board_score": 70.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 3.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 57.42,
+          "weight": 0.15,
+          "weighted_score": 8.61,
+          "seal_ratio": 0.0759,
+          "first_seal_time": "09:31:00"
+        },
+        "chip_structure": {
+          "score": 45.36,
+          "weight": 0.3,
+          "weighted_score": 13.61,
+          "turnover_rate": 7.45,
+          "high_60d_breakout": false,
+          "broken_count": 5
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "通信设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 14
+    },
+    {
+      "code": "003040",
+      "name": "楚天龙",
+      "price": 14.07,
+      "change_pct": 10.01,
+      "amount": 700507536.0,
+      "turnover_rate": 11.15,
+      "float_market_cap": 6427883130.06,
+      "total_market_cap": 6488183069.76,
+      "seal_amount": 32440579.0,
+      "seal_ratio": 0.0463,
+      "first_seal_time": "09:31:57",
+      "last_seal_time": "10:26:54",
+      "broken_count": 7,
+      "consecutive_boards": 2,
+      "sector": "通信设备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 58.2,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 73.0,
+          "weight": 0.35,
+          "weighted_score": 25.55,
+          "consecutive_boards": 2,
+          "base_board_score": 70.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 3.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 51.61,
+          "weight": 0.15,
+          "weighted_score": 7.74,
+          "seal_ratio": 0.0463,
+          "first_seal_time": "09:31:57"
+        },
+        "chip_structure": {
+          "score": 46.37,
+          "weight": 0.3,
+          "weighted_score": 13.91,
+          "turnover_rate": 11.15,
+          "high_60d_breakout": false,
+          "broken_count": 7
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "通信设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 15
+    },
+    {
+      "code": "600610",
+      "name": "中毅达",
+      "price": 8.66,
+      "change_pct": 10.04,
+      "amount": 696790720.0,
+      "turnover_rate": 12.0,
+      "float_market_cap": 6137573265.3,
+      "total_market_cap": 9277238105.28,
+      "seal_amount": 64715244.0,
+      "seal_ratio": 0.0929,
+      "first_seal_time": "13:18:11",
+      "last_seal_time": "13:18:11",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "化学原料",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 58.05,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 45.16,
+          "weight": 0.15,
+          "weighted_score": 6.77,
+          "seal_ratio": 0.0929,
+          "first_seal_time": "13:18:11"
+        },
+        "chip_structure": {
+          "score": 81.76,
+          "weight": 0.3,
+          "weighted_score": 24.53,
+          "turnover_rate": 12.0,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "化学原料",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 16
+    },
+    {
+      "code": "603105",
+      "name": "芯能科技",
+      "price": 7.74,
+      "change_pct": 9.94,
+      "amount": 249264831.0,
+      "turnover_rate": 6.54,
+      "float_market_cap": 3870088042.5,
+      "total_market_cap": 3870088050.2400002,
+      "seal_amount": 60997392.0,
+      "seal_ratio": 0.2447,
+      "first_seal_time": "09:50:38",
+      "last_seal_time": "11:03:56",
+      "broken_count": 1,
+      "consecutive_boards": 1,
+      "sector": "电力",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 57.95,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 74.58,
+          "weight": 0.15,
+          "weighted_score": 11.19,
+          "seal_ratio": 0.2447,
+          "first_seal_time": "09:50:38"
+        },
+        "chip_structure": {
+          "score": 64.71,
+          "weight": 0.3,
+          "weighted_score": 19.41,
+          "turnover_rate": 6.54,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.2,
+          "weighted_score": 11.6,
+          "sector_name": "电力",
+          "sector_zt_count": 3,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      },
+      "rank": 17
+    },
+    {
+      "code": "002580",
+      "name": "圣阳股份",
+      "price": 21.05,
+      "change_pct": 9.98,
+      "amount": 1205842672.0,
+      "turnover_rate": 12.83,
+      "float_market_cap": 9521731740.0,
+      "total_market_cap": 9553942281.6,
+      "seal_amount": 188619367.0,
+      "seal_ratio": 0.1564,
+      "first_seal_time": "09:37:33",
+      "last_seal_time": "09:41:45",
+      "broken_count": 1,
+      "consecutive_boards": 1,
+      "sector": "电池",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 57.54,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 70.97,
+          "weight": 0.15,
+          "weighted_score": 10.65,
+          "seal_ratio": 0.1564,
+          "first_seal_time": "09:37:33"
+        },
+        "chip_structure": {
+          "score": 65.16,
+          "weight": 0.3,
+          "weighted_score": 19.55,
+          "turnover_rate": 12.83,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.2,
+          "weighted_score": 11.6,
+          "sector_name": "电池",
+          "sector_zt_count": 3,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      },
+      "rank": 18
+    },
+    {
+      "code": "601700",
+      "name": "风范股份",
+      "price": 7.71,
+      "change_pct": 9.99,
+      "amount": 1221491328.0,
+      "turnover_rate": 14.54,
+      "float_market_cap": 8779818783.0,
+      "total_market_cap": 8779818752.16,
+      "seal_amount": 50322784.0,
+      "seal_ratio": 0.0412,
+      "first_seal_time": "09:54:05",
+      "last_seal_time": "09:54:05",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "电网设备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 56.98,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 41.68,
+          "weight": 0.15,
+          "weighted_score": 6.25,
+          "seal_ratio": 0.0412,
+          "first_seal_time": "09:54:05"
+        },
+        "chip_structure": {
+          "score": 79.93,
+          "weight": 0.3,
+          "weighted_score": 23.98,
+          "turnover_rate": 14.54,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "电网设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 19
+    },
+    {
+      "code": "603200",
+      "name": "上海洗霸",
+      "price": 39.13,
+      "change_pct": 10.01,
+      "amount": 130284373.0,
+      "turnover_rate": 1.92,
+      "float_market_cap": 6866536430.39,
+      "total_market_cap": 6866536430.39,
+      "seal_amount": 41106065.0,
+      "seal_ratio": 0.3155,
+      "first_seal_time": "09:34:42",
+      "last_seal_time": "09:34:42",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "环境治理",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-08-24",
+      "data_source": "akshare",
+      "quant_score": 56.04,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 45.0,
+          "weight": 0.35,
+          "weighted_score": 15.75,
+          "consecutive_boards": 1,
+          "base_board_score": 45.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 86.45,
+          "weight": 0.15,
+          "weighted_score": 12.97,
+          "seal_ratio": 0.3155,
+          "first_seal_time": "09:34:42"
+        },
+        "chip_structure": {
+          "score": 54.4,
+          "weight": 0.3,
+          "weighted_score": 16.32,
+          "turnover_rate": 1.92,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.2,
+          "weighted_score": 11.0,
+          "sector_name": "环境治理",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 20
+    }
+  ]
+}
