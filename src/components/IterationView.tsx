@@ -52,7 +52,7 @@ export const IterationView: React.FC<IterationViewProps> = ({
 
   if (loading || !data) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[460px] bg-slate-900/60 rounded-xl border border-slate-800 p-8 space-y-4">
+      <div className="flex flex-col items-center justify-center min-h-115 bg-slate-900/60 rounded-xl border border-slate-800 p-8 space-y-4">
         <RefreshCw className="w-8 h-8 text-indigo-400 animate-spin" />
         <p className="text-sm text-slate-400">正在加载策略自迭代与影子回测数据...</p>
       </div>
@@ -62,7 +62,7 @@ export const IterationView: React.FC<IterationViewProps> = ({
   // Safe defaults for potentially missing arrays/objects
   const impactedTrades: ImpactedTrade[] = data.impacted_trades || [];
   const configDiff: ConfigDiffItem[] = data.config_diff || [];
-  const metrics = data.metrics || {};
+  const metrics = data.metrics;
   const equityCurve = data.equity_curve || [];
 
   // Initialize or get current fine-tuned parameter value
@@ -95,7 +95,7 @@ export const IterationView: React.FC<IterationViewProps> = ({
   return (
     <div className="space-y-6 pb-28">
       {/* AREA A: STATUS BANNER */}
-      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/30 p-6 shadow-xl">
+      <section className="relative overflow-hidden rounded-2xl bg-linear-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/30 p-6 shadow-xl">
         <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10 pointer-events-none" />
         
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
@@ -179,7 +179,7 @@ export const IterationView: React.FC<IterationViewProps> = ({
                 <th className="py-3 px-4 font-semibold text-center">系统建议值 (Suggested)</th>
                 <th className="py-3 px-4 font-semibold text-center">安全区间 (Safe Range)</th>
                 <th className="py-3 px-4 font-semibold">归因调整理由 (Attribution Reason)</th>
-                <th className="py-3 px-4 font-semibold text-right min-w-[200px]">人工微调确认 (Adjust)</th>
+                <th className="py-3 px-4 font-semibold text-right min-w-50">人工微调确认 (Adjust)</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/60 font-mono">
@@ -281,7 +281,7 @@ export const IterationView: React.FC<IterationViewProps> = ({
             </div>
           </div>
 
-          <div className="h-[280px] w-full pt-2">
+          <div className="h-70 w-full pt-2">
             {equityCurve.length > 0 ? (
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={equityCurve} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>

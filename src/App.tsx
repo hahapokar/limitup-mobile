@@ -200,7 +200,7 @@ export default function App() {
         )}
 
         {loading ? (
-          <div className="flex min-h-[300px] items-center justify-center rounded-2xl border border-slate-800 bg-slate-900 text-slate-400">
+          <div className="flex min-h-75 items-center justify-center rounded-2xl border border-slate-800 bg-slate-900 text-slate-400">
             正在加载盘后候选结果…
           </div>
         ) : cards.length === 0 ? (
