@@ -50,8 +50,15 @@ jobs:
         run: |
           npm ci
           npm run build
-          mkdir -p public
+          # 把 build 产物覆盖到 public/（保留 public/snapshots 数据）
           cp -R dist/. public/
+          rm -f public/server.cjs public/server.cjs.map
+          # docs/ 是 GitHub Pages 源。先用 dist 全新构建，再叠加 public 的 snapshots
+          rm -rf docs
+          mkdir -p docs
+          cp -R dist/. docs/
+          cp -R public/snapshots docs/ 2>/dev/null || true
+          cp public/snapshot.json docs/ 2>/dev/null || true
 
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
@@ -109,8 +116,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Reflect new snapshot files (written to public/ by publish_snapshot.py) into docs/.
-          cp -R public/. docs/
-          rm -f docs/server.cjs docs/server.cjs.map
+          cp -R public/snapshots docs/ 2>/dev/null || true
+          cp public/snapshot.json docs/ 2>/dev/null || true
           git add public quant_system/data docs
           git diff --cached --quiet || git commit -m "chore: publish post-market snapshot"
           git fetch origin main

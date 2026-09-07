@@ -6,15 +6,16 @@ COMMIT_MSG="${1:-"update: $(date +'%Y-%m-%d %H:%M')"}"
 echo "📦 [1/5] 构建前端..."
 npm run build >/dev/null 2>&1 || { echo "❌ npm run build 失败"; exit 1; }
 
-echo "📂 [2/5] 同步 public + dist 到 docs (GitHub Pages 源)..."
+echo "📂 [2/5] 同步 build 产物到 public/ 和 docs/..."
+# Step 1: 把 build 产物覆盖到 public/（保留 public/snapshots 等数据）
+cp -R dist/. public/
+rm -f public/server.cjs public/server.cjs.map
+# Step 2: docs/ 是 GitHub Pages 源。先用 dist 全新构建，再叠加 public 的 snapshots
 rm -rf docs
 mkdir -p docs
-# 复制 build 产物（含 index.html + assets/）
 cp -R dist/. docs/
-# 复制 public 里的 snapshot 数据 + 静态资源（如有覆盖则覆盖）
-cp -R public/. docs/
-# server.cjs 是 Cloudflare Worker / 本地 dev 用，Pages 不需要
-rm -f docs/server.cjs docs/server.cjs.map
+cp -R public/snapshots docs/ 2>/dev/null || true
+cp -R public/snapshot.json docs/ 2>/dev/null || true
 
 echo "📦 [3/5] 暂存修改..."
 git add .
