@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
+import { Settings, X } from "lucide-react";
 import type { CandidateStock, CandidatesPayload, SentimentData } from "./types";
+import { SettingsView } from "./components/SettingsView";
 
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
 const STATIC_SNAPSHOT_MODE = import.meta.env.VITE_API_MODE === "static";
@@ -166,9 +168,36 @@ export default function App() {
             >
               {loading ? "正在读取…" : "自动更新数据"}
             </button>
+            <button
+              onClick={() => setShowSettings(true)}
+              className="flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-300 transition hover:bg-slate-800 hover:text-white"
+              title="模型底层逻辑与四大因子说明"
+              aria-label="模型说明"
+            >
+              <Settings className="h-4 w-4" />
+              <span>模型说明</span>
+            </button>
           </div>
         </div>
       </header>
+
+      {showSettings && (
+        <div className="fixed inset-0 z-50 flex flex-col bg-slate-950/95 backdrop-blur-sm">
+          <div className="flex items-center justify-between border-b border-slate-800 bg-slate-900 px-4 py-3">
+            <h2 className="text-base font-bold text-white">模型说明 · 四大因子与风控规则</h2>
+            <button
+              onClick={() => setShowSettings(false)}
+              className="rounded-md p-1.5 text-slate-400 transition hover:bg-slate-800 hover:text-white"
+              aria-label="关闭"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+          <div className="flex-1 overflow-y-auto">
+            <SettingsView />
+          </div>
+        </div>
+      )}
 
       <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
         <section className="mb-6 grid gap-4 md:grid-cols-3">
