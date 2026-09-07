@@ -2,8 +2,11 @@ name: Daily post-market selection
 
 on:
   schedule:
-    # 15:40 Beijing time (UTC 07:40), allowing market data to settle.
-    - cron: "40 7 * * 1-5"
+    # Beijing time, weekdays. Multiple crons to dodge GitHub schedule skips.
+    - cron: "40 7 * * 1-5"   # 15:40
+    - cron: "50 7 * * 1-5"   # 15:50 兜底
+    - cron: "0 8 * * 1-5"    # 16:00 兜底
+    - cron: "10 10 * * 1-5"  # 18:10 兜底
   workflow_dispatch:
     inputs:
       trade_date:
@@ -53,14 +56,24 @@ jobs:
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Check A-share trading day
+      - name: Check if should run
         id: trading-day
         env:
           TZ: Asia/Shanghai
         run: |
+          today="$(date +%F)"
+          # Auto-triggered runs skip if today's snapshot was already published.
+          if [ -z "${{ inputs.trade_date }}" ] && [ -f public/snapshot.json ]; then
+            published_date="$(python -c "import json; print(json.load(open('public/snapshot.json')).get('trade_date',''))")"
+            if [ "$published_date" = "$today" ]; then
+              echo "Snapshot for $today already published; skipping."
+              echo "should_run=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
           trade_date="${{ inputs.trade_date }}"
           if [ -z "$trade_date" ]; then
-            trade_date="$(date +%F)"
+            trade_date="$today"
           fi
           python - "$trade_date" <<'PY'
           import os
@@ -91,6 +104,7 @@ jobs:
           python scripts/publish_snapshot.py --date "$trade_date" --output public
 
       - name: Publish snapshot files
+        if: steps.trading-day.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -111,9 +125,11 @@ jobs:
           done
 
       - name: Upload GitHub Pages artifact
+        if: steps.trading-day.outputs.should_run == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
       - name: Deploy GitHub Pages
+        if: steps.trading-day.outputs.should_run == 'true'
         uses: actions/deploy-pages@v4
