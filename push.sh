@@ -4,6 +4,7 @@ set -e
 COMMIT_MSG="${1:-"update: $(date +'%Y-%m-%d %H:%M')"}"
 
 echo "📦 [1/5] 构建前端..."
+rm -rf dist node_modules/.vite
 npm run build >/dev/null 2>&1 || { echo "❌ npm run build 失败"; exit 1; }
 
 echo "📂 [2/5] 同步 build 产物到 public/ 和 docs/..."
