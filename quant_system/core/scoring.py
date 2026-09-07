@@ -24,7 +24,9 @@ from quant_system.config import (
     MIN_PRICE,
     MAX_PRICE,
     CANDIDATES_SELECT_COUNT,
-    DATA_DIR
+    DATA_DIR,
+    BOARD_HEIGHT_DECAY_START,
+    BOARD_HEIGHT_DECAY_RATE,
 )
 from quant_system.core.data_fetcher import data_fetcher
 from quant_system.utils.notifier import record_system_log, send_notification
@@ -380,6 +382,12 @@ class ScoringEngine:
             else:
                 base_board_score = 45.0  # 1-board is the FLOOR (was 50, neutral midpoint)
 
+            # High-board decay: five boards remain fully rewarded; excessive
+            # height is discounted exponentially without changing other factors.
+            decay_steps = max(0, consec - BOARD_HEIGHT_DECAY_START)
+            decay_factor = BOARD_HEIGHT_DECAY_RATE ** decay_steps
+            height_score = base_board_score * decay_factor
+
             sentiment_adj = 0.0
             is_spatial_leader = (consec >= market_max_boards and market_max_boards > 1)
 
@@ -402,7 +410,7 @@ class ScoringEngine:
                 elif consec == 2:
                     sentiment_adj += 3.0
 
-            factor_consecutive_board = round(max(0.0, min(100.0, base_board_score + sentiment_adj)), 2)
+            factor_consecutive_board = round(max(0.0, min(100.0, height_score + sentiment_adj)), 2)
 
 # -------------------------------------------------------------
             # Factor 2: 封板强度因子 (Seal Strength - 25%)
@@ -519,6 +527,7 @@ class ScoringEngine:
                         "weighted_score": round(factor_consecutive_board * w1, 2),
                         "consecutive_boards": consec,
                         "base_board_score": base_board_score,
+                        "decay_factor": round(decay_factor, 4),
                         "sentiment_state": sentiment_state,
                         "sentiment_adjustment": sentiment_adj,
                         "is_spatial_leader": is_spatial_leader

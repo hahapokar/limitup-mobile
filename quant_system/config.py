@@ -86,6 +86,11 @@ FACTOR_WEIGHTS: Dict[str, float] = {
     "sector_resonance":            0.20, # 4. 板块共振因子 (20%) — keep as-is
 }
 
+# High-board height decay: keep boards 1-5 unchanged, then reduce the height
+# score exponentially by 30% for each additional board.
+BOARD_HEIGHT_DECAY_START: int = 5
+BOARD_HEIGHT_DECAY_RATE: float = 0.70
+
 # Intraday Execution & Risk Control (防洗盘卖出与买入风控)
 SKIP_ONE_WORD_ZT_OPEN_PCT: float = 9.80   # 一字涨停不可买入过滤 (开盘涨幅 >= 9.8%)
 SKIP_WEAK_OPEN_PCT: float = -2.50         # 弱开盘放弃过滤 — 从-4.5收紧到-2.5:
