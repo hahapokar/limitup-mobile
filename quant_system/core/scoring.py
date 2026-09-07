@@ -27,6 +27,10 @@ from quant_system.config import (
     DATA_DIR,
     BOARD_HEIGHT_DECAY_START,
     BOARD_HEIGHT_DECAY_RATE,
+    LOCKUP_LOOKAHEAD_TRADING_DAYS,
+    LOCKUP_WARNING_RATIO,
+    LOCKUP_HARD_RATIO,
+    LOCKUP_RISK_PENALTY,
 )
 from quant_system.core.data_fetcher import data_fetcher
 from quant_system.utils.notifier import record_system_log, send_notification
@@ -106,7 +110,7 @@ class ScoringEngine:
             raise ValueError(f"Limit up pool for {effective_date} is empty.")
 
         # 2. Hard Exclusion Filtering (基础排雷)
-        filtered_pool, filter_stats = self._apply_hard_filters(raw_pool)
+        filtered_pool, filter_stats = self._apply_hard_filters(raw_pool, effective_date)
         record_system_log("INFO", "Scoring", f"Pool filtered: {len(raw_pool)} -> {len(filtered_pool)} stocks (ST, Cap, Price, Inst filters applied)")
 
         if not filtered_pool:
@@ -218,7 +222,11 @@ class ScoringEngine:
                 f"Reason: {e}"
             ) from e
 
-    def _apply_hard_filters(self, pool: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], Dict[str, int]]:
+    def _apply_hard_filters(
+        self,
+        pool: List[Dict[str, Any]],
+        trade_date: Optional[str] = None,
+    ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
         """Apply mandatory risk exclusion rules.
 
         Principle: a filter is only applied when its data is TRULY present.
@@ -236,11 +244,22 @@ class ScoringEngine:
             "price_unknown": 0,
             "inst_ratio_high": 0,
             "inst_ratio_unknown": 0,
+            "lockup_hard_excluded": 0,
+            "lockup_warning": 0,
+            "lockup_data_unavailable": 0,
             "incomplete_data": 0,
             "passed": 0
         }
 
-        for stock in pool:
+        lockup_map, lockup_data_available = data_fetcher.get_lockup_risk_map(
+            trade_date,
+            LOCKUP_LOOKAHEAD_TRADING_DAYS,
+        )
+        if not lockup_data_available:
+            stats["lockup_data_unavailable"] = 1
+
+        for original_stock in pool:
+            stock = dict(original_stock)
             required_fields = ("price", "float_market_cap", "turnover_rate", "seal_ratio", "consecutive_boards", "sector")
             if any(stock.get(field) is None for field in required_fields):
                 stats["incomplete_data"] += 1
@@ -276,6 +295,22 @@ class ScoringEngine:
             elif inst_ratio > MAX_INSTITUTION_RATIO:
                 stats["inst_ratio_high"] += 1
                 continue
+
+            lockup = lockup_map.get(str(stock.get("code", "")).zfill(6))
+            lockup_ratio = float(lockup.get("max_ratio", 0.0)) if lockup else 0.0
+            lockup_high_risk = bool(lockup and lockup.get("high_risk"))
+            hard_lockup = lockup_high_risk and lockup_ratio >= LOCKUP_HARD_RATIO
+            if hard_lockup:
+                stats["lockup_hard_excluded"] += 1
+                continue
+            if lockup_ratio >= LOCKUP_WARNING_RATIO:
+                stats["lockup_warning"] += 1
+                stock["lockup_risk_penalty"] = LOCKUP_RISK_PENALTY
+            else:
+                stock["lockup_risk_penalty"] = 0.0
+            stock["lockup_risk_ratio"] = lockup_ratio
+            stock["lockup_release_date"] = lockup.get("release_date") if lockup else None
+            stock["lockup_release_type"] = lockup.get("release_type") if lockup else None
 
             passed.append(stock)
 
@@ -509,17 +544,18 @@ class ScoringEngine:
             w3 = FACTOR_WEIGHTS.get("chip_structure", 0.25)
             w4 = FACTOR_WEIGHTS.get("sector_resonance", 0.20)
 
-            total_quant_score = round(
+            lockup_penalty = float(s.get("lockup_risk_penalty", 0.0))
+            total_quant_score = round(max(0.0, (
                 factor_consecutive_board * w1 +
                 factor_seal * w2 +
                 factor_chip * w3 +
-                factor_sector * w4,
-                2
-            )
+                factor_sector * w4
+            ) - lockup_penalty), 2)
 
             scored_item = {
                 **s,
                 "quant_score": total_quant_score,
+                "lockup_risk_penalty": lockup_penalty,
                 "factor_breakdown": {
                     "consecutive_board_sentiment": {
                         "score": factor_consecutive_board,

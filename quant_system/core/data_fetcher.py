@@ -9,7 +9,7 @@ import json
 import logging
 import datetime
 import re
-from typing import List, Dict, Any, Optional, Callable, Union
+from typing import List, Dict, Any, Optional, Callable, Union, Tuple
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -41,7 +41,13 @@ from quant_system.config import (
     DATA_REQUEST_RETRIES,
     DATA_DIR
 )
-from quant_system.utils.calendar import normalize_to_trade_day, is_trade_day, get_prev_trade_day, get_next_trade_day
+from quant_system.utils.calendar import (
+    normalize_to_trade_day,
+    is_trade_day,
+    get_prev_trade_day,
+    get_next_trade_day,
+    get_trade_days_range,
+)
 from quant_system.utils.notifier import record_system_log
 
 logger = logging.getLogger("QuantTrading.DataFetcher")
@@ -386,6 +392,7 @@ class DataFetcher:
 
     def __init__(self):
         self.session = _RobustSession()
+        self._lockup_risk_cache: Dict[str, Tuple[Dict[str, Dict[str, Any]], bool]] = {}
         self.session.headers.update({
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             "Referer": "https://finance.sina.com.cn/"
@@ -409,6 +416,87 @@ class DataFetcher:
         else:
             query_date = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)).strftime("%Y-%m-%d")
         return normalize_to_trade_day(query_date)
+
+    def get_lockup_risk_map(
+        self,
+        trade_date: Optional[str] = None,
+        lookahead_days: int = 15,
+    ) -> Tuple[Dict[str, Dict[str, Any]], bool]:
+        """Return restricted-share release risk keyed by stock code.
+
+        The release calendar is fetched once per trade date. The boolean
+        indicates whether the source was available; an unavailable source is
+        fail-open so a temporary AkShare outage cannot remove the whole pool.
+        """
+        effective_date = self.get_effective_date(trade_date)
+        cache_key = f"{effective_date}:{lookahead_days}"
+        if cache_key in self._lockup_risk_cache:
+            return self._lockup_risk_cache[cache_key]
+
+        try:
+            rows = self._fetch_lockup_calendar_akshare()
+            start_date = datetime.datetime.strptime(effective_date, "%Y-%m-%d").date()
+            trading_days = get_trade_days_range(
+                start_date,
+                start_date + datetime.timedelta(days=max(lookahead_days * 3, 30)),
+            )
+            window_end = trading_days[min(lookahead_days, len(trading_days) - 1)] if trading_days else effective_date
+            risk_map: Dict[str, Dict[str, Any]] = {}
+
+            for row in rows:
+                code = re.sub(r"\D", "", str(row.get("股票代码", row.get("代码", ""))))[-6:]
+                release_date = str(row.get("解禁时间", row.get("解禁日期", "")))[:10]
+                if len(code) != 6 or not release_date or not (effective_date <= release_date <= window_end):
+                    continue
+
+                ratio = _safe_float(
+                    row.get(
+                        "实际解禁占比",
+                        row.get(
+                            "解禁股占流通股比例",
+                            row.get("解禁股占总股本比例", row.get("解禁比例")),
+                        ),
+                    ),
+                    None,
+                    "lockup_ratio",
+                    use_none=True,
+                )
+                if ratio is None:
+                    continue
+
+                release_type = str(row.get("解禁类型", row.get("股份类型", "")))
+                high_risk = any(
+                    keyword in release_type
+                    for keyword in ("定向增发", "股权激励", "首发战略配售", "首发原股东")
+                )
+                current = risk_map.get(code)
+                if current is None or ratio > current["max_ratio"]:
+                    risk_map[code] = {
+                        "max_ratio": round(ratio, 4),
+                        "high_risk": high_risk,
+                        "release_date": release_date,
+                        "release_type": release_type,
+                    }
+                elif high_risk:
+                    current["high_risk"] = True
+
+            result = (risk_map, True)
+        except Exception as err:
+            logger.warning(f"Restricted-share release calendar unavailable: {err}")
+            record_system_log("WARNING", "DataFetcher", f"Lockup release data unavailable: {err}")
+            result = ({}, False)
+
+        self._lockup_risk_cache[cache_key] = result
+        return result
+
+    @retry_on_failure()
+    def _fetch_lockup_calendar_akshare(self) -> List[Dict[str, Any]]:
+        import akshare as ak
+
+        df = ak.stock_restricted_release_queue_em()
+        if df is None or df.empty:
+            return []
+        return df.to_dict(orient="records")
 
     # -------------------------------------------------------------------------
     # 1. LIMIT-UP POOL FETCHING (4-Level Fallback)

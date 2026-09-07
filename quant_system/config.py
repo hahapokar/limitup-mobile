@@ -38,6 +38,13 @@ DATA_REQUEST_TIMEOUT: float = 10.0  # Extended to 10.0s for heavy end-of-day dat
 DATA_REQUEST_RETRIES: int = 3
 DATA_FETCH_INTERVAL: float = 0.5    # Seconds between requests to avoid IP throttling
 
+# Restricted-share release risk controls. Ratios are percentages of total
+# share capital as reported by the AkShare release calendar.
+LOCKUP_LOOKAHEAD_TRADING_DAYS: int = 15
+LOCKUP_WARNING_RATIO: float = 2.0
+LOCKUP_HARD_RATIO: float = 5.0
+LOCKUP_RISK_PENALTY: float = 15.0
+
 # Account & Capital Allocation
 INITIAL_CAPITAL: float = 100_000.0     # 100,000 RMB (10万元本金)
 MAX_POSITIONS: int = 4                 # Equal-weight portfolio (25% max per stock)
