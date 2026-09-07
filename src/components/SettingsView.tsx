@@ -305,7 +305,7 @@ export const SettingsView: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between">
                   <span className="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-bold text-xs">
-                    因子 1 · 权重 30%
+                    因子 1 · 权重 35%
                   </span>
                   <Layers className="w-4 h-4 text-purple-400" />
                 </div>
@@ -330,14 +330,21 @@ export const SettingsView: React.FC = () => {
                     <span className="text-purple-300 font-bold">75 分</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">≥5 连板 (高位):</span>
-                    <span className="text-purple-300 font-bold">95 分</span>
+                    <span className="text-slate-400">5 连板 (高位):</span>
+                    <span className="text-purple-300 font-bold">100 分</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">≥6 连板 (超高板):</span>
+                    <span className="text-rose-300 font-bold">每多 1 板衰减 30%</span>
                   </div>
                 </div>
               </div>
 
               <div className="p-2.5 rounded bg-purple-950/40 border border-purple-900/50 text-[11px] text-purple-200">
-                ⚡ <strong>联动避险逻辑：</strong>退潮期中位股(3-4板)扣减 30分防“断板A杀”，首板加 10分防守；主升期空间高度龙头额外追加 15分。
+                ⚡ <strong>联动避险逻辑：</strong>退潮期中位股(3-4板)扣减 30分防“断板A杀”，首板加 10分防守；主升期空间高度龙头额外追加 18分。
+              </div>
+              <div className="p-2.5 rounded bg-purple-950/40 border border-purple-900/50 text-[11px] text-purple-200">
+                📉 <strong>高板衰减因子：</strong>1-5 板全额计分；超过 5 板按 0.7^(N-5) 指数衰减，规避高位股接力风险。
               </div>
             </div>
 
@@ -346,7 +353,7 @@ export const SettingsView: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between">
                   <span className="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold text-xs">
-                    因子 2 · 权重 25%
+                    因子 2 · 权重 15%
                   </span>
                   <Zap className="w-4 h-4 text-amber-400" />
                 </div>
@@ -387,7 +394,7 @@ export const SettingsView: React.FC = () => {
               <div>
                 <div className="flex items-center justify-between">
                   <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold text-xs">
-                    因子 3 · 权重 25%
+                    因子 3 · 权重 30%
                   </span>
                   <Percent className="w-4 h-4 text-emerald-400" />
                 </div>
@@ -471,7 +478,7 @@ export const SettingsView: React.FC = () => {
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
               排雷硬性过滤指标 (Hard Exclusion Filters)
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5 text-xs text-slate-300 pt-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2.5 text-xs text-slate-300 pt-1">
               <div className="p-2 rounded bg-slate-900 border border-slate-800">
                 <span className="text-red-400 font-bold">1. 严禁 ST / *ST：</span>
                 <span className="text-slate-400 block mt-0.5">直接剔除退市警示与戴帽股票。</span>
@@ -487,6 +494,10 @@ export const SettingsView: React.FC = () => {
               <div className="p-2 rounded bg-slate-900 border border-slate-800">
                 <span className="text-purple-400 font-bold">4. 开盘价下限：</span>
                 <span className="text-slate-400 block mt-0.5">次日开盘跌幅 &lt; -4.5% 严重破位股自动放弃。</span>
+              </div>
+              <div className="p-2 rounded bg-slate-900 border border-slate-800">
+                <span className="text-rose-400 font-bold">5. 解禁股风控：</span>
+                <span className="text-slate-400 block mt-0.5">解禁比例 ≥ 5% 硬排除；2%-5% 标记 warning 并扣 15 分。</span>
               </div>
             </div>
           </div>

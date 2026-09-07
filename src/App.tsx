@@ -42,6 +42,7 @@ export default function App() {
   const [payload, setPayload] = useState<CandidatesPayload | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showSettings, setShowSettings] = useState(false);
   const [calculation, setCalculation] = useState<{ status: string; trade_date?: string; candidate_count?: number; completed_at?: string; error?: string } | null>(null);
   const dateOptions = useMemo(() => Array.from(new Set([getBeijingDate(), ...availableDates])), [availableDates]);
 
