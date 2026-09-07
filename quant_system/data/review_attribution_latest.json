@@ -2,7 +2,7 @@
   "review_date": "2026-09-07",
   "prev_trade_date": "2026-09-04",
   "next_trade_date": "2026-09-08",
-  "review_time": "2026-09-07 17:35:38",
+  "review_time": "2026-09-07 19:00:19",
   "market_summary": {
     "sentiment_state": "主升/强势期",
     "sentiment_score": 94.75,
@@ -87,11 +87,12 @@
         "today_first_seal_time": "09:30:47",
         "today_factor_breakdown": {
           "consecutive_board_sentiment": {
-            "score": 100.0,
+            "score": 88.0,
             "weight": 0.35,
-            "weighted_score": 35.0,
+            "weighted_score": 30.8,
             "consecutive_boards": 6,
             "base_board_score": 100.0,
+            "decay_factor": 0.7,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 18.0,
             "is_spatial_leader": true
@@ -192,6 +193,7 @@
             "weighted_score": 29.75,
             "consecutive_boards": 3,
             "base_board_score": 85.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -548,6 +550,7 @@
             "weighted_score": 24.5,
             "consecutive_boards": 2,
             "base_board_score": 70.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -648,6 +651,7 @@
             "weighted_score": 24.5,
             "consecutive_boards": 2,
             "base_board_score": 70.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -703,7 +707,7 @@
         "prev_day_consecutive_boards": 5,
         "today_consecutive_boards": 6,
         "board_advancement": "5 → 6 连板",
-        "today_quant_score": 91.3,
+        "today_quant_score": 87.1,
         "today_rank": 1,
         "today_price": 17.11,
         "today_change_pct": 10.03,
@@ -715,7 +719,7 @@
         "today_broken_count": 0,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
-          "consecutive_board_sentiment": 100.0,
+          "consecutive_board_sentiment": 88.0,
           "seal_strength": 91.58,
           "chip_structure": 83.2,
           "sector_resonance": 88.0
@@ -733,7 +737,7 @@
           "sector_zt_count": 3,
           "has_true_resonance": true
         },
-        "verdict": "T-1 5 连板 → T 日 6 连板成功晋级（今日量化得分 91.3，排第 1 名）"
+        "verdict": "T-1 5 连板 → T 日 6 连板成功晋级（今日量化得分 87.1，排第 1 名）"
       },
       {
         "code": "600865",
@@ -982,7 +986,7 @@
         "name": "龙版传媒",
         "sector": "出版",
         "rank": 1,
-        "today_quant_score": 91.3,
+        "today_quant_score": 87.1,
         "today_consecutive_boards": 6,
         "today_close_price": 17.11,
         "today_change_pct": 10.03,
@@ -996,7 +1000,7 @@
           "板块 3 家涨停共振"
         ],
         "today_factor_scores": {
-          "consecutive_board_sentiment": 100.0,
+          "consecutive_board_sentiment": 88.0,
           "seal_strength": 91.58,
           "chip_structure": 83.2,
           "sector_resonance": 88.0
@@ -1240,7 +1244,7 @@
       "code": "605577",
       "name": "龙版传媒",
       "review_rank": 1,
-      "quant_score": 91.3,
+      "quant_score": 87.1,
       "consecutive_boards": 6,
       "sector": "出版",
       "price": 17.11,
@@ -1256,15 +1260,16 @@
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 91.3 (排名 1)",
-      "detailed_analysis": "综合量化打分 91.3 (排第 1 名)。首次封板 09:30:47。换手率 3.34%。出版 板块内 3 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 87.1 (排名 1)",
+      "detailed_analysis": "综合量化打分 87.1 (排第 1 名)。首次封板 09:30:47。换手率 3.34%。出版 板块内 3 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 100.0,
+          "score": 88.0,
           "weight": 0.35,
-          "weighted_score": 35.0,
+          "weighted_score": 30.8,
           "consecutive_boards": 6,
           "base_board_score": 100.0,
+          "decay_factor": 0.7,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
@@ -1325,6 +1330,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1385,6 +1391,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1445,6 +1452,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1505,6 +1513,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1565,6 +1574,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1625,6 +1635,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1685,6 +1696,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1733,6 +1745,7 @@
           "details": {
             "consecutive_boards": 1,
             "base_board_score": 45.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -1788,6 +1801,7 @@
           "details": {
             "consecutive_boards": 1,
             "base_board_score": 45.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -1848,11 +1862,11 @@
       "change_pct": 10.03,
       "consecutive_boards": 6,
       "sector": "出版",
-      "quant_score": 91.3,
+      "quant_score": 87.1,
       "turnover_rate": 3.34,
       "seal_ratio_pct": 44.54,
       "first_seal_time": "09:30:47",
-      "recommend_reason": "综合量化得分 91.3 (排第 1 名)。首次封板 09:30:47。所属板块：出版。",
+      "recommend_reason": "综合量化得分 87.1 (排第 1 名)。首次封板 09:30:47。所属板块：出版。",
       "operation_guide": null
     },
     {
@@ -1959,7 +1973,7 @@
       "code": "605577",
       "name": "龙版传媒",
       "review_rank": 1,
-      "quant_score": 91.3,
+      "quant_score": 87.1,
       "consecutive_boards": 6,
       "sector": "出版",
       "price": 17.11,
@@ -1975,15 +1989,16 @@
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 91.3 (排名 1)",
-      "detailed_analysis": "综合量化打分 91.3 (排第 1 名)。首次封板 09:30:47。换手率 3.34%。出版 板块内 3 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 87.1 (排名 1)",
+      "detailed_analysis": "综合量化打分 87.1 (排第 1 名)。首次封板 09:30:47。换手率 3.34%。出版 板块内 3 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 100.0,
+          "score": 88.0,
           "weight": 0.35,
-          "weighted_score": 35.0,
+          "weighted_score": 30.8,
           "consecutive_boards": 6,
           "base_board_score": 100.0,
+          "decay_factor": 0.7,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
@@ -2044,6 +2059,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2104,6 +2120,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2164,6 +2181,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2224,6 +2242,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2284,6 +2303,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2344,6 +2364,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2404,6 +2425,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -2452,6 +2474,7 @@
           "details": {
             "consecutive_boards": 1,
             "base_board_score": 45.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -2507,6 +2530,7 @@
           "details": {
             "consecutive_boards": 1,
             "base_board_score": 45.0,
+            "decay_factor": 1.0,
             "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
@@ -2567,11 +2591,11 @@
       "change_pct": 10.03,
       "consecutive_boards": 6,
       "sector": "出版",
-      "quant_score": 91.3,
+      "quant_score": 87.1,
       "turnover_rate": 3.34,
       "seal_ratio_pct": 44.54,
       "first_seal_time": "09:30:47",
-      "recommend_reason": "综合量化得分 91.3 (排第 1 名)。首次封板 09:30:47。所属板块：出版。",
+      "recommend_reason": "综合量化得分 87.1 (排第 1 名)。首次封板 09:30:47。所属板块：出版。",
       "operation_guide": null
     },
     {

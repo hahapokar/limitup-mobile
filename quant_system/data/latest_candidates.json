@@ -1,8 +1,8 @@
 {
   "trade_date": "2026-09-07",
   "snapshot_status": "FINAL",
-  "snapshot_generated_at": "2026-09-07 17:35:38",
-  "generate_time": "2026-09-07 17:35:38",
+  "snapshot_generated_at": "2026-09-07 19:00:19",
+  "generate_time": "2026-09-07 19:00:19",
   "sentiment_state": "主升/强势期",
   "total_limit_up_count": 93,
   "passed_filter_count": 58,
@@ -15,6 +15,9 @@
     "price_unknown": 0,
     "inst_ratio_high": 0,
     "inst_ratio_unknown": 58,
+    "lockup_hard_excluded": 0,
+    "lockup_warning": 0,
+    "lockup_data_unavailable": 0,
     "incomplete_data": 0,
     "passed": 58
   },
@@ -41,14 +44,19 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
-      "quant_score": 91.3,
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 87.1,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 100.0,
+          "score": 88.0,
           "weight": 0.35,
-          "weighted_score": 35.0,
+          "weighted_score": 30.8,
           "consecutive_boards": 6,
           "base_board_score": 100.0,
+          "decay_factor": 0.7,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
@@ -102,6 +110,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 86.99,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -110,6 +122,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -163,6 +176,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 76.57,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -171,6 +188,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -224,6 +242,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 75.46,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -232,6 +254,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -285,6 +308,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 75.29,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -293,6 +320,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -346,6 +374,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 73.16,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -354,6 +386,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -407,6 +440,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 70.26,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -415,6 +452,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -468,6 +506,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 69.49,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -476,6 +518,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -531,14 +574,19 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
-      "quant_score": 91.3,
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 87.1,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 100.0,
+          "score": 88.0,
           "weight": 0.35,
-          "weighted_score": 35.0,
+          "weighted_score": 30.8,
           "consecutive_boards": 6,
           "base_board_score": 100.0,
+          "decay_factor": 0.7,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
@@ -592,6 +640,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 86.99,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -600,6 +652,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -653,6 +706,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 76.57,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -661,6 +718,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -714,6 +772,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 75.46,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -722,6 +784,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -775,6 +838,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 75.29,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -783,6 +850,7 @@
           "weighted_score": 29.75,
           "consecutive_boards": 3,
           "base_board_score": 85.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -836,6 +904,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 73.16,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -844,6 +916,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -897,6 +970,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 70.26,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -905,6 +982,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -958,6 +1036,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 69.49,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -966,6 +1048,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1019,6 +1102,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 69.36,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1027,6 +1114,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1080,6 +1168,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 68.91,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1088,6 +1180,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1141,6 +1234,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 68.69,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1149,6 +1246,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1202,6 +1300,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 66.76,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1210,6 +1312,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1263,6 +1366,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 65.97,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1271,6 +1378,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1324,6 +1432,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 65.14,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1332,6 +1444,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1385,6 +1498,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 63.41,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1393,6 +1510,7 @@
           "weighted_score": 24.5,
           "consecutive_boards": 2,
           "base_board_score": 70.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1446,6 +1564,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 63.21,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1454,6 +1576,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1507,6 +1630,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 62.6,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1515,6 +1642,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1568,6 +1696,10 @@
       "high_60d_breakout": true,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 60.88,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1576,6 +1708,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1629,6 +1762,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 60.56,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1637,6 +1774,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
@@ -1690,6 +1828,10 @@
       "high_60d_breakout": false,
       "trade_date": "2026-09-07",
       "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
       "quant_score": 59.84,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
@@ -1698,6 +1840,7 @@
           "weighted_score": 15.75,
           "consecutive_boards": 1,
           "base_board_score": 45.0,
+          "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
