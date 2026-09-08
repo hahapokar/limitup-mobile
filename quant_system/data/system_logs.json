@@ -1,96 +1,5 @@
 [
   {
-    "timestamp": "2026-09-02 11:29:21",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.01% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:21",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.35% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:21",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -1.0% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.42% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.01% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:28",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.35% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:28",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -1.0% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:35",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:38",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.42% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:38",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 深证成指: 开-1.01% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:38",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 创业板指: 开-1.35% (阈值-1.0%)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:38",
-    "level": "WARNING",
-    "category": "Portfolio",
-    "message": "⛔ 3大指数中 2 个低开 < -1.0% (大盘系统性弱势), 跳过今日所有建仓",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:29:46",
-    "level": "INFO",
-    "category": "Portfolio",
-    "message": "[买入前指数审查] 上证指数: 开-0.42% (阈值-1.0%)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-02 11:29:46",
     "level": "INFO",
     "category": "Portfolio",
@@ -2097,6 +2006,97 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-09-07 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:23",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:25",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 73 limit-up stocks via [AkShare] for 2026-09-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:26",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-08 (Prev: 2026-09-07)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:27",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 73 limit-up stocks via [AkShare] for 2026-09-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:30",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 90.0 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:30",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:31",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 73 limit-up stocks via [AkShare] for 2026-09-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:32",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 73 -> 49 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:32",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:32",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-08): 市场情绪状态: [主升/强势期]，共分析 73 只涨停标的，排雷筛选后推荐 Top 8:\n亚盛集团(600108, 87.52分), 百大集团(600865, 87.33分), 爱仕达(002403, 84.02分), 中百集团(000759, 78.96分), 桂林旅游(000978, 77.52分), 读者传媒(603999, 76.65分), 中国出版(601949, 76.42分), 敦煌种业(600354, 76.14分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:32",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-09-08 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:32",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-09-08 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-08 17:18:32",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-09-08 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
