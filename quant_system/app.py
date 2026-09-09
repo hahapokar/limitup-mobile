@@ -22,7 +22,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Lightweight post-market stock selection")
     parser.add_argument("command", nargs="?", default="review", choices=["review", "health", "status", "daemon"], help="Command to execute")
     parser.add_argument("--date", type=str, default=None, help="Trading date YYYY-MM-DD")
-    parser.add_argument("--port", type=int, default=3006, help="Legacy web port (kept for compatibility only)")
+    parser.add_argument("--port", type=int, default=3008, help="Legacy web port (kept for compatibility only)")
     args = parser.parse_args()
 
     if args.command == "daemon":

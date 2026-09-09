@@ -23,7 +23,7 @@ def snapshot_manifest_file(trade_date: str) -> Path:
 
 # Web Server & Tailscale Network Configurations
 WEB_HOST: str = "0.0.0.0"
-WEB_PORT: int = 3006
+WEB_PORT: int = 3008
 TAILSCALE_DOMAIN: str = "zpq"
 
 # Operational Dates Anchor

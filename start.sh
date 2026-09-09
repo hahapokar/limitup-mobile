@@ -4,28 +4,28 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 cd "$(dirname "$0")"
 
 echo "========================================="
-echo "  A股量化盯盘系统启动中 (Port: 3006)  "
+echo "  A股量化盯盘系统启动中 (Port: 3008)  "
 echo "========================================="
 
-# 1. 检查并强制清理/释放 3006 端口占用 (避免 Address already in use)
-echo "[1/3] 检查并清理 3006 端口占用..."
+# 1. 检查并强制清理/释放 3008 端口占用 (避免 Address already in use)
+echo "[1/3] 检查并清理 3008 端口占用..."
 if command -v fuser >/dev/null 2>&1; then
-    fuser -k -n tcp 3006 >/dev/null 2>&1 || true
+    fuser -k -n tcp 3008 >/dev/null 2>&1 || true
 fi
 
 if command -v lsof >/dev/null 2>&1; then
-    PORT_PID=$(lsof -ti:3006 2>/dev/null)
+    PORT_PID=$(lsof -ti:3008 2>/dev/null)
     if [ -n "$PORT_PID" ]; then
-        echo "  发现占用 3006 端口的旧进程 PID: $PORT_PID，正在终止..."
+        echo "  发现占用 3008 端口的旧进程 PID: $PORT_PID，正在终止..."
         kill -9 $PORT_PID >/dev/null 2>&1 || true
     fi
 fi
 
-# Python 兜底清理 3006 端口进程
+# Python 兜底清理 3008 端口进程
 python3 -c "
 import os, signal, subprocess
 try:
-    res = subprocess.run(['lsof', '-ti:3006'], capture_output=True, text=True)
+    res = subprocess.run(['lsof', '-ti:3008'], capture_output=True, text=True)
     pids = [int(p) for p in res.stdout.strip().split() if p.isdigit()]
     for p in pids:
         if p != os.getpid():
@@ -34,7 +34,7 @@ except Exception:
     pass
 " 2>/dev/null || true
 
-echo "  3006 端口已就绪。"
+echo "  3008 端口已就绪。"
 
 # 2. 激活虚拟环境（若存在）
 if [ -d "venv" ]; then
@@ -73,28 +73,28 @@ fi
 
 echo "[4/4] 启动服务与网络监听..."
 echo "-----------------------------------------"
-echo "  本地访问地址: http://localhost:3006"
+echo "  本地访问地址: http://localhost:3008"
 if [ -n "$LAN_IP" ]; then
-    echo "  局域网地址:     http://${LAN_IP}:3006"
+    echo "  局域网地址:     http://${LAN_IP}:3008"
 fi
 if [ "$TS_RUNNING" = "1" ] && [ -n "$TS_IP" ]; then
-    echo "  Tailscale 地址: http://${TS_IP}:3006"
+    echo "  Tailscale 地址: http://${TS_IP}:3008"
 else
-    echo "  Tailscale 未运行: 100.84.193.8:3006 现在不可达"
+    echo "  Tailscale 未运行: 100.84.193.8:3008 现在不可达"
     echo "  需要跨设备访问时请先执行: tailscale up"
 fi
 echo "  提示: 首次拉行情约需数秒，端口就绪前浏览器会打不开"
 echo "-----------------------------------------"
 
-# 等 3006 真正开始监听后再打开浏览器（bootstrap 会先拉数据，固定 sleep 1.5s 会连拒绝）
+# 等 3008 真正开始监听后再打开浏览器（bootstrap 会先拉数据，固定 sleep 1.5s 会连拒绝）
 open_when_ready() {
     local i=0
     while [ $i -lt 60 ]; do
-        if lsof -nP -iTCP:3006 -sTCP:LISTEN >/dev/null 2>&1; then
+        if lsof -nP -iTCP:3008 -sTCP:LISTEN >/dev/null 2>&1; then
             if command -v open >/dev/null 2>&1; then
-                open "http://localhost:3006" >/dev/null 2>&1 || true
+                open "http://localhost:3008" >/dev/null 2>&1 || true
             elif command -v xdg-open >/dev/null 2>&1; then
-                xdg-open "http://localhost:3006" >/dev/null 2>&1 || true
+                xdg-open "http://localhost:3008" >/dev/null 2>&1 || true
             fi
             return 0
         fi
@@ -134,5 +134,5 @@ cleanup() {
 }
 trap cleanup EXIT INT TERM
 
-echo "启动 AI Studio 完整前端 (0.0.0.0:3006)..."
-PORT=3006 npm run dev
+echo "启动 AI Studio 完整前端 (0.0.0.0:3008)..."
+PORT=3008 npm run dev

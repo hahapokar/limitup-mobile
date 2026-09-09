@@ -3,9 +3,9 @@ name: Daily post-market selection
 on:
   schedule:
     # Beijing time, weekdays. Multiple crons to dodge GitHub schedule skips.
-    # Primary schedule + fallbacks (外部 cron-job.org 作为主触发器，这里是兜底)
-    - cron: "30 10 * * 1-5"  # 18:30 主触发
-    - cron: "0 11 * * 1-5"   # 19:00 兜底
+    # 外部 cron-job.org 负责 18:30 主触发；GitHub Actions 仅在 19:00 兜底。
+    # 避免两套调度器在 18:30 同时启动重复计算。
+    - cron: "0 11 * * 1-5"   # 19:00 北京时间兜底
   workflow_dispatch:
     inputs:
       trade_date:

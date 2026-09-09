@@ -1,5 +1,5 @@
 """
-Lightweight Web Server and Monitoring Dashboard for Port 3006.
+Lightweight Web Server and Monitoring Dashboard for Port 3008.
 Provides HTML Dashboard and RESTful APIs for Sentiment, Scored Candidates, and Portfolio NAV.
 """
 
@@ -21,7 +21,7 @@ from quant_system.utils.notifier import get_recent_logs, record_system_log
 
 logger = logging.getLogger("QuantTrading.WebServer")
 
-WEB_PORT = 3006
+WEB_PORT = 3008
 
 
 def get_latest_data() -> Dict[str, Any]:
@@ -126,7 +126,7 @@ def render_html_dashboard(data: Dict[str, Any]) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A股打板量化盯盘与实盘监控系统 (Port: 3006)</title>
+  <title>A股打板量化盯盘与实盘监控系统 (Port: 3008)</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js CDN -->
@@ -177,7 +177,7 @@ def render_html_dashboard(data: Dict[str, Any]) -> str:
         <div>
           <h1 class="text-base font-bold text-slate-100 flex items-center gap-2">
             A股打板量化盯盘监控平台
-            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">PORT 3006</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">PORT 3008</span>
           </h1>
           <p class="text-xs text-slate-400">四维情绪周期 · 4-Factor分位打分 · T+1集合竞价实盘撮合</p>
         </div>
@@ -502,7 +502,7 @@ def render_html_dashboard(data: Dict[str, Any]) -> str:
 
 
 class QuantWebRequestHandler(SimpleHTTPRequestHandler):
-    """Handles HTTP requests on port 3006."""
+    """Handles HTTP requests on port 3008."""
 
     def do_GET(self):
         parsed = urlparse(self.path)
@@ -604,7 +604,7 @@ def start_web_server(port: int = WEB_PORT, background: bool = True) -> Optional[
         logger.info(f"Port {port} Web Server active: http://localhost:{port}")
         
         if background:
-            t = threading.Thread(target=httpd.serve_forever, daemon=True, name="Quant3006WebServer")
+            t = threading.Thread(target=httpd.serve_forever, daemon=True, name="Quant3008WebServer")
             t.start()
             return httpd
         else:
