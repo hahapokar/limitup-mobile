@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx server.ts",
+    "dev": "VITE_API_MODE= VITE_API_BASE_URL= npm run build && tsx server.ts",
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
     "cap:build": "vite build && npx cap sync android",
     "cap:open": "npx cap open android",
