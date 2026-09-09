@@ -38,7 +38,7 @@ export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading
   if (!payload || !payload.candidates || payload.candidates.length === 0) {
     return (
       <div className="text-center py-16 text-slate-400">
-        暂无选股结果，系统将在 15:30 盘后自动生成当日 FINAL 选股快照。
+        暂无选股结果，系统将在 18:30 盘后自动生成当日 FINAL 选股快照。
       </div>
     );
   }
@@ -57,7 +57,7 @@ export const CandidatesView: React.FC<CandidatesViewProps> = ({ payload, loading
             <h2 className="text-lg font-bold text-slate-100">实时情绪与四大因子选股</h2>
             <p className="text-xs text-slate-400 mt-1">
               情绪择时作为四大因子选股的前置风控，数据日期：{sentiment?.trade_date || "—"}
-              {marketSession?.today_date && <span className="ml-2 text-amber-300">将于 {marketSession.today_date} 15:30 更新</span>}
+              {marketSession?.today_date && <span className="ml-2 text-amber-300">将于 {marketSession.today_date} 18:30 更新</span>}
             </p>
           </div>
           <span className="text-[11px] px-2 py-1 rounded border border-emerald-700/50 bg-emerald-950/40 text-emerald-300">盘后 FINAL</span>

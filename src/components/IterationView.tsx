@@ -137,7 +137,7 @@ export const IterationView: React.FC<IterationViewProps> = ({
             </h2>
 
             <p className="text-xs text-slate-300 leading-relaxed max-w-4xl">
-              系统根据当日 15:30 盘后涨停标的次日实际走势、炸板样本与多板晋级率，全自动在影子沙盒中进行
+              系统根据当日 18:30 盘后涨停标的次日实际走势、炸板样本与多板晋级率，全自动在影子沙盒中进行
               <span className="text-indigo-300 font-semibold"> 30个交易日滚动历史压力测试</span>。通过微调高灵敏度因子门槛，消除虚假申报噪音，在防范回撤的同时提升有效连板捕捉率。
             </p>
           </div>

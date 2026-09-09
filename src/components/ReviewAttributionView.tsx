@@ -166,7 +166,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
           <div>
             <div className="flex items-center gap-2 flex-wrap">
               <span className="px-2 py-0.5 rounded bg-red-950/60 border border-red-500/40 text-red-400 font-mono text-xs font-semibold">
-                复盘快照：{reviewDate} · 15:30 FINAL
+                复盘快照：{reviewDate} · 18:30 FINAL
               </span>
               <SentimentChip state={data.market_summary.sentiment_state} score={data.market_summary.sentiment_score} />
               <h2 className="text-lg font-bold text-slate-100">
@@ -182,7 +182,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
               <div className="rounded-lg border border-red-900/60 bg-red-950/20 px-3 py-2">
                 <span className="text-slate-500 block">T 日复盘快照</span>
                 <span className="text-red-300 font-mono font-semibold">{reviewDate}</span>
-                <span className="text-slate-500 ml-1">15:30 FINAL</span>
+                <span className="text-slate-500 ml-1">18:30 FINAL</span>
               </div>
               <div className="rounded-lg border border-amber-900/60 bg-amber-950/20 px-3 py-2">
                 <span className="text-slate-500 block">T+1 执行日期</span>
@@ -1035,7 +1035,7 @@ export const ReviewAttributionView: React.FC<ReviewAttributionViewProps> = ({
               <span>下一个交易日 ({nextDate}) 重点候选池推荐逻辑</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              根据 {reviewDate} 15:30 盘后全市场涨停标的与最新市场情绪状态（情绪分 {fmt(data.market_summary.sentiment_score, 1)} · {data.market_summary.sentiment_state || "—"}），
+              根据 {reviewDate} 18:30 盘后全市场涨停标的与最新市场情绪状态（情绪分 {fmt(data.market_summary.sentiment_score, 1)} · {data.market_summary.sentiment_state || "—"}），
               四大因子打分模型计算出 <strong className="text-red-400">{nextDate} 开盘重点关注与模拟交易候选池</strong>。
             </p>
           </div>

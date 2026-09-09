@@ -124,7 +124,7 @@ export const SettingsView: React.FC = () => {
               </span>
             </div>
             <p className="text-sm text-slate-300 mt-2 max-w-3xl leading-relaxed">
-              系统采用“盘中实时数据 + 15:30 当日 FINAL 快照 + 次日严格 T-1 决策”的交易闭环：实时行情只用于当日信号，盘后快照用于四大因子选股，历史数据只用于复盘。
+              系统采用“盘中实时数据 + 18:30 当日 FINAL 快照 + 次日严格 T-1 决策”的交易闭环：实时行情只用于当日信号，盘后快照用于四大因子选股，历史数据只用于复盘。
             </p>
           </div>
 
@@ -174,7 +174,7 @@ export const SettingsView: React.FC = () => {
                 一、大盘情绪周期量化模型 (Market Sentiment Timing)
               </h3>
             </div>
-            <span className="text-xs text-slate-400 font-mono">15:30 盘后全市场多维实时计算</span>
+            <span className="text-xs text-slate-400 font-mono">18:30 盘后全市场多维实时计算</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -514,7 +514,7 @@ export const SettingsView: React.FC = () => {
                 三、模拟实盘账户操作规则与交易风控白皮书
               </h3>
             </div>
-            <span className="text-xs text-slate-400 font-mono">LIVE 实时行情 · 15:30 FINAL 快照 · T-1 次日决策</span>
+            <span className="text-xs text-slate-400 font-mono">LIVE 实时行情 · 18:30 FINAL 快照 · T-1 次日决策</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

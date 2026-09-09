@@ -205,7 +205,7 @@ export default function App() {
             <p className="text-xs uppercase tracking-wider text-slate-400">交易日</p>
             <p className="mt-3 text-2xl font-bold text-white">{selectedDate || getBeijingDate()}</p>
             <p className="mt-1 text-xs text-slate-300">当前北京时间 {getBeijingDate()} {currentTime}</p>
-            <p className="mt-1 text-xs text-slate-500">系统将在每个交易日 15:40 更新当天数据；若未更新，请点击“自动更新数据”</p>
+            <p className="mt-1 text-xs text-slate-500">系统将在每个交易日 18:30 更新当天数据；若未更新，请点击“自动更新数据”</p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
             <p className="text-xs uppercase tracking-wider text-slate-400">情绪状态</p>
@@ -235,7 +235,7 @@ export default function App() {
         ) : cards.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900 p-8 text-center text-slate-400">
             {selectedDate === getBeijingDate()
-              ? "系统将在每个交易日15:40更新当天数据；如果尚未更新，请点击“自动更新数据”。"
+              ? "系统将在每个交易日18:30更新当天数据；如果尚未更新，请点击“自动更新数据”。"
               : `${selectedDate || "该日期"} 暂无盘后快照。`}
           </div>
         ) : (

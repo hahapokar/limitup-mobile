@@ -4,14 +4,12 @@ on:
   schedule:
     # Beijing time, weekdays. Multiple crons to dodge GitHub schedule skips.
     # Primary schedule + fallbacks (外部 cron-job.org 作为主触发器，这里是兜底)
-    - cron: "40 7 * * 1-5"   # 15:40 主触发
-    - cron: "50 7 * * 1-5"   # 15:50 兜底
-    - cron: "0 8 * * 1-5"    # 16:00 兜底
-    - cron: "15 8 * * 1-5"   # 16:15 兜底
-    - cron: "30 8 * * 1-5"   # 16:30 兜底
-    - cron: "0 9 * * 1-5"    # 17:00 兜底
-    - cron: "0 10 * * 1-5"   # 18:00 兜底
-    - cron: "30 10 * * 1-5"  # 18:30 兜底
+    - cron: "30 10 * * 1-5"  # 18:30 主触发
+    - cron: "40 10 * * 1-5"  # 18:40 兜底
+    - cron: "50 10 * * 1-5"  # 18:50 兜底
+    - cron: "0 11 * * 1-5"   # 19:00 兜底
+    - cron: "15 11 * * 1-5"  # 19:15 兜底
+    - cron: "30 11 * * 1-5"  # 19:30 兜底
   workflow_dispatch:
     inputs:
       trade_date:
@@ -109,8 +107,8 @@ jobs:
           else
             trade_date="$(date +%F)"
           fi
-          if [ "$(date +%F)" = "$trade_date" ] && [ "$(date +%H%M)" -lt "1530" ]; then
-            echo "${trade_date} has not reached the 15:30 Beijing close; no FINAL snapshot can be published."
+          if [ "$(date +%F)" = "$trade_date" ] && [ "$(date +%H%M)" -lt "1830" ]; then
+            echo "${trade_date} has not reached the 18:30 Beijing close; no FINAL snapshot can be published."
             exit 1
           fi
           python scripts/publish_snapshot.py --date "$trade_date" --output public
