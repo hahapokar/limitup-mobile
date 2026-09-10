@@ -1,0 +1,10 @@
+{
+  "trade_date": "2026-09-10",
+  "snapshot_status": "FINAL",
+  "finalized_at": "2026-09-10 18:31:19",
+  "artifacts": [
+    "limitup_2026-09-10.json",
+    "sentiment_2026-09-10.json",
+    "candidates_2026-09-10.json"
+  ]
+}
