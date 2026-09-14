@@ -1,8 +1,8 @@
 {
-  "trade_date": "2026-09-11",
+  "trade_date": "2026-09-14",
   "has_recommendation": false,
   "status": "NOT_RUN",
-  "last_evaluated": "2026-09-11 18:31:04",
+  "last_evaluated": "2026-09-14 18:31:01",
   "summary": null,
   "config_diff": [
     {
