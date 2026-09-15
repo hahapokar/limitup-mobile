@@ -1,96 +1,5 @@
 [
   {
-    "timestamp": "2026-09-02 11:44:22",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:44:40",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:44:58",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:45:16",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:45:33",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:45:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:46:09",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:46:27",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:46:44",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:47:02",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:47:19",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:47:37",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:47:55",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-02 11:48:14",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2006,97 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-09-14 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:30:58",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 32 limit-up stocks via [AkShare] for 2026-09-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:01",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-15 (Prev: 2026-09-14)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:02",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 32 limit-up stocks via [AkShare] for 2026-09-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:04",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 45.25 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:04",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:06",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 32 limit-up stocks via [AkShare] for 2026-09-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:07",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 32 -> 27 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:07",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:07",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-15): 市场情绪状态: [震荡/分化期]，共分析 32 只涨停标的，排雷筛选后推荐 Top 8:\n启明信息(002232, 71.12分), 中新赛克(002912, 65.84分), 宏盛股份(603090, 65.78分), 闽东电力(000993, 64.12分), 汉王科技(002362, 64.01分), 大为股份(002213, 62.41分), 博汇科技(688004, 62.38分), 金龙羽(002882, 61.67分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:07",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-09-15 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:07",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-09-15 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-15 18:31:07",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-09-15 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
