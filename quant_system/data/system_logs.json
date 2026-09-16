@@ -1,40 +1,5 @@
 [
   {
-    "timestamp": "2026-09-02 11:52:05",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:52:22",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:52:40",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:52:58",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:53:15",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-02 11:53:32",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2062,41 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-09-16 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 00:58:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-16",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 00:58:01",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 89 limit-up stocks via [AkShare] for 2026-09-16",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 00:58:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 89 -> 61 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 00:58:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 00:58:01",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-16): 市场情绪状态: [主升/强势期]，共分析 89 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 78.57分), 华瓷股份(001216, 76.0分), 英联股份(002846, 75.35分), 德尔未来(002631, 70.72分), 华脉科技(603042, 70.5分), 中晶科技(003026, 70.07分), 西陇科学(002584, 69.54分), 露笑科技(002617, 68.61分)",
     "details": {}
   }
 ]
