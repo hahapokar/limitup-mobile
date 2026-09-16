@@ -76,27 +76,25 @@ SENTIMENT_WEIGHTS: Dict[str, float] = {
 }
 
 # 4-Factor Percentile Scoring Model (四大因子打分模型 - 总分100)
+# TUNED on 2026-09-17 (9/1-9/16 88只样本回测):
+#   - 连板情绪因子差值 +6.58 (最有效), 维持 0.35
+#   - 板块共振因子差值 +4.35 (第二有效), 权重 0.20 → 0.25
+#   - 筹码结构因子差值 +0.50 (近乎失效), 权重 0.30 → 0.25
+#   - 封板强度因子差值 +2.35 (弱正向), 维持 0.15
 FACTOR_WEIGHTS: Dict[str, float] = {
-    # TUNED on 2026-08-21 → 08-24 live backtest:
-    #   - Raised 连板阶梯权重 from 0.30 → 0.35 because 2+ board height has
-    #     far more predictive value for T+1 carry than a one-day ZT seal.
-    #   - Cut 封板强度权重 from 0.25 → 0.15 because the T-day "giant buy1
-    #     seal order" mostly represents pre-empted T+1 sellers: stocks that
-    #     open at sky-high premiums on T+1 are exactly the ones that gap down
-    #     intraday (圣达生物 / 越剑智能 / 和远气体 were all top-1 seal-strength
-    #     names that opened -2~-4% and dropped another -4~-8% on 08-24).
-    #   - Raised 筹码结构 from 0.25 → 0.30 because turnover + 60-day high +
-    #     broken_count are the best defences against "buying fake breakouts".
     "consecutive_board_sentiment": 0.35, # 1. 连板阶梯与情绪联动 (35%)
     "seal_strength":               0.15, # 2. 封板强度因子 (15%)
-    "chip_structure":              0.30, # 3. 筹码结构与炸板惩罚 (30%)
-    "sector_resonance":            0.20, # 4. 板块共振因子 (20%) — keep as-is
+    "chip_structure":              0.25, # 3. 筹码结构与炸板惩罚 (25%) — 回测显示区分度不足, 降权
+    "sector_resonance":            0.25, # 4. 板块共振因子 (25%) — 回测验证有效, 提权
 }
 
-# High-board height decay: keep boards 1-5 unchanged, then reduce the height
-# score exponentially by 30% for each additional board.
+# High-board height decay: 从第 5 板后开始衰减，每多 1 板衰减 50%
+# TUNED on 2026-09-17 (9/1-9/16 回测):
+#   - 5板 2/4=50% 晋级率，不衰减
+#   - 6板 0/2=0%、7板 0/1=0% 晋级率，需强衰减
+# 原 START=5/RATE=0.70 衰减力度不足 → START=5/RATE=0.50 (6板砍半, 7板砍至1/4)
 BOARD_HEIGHT_DECAY_START: int = 5
-BOARD_HEIGHT_DECAY_RATE: float = 0.70
+BOARD_HEIGHT_DECAY_RATE: float = 0.50
 
 # Intraday Execution & Risk Control (防洗盘卖出与买入风控)
 SKIP_ONE_WORD_ZT_OPEN_PCT: float = 9.80   # 一字涨停不可买入过滤 (开盘涨幅 >= 9.8%)

@@ -403,19 +403,24 @@ class ScoringEngine:
                 consec = int(consec_raw)
 
             # -------------------------------------------------------------
-            # Factor 1: 连板阶梯与情绪联动 (Consecutive Board & Sentiment Linkage - 30%)
+            # Factor 1: 连板阶梯与情绪联动 (Consecutive Board & Sentiment Linkage - 35%)
+            # TUNED on 2026-09-17 (9/1-9/16 88只样本回测):
+            #   - P2: 3板是黄金接力区(50%晋级率), 设为最高基础分 90
+            #   - P5: 拉开1/2/3板差距(+22/+26), 加大中间区分分度
+            #   - P1: 6板+ 0%晋级率, 基础分压低至60, 再配合decay砍半
             # -------------------------------------------------------------
-            if consec >= 5:
-                base_board_score = 100.0
-            elif consec in (3, 4):
-                # WIDEN GAP vs 1-board (was 75, now 85). A confirmed 3-4 board
-                # stock has already survived 2+ days of real selling pressure
-                # and carries vastly more alpha than a random first-board.
-                base_board_score = 85.0
+            if consec >= 6:
+                base_board_score = 60.0   # 6板+: 0%晋级率, 基础分压低
+            elif consec == 5:
+                base_board_score = 78.0   # 5板: 50%晋级率, 略降
+            elif consec == 4:
+                base_board_score = 84.0   # 4板: 33%晋级率
+            elif consec == 3:
+                base_board_score = 90.0   # 3板: 黄金接力区(最高)
             elif consec == 2:
-                base_board_score = 70.0
+                base_board_score = 64.0   # 2板: 刚确立辨识度
             else:
-                base_board_score = 45.0  # 1-board is the FLOOR (was 50, neutral midpoint)
+                base_board_score = 42.0   # 1板: 最低
 
             # High-board decay: five boards remain fully rewarded; excessive
             # height is discounted exponentially without changing other factors.
