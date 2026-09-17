@@ -1,96 +1,5 @@
 [
   {
-    "timestamp": "2026-09-02 11:53:32",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:53:50",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:54:08",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:54:25",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:54:43",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:55:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:55:18",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:55:35",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:55:53",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:56:10",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:56:28",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:56:46",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-02 11:57:04",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-02",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-02 11:57:22",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2006,97 @@
     "level": "INFO",
     "category": "Notifier",
     "message": "📢 🎯 盘后打板量化选股完成 (2026-09-16): 市场情绪状态: [主升/强势期]，共分析 89 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 78.57分), 华瓷股份(001216, 76.0分), 英联股份(002846, 75.35分), 德尔未来(002631, 70.72分), 华脉科技(603042, 70.5分), 中晶科技(003026, 70.07分), 西陇科学(002584, 69.54分), 露笑科技(002617, 68.61分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:30:51",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-17",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:30:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-09-17",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:30:54",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-17 (Prev: 2026-09-16)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:30:55",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-09-17",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:30:59",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 73.0 (偏暖积极), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:30:59",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-17",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-09-17",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 47 -> 31 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:01",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-17): 市场情绪状态: [主升/强势期]，共分析 47 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 75.31分), 中晶科技(003026, 73.05分), 华瓷股份(001216, 71.5分), 内蒙新华(603230, 67.45分), 锡华科技(603248, 65.75分), 新宏泽(002836, 62.45分), 共达电声(002655, 62.33分), 大连圣亚(600593, 60.87分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:01",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-09-17 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:01",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-09-17 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-17 18:31:01",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-09-17 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]

@@ -1,8 +1,8 @@
 {
   "trade_date": "2026-09-16",
   "snapshot_status": "FINAL",
-  "snapshot_generated_at": "2026-09-16 18:31:01",
-  "generate_time": "2026-09-16 18:31:01",
+  "snapshot_generated_at": "2026-09-17 00:58:01",
+  "generate_time": "2026-09-17 00:58:01",
   "sentiment_state": "主升/强势期",
   "total_limit_up_count": 89,
   "passed_filter_count": 61,
@@ -48,14 +48,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 77.79,
+      "quant_score": 78.57,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 85.0,
+          "score": 84.0,
           "weight": 0.35,
-          "weighted_score": 29.75,
+          "weighted_score": 29.4,
           "consecutive_boards": 4,
-          "base_board_score": 85.0,
+          "base_board_score": 84.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -70,16 +70,16 @@
         },
         "chip_structure": {
           "score": 65.47,
-          "weight": 0.3,
-          "weighted_score": 19.64,
+          "weight": 0.25,
+          "weighted_score": 16.37,
           "turnover_rate": 7.6,
           "high_60d_breakout": false,
           "broken_count": 1
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "元件",
           "sector_zt_count": 4,
           "has_true_resonance": true,
@@ -88,72 +88,6 @@
         }
       },
       "rank": 1
-    },
-    {
-      "code": "002846",
-      "name": "英联股份",
-      "price": 12.75,
-      "change_pct": 10.01,
-      "amount": 305941904.0,
-      "turnover_rate": 8.89,
-      "float_market_cap": 3460245462.75,
-      "total_market_cap": 5354918808.0,
-      "seal_amount": 41162380.0,
-      "seal_ratio": 0.1345,
-      "first_seal_time": "09:31:24",
-      "last_seal_time": "09:31:24",
-      "broken_count": 0,
-      "consecutive_boards": 2,
-      "sector": "包装印刷",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": false,
-      "trade_date": "2026-09-16",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 77.17,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 70.0,
-          "weight": 0.35,
-          "weighted_score": 24.5,
-          "consecutive_boards": 2,
-          "base_board_score": 70.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 69.0,
-          "weight": 0.15,
-          "weighted_score": 10.35,
-          "seal_ratio": 0.1345,
-          "first_seal_time": "09:31:24"
-        },
-        "chip_structure": {
-          "score": 82.4,
-          "weight": 0.3,
-          "weighted_score": 24.72,
-          "turnover_rate": 8.89,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
-          "sector_name": "包装印刷",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      },
-      "rank": 2
     },
     {
       "code": "001216",
@@ -180,14 +114,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 77.02,
+      "quant_score": 76.0,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -202,16 +136,16 @@
         },
         "chip_structure": {
           "score": 66.4,
-          "weight": 0.3,
-          "weighted_score": 19.92,
+          "weight": 0.25,
+          "weighted_score": 16.6,
           "turnover_rate": 1.69,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "家居用品",
           "sector_zt_count": 3,
           "has_true_resonance": true,
@@ -219,24 +153,24 @@
           "is_solo_zone": false
         }
       },
-      "rank": 3
+      "rank": 2
     },
     {
-      "code": "002584",
-      "name": "西陇科学",
-      "price": 9.55,
-      "change_pct": 10.02,
-      "amount": 528102064.0,
-      "turnover_rate": 11.74,
-      "float_market_cap": 4594880677.900001,
-      "total_market_cap": 5588816772.8,
-      "seal_amount": 148050785.0,
-      "seal_ratio": 0.2803,
-      "first_seal_time": "09:32:24",
-      "last_seal_time": "09:32:24",
+      "code": "002846",
+      "name": "英联股份",
+      "price": 12.75,
+      "change_pct": 10.01,
+      "amount": 305941904.0,
+      "turnover_rate": 8.89,
+      "float_market_cap": 3460245462.75,
+      "total_market_cap": 5354918808.0,
+      "seal_amount": 41162380.0,
+      "seal_ratio": 0.1345,
+      "first_seal_time": "09:31:24",
+      "last_seal_time": "09:31:24",
       "broken_count": 0,
       "consecutive_boards": 2,
-      "sector": "电子化学",
+      "sector": "包装印刷",
       "is_st": false,
       "institution_ratio": null,
       "high_60d_breakout": false,
@@ -246,46 +180,46 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 72.98,
+      "quant_score": 75.35,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 86.0,
+          "score": 69.0,
           "weight": 0.15,
-          "weighted_score": 12.9,
-          "seal_ratio": 0.2803,
-          "first_seal_time": "09:32:24"
+          "weighted_score": 10.35,
+          "seal_ratio": 0.1345,
+          "first_seal_time": "09:31:24"
         },
         "chip_structure": {
-          "score": 81.95,
-          "weight": 0.3,
-          "weighted_score": 24.59,
-          "turnover_rate": 11.74,
+          "score": 82.4,
+          "weight": 0.25,
+          "weighted_score": 20.6,
+          "turnover_rate": 8.89,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "电子化学",
-          "sector_zt_count": 1,
-          "has_true_resonance": false,
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "包装印刷",
+          "sector_zt_count": 4,
+          "has_true_resonance": true,
           "is_overcrowded": false,
-          "is_solo_zone": true
+          "is_solo_zone": false
         }
       },
-      "rank": 4
+      "rank": 3
     },
     {
       "code": "002631",
@@ -312,14 +246,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 72.42,
+      "quant_score": 70.72,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -334,16 +268,16 @@
         },
         "chip_structure": {
           "score": 80.08,
-          "weight": 0.3,
-          "weighted_score": 24.02,
+          "weight": 0.25,
+          "weighted_score": 20.02,
           "turnover_rate": 5.66,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "家居用品",
           "sector_zt_count": 3,
           "has_true_resonance": true,
@@ -351,7 +285,7 @@
           "is_solo_zone": false
         }
       },
-      "rank": 5
+      "rank": 4
     },
     {
       "code": "603042",
@@ -378,14 +312,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 71.3,
+      "quant_score": 70.5,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -400,16 +334,16 @@
         },
         "chip_structure": {
           "score": 83.0,
-          "weight": 0.3,
-          "weighted_score": 24.9,
+          "weight": 0.25,
+          "weighted_score": 20.75,
           "turnover_rate": 9.72,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "通信设备",
           "sector_zt_count": 6,
           "has_true_resonance": true,
@@ -417,7 +351,7 @@
           "is_solo_zone": false
         }
       },
-      "rank": 6
+      "rank": 5
     },
     {
       "code": "003026",
@@ -444,14 +378,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 70.5,
+      "quant_score": 70.07,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -466,21 +400,87 @@
         },
         "chip_structure": {
           "score": 54.67,
-          "weight": 0.3,
-          "weighted_score": 16.4,
+          "weight": 0.25,
+          "weighted_score": 13.67,
           "turnover_rate": 10.74,
           "high_60d_breakout": false,
           "broken_count": 2
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "半导体",
           "sector_zt_count": 5,
           "has_true_resonance": true,
           "is_overcrowded": false,
           "is_solo_zone": false
+        }
+      },
+      "rank": 6
+    },
+    {
+      "code": "002584",
+      "name": "西陇科学",
+      "price": 9.55,
+      "change_pct": 10.02,
+      "amount": 528102064.0,
+      "turnover_rate": 11.74,
+      "float_market_cap": 4594880677.900001,
+      "total_market_cap": 5588816772.8,
+      "seal_amount": 148050785.0,
+      "seal_ratio": 0.2803,
+      "first_seal_time": "09:32:24",
+      "last_seal_time": "09:32:24",
+      "broken_count": 0,
+      "consecutive_boards": 2,
+      "sector": "电子化学",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-09-16",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 69.54,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 64.0,
+          "weight": 0.35,
+          "weighted_score": 22.4,
+          "consecutive_boards": 2,
+          "base_board_score": 64.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 86.0,
+          "weight": 0.15,
+          "weighted_score": 12.9,
+          "seal_ratio": 0.2803,
+          "first_seal_time": "09:32:24"
+        },
+        "chip_structure": {
+          "score": 81.95,
+          "weight": 0.25,
+          "weighted_score": 20.49,
+          "turnover_rate": 11.74,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "电子化学",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
         }
       },
       "rank": 7
@@ -510,14 +510,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 69.28,
+      "quant_score": 68.61,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -532,16 +532,16 @@
         },
         "chip_structure": {
           "score": 80.26,
-          "weight": 0.3,
-          "weighted_score": 24.08,
+          "weight": 0.25,
+          "weighted_score": 20.07,
           "turnover_rate": 5.91,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "电力",
           "sector_zt_count": 3,
           "has_true_resonance": true,
@@ -578,14 +578,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 77.79,
+      "quant_score": 78.57,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 85.0,
+          "score": 84.0,
           "weight": 0.35,
-          "weighted_score": 29.75,
+          "weighted_score": 29.4,
           "consecutive_boards": 4,
-          "base_board_score": 85.0,
+          "base_board_score": 84.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -600,16 +600,16 @@
         },
         "chip_structure": {
           "score": 65.47,
-          "weight": 0.3,
-          "weighted_score": 19.64,
+          "weight": 0.25,
+          "weighted_score": 16.37,
           "turnover_rate": 7.6,
           "high_60d_breakout": false,
           "broken_count": 1
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "元件",
           "sector_zt_count": 4,
           "has_true_resonance": true,
@@ -618,72 +618,6 @@
         }
       },
       "rank": 1
-    },
-    {
-      "code": "002846",
-      "name": "英联股份",
-      "price": 12.75,
-      "change_pct": 10.01,
-      "amount": 305941904.0,
-      "turnover_rate": 8.89,
-      "float_market_cap": 3460245462.75,
-      "total_market_cap": 5354918808.0,
-      "seal_amount": 41162380.0,
-      "seal_ratio": 0.1345,
-      "first_seal_time": "09:31:24",
-      "last_seal_time": "09:31:24",
-      "broken_count": 0,
-      "consecutive_boards": 2,
-      "sector": "包装印刷",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": false,
-      "trade_date": "2026-09-16",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 77.17,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 70.0,
-          "weight": 0.35,
-          "weighted_score": 24.5,
-          "consecutive_boards": 2,
-          "base_board_score": 70.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 69.0,
-          "weight": 0.15,
-          "weighted_score": 10.35,
-          "seal_ratio": 0.1345,
-          "first_seal_time": "09:31:24"
-        },
-        "chip_structure": {
-          "score": 82.4,
-          "weight": 0.3,
-          "weighted_score": 24.72,
-          "turnover_rate": 8.89,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
-          "sector_name": "包装印刷",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      },
-      "rank": 2
     },
     {
       "code": "001216",
@@ -710,14 +644,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 77.02,
+      "quant_score": 76.0,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -732,16 +666,16 @@
         },
         "chip_structure": {
           "score": 66.4,
-          "weight": 0.3,
-          "weighted_score": 19.92,
+          "weight": 0.25,
+          "weighted_score": 16.6,
           "turnover_rate": 1.69,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "家居用品",
           "sector_zt_count": 3,
           "has_true_resonance": true,
@@ -749,24 +683,24 @@
           "is_solo_zone": false
         }
       },
-      "rank": 3
+      "rank": 2
     },
     {
-      "code": "002584",
-      "name": "西陇科学",
-      "price": 9.55,
-      "change_pct": 10.02,
-      "amount": 528102064.0,
-      "turnover_rate": 11.74,
-      "float_market_cap": 4594880677.900001,
-      "total_market_cap": 5588816772.8,
-      "seal_amount": 148050785.0,
-      "seal_ratio": 0.2803,
-      "first_seal_time": "09:32:24",
-      "last_seal_time": "09:32:24",
+      "code": "002846",
+      "name": "英联股份",
+      "price": 12.75,
+      "change_pct": 10.01,
+      "amount": 305941904.0,
+      "turnover_rate": 8.89,
+      "float_market_cap": 3460245462.75,
+      "total_market_cap": 5354918808.0,
+      "seal_amount": 41162380.0,
+      "seal_ratio": 0.1345,
+      "first_seal_time": "09:31:24",
+      "last_seal_time": "09:31:24",
       "broken_count": 0,
       "consecutive_boards": 2,
-      "sector": "电子化学",
+      "sector": "包装印刷",
       "is_st": false,
       "institution_ratio": null,
       "high_60d_breakout": false,
@@ -776,46 +710,46 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 72.98,
+      "quant_score": 75.35,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 86.0,
+          "score": 69.0,
           "weight": 0.15,
-          "weighted_score": 12.9,
-          "seal_ratio": 0.2803,
-          "first_seal_time": "09:32:24"
+          "weighted_score": 10.35,
+          "seal_ratio": 0.1345,
+          "first_seal_time": "09:31:24"
         },
         "chip_structure": {
-          "score": 81.95,
-          "weight": 0.3,
-          "weighted_score": 24.59,
-          "turnover_rate": 11.74,
+          "score": 82.4,
+          "weight": 0.25,
+          "weighted_score": 20.6,
+          "turnover_rate": 8.89,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "电子化学",
-          "sector_zt_count": 1,
-          "has_true_resonance": false,
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "包装印刷",
+          "sector_zt_count": 4,
+          "has_true_resonance": true,
           "is_overcrowded": false,
-          "is_solo_zone": true
+          "is_solo_zone": false
         }
       },
-      "rank": 4
+      "rank": 3
     },
     {
       "code": "002631",
@@ -842,14 +776,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 72.42,
+      "quant_score": 70.72,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -864,16 +798,16 @@
         },
         "chip_structure": {
           "score": 80.08,
-          "weight": 0.3,
-          "weighted_score": 24.02,
+          "weight": 0.25,
+          "weighted_score": 20.02,
           "turnover_rate": 5.66,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "家居用品",
           "sector_zt_count": 3,
           "has_true_resonance": true,
@@ -881,7 +815,7 @@
           "is_solo_zone": false
         }
       },
-      "rank": 5
+      "rank": 4
     },
     {
       "code": "603042",
@@ -908,14 +842,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 71.3,
+      "quant_score": 70.5,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -930,16 +864,16 @@
         },
         "chip_structure": {
           "score": 83.0,
-          "weight": 0.3,
-          "weighted_score": 24.9,
+          "weight": 0.25,
+          "weighted_score": 20.75,
           "turnover_rate": 9.72,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "通信设备",
           "sector_zt_count": 6,
           "has_true_resonance": true,
@@ -947,7 +881,7 @@
           "is_solo_zone": false
         }
       },
-      "rank": 6
+      "rank": 5
     },
     {
       "code": "003026",
@@ -974,14 +908,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 70.5,
+      "quant_score": 70.07,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 70.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 24.5,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
-          "base_board_score": 70.0,
+          "base_board_score": 64.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -996,21 +930,87 @@
         },
         "chip_structure": {
           "score": 54.67,
-          "weight": 0.3,
-          "weighted_score": 16.4,
+          "weight": 0.25,
+          "weighted_score": 13.67,
           "turnover_rate": 10.74,
           "high_60d_breakout": false,
           "broken_count": 2
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "半导体",
           "sector_zt_count": 5,
           "has_true_resonance": true,
           "is_overcrowded": false,
           "is_solo_zone": false
+        }
+      },
+      "rank": 6
+    },
+    {
+      "code": "002584",
+      "name": "西陇科学",
+      "price": 9.55,
+      "change_pct": 10.02,
+      "amount": 528102064.0,
+      "turnover_rate": 11.74,
+      "float_market_cap": 4594880677.900001,
+      "total_market_cap": 5588816772.8,
+      "seal_amount": 148050785.0,
+      "seal_ratio": 0.2803,
+      "first_seal_time": "09:32:24",
+      "last_seal_time": "09:32:24",
+      "broken_count": 0,
+      "consecutive_boards": 2,
+      "sector": "电子化学",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-09-16",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 69.54,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 64.0,
+          "weight": 0.35,
+          "weighted_score": 22.4,
+          "consecutive_boards": 2,
+          "base_board_score": 64.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 86.0,
+          "weight": 0.15,
+          "weighted_score": 12.9,
+          "seal_ratio": 0.2803,
+          "first_seal_time": "09:32:24"
+        },
+        "chip_structure": {
+          "score": 81.95,
+          "weight": 0.25,
+          "weighted_score": 20.49,
+          "turnover_rate": 11.74,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "电子化学",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
         }
       },
       "rank": 7
@@ -1040,14 +1040,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 69.28,
+      "quant_score": 68.61,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1062,16 +1062,16 @@
         },
         "chip_structure": {
           "score": 80.26,
-          "weight": 0.3,
-          "weighted_score": 24.08,
+          "weight": 0.25,
+          "weighted_score": 20.07,
           "turnover_rate": 5.91,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "电力",
           "sector_zt_count": 3,
           "has_true_resonance": true,
@@ -1106,14 +1106,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 69.2,
+      "quant_score": 66.3,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1128,16 +1128,16 @@
         },
         "chip_structure": {
           "score": 92.0,
-          "weight": 0.3,
-          "weighted_score": 27.6,
+          "weight": 0.25,
+          "weighted_score": 23.0,
           "turnover_rate": 5.56,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
           "sector_name": "专业工程",
           "sector_zt_count": 1,
           "has_true_resonance": false,
@@ -1146,204 +1146,6 @@
         }
       },
       "rank": 9
-    },
-    {
-      "code": "002068",
-      "name": "黑猫股份",
-      "price": 10.14,
-      "change_pct": 9.98,
-      "amount": 376181616.0,
-      "turnover_rate": 5.09,
-      "float_market_cap": 7452959024.940001,
-      "total_market_cap": 7456400328.0,
-      "seal_amount": 160883734.0,
-      "seal_ratio": 0.4277,
-      "first_seal_time": "09:30:18",
-      "last_seal_time": "09:30:18",
-      "broken_count": 0,
-      "consecutive_boards": 1,
-      "sector": "橡胶",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": true,
-      "trade_date": "2026-09-16",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 68.35,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 45.0,
-          "weight": 0.35,
-          "weighted_score": 15.75,
-          "consecutive_boards": 1,
-          "base_board_score": 45.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 94.0,
-          "weight": 0.15,
-          "weighted_score": 14.1,
-          "seal_ratio": 0.4277,
-          "first_seal_time": "09:30:18"
-        },
-        "chip_structure": {
-          "score": 91.66,
-          "weight": 0.3,
-          "weighted_score": 27.5,
-          "turnover_rate": 5.09,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "橡胶",
-          "sector_zt_count": 2,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      },
-      "rank": 10
-    },
-    {
-      "code": "002780",
-      "name": "三夫户外",
-      "price": 14.04,
-      "change_pct": 10.03,
-      "amount": 100127460.0,
-      "turnover_rate": 5.58,
-      "float_market_cap": 1861638026.04,
-      "total_market_cap": 2321678450.52,
-      "seal_amount": 69520042.0,
-      "seal_ratio": 0.6943,
-      "first_seal_time": "09:47:12",
-      "last_seal_time": "09:47:12",
-      "broken_count": 0,
-      "consecutive_boards": 1,
-      "sector": "服装家纺",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": true,
-      "trade_date": "2026-09-16",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 67.71,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 45.0,
-          "weight": 0.35,
-          "weighted_score": 15.75,
-          "consecutive_boards": 1,
-          "base_board_score": 45.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 89.0,
-          "weight": 0.15,
-          "weighted_score": 13.35,
-          "seal_ratio": 0.6943,
-          "first_seal_time": "09:47:12"
-        },
-        "chip_structure": {
-          "score": 92.02,
-          "weight": 0.3,
-          "weighted_score": 27.61,
-          "turnover_rate": 5.58,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "服装家纺",
-          "sector_zt_count": 2,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      },
-      "rank": 11
-    },
-    {
-      "code": "300656",
-      "name": "民德电子",
-      "price": 29.57,
-      "change_pct": 20.01,
-      "amount": 358227616.0,
-      "turnover_rate": 9.57,
-      "float_market_cap": 3990490483.94,
-      "total_market_cap": 5060168379.04,
-      "seal_amount": 139076699.0,
-      "seal_ratio": 0.3882,
-      "first_seal_time": "11:14:33",
-      "last_seal_time": "11:14:33",
-      "broken_count": 0,
-      "consecutive_boards": 1,
-      "sector": "其他电子",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": true,
-      "trade_date": "2026-09-16",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 66.77,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 45.0,
-          "weight": 0.35,
-          "weighted_score": 15.75,
-          "consecutive_boards": 1,
-          "base_board_score": 45.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 73.0,
-          "weight": 0.15,
-          "weighted_score": 10.95,
-          "seal_ratio": 0.3882,
-          "first_seal_time": "11:14:33"
-        },
-        "chip_structure": {
-          "score": 94.89,
-          "weight": 0.3,
-          "weighted_score": 28.47,
-          "turnover_rate": 9.57,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 58.0,
-          "weight": 0.2,
-          "weighted_score": 11.6,
-          "sector_name": "其他电子",
-          "sector_zt_count": 4,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      },
-      "rank": 12
     },
     {
       "code": "603607",
@@ -1370,14 +1172,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 66.2,
+      "quant_score": 65.5,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1392,16 +1194,16 @@
         },
         "chip_structure": {
           "score": 81.0,
-          "weight": 0.3,
-          "weighted_score": 24.3,
+          "weight": 0.25,
+          "weighted_score": 20.25,
           "turnover_rate": 6.95,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "包装印刷",
           "sector_zt_count": 4,
           "has_true_resonance": true,
@@ -1409,7 +1211,73 @@
           "is_solo_zone": false
         }
       },
-      "rank": 13
+      "rank": 10
+    },
+    {
+      "code": "002068",
+      "name": "黑猫股份",
+      "price": 10.14,
+      "change_pct": 9.98,
+      "amount": 376181616.0,
+      "turnover_rate": 5.09,
+      "float_market_cap": 7452959024.940001,
+      "total_market_cap": 7456400328.0,
+      "seal_amount": 160883734.0,
+      "seal_ratio": 0.4277,
+      "first_seal_time": "09:30:18",
+      "last_seal_time": "09:30:18",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "橡胶",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-09-16",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 65.47,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 94.0,
+          "weight": 0.15,
+          "weighted_score": 14.1,
+          "seal_ratio": 0.4277,
+          "first_seal_time": "09:30:18"
+        },
+        "chip_structure": {
+          "score": 91.66,
+          "weight": 0.25,
+          "weighted_score": 22.91,
+          "turnover_rate": 5.09,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "橡胶",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 11
     },
     {
       "code": "688478",
@@ -1436,14 +1304,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.73,
+      "quant_score": 65.06,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1458,16 +1326,16 @@
         },
         "chip_structure": {
           "score": 80.44,
-          "weight": 0.3,
-          "weighted_score": 24.13,
+          "weight": 0.25,
+          "weighted_score": 20.11,
           "turnover_rate": 6.16,
           "high_60d_breakout": false,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "半导体",
           "sector_zt_count": 5,
           "has_true_resonance": true,
@@ -1475,24 +1343,24 @@
           "is_solo_zone": false
         }
       },
-      "rank": 14
+      "rank": 12
     },
     {
-      "code": "002679",
-      "name": "福建金森",
-      "price": 11.28,
-      "change_pct": 10.05,
-      "amount": 141733886.0,
+      "code": "002780",
+      "name": "三夫户外",
+      "price": 14.04,
+      "change_pct": 10.03,
+      "amount": 100127460.0,
       "turnover_rate": 5.58,
-      "float_market_cap": 2659327680.0,
-      "total_market_cap": 2659327680.0,
-      "seal_amount": 64305588.0,
-      "seal_ratio": 0.4537,
-      "first_seal_time": "10:32:51",
-      "last_seal_time": "10:32:51",
+      "float_market_cap": 1861638026.04,
+      "total_market_cap": 2321678450.52,
+      "seal_amount": 69520042.0,
+      "seal_ratio": 0.6943,
+      "first_seal_time": "09:47:12",
+      "last_seal_time": "09:47:12",
       "broken_count": 0,
       "consecutive_boards": 1,
-      "sector": "林业Ⅱ",
+      "sector": "服装家纺",
       "is_st": false,
       "institution_ratio": null,
       "high_60d_breakout": true,
@@ -1502,46 +1370,112 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.61,
+      "quant_score": 64.8,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 75.0,
+          "score": 89.0,
           "weight": 0.15,
-          "weighted_score": 11.25,
-          "seal_ratio": 0.4537,
-          "first_seal_time": "10:32:51"
+          "weighted_score": 13.35,
+          "seal_ratio": 0.6943,
+          "first_seal_time": "09:47:12"
         },
         "chip_structure": {
           "score": 92.02,
-          "weight": 0.3,
-          "weighted_score": 27.61,
+          "weight": 0.25,
+          "weighted_score": 23.0,
           "turnover_rate": 5.58,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "林业Ⅱ",
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "服装家纺",
           "sector_zt_count": 2,
           "has_true_resonance": false,
           "is_overcrowded": false,
           "is_solo_zone": true
         }
       },
-      "rank": 15
+      "rank": 13
+    },
+    {
+      "code": "300656",
+      "name": "民德电子",
+      "price": 29.57,
+      "change_pct": 20.01,
+      "amount": 358227616.0,
+      "turnover_rate": 9.57,
+      "float_market_cap": 3990490483.94,
+      "total_market_cap": 5060168379.04,
+      "seal_amount": 139076699.0,
+      "seal_ratio": 0.3882,
+      "first_seal_time": "11:14:33",
+      "last_seal_time": "11:14:33",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "其他电子",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": true,
+      "trade_date": "2026-09-16",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 63.87,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 73.0,
+          "weight": 0.15,
+          "weighted_score": 10.95,
+          "seal_ratio": 0.3882,
+          "first_seal_time": "11:14:33"
+        },
+        "chip_structure": {
+          "score": 94.89,
+          "weight": 0.25,
+          "weighted_score": 23.72,
+          "turnover_rate": 9.57,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.25,
+          "weighted_score": 14.5,
+          "sector_name": "其他电子",
+          "sector_zt_count": 4,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      },
+      "rank": 14
     },
     {
       "code": "002442",
@@ -1568,14 +1502,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.51,
+      "quant_score": 63.05,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1590,16 +1524,16 @@
         },
         "chip_structure": {
           "score": 83.2,
-          "weight": 0.3,
-          "weighted_score": 24.96,
+          "weight": 0.25,
+          "weighted_score": 20.8,
           "turnover_rate": 4.54,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
           "sector_name": "橡胶",
           "sector_zt_count": 2,
           "has_true_resonance": false,
@@ -1607,7 +1541,7 @@
           "is_solo_zone": true
         }
       },
-      "rank": 16
+      "rank": 15
     },
     {
       "code": "002963",
@@ -1634,14 +1568,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.21,
+      "quant_score": 62.75,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1656,16 +1590,16 @@
         },
         "chip_structure": {
           "score": 83.2,
-          "weight": 0.3,
-          "weighted_score": 24.96,
+          "weight": 0.25,
+          "weighted_score": 20.8,
           "turnover_rate": 3.44,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
           "sector_name": "装修装饰",
           "sector_zt_count": 1,
           "has_true_resonance": false,
@@ -1673,139 +1607,73 @@
           "is_solo_zone": true
         }
       },
-      "rank": 17
+      "rank": 16
     },
     {
-      "code": "002300",
-      "name": "太阳电缆",
-      "price": 8.38,
-      "change_pct": 9.97,
-      "amount": 385979600.0,
-      "turnover_rate": 6.52,
-      "float_market_cap": 6052805367.8,
-      "total_market_cap": 6053156372.4800005,
-      "seal_amount": 101697082.0,
-      "seal_ratio": 0.2635,
-      "first_seal_time": "09:36:15",
-      "last_seal_time": "09:36:15",
+      "code": "002679",
+      "name": "福建金森",
+      "price": 11.28,
+      "change_pct": 10.05,
+      "amount": 141733886.0,
+      "turnover_rate": 5.58,
+      "float_market_cap": 2659327680.0,
+      "total_market_cap": 2659327680.0,
+      "seal_amount": 64305588.0,
+      "seal_ratio": 0.4537,
+      "first_seal_time": "10:32:51",
+      "last_seal_time": "10:32:51",
       "broken_count": 0,
       "consecutive_boards": 1,
-      "sector": "电网设备",
+      "sector": "林业Ⅱ",
       "is_st": false,
       "institution_ratio": null,
-      "high_60d_breakout": false,
+      "high_60d_breakout": true,
       "trade_date": "2026-09-16",
       "data_source": "akshare",
       "lockup_risk_penalty": 0.0,
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 63.56,
+      "quant_score": 62.7,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 84.0,
+          "score": 75.0,
           "weight": 0.15,
-          "weighted_score": 12.6,
-          "seal_ratio": 0.2635,
-          "first_seal_time": "09:36:15"
+          "weighted_score": 11.25,
+          "seal_ratio": 0.4537,
+          "first_seal_time": "10:32:51"
         },
         "chip_structure": {
-          "score": 80.69,
-          "weight": 0.3,
-          "weighted_score": 24.21,
-          "turnover_rate": 6.52,
-          "high_60d_breakout": false,
+          "score": 92.02,
+          "weight": 0.25,
+          "weighted_score": 23.0,
+          "turnover_rate": 5.58,
+          "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
           "score": 55.0,
-          "weight": 0.2,
-          "weighted_score": 11.0,
-          "sector_name": "电网设备",
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "林业Ⅱ",
           "sector_zt_count": 2,
           "has_true_resonance": false,
           "is_overcrowded": false,
           "is_solo_zone": true
         }
       },
-      "rank": 18
-    },
-    {
-      "code": "000993",
-      "name": "闽东电力",
-      "price": 18.48,
-      "change_pct": 10.0,
-      "amount": 1811384816.0,
-      "turnover_rate": 21.76,
-      "float_market_cap": 8462942888.400001,
-      "total_market_cap": 8462942906.88,
-      "seal_amount": 43368956.0,
-      "seal_ratio": 0.0239,
-      "first_seal_time": "09:36:51",
-      "last_seal_time": "13:57:27",
-      "broken_count": 20,
-      "consecutive_boards": 6,
-      "sector": "电力",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": false,
-      "trade_date": "2026-09-16",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 63.46,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 88.0,
-          "weight": 0.35,
-          "weighted_score": 30.8,
-          "consecutive_boards": 6,
-          "base_board_score": 100.0,
-          "decay_factor": 0.7,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 18.0,
-          "is_spatial_leader": true
-        },
-        "seal_strength": {
-          "score": 42.0,
-          "weight": 0.15,
-          "weighted_score": 6.3,
-          "seal_ratio": 0.0239,
-          "first_seal_time": "09:36:51"
-        },
-        "chip_structure": {
-          "score": 29.19,
-          "weight": 0.3,
-          "weighted_score": 8.76,
-          "turnover_rate": 21.76,
-          "high_60d_breakout": false,
-          "broken_count": 20
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
-          "sector_name": "电力",
-          "sector_zt_count": 3,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      },
-      "rank": 19
+      "rank": 17
     },
     {
       "code": "600644",
@@ -1832,14 +1700,14 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 62.01,
+      "quant_score": 62.06,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 45.0,
+          "score": 42.0,
           "weight": 0.35,
-          "weighted_score": 15.75,
+          "weighted_score": 14.7,
           "consecutive_boards": 1,
-          "base_board_score": 45.0,
+          "base_board_score": 42.0,
           "decay_factor": 1.0,
           "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
@@ -1854,17 +1722,149 @@
         },
         "chip_structure": {
           "score": 66.04,
-          "weight": 0.3,
-          "weighted_score": 19.81,
+          "weight": 0.25,
+          "weighted_score": 16.51,
           "turnover_rate": 8.39,
           "high_60d_breakout": false,
           "broken_count": 1
         },
         "sector_resonance": {
           "score": 88.0,
-          "weight": 0.2,
-          "weighted_score": 17.6,
+          "weight": 0.25,
+          "weighted_score": 22.0,
           "sector_name": "电力",
+          "sector_zt_count": 3,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      },
+      "rank": 18
+    },
+    {
+      "code": "002300",
+      "name": "太阳电缆",
+      "price": 8.38,
+      "change_pct": 9.97,
+      "amount": 385979600.0,
+      "turnover_rate": 6.52,
+      "float_market_cap": 6052805367.8,
+      "total_market_cap": 6053156372.4800005,
+      "seal_amount": 101697082.0,
+      "seal_ratio": 0.2635,
+      "first_seal_time": "09:36:15",
+      "last_seal_time": "09:36:15",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "电网设备",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-09-16",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 61.22,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 84.0,
+          "weight": 0.15,
+          "weighted_score": 12.6,
+          "seal_ratio": 0.2635,
+          "first_seal_time": "09:36:15"
+        },
+        "chip_structure": {
+          "score": 80.69,
+          "weight": 0.25,
+          "weighted_score": 20.17,
+          "turnover_rate": 6.52,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "电网设备",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 19
+    },
+    {
+      "code": "601579",
+      "name": "会稽山",
+      "price": 28.33,
+      "change_pct": 10.02,
+      "amount": 679200208.0,
+      "turnover_rate": 5.24,
+      "float_market_cap": 13583198376.97,
+      "total_market_cap": 13583198348.64,
+      "seal_amount": 67599204.0,
+      "seal_ratio": 0.0995,
+      "first_seal_time": "09:55:25",
+      "last_seal_time": "10:13:58",
+      "broken_count": 2,
+      "consecutive_boards": 2,
+      "sector": "非白酒",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-09-16",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 60.34,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 64.0,
+          "weight": 0.35,
+          "weighted_score": 22.4,
+          "consecutive_boards": 2,
+          "base_board_score": 64.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 20.0,
+          "weight": 0.15,
+          "weighted_score": 3.0,
+          "seal_ratio": 0.0995,
+          "first_seal_time": "09:55:25"
+        },
+        "chip_structure": {
+          "score": 51.77,
+          "weight": 0.25,
+          "weighted_score": 12.94,
+          "turnover_rate": 5.24,
+          "high_60d_breakout": false,
+          "broken_count": 2
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "非白酒",
           "sector_zt_count": 3,
           "has_true_resonance": true,
           "is_overcrowded": false,
