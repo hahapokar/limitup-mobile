@@ -453,7 +453,7 @@ class ScoringEngine:
             factor_consecutive_board = round(max(0.0, min(100.0, height_score + sentiment_adj)), 2)
 
 # -------------------------------------------------------------
-            # Factor 2: 封板强度因子 (Seal Strength - 25%)
+            # Factor 2: 封板强度因子 (Seal Strength - 15%)
             # -------------------------------------------------------------
             seal_pct_score = seal_ratio_percentiles[i]  # already neutralized to 50 if missing
             fst = s.get("first_seal_time")
@@ -468,17 +468,28 @@ class ScoringEngine:
 
             # -------------------------------------------------------------
             # Factor 3: 筹码结构与炸板惩罚 (Chip Structure & Broken Penalty - 25%)
+            # TUNED on 2026-09-17 (9/1-9/16 回测): 换手率倒U型分桶
+            #   - 5-10% 最佳(40.9%晋级率) → 90分区间
+            #   - 10-15% 次之 → 80分区间
+            #   - 3-5% / 15-20% → 65分区间
+            #   - <3% / >20% → 30分区间
             # -------------------------------------------------------------
             turnover = turnover_rates[i]
             if turnover is None or turnover < 0:
                 # Unknown turnover → neutral 60 midpoint (between 90 ideal and 30 worst)
                 turnover_score = 60.0
-            elif 5.0 <= turnover <= 18.0:
-                turnover_score = 90.0 - abs(turnover - 10.0) * 1.5
+            elif 5.0 <= turnover <= 10.0:
+                # 最佳换手区间: 5-10% (回测40.9%晋级率)
+                turnover_score = 90.0 - abs(turnover - 7.5) * 2.0
+            elif 10.0 < turnover <= 15.0:
+                # 次佳区间: 10-15%
+                turnover_score = 80.0 - (turnover - 10.0) * 2.0
             elif 3.0 <= turnover < 5.0:
                 turnover_score = 65.0
-            elif 18.0 < turnover <= 28.0:
-                turnover_score = 60.0 - (turnover - 18.0) * 2.0
+            elif 15.0 < turnover <= 20.0:
+                turnover_score = 65.0 - (turnover - 15.0) * 3.0
+            elif 20.0 < turnover <= 28.0:
+                turnover_score = 45.0 - (turnover - 20.0) * 2.0
             else:
                 turnover_score = 30.0
 
@@ -499,7 +510,7 @@ class ScoringEngine:
             factor_chip = round(chip_subtotal * 0.6 + broken_penalty_score * 0.4, 2)
 
             # -------------------------------------------------------------
-            # Factor 4: 板块共振因子 (Sector Resonance - 20%)
+            # Factor 4: 板块共振因子 (Sector Resonance - 25%)
             #   NEW LOGIC — replaced the old "sector-count percentile + has_follower"
             #   which punished solo leaders (1 ZT sector = low percentile) and
             #   rewarded crowded sectors (6+ random ZTs = high percentile).
@@ -544,10 +555,10 @@ class ScoringEngine:
             # -------------------------------------------------------------
             # Composite Weighted Quant Score
             # -------------------------------------------------------------
-            w1 = FACTOR_WEIGHTS.get("consecutive_board_sentiment", 0.30)
-            w2 = FACTOR_WEIGHTS.get("seal_strength", 0.25)
+            w1 = FACTOR_WEIGHTS.get("consecutive_board_sentiment", 0.35)
+            w2 = FACTOR_WEIGHTS.get("seal_strength", 0.15)
             w3 = FACTOR_WEIGHTS.get("chip_structure", 0.25)
-            w4 = FACTOR_WEIGHTS.get("sector_resonance", 0.20)
+            w4 = FACTOR_WEIGHTS.get("sector_resonance", 0.25)
 
             lockup_penalty = float(s.get("lockup_risk_penalty", 0.0))
             total_quant_score = round(max(0.0, (
