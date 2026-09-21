@@ -1,8 +1,8 @@
 {
   "trade_date": "2026-09-18",
   "snapshot_status": "FINAL",
-  "snapshot_generated_at": "2026-09-18 18:31:03",
-  "generate_time": "2026-09-18 18:31:03",
+  "snapshot_generated_at": "2026-09-21 09:02:24",
+  "generate_time": "2026-09-21 09:02:24",
   "sentiment_state": "主升/强势期",
   "total_limit_up_count": 78,
   "passed_filter_count": 57,
@@ -48,7 +48,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 86.1,
+      "quant_score": 85.8,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 100.0,
@@ -69,9 +69,9 @@
           "first_seal_time": "09:30:09"
         },
         "chip_structure": {
-          "score": 66.7,
+          "score": 65.47,
           "weight": 0.25,
-          "weighted_score": 16.68,
+          "weighted_score": 16.37,
           "turnover_rate": 9.3,
           "high_60d_breakout": false,
           "broken_count": 1
@@ -180,7 +180,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 73.99,
+      "quant_score": 73.67,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 64.0,
@@ -201,9 +201,9 @@
           "first_seal_time": "09:30:23"
         },
         "chip_structure": {
-          "score": 66.72,
+          "score": 65.44,
           "weight": 0.25,
-          "weighted_score": 16.68,
+          "weighted_score": 16.36,
           "turnover_rate": 9.33,
           "high_60d_breakout": false,
           "broken_count": 1
@@ -246,7 +246,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 72.97,
+      "quant_score": 73.29,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -267,9 +267,9 @@
           "first_seal_time": "10:11:51"
         },
         "chip_structure": {
-          "score": 91.82,
+          "score": 93.09,
           "weight": 0.25,
-          "weighted_score": 22.95,
+          "weighted_score": 23.27,
           "turnover_rate": 5.3,
           "high_60d_breakout": true,
           "broken_count": 0
@@ -312,7 +312,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 69.54,
+      "quant_score": 69.89,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 64.0,
@@ -333,9 +333,9 @@
           "first_seal_time": "09:30:09"
         },
         "chip_structure": {
-          "score": 76.14,
+          "score": 77.52,
           "weight": 0.25,
-          "weighted_score": 19.04,
+          "weighted_score": 19.38,
           "turnover_rate": 5.75,
           "high_60d_breakout": true,
           "broken_count": 1
@@ -378,7 +378,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 67.14,
+      "quant_score": 67.47,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 64.0,
@@ -399,9 +399,9 @@
           "first_seal_time": "09:34:00"
         },
         "chip_structure": {
-          "score": 63.96,
+          "score": 65.28,
           "weight": 0.25,
-          "weighted_score": 15.99,
+          "weighted_score": 16.32,
           "turnover_rate": 5.5,
           "high_60d_breakout": true,
           "broken_count": 2
@@ -444,7 +444,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 66.1,
+      "quant_score": 66.43,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -465,9 +465,9 @@
           "first_seal_time": "09:25:00"
         },
         "chip_structure": {
-          "score": 91.9,
+          "score": 93.19,
           "weight": 0.25,
-          "weighted_score": 22.98,
+          "weighted_score": 23.3,
           "turnover_rate": 5.41,
           "high_60d_breakout": true,
           "broken_count": 0
@@ -510,7 +510,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.62,
+      "quant_score": 65.94,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -531,9 +531,9 @@
           "first_seal_time": "09:30:02"
         },
         "chip_structure": {
-          "score": 91.9,
+          "score": 93.19,
           "weight": 0.25,
-          "weighted_score": 22.98,
+          "weighted_score": 23.3,
           "turnover_rate": 5.41,
           "high_60d_breakout": true,
           "broken_count": 0
@@ -578,7 +578,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 86.1,
+      "quant_score": 85.8,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 100.0,
@@ -599,9 +599,9 @@
           "first_seal_time": "09:30:09"
         },
         "chip_structure": {
-          "score": 66.7,
+          "score": 65.47,
           "weight": 0.25,
-          "weighted_score": 16.68,
+          "weighted_score": 16.37,
           "turnover_rate": 9.3,
           "high_60d_breakout": false,
           "broken_count": 1
@@ -710,7 +710,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 73.99,
+      "quant_score": 73.67,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 64.0,
@@ -731,9 +731,9 @@
           "first_seal_time": "09:30:23"
         },
         "chip_structure": {
-          "score": 66.72,
+          "score": 65.44,
           "weight": 0.25,
-          "weighted_score": 16.68,
+          "weighted_score": 16.36,
           "turnover_rate": 9.33,
           "high_60d_breakout": false,
           "broken_count": 1
@@ -776,7 +776,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 72.97,
+      "quant_score": 73.29,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -797,9 +797,9 @@
           "first_seal_time": "10:11:51"
         },
         "chip_structure": {
-          "score": 91.82,
+          "score": 93.09,
           "weight": 0.25,
-          "weighted_score": 22.95,
+          "weighted_score": 23.27,
           "turnover_rate": 5.3,
           "high_60d_breakout": true,
           "broken_count": 0
@@ -842,7 +842,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 69.54,
+      "quant_score": 69.89,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 64.0,
@@ -863,9 +863,9 @@
           "first_seal_time": "09:30:09"
         },
         "chip_structure": {
-          "score": 76.14,
+          "score": 77.52,
           "weight": 0.25,
-          "weighted_score": 19.04,
+          "weighted_score": 19.38,
           "turnover_rate": 5.75,
           "high_60d_breakout": true,
           "broken_count": 1
@@ -908,7 +908,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 67.14,
+      "quant_score": 67.47,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 64.0,
@@ -929,9 +929,9 @@
           "first_seal_time": "09:34:00"
         },
         "chip_structure": {
-          "score": 63.96,
+          "score": 65.28,
           "weight": 0.25,
-          "weighted_score": 15.99,
+          "weighted_score": 16.32,
           "turnover_rate": 5.5,
           "high_60d_breakout": true,
           "broken_count": 2
@@ -974,7 +974,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 66.1,
+      "quant_score": 66.43,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -995,9 +995,9 @@
           "first_seal_time": "09:25:00"
         },
         "chip_structure": {
-          "score": 91.9,
+          "score": 93.19,
           "weight": 0.25,
-          "weighted_score": 22.98,
+          "weighted_score": 23.3,
           "turnover_rate": 5.41,
           "high_60d_breakout": true,
           "broken_count": 0
@@ -1040,7 +1040,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.62,
+      "quant_score": 65.94,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1061,9 +1061,9 @@
           "first_seal_time": "09:30:02"
         },
         "chip_structure": {
-          "score": 91.9,
+          "score": 93.19,
           "weight": 0.25,
-          "weighted_score": 22.98,
+          "weighted_score": 23.3,
           "turnover_rate": 5.41,
           "high_60d_breakout": true,
           "broken_count": 0
@@ -1106,7 +1106,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 65.32,
+      "quant_score": 64.78,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 90.0,
@@ -1127,9 +1127,9 @@
           "first_seal_time": "09:25:01"
         },
         "chip_structure": {
-          "score": 32.35,
+          "score": 30.2,
           "weight": 0.25,
-          "weighted_score": 8.09,
+          "weighted_score": 7.55,
           "turnover_rate": 18.47,
           "high_60d_breakout": false,
           "broken_count": 6
@@ -1146,72 +1146,6 @@
         }
       },
       "rank": 9
-    },
-    {
-      "code": "002453",
-      "name": "华软科技",
-      "price": 5.34,
-      "change_pct": 10.1,
-      "amount": 446859296.0,
-      "turnover_rate": 13.44,
-      "float_market_cap": 3434161892.52,
-      "total_market_cap": 4338040420.8,
-      "seal_amount": 39242575.0,
-      "seal_ratio": 0.0878,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "10:41:15",
-      "broken_count": 1,
-      "consecutive_boards": 2,
-      "sector": "化学制品",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": false,
-      "trade_date": "2026-09-18",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 64.81,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 64.0,
-          "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 28.22,
-          "weight": 0.15,
-          "weighted_score": 4.23,
-          "seal_ratio": 0.0878,
-          "first_seal_time": "09:25:00"
-        },
-        "chip_structure": {
-          "score": 64.72,
-          "weight": 0.25,
-          "weighted_score": 16.18,
-          "turnover_rate": 13.44,
-          "high_60d_breakout": false,
-          "broken_count": 1
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "化学制品",
-          "sector_zt_count": 3,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      },
-      "rank": 10
     },
     {
       "code": "000910",
@@ -1277,6 +1211,72 @@
           "is_solo_zone": false
         }
       },
+      "rank": 10
+    },
+    {
+      "code": "002453",
+      "name": "华软科技",
+      "price": 5.34,
+      "change_pct": 10.1,
+      "amount": 446859296.0,
+      "turnover_rate": 13.44,
+      "float_market_cap": 3434161892.52,
+      "total_market_cap": 4338040420.8,
+      "seal_amount": 39242575.0,
+      "seal_ratio": 0.0878,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "10:41:15",
+      "broken_count": 1,
+      "consecutive_boards": 2,
+      "sector": "化学制品",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-09-18",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 63.41,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 64.0,
+          "weight": 0.35,
+          "weighted_score": 22.4,
+          "consecutive_boards": 2,
+          "base_board_score": 64.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 28.22,
+          "weight": 0.15,
+          "weighted_score": 4.23,
+          "seal_ratio": 0.0878,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 59.1,
+          "weight": 0.25,
+          "weighted_score": 14.78,
+          "turnover_rate": 13.44,
+          "high_60d_breakout": false,
+          "broken_count": 1
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "化学制品",
+          "sector_zt_count": 3,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      },
       "rank": 11
     },
     {
@@ -1304,7 +1304,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 62.87,
+      "quant_score": 63.24,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1325,9 +1325,9 @@
           "first_seal_time": "10:04:26"
         },
         "chip_structure": {
-          "score": 65.54,
+          "score": 67.01,
           "weight": 0.25,
-          "weighted_score": 16.39,
+          "weighted_score": 16.75,
           "turnover_rate": 7.7,
           "high_60d_breakout": false,
           "broken_count": 1
@@ -1370,7 +1370,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 61.91,
+      "quant_score": 62.32,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1391,9 +1391,9 @@
           "first_seal_time": "09:45:50"
         },
         "chip_structure": {
-          "score": 80.9,
+          "score": 82.54,
           "weight": 0.25,
-          "weighted_score": 20.23,
+          "weighted_score": 20.64,
           "turnover_rate": 6.81,
           "high_60d_breakout": false,
           "broken_count": 0
@@ -1436,7 +1436,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 61.52,
+      "quant_score": 61.96,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1457,9 +1457,9 @@
           "first_seal_time": "09:44:15"
         },
         "chip_structure": {
-          "score": 81.28,
+          "score": 83.04,
           "weight": 0.25,
-          "weighted_score": 20.32,
+          "weighted_score": 20.76,
           "turnover_rate": 7.33,
           "high_60d_breakout": false,
           "broken_count": 0
@@ -1676,72 +1676,6 @@
       "rank": 17
     },
     {
-      "code": "002300",
-      "name": "太阳电缆",
-      "price": 8.67,
-      "change_pct": 10.03,
-      "amount": 649264240.0,
-      "turnover_rate": 10.63,
-      "float_market_cap": 6262269992.7,
-      "total_market_cap": 6262633144.32,
-      "seal_amount": 77512531.0,
-      "seal_ratio": 0.1194,
-      "first_seal_time": "09:45:09",
-      "last_seal_time": "09:45:09",
-      "broken_count": 0,
-      "consecutive_boards": 1,
-      "sector": "电网设备",
-      "is_st": false,
-      "institution_ratio": null,
-      "high_60d_breakout": false,
-      "trade_date": "2026-09-18",
-      "data_source": "akshare",
-      "lockup_risk_penalty": 0.0,
-      "lockup_risk_ratio": 0.0,
-      "lockup_release_date": null,
-      "lockup_release_type": null,
-      "quant_score": 60.07,
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 42.0,
-          "weight": 0.35,
-          "weighted_score": 14.7,
-          "consecutive_boards": 1,
-          "base_board_score": 42.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 67.86,
-          "weight": 0.15,
-          "weighted_score": 10.18,
-          "seal_ratio": 0.1194,
-          "first_seal_time": "09:45:09"
-        },
-        "chip_structure": {
-          "score": 82.75,
-          "weight": 0.25,
-          "weighted_score": 20.69,
-          "turnover_rate": 10.63,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 58.0,
-          "weight": 0.25,
-          "weighted_score": 14.5,
-          "sector_name": "电网设备",
-          "sector_zt_count": 6,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      },
-      "rank": 18
-    },
-    {
       "code": "002471",
       "name": "中超控股",
       "price": 5.96,
@@ -1766,7 +1700,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 59.59,
+      "quant_score": 60.01,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1787,9 +1721,9 @@
           "first_seal_time": "09:50:00"
         },
         "chip_structure": {
-          "score": 81.13,
+          "score": 82.84,
           "weight": 0.25,
-          "weighted_score": 20.28,
+          "weighted_score": 20.71,
           "turnover_rate": 7.13,
           "high_60d_breakout": false,
           "broken_count": 0
@@ -1805,7 +1739,7 @@
           "is_solo_zone": false
         }
       },
-      "rank": 19
+      "rank": 18
     },
     {
       "code": "002965",
@@ -1832,7 +1766,7 @@
       "lockup_risk_ratio": 0.0,
       "lockup_release_date": null,
       "lockup_release_type": null,
-      "quant_score": 59.55,
+      "quant_score": 59.99,
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1853,9 +1787,9 @@
           "first_seal_time": "09:47:39"
         },
         "chip_structure": {
-          "score": 81.41,
+          "score": 83.19,
           "weight": 0.25,
-          "weighted_score": 20.35,
+          "weighted_score": 20.8,
           "turnover_rate": 7.51,
           "high_60d_breakout": false,
           "broken_count": 0
@@ -1865,6 +1799,72 @@
           "weight": 0.25,
           "weighted_score": 13.75,
           "sector_name": "汽车零部",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      },
+      "rank": 19
+    },
+    {
+      "code": "001229",
+      "name": "魅视科技",
+      "price": 39.99,
+      "change_pct": 10.01,
+      "amount": 208145241.0,
+      "turnover_rate": 7.4,
+      "float_market_cap": 2949310727.94,
+      "total_market_cap": 5735849679.0,
+      "seal_amount": 63216192.0,
+      "seal_ratio": 0.3037,
+      "first_seal_time": "11:02:39",
+      "last_seal_time": "11:02:39",
+      "broken_count": 0,
+      "consecutive_boards": 1,
+      "sector": "计算机设",
+      "is_st": false,
+      "institution_ratio": null,
+      "high_60d_breakout": false,
+      "trade_date": "2026-09-18",
+      "data_source": "akshare",
+      "lockup_risk_penalty": 0.0,
+      "lockup_risk_ratio": 0.0,
+      "lockup_release_date": null,
+      "lockup_release_type": null,
+      "quant_score": 59.78,
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 70.36,
+          "weight": 0.15,
+          "weighted_score": 10.55,
+          "seal_ratio": 0.3037,
+          "first_seal_time": "11:02:39"
+        },
+        "chip_structure": {
+          "score": 83.1,
+          "weight": 0.25,
+          "weighted_score": 20.77,
+          "turnover_rate": 7.4,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "计算机设",
           "sector_zt_count": 2,
           "has_true_resonance": false,
           "is_overcrowded": false,

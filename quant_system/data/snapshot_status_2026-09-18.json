@@ -1,7 +1,7 @@
 {
   "trade_date": "2026-09-18",
   "snapshot_status": "FINAL",
-  "finalized_at": "2026-09-18 18:31:03",
+  "finalized_at": "2026-09-21 09:02:24",
   "artifacts": [
     "limitup_2026-09-18.json",
     "sentiment_2026-09-18.json",
