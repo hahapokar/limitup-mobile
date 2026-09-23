@@ -53,6 +53,8 @@ class SentimentEngine:
         # -------------------------------------------------------------
         # Factor 1: Yesterday's Limit-Up Today's Average Premium (35%)
         #   Note: raw can be None → scoring neutralizes to 50, raw_value stays None (not a lie).
+        #   yesterday_premium_pct is allowed to be None (uses neutral 50 score) —
+        #   this happens when prev_date data file doesn't exist (holiday calendar mismatch).
         # -------------------------------------------------------------
         yesterday_premium_pct = self._calculate_yesterday_zt_premium(prev_date, effective_date, today_zt_pool)
         required_overview_fields = ("up_count", "down_count", "limit_down_count", "advance_ratio")
@@ -60,11 +62,10 @@ class SentimentEngine:
             market_overview.get("trade_date") != effective_date
             or market_overview.get("data_source") is None
             or any(market_overview.get(field) is None for field in required_overview_fields)
-            or yesterday_premium_pct is None
         ):
             record_system_log(
                 "WARNING", "Sentiment",
-                f"{effective_date} 关键实时市场数据不完整，禁止生成可交易情绪结果。"
+                f"{effective_date} 市场概览数据不完整，禁止生成可交易情绪结果。"
             )
             raise RuntimeError(f"Incomplete live market data for sentiment {effective_date}")
         score_premium = self._score_yesterday_premium(yesterday_premium_pct)
@@ -235,9 +236,26 @@ class SentimentEngine:
 
         Returns None if the value cannot be genuinely determined.
         NEVER fabricate a value from thin air (e.g. the old multi_ratio*5.0-1.0 formula).
+
+        If prev_date's cache file doesn't exist (e.g. holiday calendar mismatch),
+        roll backwards up to 10 days to find the most recent trading day with data.
         """
         try:
-            prev_cache = DATA_DIR / f"limitup_{prev_date}.json"
+            # Try prev_date first, then roll backwards if data file missing
+            # (handles chinese_calendar not knowing 2026+ holidays)
+            search_date = prev_date
+            for _ in range(10):
+                prev_cache = DATA_DIR / f"limitup_{search_date}.json"
+                if prev_cache.exists():
+                    break
+                # Roll back one more day
+                from quant_system.utils.calendar import parse_date, format_date
+                d = parse_date(search_date) - datetime.timedelta(days=1)
+                search_date = format_date(d)
+            else:
+                search_date = prev_date  # exhausted, use original
+
+            prev_cache = DATA_DIR / f"limitup_{search_date}.json"
             if prev_cache.exists():
                 with open(prev_cache, "r", encoding="utf-8") as f:
                     prev_pool = json.load(f)
