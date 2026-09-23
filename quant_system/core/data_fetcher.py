@@ -510,6 +510,17 @@ class DataFetcher:
         date_nodash = effective_date.replace("-", "")
         errors = []
 
+        # 缓存命中：同日内已被拉取过则直接返回本地缓存，避免重复请求被 API 限流
+        cache_path = DATA_DIR / f"limitup_{effective_date}.json"
+        if cache_path.exists():
+            try:
+                with open(cache_path, "r", encoding="utf-8") as f:
+                    cached = json.load(f)
+                if cached:
+                    return cached
+            except Exception:
+                pass  # 缓存损坏则继续走在线拉取
+
         for source in DATA_SOURCE_PRIORITY:
             try:
                 if source == "akshare":
@@ -943,7 +954,18 @@ class DataFetcher:
     def get_market_overview(self, trade_date: Optional[str] = None) -> Dict[str, Any]:
         """Fetch whole market advance/decline distribution and limit down count."""
         effective_date = self.get_effective_date(trade_date)
-        
+
+        # 缓存命中：同日内已拉取过则直接返回本地缓存，避免重复请求被 API 限流
+        overview_cache = DATA_DIR / f"market_overview_{effective_date}.json"
+        if overview_cache.exists():
+            try:
+                with open(overview_cache, "r", encoding="utf-8") as f:
+                    cached = json.load(f)
+                if cached.get("data_source"):
+                    return cached
+            except Exception:
+                pass
+
         # 1. Try AkShare Legu Market Activity
         try:
             import akshare as ak
@@ -958,7 +980,7 @@ class DataFetcher:
                 activity_rate = _safe_float(str(activity_dict.get("活跃度")).replace("%", ""), None, "activity_pct", use_none=True)
                 total = sum(value for value in (up_count, down_count, flat_count) if value is not None)
 
-                return {
+                result = {
                     "trade_date": effective_date,
                     "up_count": int(up_count) if up_count is not None else None,
                     "down_count": int(down_count) if down_count is not None else None,
@@ -969,6 +991,13 @@ class DataFetcher:
                     "advance_ratio": round(up_count / total * 100, 2) if up_count is not None and total > 0 else None,
                     "data_source": "akshare_legu"
                 }
+                # 缓存到本地
+                try:
+                    with open(overview_cache, "w", encoding="utf-8") as f:
+                        json.dump(result, f, ensure_ascii=False, indent=2)
+                except Exception:
+                    pass
+                return result
         except Exception as e:
             logger.warning(f"AkShare legu activity failed: {e}")
 

@@ -58,16 +58,12 @@ class SentimentEngine:
         # -------------------------------------------------------------
         yesterday_premium_pct = self._calculate_yesterday_zt_premium(prev_date, effective_date, today_zt_pool)
         required_overview_fields = ("up_count", "down_count", "limit_down_count", "advance_ratio")
-        if (
-            market_overview.get("trade_date") != effective_date
-            or market_overview.get("data_source") is None
-            or any(market_overview.get(field) is None for field in required_overview_fields)
-        ):
+        missing_fields = [f for f in required_overview_fields if market_overview.get(f) is None]
+        if missing_fields:
             record_system_log(
                 "WARNING", "Sentiment",
-                f"{effective_date} 市场概览数据不完整，禁止生成可交易情绪结果。"
+                f"{effective_date} 市场概览部分字段缺失({', '.join(missing_fields)})，对应因子用中性50分兜底。"
             )
-            raise RuntimeError(f"Incomplete live market data for sentiment {effective_date}")
         score_premium = self._score_yesterday_premium(yesterday_premium_pct)
 
         # -------------------------------------------------------------
@@ -237,36 +233,32 @@ class SentimentEngine:
         Returns None if the value cannot be genuinely determined.
         NEVER fabricate a value from thin air (e.g. the old multi_ratio*5.0-1.0 formula).
 
-        If prev_date's cache file doesn't exist (e.g. holiday calendar mismatch),
-        roll backwards up to 10 days to find the most recent trading day with data.
+        If prev_date's local cache file is missing (e.g. previous day's post-market
+        job was skipped by GitHub Actions), try fetching from akshare directly.
         """
         try:
-            # Try prev_date first, then roll backwards if data file missing
-            # (handles chinese_calendar not knowing 2026+ holidays)
-            search_date = prev_date
-            for _ in range(10):
-                prev_cache = DATA_DIR / f"limitup_{search_date}.json"
-                if prev_cache.exists():
-                    break
-                # Roll back one more day
-                from quant_system.utils.calendar import parse_date, format_date
-                d = parse_date(search_date) - datetime.timedelta(days=1)
-                search_date = format_date(d)
-            else:
-                search_date = prev_date  # exhausted, use original
+            prev_cache = DATA_DIR / f"limitup_{prev_date}.json"
+            prev_pool: List[Dict[str, Any]] = []
 
-            prev_cache = DATA_DIR / f"limitup_{search_date}.json"
             if prev_cache.exists():
                 with open(prev_cache, "r", encoding="utf-8") as f:
                     prev_pool = json.load(f)
-                if prev_pool:
-                    codes = [item["code"] for item in prev_pool if "code" in item]
-                    if codes:
-                        quotes = data_fetcher.get_realtime_quotes(codes)
-                        if quotes:
-                            premiums = [q["change_pct"] for q in quotes.values() if "change_pct" in q]
-                            if premiums:
-                                return round(sum(premiums) / len(premiums), 4)
+            else:
+                # 本地缓存缺失（前日盘后任务可能被跳过），从数据源直接拉取
+                logger.info(f"Local cache {prev_cache.name} not found, fetching from data source...")
+                try:
+                    prev_pool = data_fetcher.get_limit_up_pool(prev_date)
+                except Exception as fetch_err:
+                    logger.warning(f"Failed to fetch limit-up pool for {prev_date}: {fetch_err}")
+
+            if prev_pool:
+                codes = [item["code"] for item in prev_pool if "code" in item]
+                if codes:
+                    quotes = data_fetcher.get_realtime_quotes(codes)
+                    if quotes:
+                        premiums = [q["change_pct"] for q in quotes.values() if "change_pct" in q]
+                        if premiums:
+                            return round(sum(premiums) / len(premiums), 4)
         except Exception as e:
             logger.debug(f"Calculate yesterday premium from cache failed: {e}")
 

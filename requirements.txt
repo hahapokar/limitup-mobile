@@ -1,5 +1,6 @@
 akshare
 apscheduler
+chinese-calendar
 numpy
 pandas
 requests
