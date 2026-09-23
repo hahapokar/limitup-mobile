@@ -1,27 +1,27 @@
 {
-  "review_date": "2026-09-22",
-  "prev_trade_date": "2026-09-21",
-  "next_trade_date": "2026-09-23",
-  "review_time": "2026-09-22 18:31:03",
+  "review_date": "2026-09-23",
+  "prev_trade_date": "2026-09-22",
+  "next_trade_date": "2026-09-24",
+  "review_time": "2026-09-23 21:58:06",
   "market_summary": {
-    "sentiment_state": "主升/强势期",
-    "sentiment_score": 82.75,
-    "total_limit_up_count": 63,
-    "consecutive_limit_up_count": 11,
-    "max_consecutive_boards": 6,
-    "total_limit_down_count": 3,
+    "sentiment_state": "震荡/分化期",
+    "sentiment_score": 49.25,
+    "total_limit_up_count": 51,
+    "consecutive_limit_up_count": 7,
+    "max_consecutive_boards": 4,
+    "total_limit_down_count": 11,
     "broken_up_count": 0,
-    "advance_ratio": 43.72,
-    "up_count": 2283,
-    "down_count": 2783,
-    "top4_hit_rate": "2026-09-22 盘后优选 8 只优质标的 (全市场共 63 只涨停，筛选通过率 12.7%)",
+    "advance_ratio": 33.65,
+    "up_count": 1757,
+    "down_count": 3366,
+    "top4_hit_rate": "2026-09-23 盘后优选 8 只优质标的 (全市场共 51 只涨停，筛选通过率 15.7%)",
     "total_portfolio_floating_pnl": null,
     "total_portfolio_floating_pnl_pct": null,
-    "target_position_ratio": 1.0
+    "target_position_ratio": 0.65
   },
   "prev_day_candidates_review": {
-    "prev_trade_date": "2026-09-21",
-    "review_trade_date": "2026-09-22",
+    "prev_trade_date": "2026-09-22",
+    "review_trade_date": "2026-09-23",
     "total_reviewed": 8,
     "success_consecutive_board_count": 0,
     "win_count": 0,
@@ -30,10 +30,10 @@
     "avg_pnl_pct": null,
     "items": [
       {
-        "code": "002453",
-        "name": "华软科技",
-        "sector": "化学制品",
-        "prev_day_quant_score": 91.24,
+        "code": "601811",
+        "name": "新华文轩",
+        "sector": "出版",
+        "prev_day_quant_score": 84.41,
         "prev_day_rank": 1,
         "prev_day_factor_breakdown": {
           "consecutive_board_sentiment": {
@@ -48,17 +48,17 @@
             "is_spatial_leader": false
           },
           "seal_strength": {
-            "score": 94.17,
+            "score": 95.39,
             "weight": 0.15,
-            "weighted_score": 14.13,
-            "seal_ratio": 0.4342,
-            "first_seal_time": "09:30:00"
+            "weighted_score": 14.31,
+            "seal_ratio": 2.1081,
+            "first_seal_time": "09:25:02"
           },
           "chip_structure": {
-            "score": 94.44,
+            "score": 66.4,
             "weight": 0.25,
-            "weighted_score": 23.61,
-            "turnover_rate": 6.71,
+            "weighted_score": 16.6,
+            "turnover_rate": 0.51,
             "high_60d_breakout": true,
             "broken_count": 0
           },
@@ -66,225 +66,58 @@
             "score": 88.0,
             "weight": 0.25,
             "weighted_score": 22.0,
-            "sector_name": "化学制品",
-            "sector_zt_count": 5,
+            "sector_name": "出版",
+            "sector_zt_count": 4,
             "has_true_resonance": true,
             "is_overcrowded": false,
             "is_solo_zone": false
           }
         },
         "prev_day_consecutive_boards": 3,
-        "prev_day_close_price": 5.87,
+        "prev_day_close_price": 16.82,
         "buy_price": null,
-        "buy_reason": "2026-09-21 TOP1 候选 (量化91.24分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "buy_reason": "2026-09-22 TOP1 候选 (量化84.41分)，未进入实际建仓记录，仅用于候选表现复盘",
         "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
-        "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
-        "today_factor_breakdown": null,
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "001216",
-        "name": "华瓷股份",
-        "sector": "家居用品",
-        "prev_day_quant_score": 87.08,
-        "prev_day_rank": 2,
-        "prev_day_factor_breakdown": {
+        "today_close_price": 18.5,
+        "today_change_pct": 9.99,
+        "today_consecutive_boards": 4,
+        "today_rank_in_candidates": 3,
+        "today_seal_ratio_pct": 47.01,
+        "today_turnover_rate": 2.1,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:30:16",
+        "today_factor_breakdown": {
           "consecutive_board_sentiment": {
             "score": 96.0,
             "weight": 0.35,
             "weighted_score": 33.6,
-            "consecutive_boards": 5,
-            "base_board_score": 78.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 18.0,
-            "is_spatial_leader": true
-          },
-          "seal_strength": {
-            "score": 99.17,
-            "weight": 0.15,
-            "weighted_score": 14.88,
-            "seal_ratio": 5.4428,
-            "first_seal_time": "09:25:00"
-          },
-          "chip_structure": {
-            "score": 66.4,
-            "weight": 0.25,
-            "weighted_score": 16.6,
-            "turnover_rate": 0.86,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "家居用品",
-            "sector_zt_count": 3,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 5,
-        "prev_day_close_price": 24.06,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP2 候选 (量化87.08分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": 26.47,
-        "today_change_pct": 10.02,
-        "today_consecutive_boards": 6,
-        "today_rank_in_candidates": 6,
-        "today_seal_ratio_pct": 535.25,
-        "today_turnover_rate": 0.74,
-        "today_broken_count": 0,
-        "today_first_seal_time": "09:25:00",
-        "today_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 48.0,
-            "weight": 0.35,
-            "weighted_score": 16.8,
-            "consecutive_boards": 6,
-            "base_board_score": 60.0,
-            "decay_factor": 0.5,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 18.0,
-            "is_spatial_leader": true
-          },
-          "seal_strength": {
-            "score": 98.46,
-            "weight": 0.15,
-            "weighted_score": 14.77,
-            "seal_ratio": 5.3525,
-            "first_seal_time": "09:25:00"
-          },
-          "chip_structure": {
-            "score": 66.4,
-            "weight": 0.25,
-            "weighted_score": 16.6,
-            "turnover_rate": 0.74,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "家居用品",
-            "sector_zt_count": 5,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "000504",
-        "name": "南华生物",
-        "sector": "医疗服务",
-        "prev_day_quant_score": 84.85,
-        "prev_day_rank": 3,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 90.0,
-            "weight": 0.35,
-            "weighted_score": 31.5,
-            "consecutive_boards": 3,
-            "base_board_score": 90.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 98.33,
-            "weight": 0.15,
-            "weighted_score": 14.75,
-            "seal_ratio": 3.1179,
-            "first_seal_time": "09:25:00"
-          },
-          "chip_structure": {
-            "score": 66.4,
-            "weight": 0.25,
-            "weighted_score": 16.6,
-            "turnover_rate": 1.62,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "医疗服务",
-            "sector_zt_count": 5,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 3,
-        "prev_day_close_price": 11.01,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP3 候选 (量化84.85分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": 12.11,
-        "today_change_pct": 9.99,
-        "today_consecutive_boards": 4,
-        "today_rank_in_candidates": 3,
-        "today_seal_ratio_pct": 382.34,
-        "today_turnover_rate": 1.79,
-        "today_broken_count": 0,
-        "today_first_seal_time": "09:25:00",
-        "today_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 84.0,
-            "weight": 0.35,
-            "weighted_score": 29.4,
             "consecutive_boards": 4,
             "base_board_score": 84.0,
             "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 12.0,
+            "is_spatial_leader": true
           },
           "seal_strength": {
-            "score": 96.92,
+            "score": 90.32,
             "weight": 0.15,
-            "weighted_score": 14.54,
-            "seal_ratio": 3.8234,
-            "first_seal_time": "09:25:00"
+            "weighted_score": 13.55,
+            "seal_ratio": 0.4701,
+            "first_seal_time": "09:30:16"
           },
           "chip_structure": {
             "score": 66.4,
             "weight": 0.25,
             "weighted_score": 16.6,
-            "turnover_rate": 1.79,
+            "turnover_rate": 2.1,
             "high_60d_breakout": true,
             "broken_count": 0
           },
           "sector_resonance": {
-            "score": 55.0,
+            "score": 95.0,
             "weight": 0.25,
-            "weighted_score": 13.75,
-            "sector_name": "医疗服务",
+            "weighted_score": 23.75,
+            "sector_name": "出版",
             "sector_zt_count": 2,
             "has_true_resonance": false,
             "is_overcrowded": false,
@@ -299,360 +132,12 @@
         "exit_logs": null
       },
       {
-        "code": "600630",
-        "name": "龙头股份",
-        "sector": "服装家纺",
-        "prev_day_quant_score": 81.41,
-        "prev_day_rank": 4,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 90.0,
-            "weight": 0.35,
-            "weighted_score": 31.5,
-            "consecutive_boards": 3,
-            "base_board_score": 90.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 83.33,
-            "weight": 0.15,
-            "weighted_score": 12.5,
-            "seal_ratio": 0.1667,
-            "first_seal_time": "09:25:01"
-          },
-          "chip_structure": {
-            "score": 61.63,
-            "weight": 0.25,
-            "weighted_score": 15.41,
-            "turnover_rate": 10.8,
-            "high_60d_breakout": false,
-            "broken_count": 1
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "服装家纺",
-            "sector_zt_count": 4,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 3,
-        "prev_day_close_price": 9.12,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP4 候选 (量化81.41分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
-        "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
-        "today_factor_breakdown": null,
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "001376",
-        "name": "百通能源",
-        "sector": "电力",
-        "prev_day_quant_score": 74.28,
-        "prev_day_rank": 5,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 64.0,
-            "weight": 0.35,
-            "weighted_score": 22.4,
-            "consecutive_boards": 2,
-            "base_board_score": 64.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 95.84,
-            "weight": 0.15,
-            "weighted_score": 14.38,
-            "seal_ratio": 0.5277,
-            "first_seal_time": "09:32:12"
-          },
-          "chip_structure": {
-            "score": 95.0,
-            "weight": 0.25,
-            "weighted_score": 23.75,
-            "turnover_rate": 7.71,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 55.0,
-            "weight": 0.25,
-            "weighted_score": 13.75,
-            "sector_name": "电力",
-            "sector_zt_count": 1,
-            "has_true_resonance": false,
-            "is_overcrowded": false,
-            "is_solo_zone": true
-          }
-        },
-        "prev_day_consecutive_boards": 2,
-        "prev_day_close_price": 13.93,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP5 候选 (量化74.28分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
-        "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
-        "today_factor_breakdown": null,
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "603230",
-        "name": "内蒙新华",
-        "sector": "出版",
-        "prev_day_quant_score": 73.98,
-        "prev_day_rank": 6,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 84.0,
-            "weight": 0.35,
-            "weighted_score": 29.4,
-            "consecutive_boards": 4,
-            "base_board_score": 84.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 80.84,
-            "weight": 0.15,
-            "weighted_score": 12.13,
-            "seal_ratio": 0.1553,
-            "first_seal_time": "09:25:02"
-          },
-          "chip_structure": {
-            "score": 41.8,
-            "weight": 0.25,
-            "weighted_score": 10.45,
-            "turnover_rate": 10.63,
-            "high_60d_breakout": false,
-            "broken_count": 3
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "出版",
-            "sector_zt_count": 3,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 4,
-        "prev_day_close_price": 14.83,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP6 候选 (量化73.98分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": 16.31,
-        "today_change_pct": 9.98,
-        "today_consecutive_boards": 5,
-        "today_rank_in_candidates": 7,
-        "today_seal_ratio_pct": 10.42,
-        "today_turnover_rate": 11.02,
-        "today_broken_count": 3,
-        "today_first_seal_time": "09:34:36",
-        "today_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 78.0,
-            "weight": 0.35,
-            "weighted_score": 27.3,
-            "consecutive_boards": 5,
-            "base_board_score": 78.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 66.15,
-            "weight": 0.15,
-            "weighted_score": 9.92,
-            "seal_ratio": 0.1042,
-            "first_seal_time": "09:34:36"
-          },
-          "chip_structure": {
-            "score": 41.42,
-            "weight": 0.25,
-            "weighted_score": 10.36,
-            "turnover_rate": 11.02,
-            "high_60d_breakout": false,
-            "broken_count": 3
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "出版",
-            "sector_zt_count": 4,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "600785",
-        "name": "新华百货",
-        "sector": "一般零售",
-        "prev_day_quant_score": 68.34,
-        "prev_day_rank": 7,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 42.0,
-            "weight": 0.35,
-            "weighted_score": 14.7,
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 74.5,
-            "weight": 0.15,
-            "weighted_score": 11.17,
-            "seal_ratio": 0.1643,
-            "first_seal_time": "09:53:10"
-          },
-          "chip_structure": {
-            "score": 81.88,
-            "weight": 0.25,
-            "weighted_score": 20.47,
-            "turnover_rate": 8.87,
-            "high_60d_breakout": false,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "一般零售",
-            "sector_zt_count": 4,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 11.35,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP7 候选 (量化68.34分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
-        "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
-        "today_factor_breakdown": null,
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
         "code": "600825",
         "name": "新华传媒",
         "sector": "出版",
-        "prev_day_quant_score": 68.3,
-        "prev_day_rank": 8,
+        "prev_day_quant_score": 76.0,
+        "prev_day_rank": 2,
         "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 42.0,
-            "weight": 0.35,
-            "weighted_score": 14.7,
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 100.0,
-            "weight": 0.15,
-            "weighted_score": 15.0,
-            "seal_ratio": 171.3523,
-            "first_seal_time": "09:25:02"
-          },
-          "chip_structure": {
-            "score": 66.4,
-            "weight": 0.25,
-            "weighted_score": 16.6,
-            "turnover_rate": 0.24,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "出版",
-            "sector_zt_count": 3,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 5.84,
-        "buy_price": null,
-        "buy_reason": "2026-09-21 TOP8 候选 (量化68.3分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": 6.42,
-        "today_change_pct": 9.93,
-        "today_consecutive_boards": 2,
-        "today_rank_in_candidates": 2,
-        "today_seal_ratio_pct": 9589.12,
-        "today_turnover_rate": 0.33,
-        "today_broken_count": 0,
-        "today_first_seal_time": "09:25:02",
-        "today_factor_breakdown": {
           "consecutive_board_sentiment": {
             "score": 64.0,
             "weight": 0.35,
@@ -690,6 +175,558 @@
             "is_solo_zone": false
           }
         },
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 6.42,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP2 候选 (量化76.0分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 7.06,
+        "today_change_pct": 9.97,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 4,
+        "today_seal_ratio_pct": 5939.96,
+        "today_turnover_rate": 0.44,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:25:00",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 100.0,
+            "weight": 0.15,
+            "weighted_score": 15.0,
+            "seal_ratio": 59.3996,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.25,
+            "weighted_score": 16.6,
+            "turnover_rate": 0.44,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "出版",
+            "sector_zt_count": 2,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "000504",
+        "name": "南华生物",
+        "sector": "医疗服务",
+        "prev_day_quant_score": 74.29,
+        "prev_day_rank": 3,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 84.0,
+            "weight": 0.35,
+            "weighted_score": 29.4,
+            "consecutive_boards": 4,
+            "base_board_score": 84.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 96.92,
+            "weight": 0.15,
+            "weighted_score": 14.54,
+            "seal_ratio": 3.8234,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.25,
+            "weighted_score": 16.6,
+            "turnover_rate": 1.79,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 55.0,
+            "weight": 0.25,
+            "weighted_score": 13.75,
+            "sector_name": "医疗服务",
+            "sector_zt_count": 2,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 4,
+        "prev_day_close_price": 12.11,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP3 候选 (量化74.29分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": null,
+        "today_change_pct": null,
+        "today_consecutive_boards": null,
+        "today_rank_in_candidates": null,
+        "today_seal_ratio_pct": null,
+        "today_turnover_rate": null,
+        "today_broken_count": null,
+        "today_first_seal_time": null,
+        "today_factor_breakdown": null,
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "000910",
+        "name": "大亚圣象",
+        "sector": "家居用品",
+        "prev_day_quant_score": 74.01,
+        "prev_day_rank": 4,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 6.93,
+            "weight": 0.15,
+            "weighted_score": 1.04,
+            "seal_ratio": 0.0493,
+            "first_seal_time": "13:12:15"
+          },
+          "chip_structure": {
+            "score": 77.89,
+            "weight": 0.25,
+            "weighted_score": 19.47,
+            "turnover_rate": 10.53,
+            "high_60d_breakout": false,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 88.0,
+            "weight": 0.25,
+            "weighted_score": 22.0,
+            "sector_name": "家居用品",
+            "sector_zt_count": 5,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "prev_day_consecutive_boards": 3,
+        "prev_day_close_price": 6.89,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP4 候选 (量化74.01分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 7.58,
+        "today_change_pct": 10.01,
+        "today_consecutive_boards": 4,
+        "today_rank_in_candidates": 2,
+        "today_seal_ratio_pct": 31.57,
+        "today_turnover_rate": 5.51,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:30:39",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 96.0,
+            "weight": 0.35,
+            "weighted_score": 33.6,
+            "consecutive_boards": 4,
+            "base_board_score": 84.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 12.0,
+            "is_spatial_leader": true
+          },
+          "seal_strength": {
+            "score": 84.51,
+            "weight": 0.15,
+            "weighted_score": 12.68,
+            "seal_ratio": 0.3157,
+            "first_seal_time": "09:30:39"
+          },
+          "chip_structure": {
+            "score": 81.29,
+            "weight": 0.25,
+            "weighted_score": 20.32,
+            "turnover_rate": 5.51,
+            "high_60d_breakout": false,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "家居用品",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "001234",
+        "name": "泰慕士",
+        "sector": "服装家纺",
+        "prev_day_quant_score": 71.03,
+        "prev_day_rank": 5,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 64.0,
+            "weight": 0.35,
+            "weighted_score": 22.4,
+            "consecutive_boards": 2,
+            "base_board_score": 64.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 93.84,
+            "weight": 0.15,
+            "weighted_score": 14.08,
+            "seal_ratio": 1.9786,
+            "first_seal_time": "09:30:00"
+          },
+          "chip_structure": {
+            "score": 83.2,
+            "weight": 0.25,
+            "weighted_score": 20.8,
+            "turnover_rate": 4.74,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 55.0,
+            "weight": 0.25,
+            "weighted_score": 13.75,
+            "sector_name": "服装家纺",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 29.25,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP5 候选 (量化71.03分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 32.18,
+        "today_change_pct": 10.02,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 1,
+        "today_seal_ratio_pct": 382.74,
+        "today_turnover_rate": 3.04,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:25:00",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 98.06,
+            "weight": 0.15,
+            "weighted_score": 14.71,
+            "seal_ratio": 3.8274,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 83.2,
+            "weight": 0.25,
+            "weighted_score": 20.8,
+            "turnover_rate": 3.04,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "服装家纺",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "001216",
+        "name": "华瓷股份",
+        "sector": "家居用品",
+        "prev_day_quant_score": 70.17,
+        "prev_day_rank": 6,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 48.0,
+            "weight": 0.35,
+            "weighted_score": 16.8,
+            "consecutive_boards": 6,
+            "base_board_score": 60.0,
+            "decay_factor": 0.5,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 18.0,
+            "is_spatial_leader": true
+          },
+          "seal_strength": {
+            "score": 98.46,
+            "weight": 0.15,
+            "weighted_score": 14.77,
+            "seal_ratio": 5.3525,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.25,
+            "weighted_score": 16.6,
+            "turnover_rate": 0.74,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 88.0,
+            "weight": 0.25,
+            "weighted_score": 22.0,
+            "sector_name": "家居用品",
+            "sector_zt_count": 5,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "prev_day_consecutive_boards": 6,
+        "prev_day_close_price": 26.47,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP6 候选 (量化70.17分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": null,
+        "today_change_pct": null,
+        "today_consecutive_boards": null,
+        "today_rank_in_candidates": null,
+        "today_seal_ratio_pct": null,
+        "today_turnover_rate": null,
+        "today_broken_count": null,
+        "today_first_seal_time": null,
+        "today_factor_breakdown": null,
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "603230",
+        "name": "内蒙新华",
+        "sector": "出版",
+        "prev_day_quant_score": 69.58,
+        "prev_day_rank": 7,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 78.0,
+            "weight": 0.35,
+            "weighted_score": 27.3,
+            "consecutive_boards": 5,
+            "base_board_score": 78.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 66.15,
+            "weight": 0.15,
+            "weighted_score": 9.92,
+            "seal_ratio": 0.1042,
+            "first_seal_time": "09:34:36"
+          },
+          "chip_structure": {
+            "score": 41.42,
+            "weight": 0.25,
+            "weighted_score": 10.36,
+            "turnover_rate": 11.02,
+            "high_60d_breakout": false,
+            "broken_count": 3
+          },
+          "sector_resonance": {
+            "score": 88.0,
+            "weight": 0.25,
+            "weighted_score": 22.0,
+            "sector_name": "出版",
+            "sector_zt_count": 4,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "prev_day_consecutive_boards": 5,
+        "prev_day_close_price": 16.31,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP7 候选 (量化69.58分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": null,
+        "today_change_pct": null,
+        "today_consecutive_boards": null,
+        "today_rank_in_candidates": null,
+        "today_seal_ratio_pct": null,
+        "today_turnover_rate": null,
+        "today_broken_count": null,
+        "today_first_seal_time": null,
+        "today_factor_breakdown": null,
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "002614",
+        "name": "奥佳华",
+        "sector": "其他家电",
+        "prev_day_quant_score": 66.6,
+        "prev_day_rank": 8,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 64.0,
+            "weight": 0.35,
+            "weighted_score": 22.4,
+            "consecutive_boards": 2,
+            "base_board_score": 64.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 92.31,
+            "weight": 0.15,
+            "weighted_score": 13.85,
+            "seal_ratio": 1.3377,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.25,
+            "weighted_score": 16.6,
+            "turnover_rate": 2.73,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 55.0,
+            "weight": 0.25,
+            "weighted_score": 13.75,
+            "sector_name": "其他家电",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 6.88,
+        "buy_price": null,
+        "buy_reason": "2026-09-22 TOP8 候选 (量化66.6分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 7.57,
+        "today_change_pct": 10.03,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 7,
+        "today_seal_ratio_pct": 7.72,
+        "today_turnover_rate": 29.8,
+        "today_broken_count": 7,
+        "today_first_seal_time": "09:31:09",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 23.549999999999997,
+            "weight": 0.15,
+            "weighted_score": 3.53,
+            "seal_ratio": 0.0772,
+            "first_seal_time": "09:31:09"
+          },
+          "chip_structure": {
+            "score": 18.4,
+            "weight": 0.25,
+            "weighted_score": 4.6,
+            "turnover_rate": 29.8,
+            "high_60d_breakout": false,
+            "broken_count": 7
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "其他家电",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
         "pnl_amount": null,
         "pnl_pct": null,
         "outcome": "WATCHLIST_ONLY",
@@ -700,580 +737,438 @@
     ]
   },
   "closed_positions_attribution": {
-    "attribution_date": "2026-09-22",
+    "attribution_date": "2026-09-23",
     "total_exits": 0,
     "loss_exit_count": 0,
     "items": []
   },
   "consecutive_board_success_analysis": {
-    "total_success": 8,
+    "total_success": 6,
     "items": [
-      {
-        "code": "001216",
-        "name": "华瓷股份",
-        "sector": "家居用品",
-        "prev_day_consecutive_boards": 5,
-        "today_consecutive_boards": 6,
-        "board_advancement": "5 → 6 连板",
-        "today_quant_score": 70.17,
-        "today_rank": 6,
-        "today_price": 26.47,
-        "today_change_pct": 10.02,
-        "today_amount": 48414477.0,
-        "today_turnover_rate": 0.74,
-        "today_seal_ratio_pct": 535.25,
-        "today_first_seal_time": "09:25:00",
-        "today_last_seal_time": "09:25:00",
-        "today_broken_count": 0,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 48.0,
-          "seal_strength": 98.46,
-          "chip_structure": 66.4,
-          "sector_resonance": 88.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": true,
-          "sentiment_adjustment": 18.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 5.3525,
-          "first_seal_time": "09:25:00",
-          "turnover_rate": 0.74,
-          "high_60d_breakout": true,
-          "broken_count": 0,
-          "sector_name": "家居用品",
-          "sector_zt_count": 5,
-          "has_true_resonance": true
-        },
-        "verdict": "T-1 5 连板 → T 日 6 连板成功晋级（今日量化得分 70.17，排第 6 名）"
-      },
-      {
-        "code": "603230",
-        "name": "内蒙新华",
-        "sector": "出版",
-        "prev_day_consecutive_boards": 4,
-        "today_consecutive_boards": 5,
-        "board_advancement": "4 → 5 连板",
-        "today_quant_score": 69.58,
-        "today_rank": 7,
-        "today_price": 16.31,
-        "today_change_pct": 9.98,
-        "today_amount": 622024368.0,
-        "today_turnover_rate": 11.02,
-        "today_seal_ratio_pct": 10.42,
-        "today_first_seal_time": "09:34:36",
-        "today_last_seal_time": "09:42:15",
-        "today_broken_count": 3,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 78.0,
-          "seal_strength": 66.15,
-          "chip_structure": 41.42,
-          "sector_resonance": 88.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 0.1042,
-          "first_seal_time": "09:34:36",
-          "turnover_rate": 11.02,
-          "high_60d_breakout": false,
-          "broken_count": 3,
-          "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true
-        },
-        "verdict": "T-1 4 连板 → T 日 5 连板成功晋级（今日量化得分 69.58，排第 7 名）"
-      },
-      {
-        "code": "000504",
-        "name": "南华生物",
-        "sector": "医疗服务",
-        "prev_day_consecutive_boards": 3,
-        "today_consecutive_boards": 4,
-        "board_advancement": "3 → 4 连板",
-        "today_quant_score": 74.29,
-        "today_rank": 3,
-        "today_price": 12.11,
-        "today_change_pct": 9.99,
-        "today_amount": 71297625.0,
-        "today_turnover_rate": 1.79,
-        "today_seal_ratio_pct": 382.34,
-        "today_first_seal_time": "09:25:00",
-        "today_last_seal_time": "09:25:00",
-        "today_broken_count": 0,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 84.0,
-          "seal_strength": 96.92,
-          "chip_structure": 66.4,
-          "sector_resonance": 55.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 3.8234,
-          "first_seal_time": "09:25:00",
-          "turnover_rate": 1.79,
-          "high_60d_breakout": true,
-          "broken_count": 0,
-          "sector_name": "医疗服务",
-          "sector_zt_count": 2,
-          "has_true_resonance": false
-        },
-        "verdict": "T-1 3 连板 → T 日 4 连板成功晋级（今日量化得分 74.29，排第 3 名）"
-      },
       {
         "code": "000910",
         "name": "大亚圣象",
         "sector": "家居用品",
-        "prev_day_consecutive_boards": 2,
-        "today_consecutive_boards": 3,
-        "board_advancement": "2 → 3 连板",
-        "today_quant_score": 74.01,
-        "today_rank": 4,
-        "today_price": 6.89,
-        "today_change_pct": 10.06,
-        "today_amount": 373106272.0,
-        "today_turnover_rate": 10.53,
-        "today_seal_ratio_pct": 4.93,
-        "today_first_seal_time": "13:12:15",
-        "today_last_seal_time": "13:12:15",
+        "prev_day_consecutive_boards": 3,
+        "today_consecutive_boards": 4,
+        "board_advancement": "3 → 4 连板",
+        "today_quant_score": 90.35,
+        "today_rank": 2,
+        "today_price": 7.58,
+        "today_change_pct": 10.01,
+        "today_amount": 224213587.0,
+        "today_turnover_rate": 5.51,
+        "today_seal_ratio_pct": 31.57,
+        "today_first_seal_time": "09:30:39",
+        "today_last_seal_time": "09:30:39",
         "today_broken_count": 0,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
-          "consecutive_board_sentiment": 90.0,
-          "seal_strength": 6.93,
-          "chip_structure": 77.89,
-          "sector_resonance": 88.0
+          "consecutive_board_sentiment": 96.0,
+          "seal_strength": 84.51,
+          "chip_structure": 81.29,
+          "sector_resonance": 95.0
         },
         "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 0.0493,
-          "first_seal_time": "13:12:15",
-          "turnover_rate": 10.53,
+          "is_spatial_leader": true,
+          "sentiment_adjustment": 12.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.3157,
+          "first_seal_time": "09:30:39",
+          "turnover_rate": 5.51,
           "high_60d_breakout": false,
           "broken_count": 0,
           "sector_name": "家居用品",
-          "sector_zt_count": 5,
-          "has_true_resonance": true
+          "sector_zt_count": 1,
+          "has_true_resonance": false
         },
-        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 74.01，排第 4 名）"
+        "verdict": "T-1 3 连板 → T 日 4 连板成功晋级（今日量化得分 90.35，排第 2 名）"
       },
       {
-        "code": "600825",
-        "name": "新华传媒",
+        "code": "601811",
+        "name": "新华文轩",
         "sector": "出版",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 76.0,
-        "today_rank": 2,
-        "today_price": 6.42,
-        "today_change_pct": 9.93,
-        "today_amount": 22383972.0,
-        "today_turnover_rate": 0.33,
-        "today_seal_ratio_pct": 9589.12,
-        "today_first_seal_time": "09:25:02",
-        "today_last_seal_time": "09:25:02",
+        "prev_day_consecutive_boards": 3,
+        "today_consecutive_boards": 4,
+        "board_advancement": "3 → 4 连板",
+        "today_quant_score": 87.5,
+        "today_rank": 3,
+        "today_price": 18.5,
+        "today_change_pct": 9.99,
+        "today_amount": 306609584.0,
+        "today_turnover_rate": 2.1,
+        "today_seal_ratio_pct": 47.01,
+        "today_first_seal_time": "09:30:16",
+        "today_last_seal_time": "09:30:16",
         "today_broken_count": 0,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
-          "consecutive_board_sentiment": 64.0,
-          "seal_strength": 100.0,
+          "consecutive_board_sentiment": 96.0,
+          "seal_strength": 90.32,
           "chip_structure": 66.4,
-          "sector_resonance": 88.0
+          "sector_resonance": 95.0
         },
         "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 95.8912,
-          "first_seal_time": "09:25:02",
-          "turnover_rate": 0.33,
+          "is_spatial_leader": true,
+          "sentiment_adjustment": 12.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.4701,
+          "first_seal_time": "09:30:16",
+          "turnover_rate": 2.1,
           "high_60d_breakout": true,
           "broken_count": 0,
           "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true
+          "sector_zt_count": 2,
+          "has_true_resonance": false
         },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 76.0，排第 2 名）"
+        "verdict": "T-1 3 连板 → T 日 4 连板成功晋级（今日量化得分 87.5，排第 3 名）"
       },
       {
         "code": "001234",
         "name": "泰慕士",
         "sector": "服装家纺",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 71.03,
-        "today_rank": 5,
-        "today_price": 29.25,
-        "today_change_pct": 10.0,
-        "today_amount": 126493342.0,
-        "today_turnover_rate": 4.74,
-        "today_seal_ratio_pct": 197.86,
-        "today_first_seal_time": "09:30:00",
-        "today_last_seal_time": "09:30:00",
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 90.76,
+        "today_rank": 1,
+        "today_price": 32.18,
+        "today_change_pct": 10.02,
+        "today_amount": 89602957.0,
+        "today_turnover_rate": 3.04,
+        "today_seal_ratio_pct": 382.74,
+        "today_first_seal_time": "09:25:00",
+        "today_last_seal_time": "09:25:00",
         "today_broken_count": 0,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
-          "consecutive_board_sentiment": 64.0,
-          "seal_strength": 93.84,
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 98.06,
           "chip_structure": 83.2,
-          "sector_resonance": 55.0
+          "sector_resonance": 95.0
         },
         "factor_details_today": {
           "is_spatial_leader": false,
           "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 1.9786,
-          "first_seal_time": "09:30:00",
-          "turnover_rate": 4.74,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 3.8274,
+          "first_seal_time": "09:25:00",
+          "turnover_rate": 3.04,
           "high_60d_breakout": true,
           "broken_count": 0,
           "sector_name": "服装家纺",
           "sector_zt_count": 1,
           "has_true_resonance": false
         },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 71.03，排第 5 名）"
-      },
-      {
-        "code": "002614",
-        "name": "奥佳华",
-        "sector": "其他家电",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 66.6,
-        "today_rank": 8,
-        "today_price": 6.88,
-        "today_change_pct": 10.08,
-        "today_amount": 82802947.0,
-        "today_turnover_rate": 2.73,
-        "today_seal_ratio_pct": 133.77,
-        "today_first_seal_time": "09:25:00",
-        "today_last_seal_time": "09:25:00",
-        "today_broken_count": 0,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 64.0,
-          "seal_strength": 92.31,
-          "chip_structure": 66.4,
-          "sector_resonance": 55.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 1.3377,
-          "first_seal_time": "09:25:00",
-          "turnover_rate": 2.73,
-          "high_60d_breakout": true,
-          "broken_count": 0,
-          "sector_name": "其他家电",
-          "sector_zt_count": 1,
-          "has_true_resonance": false
-        },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 66.6，排第 8 名）"
-      },
-      {
-        "code": "002303",
-        "name": "美盈森",
-        "sector": "包装印刷",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 63.93,
-        "today_rank": 10,
-        "today_price": 6.9,
-        "today_change_pct": 10.05,
-        "today_amount": 450105648.0,
-        "today_turnover_rate": 6.12,
-        "today_seal_ratio_pct": 16.02,
-        "today_first_seal_time": "09:30:00",
-        "today_last_seal_time": "09:39:00",
-        "today_broken_count": 1,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 64.0,
-          "seal_strength": 75.38,
-          "chip_structure": 65.88,
-          "sector_resonance": 55.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 0.0,
-          "sentiment_state": "主升/强势期",
-          "seal_ratio": 0.1602,
-          "first_seal_time": "09:30:00",
-          "turnover_rate": 6.12,
-          "high_60d_breakout": false,
-          "broken_count": 1,
-          "sector_name": "包装印刷",
-          "sector_zt_count": 1,
-          "has_true_resonance": false
-        },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 63.93，排第 10 名）"
-      }
-    ]
-  },
-  "next_day_prediction": {
-    "prediction_for_trade_date": "T+1（下一交易日）",
-    "prevailing_sentiment_state": "主升/强势期",
-    "prevailing_sentiment_score": 82.75,
-    "market_level_prediction": "情绪进入主升/强势区，T+1 开盘整体预期偏强，关注高连板龙头（≥4 板）的连板延续性。",
-    "item_predictions": [
-      {
-        "code": "601811",
-        "name": "新华文轩",
-        "sector": "出版",
-        "rank": 1,
-        "today_quant_score": 84.41,
-        "today_consecutive_boards": 3,
-        "today_close_price": 16.82,
-        "today_change_pct": 10.01,
-        "direction": "偏强看涨",
-        "confidence_level": "HIGH",
-        "confidence_pct": 90,
-        "key_drivers": [
-          "T 日 3 连板",
-          "封板强度 95.4 分（强）",
-          "筹码结构 66.4 分",
-          "板块 4 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 90.0,
-          "seal_strength": 95.39,
-          "chip_structure": 66.4,
-          "sector_resonance": 88.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
-        },
-        "operation_guide": "T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。",
-        "prediction_summary": "新华文轩 T+1 预测【偏强看涨】 (置信度 90%)——关键因子: T 日 3 连板；封板强度 95.4 分（强）；筹码结构 66.4 分；板块 4 家涨停共振。操作建议: T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。"
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 90.76，排第 1 名）"
       },
       {
         "code": "600825",
         "name": "新华传媒",
         "sector": "出版",
-        "rank": 2,
-        "today_quant_score": 76.0,
-        "today_consecutive_boards": 2,
-        "today_close_price": 6.42,
-        "today_change_pct": 9.93,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 65,
-        "key_drivers": [
-          "T 日 2 连板",
-          "封板强度 100.0 分（强）",
-          "筹码结构 66.4 分",
-          "板块 4 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 64.0,
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 86.85,
+        "today_rank": 4,
+        "today_price": 7.06,
+        "today_change_pct": 9.97,
+        "today_amount": 32333388.0,
+        "today_turnover_rate": 0.44,
+        "today_seal_ratio_pct": 5939.96,
+        "today_first_seal_time": "09:25:00",
+        "today_last_seal_time": "09:25:00",
+        "today_broken_count": 0,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 90.0,
           "seal_strength": 100.0,
           "chip_structure": 66.4,
-          "sector_resonance": 88.0
+          "sector_resonance": 95.0
         },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 59.3996,
+          "first_seal_time": "09:25:00",
+          "turnover_rate": 0.44,
+          "high_60d_breakout": true,
+          "broken_count": 0,
+          "sector_name": "出版",
+          "sector_zt_count": 2,
+          "has_true_resonance": false
         },
-        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "新华传媒 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 2 连板；封板强度 100.0 分（强）；筹码结构 66.4 分；板块 4 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 86.85，排第 4 名）"
       },
       {
-        "code": "000504",
-        "name": "南华生物",
-        "sector": "医疗服务",
-        "rank": 3,
-        "today_quant_score": 74.29,
-        "today_consecutive_boards": 4,
-        "today_close_price": 12.11,
-        "today_change_pct": 9.99,
-        "direction": "偏强看涨",
-        "confidence_level": "HIGH",
-        "confidence_pct": 85,
-        "key_drivers": [
-          "T 日 4 连板",
-          "封板强度 96.9 分（强）",
-          "筹码结构 66.4 分",
-          "板块 2 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 84.0,
-          "seal_strength": 96.92,
-          "chip_structure": 66.4,
-          "sector_resonance": 55.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
-        },
-        "operation_guide": "T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。",
-        "prediction_summary": "南华生物 T+1 预测【偏强看涨】 (置信度 85%)——关键因子: T 日 4 连板；封板强度 96.9 分（强）；筹码结构 66.4 分；板块 2 家涨停共振。操作建议: T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。"
-      },
-      {
-        "code": "000910",
-        "name": "大亚圣象",
-        "sector": "家居用品",
-        "rank": 4,
-        "today_quant_score": 74.01,
+        "code": "603636",
+        "name": "南威软件",
+        "sector": "IT服务Ⅱ",
+        "prev_day_consecutive_boards": 2,
         "today_consecutive_boards": 3,
-        "today_close_price": 6.89,
-        "today_change_pct": 10.06,
-        "direction": "偏强看涨",
-        "confidence_level": "HIGH",
-        "confidence_pct": 85,
-        "key_drivers": [
-          "T 日 3 连板",
-          "封板强度 6.9 分（弱）",
-          "筹码结构 77.9 分",
-          "板块 5 家涨停共振"
-        ],
-        "today_factor_scores": {
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 69.04,
+        "today_rank": 5,
+        "today_price": 8.81,
+        "today_change_pct": 9.99,
+        "today_amount": 642502976.0,
+        "today_turnover_rate": 12.62,
+        "today_seal_ratio_pct": 8.7,
+        "today_first_seal_time": "09:25:01",
+        "today_last_seal_time": "09:58:37",
+        "today_broken_count": 3,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
           "consecutive_board_sentiment": 90.0,
-          "seal_strength": 6.93,
-          "chip_structure": 77.89,
-          "sector_resonance": 88.0
+          "seal_strength": 25.490000000000002,
+          "chip_structure": 39.88,
+          "sector_resonance": 95.0
         },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": 0.0493
-        },
-        "operation_guide": "T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。",
-        "prediction_summary": "大亚圣象 T+1 预测【偏强看涨】 (置信度 85%)——关键因子: T 日 3 连板；封板强度 6.9 分（弱）；筹码结构 77.9 分；板块 5 家涨停共振。操作建议: T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。"
-      },
-      {
-        "code": "001234",
-        "name": "泰慕士",
-        "sector": "服装家纺",
-        "rank": 5,
-        "today_quant_score": 71.03,
-        "today_consecutive_boards": 2,
-        "today_close_price": 29.25,
-        "today_change_pct": 10.0,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 65,
-        "key_drivers": [
-          "T 日 2 连板",
-          "封板强度 93.8 分（强）",
-          "筹码结构 83.2 分",
-          "板块 1 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 64.0,
-          "seal_strength": 93.84,
-          "chip_structure": 83.2,
-          "sector_resonance": 55.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
-        },
-        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "泰慕士 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 2 连板；封板强度 93.8 分（强）；筹码结构 83.2 分；板块 1 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
-      },
-      {
-        "code": "001216",
-        "name": "华瓷股份",
-        "sector": "家居用品",
-        "rank": 6,
-        "today_quant_score": 70.17,
-        "today_consecutive_boards": 6,
-        "today_close_price": 26.47,
-        "today_change_pct": 10.02,
-        "direction": "偏强看涨",
-        "confidence_level": "HIGH",
-        "confidence_pct": 85,
-        "key_drivers": [
-          "T 日 6 连板",
-          "封板强度 98.5 分（强）",
-          "筹码结构 66.4 分",
-          "板块 5 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 48.0,
-          "seal_strength": 98.46,
-          "chip_structure": 66.4,
-          "sector_resonance": 88.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
-        },
-        "operation_guide": "T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。",
-        "prediction_summary": "华瓷股份 T+1 预测【偏强看涨】 (置信度 85%)——关键因子: T 日 6 连板；封板强度 98.5 分（强）；筹码结构 66.4 分；板块 5 家涨停共振。操作建议: T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。"
-      },
-      {
-        "code": "603230",
-        "name": "内蒙新华",
-        "sector": "出版",
-        "rank": 7,
-        "today_quant_score": 69.58,
-        "today_consecutive_boards": 5,
-        "today_close_price": 16.31,
-        "today_change_pct": 9.98,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 59,
-        "key_drivers": [
-          "T 日 5 连板",
-          "封板强度 66.2 分（中）",
-          "筹码结构 41.4 分",
-          "板块 4 家涨停共振",
-          "T 日炸板 3 次（风险）"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 78.0,
-          "seal_strength": 66.15,
-          "chip_structure": 41.42,
-          "sector_resonance": 88.0
-        },
-        "risk_flags": {
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.087,
+          "first_seal_time": "09:25:01",
+          "turnover_rate": 12.62,
+          "high_60d_breakout": false,
           "broken_count": 3,
-          "high_turnover": null,
-          "low_seal_ratio": null
+          "sector_name": "IT服务Ⅱ",
+          "sector_zt_count": 1,
+          "has_true_resonance": false
         },
-        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "内蒙新华 T+1 预测【谨慎看涨】 (置信度 59%)——关键因子: T 日 5 连板；封板强度 66.2 分（中）；筹码结构 41.4 分；板块 4 家涨停共振；T 日炸板 3 次（风险）。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 69.04，排第 5 名）"
       },
       {
         "code": "002614",
         "name": "奥佳华",
         "sector": "其他家电",
-        "rank": 8,
-        "today_quant_score": 66.6,
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 63.38,
+        "today_rank": 7,
+        "today_price": 7.57,
+        "today_change_pct": 10.03,
+        "today_amount": 991041808.0,
+        "today_turnover_rate": 29.8,
+        "today_seal_ratio_pct": 7.72,
+        "today_first_seal_time": "09:31:09",
+        "today_last_seal_time": "10:20:51",
+        "today_broken_count": 7,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 23.549999999999997,
+          "chip_structure": 18.4,
+          "sector_resonance": 95.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "震荡/分化期",
+          "seal_ratio": 0.0772,
+          "first_seal_time": "09:31:09",
+          "turnover_rate": 29.8,
+          "high_60d_breakout": false,
+          "broken_count": 7,
+          "sector_name": "其他家电",
+          "sector_zt_count": 1,
+          "has_true_resonance": false
+        },
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 63.38，排第 7 名）"
+      }
+    ]
+  },
+  "next_day_prediction": {
+    "prediction_for_trade_date": "T+1（下一交易日）",
+    "prevailing_sentiment_state": "震荡/分化期",
+    "prevailing_sentiment_score": 49.25,
+    "market_level_prediction": "情绪偏弱区，T+1 宜防守 —— 优先规避 ≥5 连板高标见顶回落风险，关注首板/2 板补涨。",
+    "item_predictions": [
+      {
+        "code": "001234",
+        "name": "泰慕士",
+        "sector": "服装家纺",
+        "rank": 1,
+        "today_quant_score": 90.76,
+        "today_consecutive_boards": 3,
+        "today_close_price": 32.18,
+        "today_change_pct": 10.02,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 70,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 98.1 分（强）",
+          "筹码结构 83.2 分",
+          "板块 1 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 98.06,
+          "chip_structure": 83.2,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "泰慕士 T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 3 连板；封板强度 98.1 分（强）；筹码结构 83.2 分；板块 1 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "000910",
+        "name": "大亚圣象",
+        "sector": "家居用品",
+        "rank": 2,
+        "today_quant_score": 90.35,
+        "today_consecutive_boards": 4,
+        "today_close_price": 7.58,
+        "today_change_pct": 10.01,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 70,
+        "key_drivers": [
+          "T 日 4 连板",
+          "封板强度 84.5 分（强）",
+          "筹码结构 81.3 分",
+          "板块 1 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 96.0,
+          "seal_strength": 84.51,
+          "chip_structure": 81.29,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "大亚圣象 T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 4 连板；封板强度 84.5 分（强）；筹码结构 81.3 分；板块 1 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "601811",
+        "name": "新华文轩",
+        "sector": "出版",
+        "rank": 3,
+        "today_quant_score": 87.5,
+        "today_consecutive_boards": 4,
+        "today_close_price": 18.5,
+        "today_change_pct": 9.99,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 70,
+        "key_drivers": [
+          "T 日 4 连板",
+          "封板强度 90.3 分（强）",
+          "筹码结构 66.4 分",
+          "板块 2 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 96.0,
+          "seal_strength": 90.32,
+          "chip_structure": 66.4,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "新华文轩 T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 4 连板；封板强度 90.3 分（强）；筹码结构 66.4 分；板块 2 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "600825",
+        "name": "新华传媒",
+        "sector": "出版",
+        "rank": 4,
+        "today_quant_score": 86.85,
+        "today_consecutive_boards": 3,
+        "today_close_price": 7.06,
+        "today_change_pct": 9.97,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 70,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 100.0 分（强）",
+          "筹码结构 66.4 分",
+          "板块 2 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 100.0,
+          "chip_structure": 66.4,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "新华传媒 T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 3 连板；封板强度 100.0 分（强）；筹码结构 66.4 分；板块 2 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "603636",
+        "name": "南威软件",
+        "sector": "IT服务Ⅱ",
+        "rank": 5,
+        "today_quant_score": 69.04,
+        "today_consecutive_boards": 3,
+        "today_close_price": 8.81,
+        "today_change_pct": 9.99,
+        "direction": "偏弱观望",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 35,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 25.5 分（弱）",
+          "筹码结构 39.9 分",
+          "板块 1 家涨停共振",
+          "T 日炸板 3 次（风险）"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 25.490000000000002,
+          "chip_structure": 39.88,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": 3,
+          "high_turnover": null,
+          "low_seal_ratio": 0.087
+        },
+        "operation_guide": "情绪偏弱或因子薄弱，不建议 T+1 开盘追入；若已有持仓则以开盘后 30 分钟不翻红为离场信号。",
+        "prediction_summary": "南威软件 T+1 预测【偏弱观望】 (置信度 35%)——关键因子: T 日 3 连板；封板强度 25.5 分（弱）；筹码结构 39.9 分；板块 1 家涨停共振；T 日炸板 3 次（风险）。操作建议: 情绪偏弱或因子薄弱，不建议 T+1 开盘追入；若已有持仓则以开盘后 30 分钟不翻红为离场信号。"
+      },
+      {
+        "code": "002238",
+        "name": "天威视讯",
+        "sector": "电视广播",
+        "rank": 6,
+        "today_quant_score": 68.22,
         "today_consecutive_boards": 2,
-        "today_close_price": 6.88,
-        "today_change_pct": 10.08,
+        "today_close_price": 7.66,
+        "today_change_pct": 10.06,
         "direction": "震荡中性",
         "confidence_level": "LOW",
         "confidence_pct": 45,
         "key_drivers": [
           "T 日 2 连板",
-          "封板强度 92.3 分（强）",
+          "封板强度 96.1 分（强）",
           "筹码结构 66.4 分",
           "板块 1 家涨停共振"
         ],
         "today_factor_scores": {
-          "consecutive_board_sentiment": 64.0,
-          "seal_strength": 92.31,
+          "consecutive_board_sentiment": 67.0,
+          "seal_strength": 96.13,
           "chip_structure": 66.4,
           "sector_resonance": 55.0
         },
@@ -1283,216 +1178,99 @@
           "low_seal_ratio": null
         },
         "operation_guide": "信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。",
-        "prediction_summary": "奥佳华 T+1 预测【震荡中性】 (置信度 45%)——关键因子: T 日 2 连板；封板强度 92.3 分（强）；筹码结构 66.4 分；板块 1 家涨停共振。操作建议: 信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。"
+        "prediction_summary": "天威视讯 T+1 预测【震荡中性】 (置信度 45%)——关键因子: T 日 2 连板；封板强度 96.1 分（强）；筹码结构 66.4 分；板块 1 家涨停共振。操作建议: 信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。"
+      },
+      {
+        "code": "002614",
+        "name": "奥佳华",
+        "sector": "其他家电",
+        "rank": 7,
+        "today_quant_score": 63.38,
+        "today_consecutive_boards": 3,
+        "today_close_price": 7.57,
+        "today_change_pct": 10.03,
+        "direction": "偏弱观望",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 35,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 23.5 分（弱）",
+          "筹码结构 18.4 分",
+          "板块 1 家涨停共振",
+          "T 日炸板 7 次（风险）",
+          "换手率 29.8%（偏高）"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 23.549999999999997,
+          "chip_structure": 18.4,
+          "sector_resonance": 95.0
+        },
+        "risk_flags": {
+          "broken_count": 7,
+          "high_turnover": 29.8,
+          "low_seal_ratio": 0.0772
+        },
+        "operation_guide": "情绪偏弱或因子薄弱，不建议 T+1 开盘追入；若已有持仓则以开盘后 30 分钟不翻红为离场信号。",
+        "prediction_summary": "奥佳华 T+1 预测【偏弱观望】 (置信度 35%)——关键因子: T 日 3 连板；封板强度 23.5 分（弱）；筹码结构 18.4 分；板块 1 家涨停共振；T 日炸板 7 次（风险）；换手率 29.8%（偏高）。操作建议: 情绪偏弱或因子薄弱，不建议 T+1 开盘追入；若已有持仓则以开盘后 30 分钟不翻红为离场信号。"
+      },
+      {
+        "code": "603803",
+        "name": "瑞斯康达",
+        "sector": "通信设备",
+        "rank": 8,
+        "today_quant_score": 62.78,
+        "today_consecutive_boards": 1,
+        "today_close_price": 12.87,
+        "today_change_pct": 10.0,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 65,
+        "key_drivers": [
+          "T 日 1 连板",
+          "封板强度 74.2 分（强）",
+          "筹码结构 92.8 分",
+          "板块 1 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 42.0,
+          "seal_strength": 74.19,
+          "chip_structure": 92.8,
+          "sector_resonance": 55.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "瑞斯康达 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 1 连板；封板强度 74.2 分（强）；筹码结构 92.8 分；板块 1 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
       }
     ]
   },
   "top_candidate_evaluations": [
     {
-      "code": "601811",
-      "name": "新华文轩",
+      "code": "001234",
+      "name": "泰慕士",
       "review_rank": 1,
-      "quant_score": 84.41,
+      "quant_score": 90.76,
       "consecutive_boards": 3,
-      "sector": "出版",
-      "price": 16.82,
-      "change_pct": 10.01,
-      "amount": 68201736.0,
-      "float_market_cap": 13319823598.0,
-      "turnover_rate": 0.51,
-      "seal_amount": 143779042.0,
-      "seal_ratio_pct": 210.81,
-      "first_seal_time": "09:25:02",
-      "last_seal_time": "09:25:02",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 84.41 (排名 1)",
-      "detailed_analysis": "综合量化打分 84.41 (排第 1 名)。首次封板 09:25:02。换手率 0.51%。出版 板块内 4 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 90.0,
-          "weight": 0.35,
-          "weighted_score": 31.5,
-          "consecutive_boards": 3,
-          "base_board_score": 90.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 95.39,
-          "weight": 0.15,
-          "weighted_score": 14.31,
-          "seal_ratio": 2.1081,
-          "first_seal_time": "09:25:02"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 0.51,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "600825",
-      "name": "新华传媒",
-      "review_rank": 2,
-      "quant_score": 76.0,
-      "consecutive_boards": 2,
-      "sector": "出版",
-      "price": 6.42,
-      "change_pct": 9.93,
-      "amount": 22383972.0,
-      "float_market_cap": 6708179997.0,
-      "turnover_rate": 0.33,
-      "seal_amount": 2146426334.0,
-      "seal_ratio_pct": 9589.12,
-      "first_seal_time": "09:25:02",
-      "last_seal_time": "09:25:02",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 76.0 (排名 2)",
-      "detailed_analysis": "综合量化打分 76.0 (排第 2 名)。首次封板 09:25:02。换手率 0.33%。出版 板块内 4 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 64.0,
-          "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 100.0,
-          "weight": 0.15,
-          "weighted_score": 15.0,
-          "seal_ratio": 95.8912,
-          "first_seal_time": "09:25:02"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 0.33,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "000504",
-      "name": "南华生物",
-      "review_rank": 3,
-      "quant_score": 74.29,
-      "consecutive_boards": 4,
-      "sector": "医疗服务",
-      "price": 12.11,
-      "change_pct": 9.99,
-      "amount": 71297625.0,
-      "float_market_cap": 3985672239.7799997,
-      "turnover_rate": 1.79,
-      "seal_amount": 272598522.0,
-      "seal_ratio_pct": 382.34,
+      "sector": "服装家纺",
+      "price": 32.18,
+      "change_pct": 10.02,
+      "amount": 89602957.0,
+      "float_market_cap": 2945805470.0,
+      "turnover_rate": 3.04,
+      "seal_amount": 342947730.0,
+      "seal_ratio_pct": 382.74,
       "first_seal_time": "09:25:00",
       "last_seal_time": "09:25:00",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 74.29 (排名 3)",
-      "detailed_analysis": "综合量化打分 74.29 (排第 3 名)。首次封板 09:25:00。换手率 1.79%。医疗服务 板块内 2 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 84.0,
-          "weight": 0.35,
-          "weighted_score": 29.4,
-          "consecutive_boards": 4,
-          "base_board_score": 84.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 96.92,
-          "weight": 0.15,
-          "weighted_score": 14.54,
-          "seal_ratio": 3.8234,
-          "first_seal_time": "09:25:00"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 1.79,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.25,
-          "weighted_score": 13.75,
-          "sector_name": "医疗服务",
-          "sector_zt_count": 2,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      }
-    },
-    {
-      "code": "000910",
-      "name": "大亚圣象",
-      "review_rank": 4,
-      "quant_score": 74.01,
-      "consecutive_boards": 3,
-      "sector": "家居用品",
-      "price": 6.89,
-      "change_pct": 10.06,
-      "amount": 373106272.0,
-      "float_market_cap": 3770450011.25,
-      "turnover_rate": 10.53,
-      "seal_amount": 18386164.0,
-      "seal_ratio_pct": 4.93,
-      "first_seal_time": "13:12:15",
-      "last_seal_time": "13:12:15",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 74.01 (排名 4)",
-      "detailed_analysis": "综合量化打分 74.01 (排第 4 名)。首次封板 13:12:15。换手率 10.53%。家居用品 板块内 5 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 90.76 (排名 1)",
+      "detailed_analysis": "综合量化打分 90.76 (排第 1 名)。首次封板 09:25:00。换手率 3.04%。服装家纺 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 90.0,
@@ -1501,90 +1279,29 @@
           "consecutive_boards": 3,
           "base_board_score": 90.0,
           "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
+          "sentiment_state": "震荡/分化期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 6.93,
+          "score": 98.06,
           "weight": 0.15,
-          "weighted_score": 1.04,
-          "seal_ratio": 0.0493,
-          "first_seal_time": "13:12:15"
-        },
-        "chip_structure": {
-          "score": 77.89,
-          "weight": 0.25,
-          "weighted_score": 19.47,
-          "turnover_rate": 10.53,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "家居用品",
-          "sector_zt_count": 5,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "001234",
-      "name": "泰慕士",
-      "review_rank": 5,
-      "quant_score": 71.03,
-      "consecutive_boards": 2,
-      "sector": "服装家纺",
-      "price": 29.25,
-      "change_pct": 10.0,
-      "amount": 126493342.0,
-      "float_market_cap": 2677588875.0,
-      "turnover_rate": 4.74,
-      "seal_amount": 250279760.0,
-      "seal_ratio_pct": 197.86,
-      "first_seal_time": "09:30:00",
-      "last_seal_time": "09:30:00",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 71.03 (排名 5)",
-      "detailed_analysis": "综合量化打分 71.03 (排第 5 名)。首次封板 09:30:00。换手率 4.74%。服装家纺 板块内 1 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 64.0,
-          "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 93.84,
-          "weight": 0.15,
-          "weighted_score": 14.08,
-          "seal_ratio": 1.9786,
-          "first_seal_time": "09:30:00"
+          "weighted_score": 14.71,
+          "seal_ratio": 3.8274,
+          "first_seal_time": "09:25:00"
         },
         "chip_structure": {
           "score": 83.2,
           "weight": 0.25,
           "weighted_score": 20.8,
-          "turnover_rate": 4.74,
+          "turnover_rate": 3.04,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 55.0,
+          "score": 95.0,
           "weight": 0.25,
-          "weighted_score": 13.75,
+          "weighted_score": 23.75,
           "sector_name": "服装家纺",
           "sector_zt_count": 1,
           "has_true_resonance": false,
@@ -1594,173 +1311,295 @@
       }
     },
     {
-      "code": "001216",
-      "name": "华瓷股份",
-      "review_rank": 6,
-      "quant_score": 70.17,
-      "consecutive_boards": 6,
+      "code": "000910",
+      "name": "大亚圣象",
+      "review_rank": 2,
+      "quant_score": 90.35,
+      "consecutive_boards": 4,
       "sector": "家居用品",
-      "price": 26.47,
-      "change_pct": 10.02,
-      "amount": 48414477.0,
-      "float_market_cap": 6533754187.53,
-      "turnover_rate": 0.74,
-      "seal_amount": 259140452.0,
-      "seal_ratio_pct": 535.25,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "09:25:00",
+      "price": 7.58,
+      "change_pct": 10.01,
+      "amount": 224213587.0,
+      "float_market_cap": 4148042247.5,
+      "turnover_rate": 5.51,
+      "seal_amount": 70774096.0,
+      "seal_ratio_pct": 31.57,
+      "first_seal_time": "09:30:39",
+      "last_seal_time": "09:30:39",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 70.17 (排名 6)",
-      "detailed_analysis": "综合量化打分 70.17 (排第 6 名)。首次封板 09:25:00。换手率 0.74%。家居用品 板块内 5 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 90.35 (排名 2)",
+      "detailed_analysis": "综合量化打分 90.35 (排第 2 名)。首次封板 09:30:39。换手率 5.51%。家居用品 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 48.0,
+          "score": 96.0,
           "weight": 0.35,
-          "weighted_score": 16.8,
-          "consecutive_boards": 6,
-          "base_board_score": 60.0,
-          "decay_factor": 0.5,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 18.0,
+          "weighted_score": 33.6,
+          "consecutive_boards": 4,
+          "base_board_score": 84.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
           "is_spatial_leader": true
         },
         "seal_strength": {
-          "score": 98.46,
+          "score": 84.51,
           "weight": 0.15,
-          "weighted_score": 14.77,
-          "seal_ratio": 5.3525,
-          "first_seal_time": "09:25:00"
+          "weighted_score": 12.68,
+          "seal_ratio": 0.3157,
+          "first_seal_time": "09:30:39"
+        },
+        "chip_structure": {
+          "score": 81.29,
+          "weight": 0.25,
+          "weighted_score": 20.32,
+          "turnover_rate": 5.51,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
+          "sector_name": "家居用品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "601811",
+      "name": "新华文轩",
+      "review_rank": 3,
+      "quant_score": 87.5,
+      "consecutive_boards": 4,
+      "sector": "出版",
+      "price": 18.5,
+      "change_pct": 9.99,
+      "amount": 306609584.0,
+      "float_market_cap": 14650222150.0,
+      "turnover_rate": 2.1,
+      "seal_amount": 144132760.0,
+      "seal_ratio_pct": 47.01,
+      "first_seal_time": "09:30:16",
+      "last_seal_time": "09:30:16",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 87.5 (排名 3)",
+      "detailed_analysis": "综合量化打分 87.5 (排第 3 名)。首次封板 09:30:16。换手率 2.1%。出版 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 96.0,
+          "weight": 0.35,
+          "weighted_score": 33.6,
+          "consecutive_boards": 4,
+          "base_board_score": 84.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
+          "is_spatial_leader": true
+        },
+        "seal_strength": {
+          "score": 90.32,
+          "weight": 0.15,
+          "weighted_score": 13.55,
+          "seal_ratio": 0.4701,
+          "first_seal_time": "09:30:16"
         },
         "chip_structure": {
           "score": 66.4,
           "weight": 0.25,
           "weighted_score": 16.6,
-          "turnover_rate": 0.74,
+          "turnover_rate": 2.1,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 88.0,
+          "score": 95.0,
           "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "家居用品",
-          "sector_zt_count": 5,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "603230",
-      "name": "内蒙新华",
-      "review_rank": 7,
-      "quant_score": 69.58,
-      "consecutive_boards": 5,
-      "sector": "出版",
-      "price": 16.31,
-      "change_pct": 9.98,
-      "amount": 622024368.0,
-      "float_market_cap": 5765960130.0,
-      "turnover_rate": 11.02,
-      "seal_amount": 64824551.0,
-      "seal_ratio_pct": 10.42,
-      "first_seal_time": "09:34:36",
-      "last_seal_time": "09:42:15",
-      "broken_count": 3,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 69.58 (排名 7)",
-      "detailed_analysis": "综合量化打分 69.58 (排第 7 名)。首次封板 09:34:36。换手率 11.02%。出版 板块内 4 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 78.0,
-          "weight": 0.35,
-          "weighted_score": 27.3,
-          "consecutive_boards": 5,
-          "base_board_score": 78.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 66.15,
-          "weight": 0.15,
-          "weighted_score": 9.92,
-          "seal_ratio": 0.1042,
-          "first_seal_time": "09:34:36"
-        },
-        "chip_structure": {
-          "score": 41.42,
-          "weight": 0.25,
-          "weighted_score": 10.36,
-          "turnover_rate": 11.02,
-          "high_60d_breakout": false,
-          "broken_count": 3
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
+          "weighted_score": 23.75,
           "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
           "is_overcrowded": false,
-          "is_solo_zone": false
+          "is_solo_zone": true
         }
       }
     },
     {
-      "code": "002614",
-      "name": "奥佳华",
-      "review_rank": 8,
-      "quant_score": 66.6,
-      "consecutive_boards": 2,
-      "sector": "其他家电",
-      "price": 6.88,
-      "change_pct": 10.08,
-      "amount": 82802947.0,
-      "float_market_cap": 3035974139.68,
-      "turnover_rate": 2.73,
-      "seal_amount": 110766541.0,
-      "seal_ratio_pct": 133.77,
+      "code": "600825",
+      "name": "新华传媒",
+      "review_rank": 4,
+      "quant_score": 86.85,
+      "consecutive_boards": 3,
+      "sector": "出版",
+      "price": 7.06,
+      "change_pct": 9.97,
+      "amount": 32333388.0,
+      "float_market_cap": 7376908221.0,
+      "turnover_rate": 0.44,
+      "seal_amount": 1920589748.0,
+      "seal_ratio_pct": 5939.96,
       "first_seal_time": "09:25:00",
       "last_seal_time": "09:25:00",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 66.6 (排名 8)",
-      "detailed_analysis": "综合量化打分 66.6 (排第 8 名)。首次封板 09:25:00。换手率 2.73%。其他家电 板块内 1 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 86.85 (排名 4)",
+      "detailed_analysis": "综合量化打分 86.85 (排第 4 名)。首次封板 09:25:00。换手率 0.44%。出版 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 64.0,
+          "score": 90.0,
           "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
           "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
+          "sentiment_state": "震荡/分化期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 92.31,
+          "score": 100.0,
           "weight": 0.15,
-          "weighted_score": 13.85,
-          "seal_ratio": 1.3377,
+          "weighted_score": 15.0,
+          "seal_ratio": 59.3996,
           "first_seal_time": "09:25:00"
         },
         "chip_structure": {
           "score": 66.4,
           "weight": 0.25,
           "weighted_score": 16.6,
-          "turnover_rate": 2.73,
+          "turnover_rate": 0.44,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
+          "sector_name": "出版",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "603636",
+      "name": "南威软件",
+      "review_rank": 5,
+      "quant_score": 69.04,
+      "consecutive_boards": 3,
+      "sector": "IT服务Ⅱ",
+      "price": 8.81,
+      "change_pct": 9.99,
+      "amount": 642502976.0,
+      "float_market_cap": 5112976207.63,
+      "turnover_rate": 12.62,
+      "seal_amount": 55876050.0,
+      "seal_ratio_pct": 8.7,
+      "first_seal_time": "09:25:01",
+      "last_seal_time": "09:58:37",
+      "broken_count": 3,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 69.04 (排名 5)",
+      "detailed_analysis": "综合量化打分 69.04 (排第 5 名)。首次封板 09:25:01。换手率 12.62%。IT服务Ⅱ 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 25.490000000000002,
+          "weight": 0.15,
+          "weighted_score": 3.82,
+          "seal_ratio": 0.087,
+          "first_seal_time": "09:25:01"
+        },
+        "chip_structure": {
+          "score": 39.88,
+          "weight": 0.25,
+          "weighted_score": 9.97,
+          "turnover_rate": 12.62,
+          "high_60d_breakout": false,
+          "broken_count": 3
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
+          "sector_name": "IT服务Ⅱ",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "002238",
+      "name": "天威视讯",
+      "review_rank": 6,
+      "quant_score": 68.22,
+      "consecutive_boards": 2,
+      "sector": "电视广播",
+      "price": 7.66,
+      "change_pct": 10.06,
+      "amount": 87635096.0,
+      "float_market_cap": 6147603165.6,
+      "turnover_rate": 1.43,
+      "seal_amount": 118000354.0,
+      "seal_ratio_pct": 134.65,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:25:00",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 68.22 (排名 6)",
+      "detailed_analysis": "综合量化打分 68.22 (排第 6 名)。首次封板 09:25:00。换手率 1.43%。电视广播 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 67.0,
+          "weight": 0.35,
+          "weighted_score": 23.45,
+          "consecutive_boards": 2,
+          "base_board_score": 64.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 3.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 96.13,
+          "weight": 0.15,
+          "weighted_score": 14.42,
+          "seal_ratio": 1.3465,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.25,
+          "weighted_score": 16.6,
+          "turnover_rate": 1.43,
           "high_60d_breakout": true,
           "broken_count": 0
         },
@@ -1768,7 +1607,129 @@
           "score": 55.0,
           "weight": 0.25,
           "weighted_score": 13.75,
+          "sector_name": "电视广播",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "002614",
+      "name": "奥佳华",
+      "review_rank": 7,
+      "quant_score": 63.38,
+      "consecutive_boards": 3,
+      "sector": "其他家电",
+      "price": 7.57,
+      "change_pct": 10.03,
+      "amount": 991041808.0,
+      "float_market_cap": 3340454104.27,
+      "turnover_rate": 29.8,
+      "seal_amount": 76508286.0,
+      "seal_ratio_pct": 7.72,
+      "first_seal_time": "09:31:09",
+      "last_seal_time": "10:20:51",
+      "broken_count": 7,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 63.38 (排名 7)",
+      "detailed_analysis": "综合量化打分 63.38 (排第 7 名)。首次封板 09:31:09。换手率 29.8%。其他家电 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 23.549999999999997,
+          "weight": 0.15,
+          "weighted_score": 3.53,
+          "seal_ratio": 0.0772,
+          "first_seal_time": "09:31:09"
+        },
+        "chip_structure": {
+          "score": 18.4,
+          "weight": 0.25,
+          "weighted_score": 4.6,
+          "turnover_rate": 29.8,
+          "high_60d_breakout": false,
+          "broken_count": 7
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
           "sector_name": "其他家电",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "603803",
+      "name": "瑞斯康达",
+      "review_rank": 8,
+      "quant_score": 62.78,
+      "consecutive_boards": 1,
+      "sector": "通信设备",
+      "price": 12.87,
+      "change_pct": 10.0,
+      "amount": 260172843.0,
+      "float_market_cap": 5468251378.589999,
+      "turnover_rate": 5.0,
+      "seal_amount": 131446998.0,
+      "seal_ratio_pct": 50.52,
+      "first_seal_time": "13:00:52",
+      "last_seal_time": "13:00:52",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 62.78 (排名 8)",
+      "detailed_analysis": "综合量化打分 62.78 (排第 8 名)。首次封板 13:00:52。换手率 5.0%。通信设备 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 74.19,
+          "weight": 0.15,
+          "weighted_score": 11.13,
+          "seal_ratio": 0.5052,
+          "first_seal_time": "13:00:52"
+        },
+        "chip_structure": {
+          "score": 92.8,
+          "weight": 0.25,
+          "weighted_score": 23.2,
+          "turnover_rate": 5.0,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "通信设备",
           "sector_zt_count": 1,
           "has_true_resonance": false,
           "is_overcrowded": false,
@@ -1779,91 +1740,24 @@
   ],
   "lower_ranked_attributions": [
     {
-      "code": "603636",
-      "name": "南威软件",
-      "sector": "IT服务Ⅱ",
-      "quant_score": 66.13,
+      "code": "603373",
+      "name": "安邦护卫",
+      "sector": "专业服务",
+      "quant_score": 62.06,
       "rank": 9,
-      "consecutive_boards": 2,
-      "change_pct": 10.03,
+      "consecutive_boards": 1,
+      "change_pct": 10.0,
       "factor_rejection_breakdown": {
         "sector_resonance": {
           "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "IT服务Ⅱ",
-            "sector_zt_count": 2,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": true
-          }
-        }
-      },
-      "why_not_in_topN": "南威软件 综合得分 66.13 (排第 9 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)。"
-    },
-    {
-      "code": "002303",
-      "name": "美盈森",
-      "sector": "包装印刷",
-      "quant_score": 63.93,
-      "rank": 10,
-      "consecutive_boards": 2,
-      "change_pct": 10.05,
-      "factor_rejection_breakdown": {
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.25,
-          "details": {
-            "sector_name": "包装印刷",
+            "sector_name": "专业服务",
             "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
             "is_solo_zone": true
           }
-        }
-      },
-      "why_not_in_topN": "美盈森 综合得分 63.93 (排第 10 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)。"
-    },
-    {
-      "code": "601949",
-      "name": "中国出版",
-      "sector": "出版",
-      "quant_score": 63.68,
-      "rank": 11,
-      "consecutive_boards": 1,
-      "change_pct": 9.97,
-      "factor_rejection_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 42.0,
-          "weight": 0.35,
-          "details": {
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          }
-        }
-      },
-      "why_not_in_topN": "中国出版 综合得分 63.68 (排第 11 名)，主要扣分点：连板阶梯得分仅 42.0 (低于60门槛)。"
-    },
-    {
-      "code": "603221",
-      "name": "爱丽家居",
-      "sector": "家居用品",
-      "quant_score": 61.2,
-      "rank": 12,
-      "consecutive_boards": 1,
-      "change_pct": 10.0,
-      "factor_rejection_breakdown": {
-        "seal_strength": {
-          "score": 26.6,
-          "weight": 0.15,
-          "details": {
-            "seal_ratio": 0.0973,
-            "first_seal_time": "09:46:33"
-          }
         },
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1872,29 +1766,29 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
+            "sentiment_state": "震荡/分化期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "爱丽家居 综合得分 61.2 (排第 12 名)，主要扣分点：封板强度得分仅 26.6 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "安邦护卫 综合得分 62.06 (排第 9 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     },
     {
-      "code": "001268",
-      "name": "联合精密",
-      "sector": "家电零部",
-      "quant_score": 60.37,
-      "rank": 13,
+      "code": "603937",
+      "name": "丽岛新材",
+      "sector": "工业金属",
+      "quant_score": 60.45,
+      "rank": 10,
       "consecutive_boards": 1,
-      "change_pct": 10.02,
+      "change_pct": 10.01,
       "factor_rejection_breakdown": {
         "sector_resonance": {
           "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "家电零部",
-            "sector_zt_count": 2,
+            "sector_name": "工业金属",
+            "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
             "is_solo_zone": true
@@ -1907,335 +1801,265 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
+            "sentiment_state": "震荡/分化期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "联合精密 综合得分 60.37 (排第 13 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "丽岛新材 综合得分 60.45 (排第 10 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+    },
+    {
+      "code": "603396",
+      "name": "金辰股份",
+      "sector": "光伏设备",
+      "quant_score": 58.64,
+      "rank": 11,
+      "consecutive_boards": 1,
+      "change_pct": 10.02,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "光伏设备",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "金辰股份 综合得分 58.64 (排第 11 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+    },
+    {
+      "code": "600802",
+      "name": "福建水泥",
+      "sector": "水泥",
+      "quant_score": 57.7,
+      "rank": 12,
+      "consecutive_boards": 1,
+      "change_pct": 10.05,
+      "factor_rejection_breakdown": {
+        "seal_strength": {
+          "score": 57.2,
+          "weight": 0.15,
+          "details": {
+            "seal_ratio": 0.1414,
+            "first_seal_time": "10:01:24"
+          }
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "水泥",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "福建水泥 综合得分 57.7 (排第 12 名)，主要扣分点：封板强度得分仅 57.2 (低于60门槛)；板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+    },
+    {
+      "code": "002286",
+      "name": "保龄宝",
+      "sector": "农产品加",
+      "quant_score": 57.04,
+      "rank": 13,
+      "consecutive_boards": 1,
+      "change_pct": 10.06,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "农产品加",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "保龄宝 综合得分 57.04 (排第 13 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     }
   ],
   "next_day_recommended_candidates": [
     {
-      "code": "601811",
-      "name": "新华文轩",
-      "price": 16.82,
-      "change_pct": 10.01,
+      "code": "001234",
+      "name": "泰慕士",
+      "price": 32.18,
+      "change_pct": 10.02,
       "consecutive_boards": 3,
-      "sector": "出版",
-      "quant_score": 84.41,
-      "turnover_rate": 0.51,
-      "seal_ratio_pct": 210.81,
-      "first_seal_time": "09:25:02",
-      "recommend_reason": "综合量化得分 84.41 (排第 1 名)。首次封板 09:25:02。所属板块：出版。",
-      "operation_guide": null
-    },
-    {
-      "code": "600825",
-      "name": "新华传媒",
-      "price": 6.42,
-      "change_pct": 9.93,
-      "consecutive_boards": 2,
-      "sector": "出版",
-      "quant_score": 76.0,
-      "turnover_rate": 0.33,
-      "seal_ratio_pct": 9589.12,
-      "first_seal_time": "09:25:02",
-      "recommend_reason": "综合量化得分 76.0 (排第 2 名)。首次封板 09:25:02。所属板块：出版。",
-      "operation_guide": null
-    },
-    {
-      "code": "000504",
-      "name": "南华生物",
-      "price": 12.11,
-      "change_pct": 9.99,
-      "consecutive_boards": 4,
-      "sector": "医疗服务",
-      "quant_score": 74.29,
-      "turnover_rate": 1.79,
-      "seal_ratio_pct": 382.34,
+      "sector": "服装家纺",
+      "quant_score": 90.76,
+      "turnover_rate": 3.04,
+      "seal_ratio_pct": 382.74,
       "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 74.29 (排第 3 名)。首次封板 09:25:00。所属板块：医疗服务。",
+      "recommend_reason": "综合量化得分 90.76 (排第 1 名)。首次封板 09:25:00。所属板块：服装家纺。",
       "operation_guide": null
     },
     {
       "code": "000910",
       "name": "大亚圣象",
-      "price": 6.89,
-      "change_pct": 10.06,
-      "consecutive_boards": 3,
+      "price": 7.58,
+      "change_pct": 10.01,
+      "consecutive_boards": 4,
       "sector": "家居用品",
-      "quant_score": 74.01,
-      "turnover_rate": 10.53,
-      "seal_ratio_pct": 4.93,
-      "first_seal_time": "13:12:15",
-      "recommend_reason": "综合量化得分 74.01 (排第 4 名)。首次封板 13:12:15。所属板块：家居用品。",
+      "quant_score": 90.35,
+      "turnover_rate": 5.51,
+      "seal_ratio_pct": 31.57,
+      "first_seal_time": "09:30:39",
+      "recommend_reason": "综合量化得分 90.35 (排第 2 名)。首次封板 09:30:39。所属板块：家居用品。",
       "operation_guide": null
     },
     {
-      "code": "001234",
-      "name": "泰慕士",
-      "price": 29.25,
-      "change_pct": 10.0,
-      "consecutive_boards": 2,
-      "sector": "服装家纺",
-      "quant_score": 71.03,
-      "turnover_rate": 4.74,
-      "seal_ratio_pct": 197.86,
-      "first_seal_time": "09:30:00",
-      "recommend_reason": "综合量化得分 71.03 (排第 5 名)。首次封板 09:30:00。所属板块：服装家纺。",
-      "operation_guide": null
-    },
-    {
-      "code": "001216",
-      "name": "华瓷股份",
-      "price": 26.47,
-      "change_pct": 10.02,
-      "consecutive_boards": 6,
-      "sector": "家居用品",
-      "quant_score": 70.17,
-      "turnover_rate": 0.74,
-      "seal_ratio_pct": 535.25,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 70.17 (排第 6 名)。首次封板 09:25:00。所属板块：家居用品。",
-      "operation_guide": null
-    },
-    {
-      "code": "603230",
-      "name": "内蒙新华",
-      "price": 16.31,
-      "change_pct": 9.98,
-      "consecutive_boards": 5,
+      "code": "601811",
+      "name": "新华文轩",
+      "price": 18.5,
+      "change_pct": 9.99,
+      "consecutive_boards": 4,
       "sector": "出版",
-      "quant_score": 69.58,
-      "turnover_rate": 11.02,
-      "seal_ratio_pct": 10.42,
-      "first_seal_time": "09:34:36",
-      "recommend_reason": "综合量化得分 69.58 (排第 7 名)。首次封板 09:34:36。所属板块：出版。",
+      "quant_score": 87.5,
+      "turnover_rate": 2.1,
+      "seal_ratio_pct": 47.01,
+      "first_seal_time": "09:30:16",
+      "recommend_reason": "综合量化得分 87.5 (排第 3 名)。首次封板 09:30:16。所属板块：出版。",
+      "operation_guide": null
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "price": 7.06,
+      "change_pct": 9.97,
+      "consecutive_boards": 3,
+      "sector": "出版",
+      "quant_score": 86.85,
+      "turnover_rate": 0.44,
+      "seal_ratio_pct": 5939.96,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 86.85 (排第 4 名)。首次封板 09:25:00。所属板块：出版。",
+      "operation_guide": null
+    },
+    {
+      "code": "603636",
+      "name": "南威软件",
+      "price": 8.81,
+      "change_pct": 9.99,
+      "consecutive_boards": 3,
+      "sector": "IT服务Ⅱ",
+      "quant_score": 69.04,
+      "turnover_rate": 12.62,
+      "seal_ratio_pct": 8.7,
+      "first_seal_time": "09:25:01",
+      "recommend_reason": "综合量化得分 69.04 (排第 5 名)。首次封板 09:25:01。所属板块：IT服务Ⅱ。",
+      "operation_guide": null
+    },
+    {
+      "code": "002238",
+      "name": "天威视讯",
+      "price": 7.66,
+      "change_pct": 10.06,
+      "consecutive_boards": 2,
+      "sector": "电视广播",
+      "quant_score": 68.22,
+      "turnover_rate": 1.43,
+      "seal_ratio_pct": 134.65,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 68.22 (排第 6 名)。首次封板 09:25:00。所属板块：电视广播。",
       "operation_guide": null
     },
     {
       "code": "002614",
       "name": "奥佳华",
-      "price": 6.88,
-      "change_pct": 10.08,
-      "consecutive_boards": 2,
+      "price": 7.57,
+      "change_pct": 10.03,
+      "consecutive_boards": 3,
       "sector": "其他家电",
-      "quant_score": 66.6,
-      "turnover_rate": 2.73,
-      "seal_ratio_pct": 133.77,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 66.6 (排第 8 名)。首次封板 09:25:00。所属板块：其他家电。",
+      "quant_score": 63.38,
+      "turnover_rate": 29.8,
+      "seal_ratio_pct": 7.72,
+      "first_seal_time": "09:31:09",
+      "recommend_reason": "综合量化得分 63.38 (排第 7 名)。首次封板 09:31:09。所属板块：其他家电。",
+      "operation_guide": null
+    },
+    {
+      "code": "603803",
+      "name": "瑞斯康达",
+      "price": 12.87,
+      "change_pct": 10.0,
+      "consecutive_boards": 1,
+      "sector": "通信设备",
+      "quant_score": 62.78,
+      "turnover_rate": 5.0,
+      "seal_ratio_pct": 50.52,
+      "first_seal_time": "13:00:52",
+      "recommend_reason": "综合量化得分 62.78 (排第 8 名)。首次封板 13:00:52。所属板块：通信设备。",
       "operation_guide": null
     }
   ],
   "aug21_top4_evaluations": [
     {
-      "code": "601811",
-      "name": "新华文轩",
+      "code": "001234",
+      "name": "泰慕士",
       "review_rank": 1,
-      "quant_score": 84.41,
+      "quant_score": 90.76,
       "consecutive_boards": 3,
-      "sector": "出版",
-      "price": 16.82,
-      "change_pct": 10.01,
-      "amount": 68201736.0,
-      "float_market_cap": 13319823598.0,
-      "turnover_rate": 0.51,
-      "seal_amount": 143779042.0,
-      "seal_ratio_pct": 210.81,
-      "first_seal_time": "09:25:02",
-      "last_seal_time": "09:25:02",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 84.41 (排名 1)",
-      "detailed_analysis": "综合量化打分 84.41 (排第 1 名)。首次封板 09:25:02。换手率 0.51%。出版 板块内 4 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 90.0,
-          "weight": 0.35,
-          "weighted_score": 31.5,
-          "consecutive_boards": 3,
-          "base_board_score": 90.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 95.39,
-          "weight": 0.15,
-          "weighted_score": 14.31,
-          "seal_ratio": 2.1081,
-          "first_seal_time": "09:25:02"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 0.51,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "600825",
-      "name": "新华传媒",
-      "review_rank": 2,
-      "quant_score": 76.0,
-      "consecutive_boards": 2,
-      "sector": "出版",
-      "price": 6.42,
-      "change_pct": 9.93,
-      "amount": 22383972.0,
-      "float_market_cap": 6708179997.0,
-      "turnover_rate": 0.33,
-      "seal_amount": 2146426334.0,
-      "seal_ratio_pct": 9589.12,
-      "first_seal_time": "09:25:02",
-      "last_seal_time": "09:25:02",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 76.0 (排名 2)",
-      "detailed_analysis": "综合量化打分 76.0 (排第 2 名)。首次封板 09:25:02。换手率 0.33%。出版 板块内 4 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 64.0,
-          "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 100.0,
-          "weight": 0.15,
-          "weighted_score": 15.0,
-          "seal_ratio": 95.8912,
-          "first_seal_time": "09:25:02"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 0.33,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "000504",
-      "name": "南华生物",
-      "review_rank": 3,
-      "quant_score": 74.29,
-      "consecutive_boards": 4,
-      "sector": "医疗服务",
-      "price": 12.11,
-      "change_pct": 9.99,
-      "amount": 71297625.0,
-      "float_market_cap": 3985672239.7799997,
-      "turnover_rate": 1.79,
-      "seal_amount": 272598522.0,
-      "seal_ratio_pct": 382.34,
+      "sector": "服装家纺",
+      "price": 32.18,
+      "change_pct": 10.02,
+      "amount": 89602957.0,
+      "float_market_cap": 2945805470.0,
+      "turnover_rate": 3.04,
+      "seal_amount": 342947730.0,
+      "seal_ratio_pct": 382.74,
       "first_seal_time": "09:25:00",
       "last_seal_time": "09:25:00",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 74.29 (排名 3)",
-      "detailed_analysis": "综合量化打分 74.29 (排第 3 名)。首次封板 09:25:00。换手率 1.79%。医疗服务 板块内 2 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 84.0,
-          "weight": 0.35,
-          "weighted_score": 29.4,
-          "consecutive_boards": 4,
-          "base_board_score": 84.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 96.92,
-          "weight": 0.15,
-          "weighted_score": 14.54,
-          "seal_ratio": 3.8234,
-          "first_seal_time": "09:25:00"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 1.79,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.25,
-          "weighted_score": 13.75,
-          "sector_name": "医疗服务",
-          "sector_zt_count": 2,
-          "has_true_resonance": false,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      }
-    },
-    {
-      "code": "000910",
-      "name": "大亚圣象",
-      "review_rank": 4,
-      "quant_score": 74.01,
-      "consecutive_boards": 3,
-      "sector": "家居用品",
-      "price": 6.89,
-      "change_pct": 10.06,
-      "amount": 373106272.0,
-      "float_market_cap": 3770450011.25,
-      "turnover_rate": 10.53,
-      "seal_amount": 18386164.0,
-      "seal_ratio_pct": 4.93,
-      "first_seal_time": "13:12:15",
-      "last_seal_time": "13:12:15",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 74.01 (排名 4)",
-      "detailed_analysis": "综合量化打分 74.01 (排第 4 名)。首次封板 13:12:15。换手率 10.53%。家居用品 板块内 5 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 90.76 (排名 1)",
+      "detailed_analysis": "综合量化打分 90.76 (排第 1 名)。首次封板 09:25:00。换手率 3.04%。服装家纺 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 90.0,
@@ -2244,90 +2068,29 @@
           "consecutive_boards": 3,
           "base_board_score": 90.0,
           "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
+          "sentiment_state": "震荡/分化期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 6.93,
+          "score": 98.06,
           "weight": 0.15,
-          "weighted_score": 1.04,
-          "seal_ratio": 0.0493,
-          "first_seal_time": "13:12:15"
-        },
-        "chip_structure": {
-          "score": 77.89,
-          "weight": 0.25,
-          "weighted_score": 19.47,
-          "turnover_rate": 10.53,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "家居用品",
-          "sector_zt_count": 5,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "001234",
-      "name": "泰慕士",
-      "review_rank": 5,
-      "quant_score": 71.03,
-      "consecutive_boards": 2,
-      "sector": "服装家纺",
-      "price": 29.25,
-      "change_pct": 10.0,
-      "amount": 126493342.0,
-      "float_market_cap": 2677588875.0,
-      "turnover_rate": 4.74,
-      "seal_amount": 250279760.0,
-      "seal_ratio_pct": 197.86,
-      "first_seal_time": "09:30:00",
-      "last_seal_time": "09:30:00",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 71.03 (排名 5)",
-      "detailed_analysis": "综合量化打分 71.03 (排第 5 名)。首次封板 09:30:00。换手率 4.74%。服装家纺 板块内 1 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 64.0,
-          "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 93.84,
-          "weight": 0.15,
-          "weighted_score": 14.08,
-          "seal_ratio": 1.9786,
-          "first_seal_time": "09:30:00"
+          "weighted_score": 14.71,
+          "seal_ratio": 3.8274,
+          "first_seal_time": "09:25:00"
         },
         "chip_structure": {
           "score": 83.2,
           "weight": 0.25,
           "weighted_score": 20.8,
-          "turnover_rate": 4.74,
+          "turnover_rate": 3.04,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 55.0,
+          "score": 95.0,
           "weight": 0.25,
-          "weighted_score": 13.75,
+          "weighted_score": 23.75,
           "sector_name": "服装家纺",
           "sector_zt_count": 1,
           "has_true_resonance": false,
@@ -2337,173 +2100,295 @@
       }
     },
     {
-      "code": "001216",
-      "name": "华瓷股份",
-      "review_rank": 6,
-      "quant_score": 70.17,
-      "consecutive_boards": 6,
+      "code": "000910",
+      "name": "大亚圣象",
+      "review_rank": 2,
+      "quant_score": 90.35,
+      "consecutive_boards": 4,
       "sector": "家居用品",
-      "price": 26.47,
-      "change_pct": 10.02,
-      "amount": 48414477.0,
-      "float_market_cap": 6533754187.53,
-      "turnover_rate": 0.74,
-      "seal_amount": 259140452.0,
-      "seal_ratio_pct": 535.25,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "09:25:00",
+      "price": 7.58,
+      "change_pct": 10.01,
+      "amount": 224213587.0,
+      "float_market_cap": 4148042247.5,
+      "turnover_rate": 5.51,
+      "seal_amount": 70774096.0,
+      "seal_ratio_pct": 31.57,
+      "first_seal_time": "09:30:39",
+      "last_seal_time": "09:30:39",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 70.17 (排名 6)",
-      "detailed_analysis": "综合量化打分 70.17 (排第 6 名)。首次封板 09:25:00。换手率 0.74%。家居用品 板块内 5 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 90.35 (排名 2)",
+      "detailed_analysis": "综合量化打分 90.35 (排第 2 名)。首次封板 09:30:39。换手率 5.51%。家居用品 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 48.0,
+          "score": 96.0,
           "weight": 0.35,
-          "weighted_score": 16.8,
-          "consecutive_boards": 6,
-          "base_board_score": 60.0,
-          "decay_factor": 0.5,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 18.0,
+          "weighted_score": 33.6,
+          "consecutive_boards": 4,
+          "base_board_score": 84.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
           "is_spatial_leader": true
         },
         "seal_strength": {
-          "score": 98.46,
+          "score": 84.51,
           "weight": 0.15,
-          "weighted_score": 14.77,
-          "seal_ratio": 5.3525,
-          "first_seal_time": "09:25:00"
+          "weighted_score": 12.68,
+          "seal_ratio": 0.3157,
+          "first_seal_time": "09:30:39"
+        },
+        "chip_structure": {
+          "score": 81.29,
+          "weight": 0.25,
+          "weighted_score": 20.32,
+          "turnover_rate": 5.51,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
+          "sector_name": "家居用品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "601811",
+      "name": "新华文轩",
+      "review_rank": 3,
+      "quant_score": 87.5,
+      "consecutive_boards": 4,
+      "sector": "出版",
+      "price": 18.5,
+      "change_pct": 9.99,
+      "amount": 306609584.0,
+      "float_market_cap": 14650222150.0,
+      "turnover_rate": 2.1,
+      "seal_amount": 144132760.0,
+      "seal_ratio_pct": 47.01,
+      "first_seal_time": "09:30:16",
+      "last_seal_time": "09:30:16",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 87.5 (排名 3)",
+      "detailed_analysis": "综合量化打分 87.5 (排第 3 名)。首次封板 09:30:16。换手率 2.1%。出版 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 96.0,
+          "weight": 0.35,
+          "weighted_score": 33.6,
+          "consecutive_boards": 4,
+          "base_board_score": 84.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 12.0,
+          "is_spatial_leader": true
+        },
+        "seal_strength": {
+          "score": 90.32,
+          "weight": 0.15,
+          "weighted_score": 13.55,
+          "seal_ratio": 0.4701,
+          "first_seal_time": "09:30:16"
         },
         "chip_structure": {
           "score": 66.4,
           "weight": 0.25,
           "weighted_score": 16.6,
-          "turnover_rate": 0.74,
+          "turnover_rate": 2.1,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 88.0,
+          "score": 95.0,
           "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "家居用品",
-          "sector_zt_count": 5,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "603230",
-      "name": "内蒙新华",
-      "review_rank": 7,
-      "quant_score": 69.58,
-      "consecutive_boards": 5,
-      "sector": "出版",
-      "price": 16.31,
-      "change_pct": 9.98,
-      "amount": 622024368.0,
-      "float_market_cap": 5765960130.0,
-      "turnover_rate": 11.02,
-      "seal_amount": 64824551.0,
-      "seal_ratio_pct": 10.42,
-      "first_seal_time": "09:34:36",
-      "last_seal_time": "09:42:15",
-      "broken_count": 3,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 69.58 (排名 7)",
-      "detailed_analysis": "综合量化打分 69.58 (排第 7 名)。首次封板 09:34:36。换手率 11.02%。出版 板块内 4 家涨停共振。情绪状态：主升/强势期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 78.0,
-          "weight": 0.35,
-          "weighted_score": 27.3,
-          "consecutive_boards": 5,
-          "base_board_score": 78.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
-          "sentiment_adjustment": 0.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 66.15,
-          "weight": 0.15,
-          "weighted_score": 9.92,
-          "seal_ratio": 0.1042,
-          "first_seal_time": "09:34:36"
-        },
-        "chip_structure": {
-          "score": 41.42,
-          "weight": 0.25,
-          "weighted_score": 10.36,
-          "turnover_rate": 11.02,
-          "high_60d_breakout": false,
-          "broken_count": 3
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
+          "weighted_score": 23.75,
           "sector_name": "出版",
-          "sector_zt_count": 4,
-          "has_true_resonance": true,
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
           "is_overcrowded": false,
-          "is_solo_zone": false
+          "is_solo_zone": true
         }
       }
     },
     {
-      "code": "002614",
-      "name": "奥佳华",
-      "review_rank": 8,
-      "quant_score": 66.6,
-      "consecutive_boards": 2,
-      "sector": "其他家电",
-      "price": 6.88,
-      "change_pct": 10.08,
-      "amount": 82802947.0,
-      "float_market_cap": 3035974139.68,
-      "turnover_rate": 2.73,
-      "seal_amount": 110766541.0,
-      "seal_ratio_pct": 133.77,
+      "code": "600825",
+      "name": "新华传媒",
+      "review_rank": 4,
+      "quant_score": 86.85,
+      "consecutive_boards": 3,
+      "sector": "出版",
+      "price": 7.06,
+      "change_pct": 9.97,
+      "amount": 32333388.0,
+      "float_market_cap": 7376908221.0,
+      "turnover_rate": 0.44,
+      "seal_amount": 1920589748.0,
+      "seal_ratio_pct": 5939.96,
       "first_seal_time": "09:25:00",
       "last_seal_time": "09:25:00",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 66.6 (排名 8)",
-      "detailed_analysis": "综合量化打分 66.6 (排第 8 名)。首次封板 09:25:00。换手率 2.73%。其他家电 板块内 1 家涨停共振。情绪状态：主升/强势期。",
+      "evaluation_verdict": "综合量化得分 86.85 (排名 4)",
+      "detailed_analysis": "综合量化打分 86.85 (排第 4 名)。首次封板 09:25:00。换手率 0.44%。出版 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 64.0,
+          "score": 90.0,
           "weight": 0.35,
-          "weighted_score": 22.4,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
           "decay_factor": 1.0,
-          "sentiment_state": "主升/强势期",
+          "sentiment_state": "震荡/分化期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 92.31,
+          "score": 100.0,
           "weight": 0.15,
-          "weighted_score": 13.85,
-          "seal_ratio": 1.3377,
+          "weighted_score": 15.0,
+          "seal_ratio": 59.3996,
           "first_seal_time": "09:25:00"
         },
         "chip_structure": {
           "score": 66.4,
           "weight": 0.25,
           "weighted_score": 16.6,
-          "turnover_rate": 2.73,
+          "turnover_rate": 0.44,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
+          "sector_name": "出版",
+          "sector_zt_count": 2,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "603636",
+      "name": "南威软件",
+      "review_rank": 5,
+      "quant_score": 69.04,
+      "consecutive_boards": 3,
+      "sector": "IT服务Ⅱ",
+      "price": 8.81,
+      "change_pct": 9.99,
+      "amount": 642502976.0,
+      "float_market_cap": 5112976207.63,
+      "turnover_rate": 12.62,
+      "seal_amount": 55876050.0,
+      "seal_ratio_pct": 8.7,
+      "first_seal_time": "09:25:01",
+      "last_seal_time": "09:58:37",
+      "broken_count": 3,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 69.04 (排名 5)",
+      "detailed_analysis": "综合量化打分 69.04 (排第 5 名)。首次封板 09:25:01。换手率 12.62%。IT服务Ⅱ 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 25.490000000000002,
+          "weight": 0.15,
+          "weighted_score": 3.82,
+          "seal_ratio": 0.087,
+          "first_seal_time": "09:25:01"
+        },
+        "chip_structure": {
+          "score": 39.88,
+          "weight": 0.25,
+          "weighted_score": 9.97,
+          "turnover_rate": 12.62,
+          "high_60d_breakout": false,
+          "broken_count": 3
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
+          "sector_name": "IT服务Ⅱ",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "002238",
+      "name": "天威视讯",
+      "review_rank": 6,
+      "quant_score": 68.22,
+      "consecutive_boards": 2,
+      "sector": "电视广播",
+      "price": 7.66,
+      "change_pct": 10.06,
+      "amount": 87635096.0,
+      "float_market_cap": 6147603165.6,
+      "turnover_rate": 1.43,
+      "seal_amount": 118000354.0,
+      "seal_ratio_pct": 134.65,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:25:00",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 68.22 (排名 6)",
+      "detailed_analysis": "综合量化打分 68.22 (排第 6 名)。首次封板 09:25:00。换手率 1.43%。电视广播 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 67.0,
+          "weight": 0.35,
+          "weighted_score": 23.45,
+          "consecutive_boards": 2,
+          "base_board_score": 64.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 3.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 96.13,
+          "weight": 0.15,
+          "weighted_score": 14.42,
+          "seal_ratio": 1.3465,
+          "first_seal_time": "09:25:00"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.25,
+          "weighted_score": 16.6,
+          "turnover_rate": 1.43,
           "high_60d_breakout": true,
           "broken_count": 0
         },
@@ -2511,7 +2396,129 @@
           "score": 55.0,
           "weight": 0.25,
           "weighted_score": 13.75,
+          "sector_name": "电视广播",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "002614",
+      "name": "奥佳华",
+      "review_rank": 7,
+      "quant_score": 63.38,
+      "consecutive_boards": 3,
+      "sector": "其他家电",
+      "price": 7.57,
+      "change_pct": 10.03,
+      "amount": 991041808.0,
+      "float_market_cap": 3340454104.27,
+      "turnover_rate": 29.8,
+      "seal_amount": 76508286.0,
+      "seal_ratio_pct": 7.72,
+      "first_seal_time": "09:31:09",
+      "last_seal_time": "10:20:51",
+      "broken_count": 7,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 63.38 (排名 7)",
+      "detailed_analysis": "综合量化打分 63.38 (排第 7 名)。首次封板 09:31:09。换手率 29.8%。其他家电 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 23.549999999999997,
+          "weight": 0.15,
+          "weighted_score": 3.53,
+          "seal_ratio": 0.0772,
+          "first_seal_time": "09:31:09"
+        },
+        "chip_structure": {
+          "score": 18.4,
+          "weight": 0.25,
+          "weighted_score": 4.6,
+          "turnover_rate": 29.8,
+          "high_60d_breakout": false,
+          "broken_count": 7
+        },
+        "sector_resonance": {
+          "score": 95.0,
+          "weight": 0.25,
+          "weighted_score": 23.75,
           "sector_name": "其他家电",
+          "sector_zt_count": 1,
+          "has_true_resonance": false,
+          "is_overcrowded": false,
+          "is_solo_zone": true
+        }
+      }
+    },
+    {
+      "code": "603803",
+      "name": "瑞斯康达",
+      "review_rank": 8,
+      "quant_score": 62.78,
+      "consecutive_boards": 1,
+      "sector": "通信设备",
+      "price": 12.87,
+      "change_pct": 10.0,
+      "amount": 260172843.0,
+      "float_market_cap": 5468251378.589999,
+      "turnover_rate": 5.0,
+      "seal_amount": 131446998.0,
+      "seal_ratio_pct": 50.52,
+      "first_seal_time": "13:00:52",
+      "last_seal_time": "13:00:52",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 62.78 (排名 8)",
+      "detailed_analysis": "综合量化打分 62.78 (排第 8 名)。首次封板 13:00:52。换手率 5.0%。通信设备 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "震荡/分化期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 74.19,
+          "weight": 0.15,
+          "weighted_score": 11.13,
+          "seal_ratio": 0.5052,
+          "first_seal_time": "13:00:52"
+        },
+        "chip_structure": {
+          "score": 92.8,
+          "weight": 0.25,
+          "weighted_score": 23.2,
+          "turnover_rate": 5.0,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "weighted_score": 13.75,
+          "sector_name": "通信设备",
           "sector_zt_count": 1,
           "has_true_resonance": false,
           "is_overcrowded": false,
@@ -2522,91 +2529,24 @@
   ],
   "aug24_consecutive_board_attributions": [
     {
-      "code": "603636",
-      "name": "南威软件",
-      "sector": "IT服务Ⅱ",
-      "quant_score": 66.13,
+      "code": "603373",
+      "name": "安邦护卫",
+      "sector": "专业服务",
+      "quant_score": 62.06,
       "rank": 9,
-      "consecutive_boards": 2,
-      "change_pct": 10.03,
+      "consecutive_boards": 1,
+      "change_pct": 10.0,
       "factor_rejection_breakdown": {
         "sector_resonance": {
           "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "IT服务Ⅱ",
-            "sector_zt_count": 2,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": true
-          }
-        }
-      },
-      "why_not_in_topN": "南威软件 综合得分 66.13 (排第 9 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)。"
-    },
-    {
-      "code": "002303",
-      "name": "美盈森",
-      "sector": "包装印刷",
-      "quant_score": 63.93,
-      "rank": 10,
-      "consecutive_boards": 2,
-      "change_pct": 10.05,
-      "factor_rejection_breakdown": {
-        "sector_resonance": {
-          "score": 55.0,
-          "weight": 0.25,
-          "details": {
-            "sector_name": "包装印刷",
+            "sector_name": "专业服务",
             "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
             "is_solo_zone": true
           }
-        }
-      },
-      "why_not_in_topN": "美盈森 综合得分 63.93 (排第 10 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)。"
-    },
-    {
-      "code": "601949",
-      "name": "中国出版",
-      "sector": "出版",
-      "quant_score": 63.68,
-      "rank": 11,
-      "consecutive_boards": 1,
-      "change_pct": 9.97,
-      "factor_rejection_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 42.0,
-          "weight": 0.35,
-          "details": {
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          }
-        }
-      },
-      "why_not_in_topN": "中国出版 综合得分 63.68 (排第 11 名)，主要扣分点：连板阶梯得分仅 42.0 (低于60门槛)。"
-    },
-    {
-      "code": "603221",
-      "name": "爱丽家居",
-      "sector": "家居用品",
-      "quant_score": 61.2,
-      "rank": 12,
-      "consecutive_boards": 1,
-      "change_pct": 10.0,
-      "factor_rejection_breakdown": {
-        "seal_strength": {
-          "score": 26.6,
-          "weight": 0.15,
-          "details": {
-            "seal_ratio": 0.0973,
-            "first_seal_time": "09:46:33"
-          }
         },
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -2615,29 +2555,29 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
+            "sentiment_state": "震荡/分化期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "爱丽家居 综合得分 61.2 (排第 12 名)，主要扣分点：封板强度得分仅 26.6 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "安邦护卫 综合得分 62.06 (排第 9 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     },
     {
-      "code": "001268",
-      "name": "联合精密",
-      "sector": "家电零部",
-      "quant_score": 60.37,
-      "rank": 13,
+      "code": "603937",
+      "name": "丽岛新材",
+      "sector": "工业金属",
+      "quant_score": 60.45,
+      "rank": 10,
       "consecutive_boards": 1,
-      "change_pct": 10.02,
+      "change_pct": 10.01,
       "factor_rejection_breakdown": {
         "sector_resonance": {
           "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "家电零部",
-            "sector_zt_count": 2,
+            "sector_name": "工业金属",
+            "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
             "is_solo_zone": true
@@ -2650,126 +2590,239 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "主升/强势期",
+            "sentiment_state": "震荡/分化期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "联合精密 综合得分 60.37 (排第 13 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "丽岛新材 综合得分 60.45 (排第 10 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+    },
+    {
+      "code": "603396",
+      "name": "金辰股份",
+      "sector": "光伏设备",
+      "quant_score": 58.64,
+      "rank": 11,
+      "consecutive_boards": 1,
+      "change_pct": 10.02,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "光伏设备",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "金辰股份 综合得分 58.64 (排第 11 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+    },
+    {
+      "code": "600802",
+      "name": "福建水泥",
+      "sector": "水泥",
+      "quant_score": 57.7,
+      "rank": 12,
+      "consecutive_boards": 1,
+      "change_pct": 10.05,
+      "factor_rejection_breakdown": {
+        "seal_strength": {
+          "score": 57.2,
+          "weight": 0.15,
+          "details": {
+            "seal_ratio": 0.1414,
+            "first_seal_time": "10:01:24"
+          }
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "水泥",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "福建水泥 综合得分 57.7 (排第 12 名)，主要扣分点：封板强度得分仅 57.2 (低于60门槛)；板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+    },
+    {
+      "code": "002286",
+      "name": "保龄宝",
+      "sector": "农产品加",
+      "quant_score": 57.04,
+      "rank": 13,
+      "consecutive_boards": 1,
+      "change_pct": 10.06,
+      "factor_rejection_breakdown": {
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "农产品加",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "details": {
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          }
+        }
+      },
+      "why_not_in_topN": "保龄宝 综合得分 57.04 (排第 13 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     }
   ],
   "aug25_recommended_candidates": [
     {
-      "code": "601811",
-      "name": "新华文轩",
-      "price": 16.82,
-      "change_pct": 10.01,
+      "code": "001234",
+      "name": "泰慕士",
+      "price": 32.18,
+      "change_pct": 10.02,
       "consecutive_boards": 3,
-      "sector": "出版",
-      "quant_score": 84.41,
-      "turnover_rate": 0.51,
-      "seal_ratio_pct": 210.81,
-      "first_seal_time": "09:25:02",
-      "recommend_reason": "综合量化得分 84.41 (排第 1 名)。首次封板 09:25:02。所属板块：出版。",
-      "operation_guide": null
-    },
-    {
-      "code": "600825",
-      "name": "新华传媒",
-      "price": 6.42,
-      "change_pct": 9.93,
-      "consecutive_boards": 2,
-      "sector": "出版",
-      "quant_score": 76.0,
-      "turnover_rate": 0.33,
-      "seal_ratio_pct": 9589.12,
-      "first_seal_time": "09:25:02",
-      "recommend_reason": "综合量化得分 76.0 (排第 2 名)。首次封板 09:25:02。所属板块：出版。",
-      "operation_guide": null
-    },
-    {
-      "code": "000504",
-      "name": "南华生物",
-      "price": 12.11,
-      "change_pct": 9.99,
-      "consecutive_boards": 4,
-      "sector": "医疗服务",
-      "quant_score": 74.29,
-      "turnover_rate": 1.79,
-      "seal_ratio_pct": 382.34,
+      "sector": "服装家纺",
+      "quant_score": 90.76,
+      "turnover_rate": 3.04,
+      "seal_ratio_pct": 382.74,
       "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 74.29 (排第 3 名)。首次封板 09:25:00。所属板块：医疗服务。",
+      "recommend_reason": "综合量化得分 90.76 (排第 1 名)。首次封板 09:25:00。所属板块：服装家纺。",
       "operation_guide": null
     },
     {
       "code": "000910",
       "name": "大亚圣象",
-      "price": 6.89,
-      "change_pct": 10.06,
-      "consecutive_boards": 3,
+      "price": 7.58,
+      "change_pct": 10.01,
+      "consecutive_boards": 4,
       "sector": "家居用品",
-      "quant_score": 74.01,
-      "turnover_rate": 10.53,
-      "seal_ratio_pct": 4.93,
-      "first_seal_time": "13:12:15",
-      "recommend_reason": "综合量化得分 74.01 (排第 4 名)。首次封板 13:12:15。所属板块：家居用品。",
+      "quant_score": 90.35,
+      "turnover_rate": 5.51,
+      "seal_ratio_pct": 31.57,
+      "first_seal_time": "09:30:39",
+      "recommend_reason": "综合量化得分 90.35 (排第 2 名)。首次封板 09:30:39。所属板块：家居用品。",
       "operation_guide": null
     },
     {
-      "code": "001234",
-      "name": "泰慕士",
-      "price": 29.25,
-      "change_pct": 10.0,
-      "consecutive_boards": 2,
-      "sector": "服装家纺",
-      "quant_score": 71.03,
-      "turnover_rate": 4.74,
-      "seal_ratio_pct": 197.86,
-      "first_seal_time": "09:30:00",
-      "recommend_reason": "综合量化得分 71.03 (排第 5 名)。首次封板 09:30:00。所属板块：服装家纺。",
-      "operation_guide": null
-    },
-    {
-      "code": "001216",
-      "name": "华瓷股份",
-      "price": 26.47,
-      "change_pct": 10.02,
-      "consecutive_boards": 6,
-      "sector": "家居用品",
-      "quant_score": 70.17,
-      "turnover_rate": 0.74,
-      "seal_ratio_pct": 535.25,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 70.17 (排第 6 名)。首次封板 09:25:00。所属板块：家居用品。",
-      "operation_guide": null
-    },
-    {
-      "code": "603230",
-      "name": "内蒙新华",
-      "price": 16.31,
-      "change_pct": 9.98,
-      "consecutive_boards": 5,
+      "code": "601811",
+      "name": "新华文轩",
+      "price": 18.5,
+      "change_pct": 9.99,
+      "consecutive_boards": 4,
       "sector": "出版",
-      "quant_score": 69.58,
-      "turnover_rate": 11.02,
-      "seal_ratio_pct": 10.42,
-      "first_seal_time": "09:34:36",
-      "recommend_reason": "综合量化得分 69.58 (排第 7 名)。首次封板 09:34:36。所属板块：出版。",
+      "quant_score": 87.5,
+      "turnover_rate": 2.1,
+      "seal_ratio_pct": 47.01,
+      "first_seal_time": "09:30:16",
+      "recommend_reason": "综合量化得分 87.5 (排第 3 名)。首次封板 09:30:16。所属板块：出版。",
+      "operation_guide": null
+    },
+    {
+      "code": "600825",
+      "name": "新华传媒",
+      "price": 7.06,
+      "change_pct": 9.97,
+      "consecutive_boards": 3,
+      "sector": "出版",
+      "quant_score": 86.85,
+      "turnover_rate": 0.44,
+      "seal_ratio_pct": 5939.96,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 86.85 (排第 4 名)。首次封板 09:25:00。所属板块：出版。",
+      "operation_guide": null
+    },
+    {
+      "code": "603636",
+      "name": "南威软件",
+      "price": 8.81,
+      "change_pct": 9.99,
+      "consecutive_boards": 3,
+      "sector": "IT服务Ⅱ",
+      "quant_score": 69.04,
+      "turnover_rate": 12.62,
+      "seal_ratio_pct": 8.7,
+      "first_seal_time": "09:25:01",
+      "recommend_reason": "综合量化得分 69.04 (排第 5 名)。首次封板 09:25:01。所属板块：IT服务Ⅱ。",
+      "operation_guide": null
+    },
+    {
+      "code": "002238",
+      "name": "天威视讯",
+      "price": 7.66,
+      "change_pct": 10.06,
+      "consecutive_boards": 2,
+      "sector": "电视广播",
+      "quant_score": 68.22,
+      "turnover_rate": 1.43,
+      "seal_ratio_pct": 134.65,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 68.22 (排第 6 名)。首次封板 09:25:00。所属板块：电视广播。",
       "operation_guide": null
     },
     {
       "code": "002614",
       "name": "奥佳华",
-      "price": 6.88,
-      "change_pct": 10.08,
-      "consecutive_boards": 2,
+      "price": 7.57,
+      "change_pct": 10.03,
+      "consecutive_boards": 3,
       "sector": "其他家电",
-      "quant_score": 66.6,
-      "turnover_rate": 2.73,
-      "seal_ratio_pct": 133.77,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 66.6 (排第 8 名)。首次封板 09:25:00。所属板块：其他家电。",
+      "quant_score": 63.38,
+      "turnover_rate": 29.8,
+      "seal_ratio_pct": 7.72,
+      "first_seal_time": "09:31:09",
+      "recommend_reason": "综合量化得分 63.38 (排第 7 名)。首次封板 09:31:09。所属板块：其他家电。",
+      "operation_guide": null
+    },
+    {
+      "code": "603803",
+      "name": "瑞斯康达",
+      "price": 12.87,
+      "change_pct": 10.0,
+      "consecutive_boards": 1,
+      "sector": "通信设备",
+      "quant_score": 62.78,
+      "turnover_rate": 5.0,
+      "seal_ratio_pct": 50.52,
+      "first_seal_time": "13:00:52",
+      "recommend_reason": "综合量化得分 62.78 (排第 8 名)。首次封板 13:00:52。所属板块：通信设备。",
       "operation_guide": null
     }
   ]
