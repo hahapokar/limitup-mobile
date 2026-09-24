@@ -1,54 +1,5 @@
 [
   {
-    "timestamp": "2026-09-04 00:46:09",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-03 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 00:46:09",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-04 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 00:46:09",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-03 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 00:47:07",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-03",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 00:47:09",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 44 limit-up stocks via [AkShare] for 2026-09-03",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 00:47:10",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-03 (Prev: 2026-09-02)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 00:47:11",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 44 limit-up stocks via [AkShare] for 2026-09-03",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-04 00:47:13",
     "level": "INFO",
     "category": "Sentiment",
@@ -2009,94 +1960,143 @@
     "details": {}
   },
   {
-    "timestamp": "2026-09-23 21:57:54",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:57:56",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 51 limit-up stocks via [AkShare] for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:57:57",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:57:58",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 51 limit-up stocks via [AkShare] for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:58:03",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 49.25 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:58:03",
+    "timestamp": "2026-09-23 21:49:44",
     "level": "INFO",
     "category": "Scoring",
     "message": "Executing 4-factor quant scoring for 2026-09-23",
     "details": {}
   },
   {
-    "timestamp": "2026-09-23 21:58:05",
+    "timestamp": "2026-09-23 21:49:51",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-23. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:50:02",
     "level": "INFO",
     "category": "DataFetcher",
     "message": "Successfully fetched 51 limit-up stocks via [AkShare] for 2026-09-23",
     "details": {}
   },
   {
-    "timestamp": "2026-09-23 21:58:06",
+    "timestamp": "2026-09-23 21:50:10",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:50:17",
+    "level": "ERROR",
+    "category": "DataFetcher",
+    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-23. Errors: ",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:51:16",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:51:18",
     "level": "INFO",
     "category": "Scoring",
     "message": "Pool filtered: 51 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
     "details": {}
   },
   {
-    "timestamp": "2026-09-23 21:58:06",
+    "timestamp": "2026-09-23 21:51:18",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:51:30",
+    "level": "WARNING",
+    "category": "Sentiment",
+    "message": "2026-09-23 市场概览数据不完整，禁止生成可交易情绪结果。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:52:42",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:52:47",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 51 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:52:47",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:52:58",
+    "level": "WARNING",
+    "category": "Sentiment",
+    "message": "2026-09-23 市场概览数据不完整，禁止生成可交易情绪结果。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:53:55",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:53:56",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 51 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:53:56",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:54:11",
+    "level": "WARNING",
+    "category": "Sentiment",
+    "message": "2026-09-23 市场概览部分字段缺失(up_count, down_count, limit_down_count, advance_ratio)，对应因子用中性50分兜底。",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:54:11",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 53.0 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-23 21:54:11",
     "level": "INFO",
     "category": "Scoring",
     "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
     "details": {}
   },
   {
-    "timestamp": "2026-09-23 21:58:06",
+    "timestamp": "2026-09-23 21:54:11",
     "level": "INFO",
     "category": "Notifier",
     "message": "📢 🎯 盘后打板量化选股完成 (2026-09-23): 市场情绪状态: [震荡/分化期]，共分析 51 只涨停标的，排雷筛选后推荐 Top 8:\n泰慕士(001234, 90.76分), 大亚圣象(000910, 90.35分), 新华文轩(601811, 87.5分), 新华传媒(600825, 86.85分), 南威软件(603636, 69.04分), 天威视讯(002238, 68.22分), 奥佳华(002614, 63.38分), 瑞斯康达(603803, 62.78分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:58:06",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-23 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:58:06",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-23 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:58:06",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-23 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]

@@ -1,8 +1,8 @@
 {
   "trade_date": "2026-09-23",
   "snapshot_status": "FINAL",
-  "snapshot_generated_at": "2026-09-23 21:58:03",
-  "sentiment_score": 49.25,
+  "snapshot_generated_at": "2026-09-23 21:54:11",
+  "sentiment_score": 53.0,
   "sentiment_state": "震荡/分化期",
   "sentiment_level": "震荡分化",
   "sentiment_circuit_breaker": false,
@@ -17,7 +17,7 @@
       "description": "昨日涨停个股今日平均溢价率"
     },
     "market_limit_down": {
-      "raw_value": 11,
+      "raw_value": null,
       "score": 50.0,
       "weight": 0.25,
       "weighted_score": 12.5,
@@ -34,10 +34,10 @@
       "description": "最高连板高度(4板)与真实炸板率(0.0%)"
     },
     "advance_decline_ratio": {
-      "raw_value": 33.72,
-      "score": 25.0,
+      "raw_value": null,
+      "score": 50.0,
       "weight": 0.15,
-      "weighted_score": 3.75,
+      "weighted_score": 7.5,
       "unit": "%",
       "description": "全市场红盘上涨家数占比"
     }
@@ -45,9 +45,9 @@
   "market_summary": {
     "limit_up_count": 51,
     "broken_up_count": 0,
-    "limit_down_count": 11,
-    "up_count": 1757,
-    "down_count": 3366,
-    "activity_pct": 33.65
+    "limit_down_count": null,
+    "up_count": null,
+    "down_count": null,
+    "activity_pct": null
   }
 }

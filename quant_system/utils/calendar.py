@@ -13,6 +13,18 @@ except ImportError:
     cc = None
     HAS_CC = False
 
+# 自定义 A 股休市日（chinese_calendar 库可能未覆盖 2026 年假日）
+CUSTOM_HOLIDAYS = {
+    # 2026 年中秋节（9/25 周五；9/26-27 周末自动排除）
+    datetime.date(2026, 9, 25),
+    # 2026 年国庆节（10/1-10/7；10/3-4 周末自动排除）
+    datetime.date(2026, 10, 1),
+    datetime.date(2026, 10, 2),
+    datetime.date(2026, 10, 5),
+    datetime.date(2026, 10, 6),
+    datetime.date(2026, 10, 7),
+}
+
 
 def parse_date(date_input: Union[str, datetime.date, datetime.datetime]) -> datetime.date:
     """Parse date string YYYY-MM-DD or YYYYMMDD to datetime.date."""
@@ -41,7 +53,10 @@ def is_trade_day(target_date: Union[str, datetime.date]) -> bool:
     # A-share markets are closed on weekends even if it's a compensated workday in China
     if d.weekday() >= 5:
         return False
-    # Check public holidays
+    # Check custom holidays first (covers 2026 when chinese_calendar doesn't)
+    if d in CUSTOM_HOLIDAYS:
+        return False
+    # Check public holidays via chinese_calendar
     if HAS_CC and cc is not None:
         try:
             if cc.is_holiday(d):
