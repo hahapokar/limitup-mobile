@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-04 01:09:25",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-04 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 01:09:25",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-03 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:24:32",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:11",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-04. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:11",
-    "level": "WARNING",
-    "category": "Scheduler",
-    "message": "Manual review: limit-up pool fetch failed: All 4 data sources failed to fetch limit-up pool for date 2026-09-04. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:12",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-04 (Prev: 2026-09-03)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:13",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 39 limit-up stocks via [AkShare] for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:16",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 62.25 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:16",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 39 limit-up stocks via [AkShare] for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 39 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-04 17:30:17",
     "level": "INFO",
     "category": "Scoring",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-09-29 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:50",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-30",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:52",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-09-30",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:53",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-09-30 (Prev: 2026-09-29)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:55",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 73.75 (偏暖积极), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:55",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-09-30",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:56",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 52 -> 44 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:56",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:56",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-30): 市场情绪状态: [主升/强势期]，共分析 52 只涨停标的，排雷筛选后推荐 Top 8:\n时代万恒(600241, 84.68分), 亚邦股份(603188, 75.6分), 紫竹高科(002058, 75.37分), 九阳股份(002242, 74.96分), 善水科技(301190, 73.8分), 襄阳轴承(000678, 73.58分), 园林股份(605303, 67.75分), 建业股份(603948, 67.04分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:56",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-09-30 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:56",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-09-30 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-09-30 18:30:56",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-09-30 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
