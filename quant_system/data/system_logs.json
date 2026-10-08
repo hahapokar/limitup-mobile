@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-04): 市场情绪状态: [震荡/分化期]，共分析 39 只涨停标的，排雷筛选后推荐 Top 8:\n龙版传媒(605577, 81.19分), 爱仕达(002403, 75.64分), 恒盛能源(605580, 71.47分), 新炬网络(605398, 70.89分), 楚天龙(003040, 68.97分), 翠微股份(603123, 66.42分), 播恩集团(001366, 65.15分), 海欣食品(002702, 65.04分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-04 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-04 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 17:30:17",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-04 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 20:14:58",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 20:15:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 39 limit-up stocks via [AkShare] for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 20:15:01",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-04 (Prev: 2026-09-03)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 20:15:02",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 39 limit-up stocks via [AkShare] for 2026-09-04",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 20:15:05",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 62.25 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-04 20:15:05",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-04",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-04 20:15:06",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-09-30 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:30:57",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:30:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 43 limit-up stocks via [AkShare] for 2026-10-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:00",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-08 (Prev: 2026-09-30)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:02",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 58.75 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-08",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 43 -> 33 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:03",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-08): 市场情绪状态: [震荡/分化期]，共分析 43 只涨停标的，排雷筛选后推荐 Top 8:\n园林股份(605303, 76.57分), 九阳股份(002242, 73.62分), 时代万恒(600241, 71.48分), 紫竹高科(002058, 69.39分), 兴业股份(603928, 69.05分), 传艺科技(002866, 65.33分), 三柏硕(001300, 63.41分), 新华传媒(600825, 62.17分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:03",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-08 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:03",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-08 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-08 18:31:03",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-08 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
