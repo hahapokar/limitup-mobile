@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-07 17:35:37",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 94.75 (极度狂热), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:37",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-07",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 93 limit-up stocks via [AkShare] for 2026-09-07",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 93 -> 58 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-07): 市场情绪状态: [主升/强势期]，共分析 93 只涨停标的，排雷筛选后推荐 Top 8:\n龙版传媒(605577, 91.3分), 百大集团(600865, 86.99分), 天沃科技(002564, 76.57分), 播恩集团(001366, 75.46分), 爱仕达(002403, 75.29分), 中水渔业(000798, 73.16分), 海欣食品(002702, 70.26分), 罗牛山(000735, 69.49分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-07 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-07 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 17:35:38",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-07 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 19:00:10",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-07",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-07 19:00:12",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 93 limit-up stocks via [AkShare] for 2026-09-07",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-07 19:00:13",
     "level": "INFO",
     "category": "Sentiment",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-09 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:52",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-12",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 46 limit-up stocks via [AkShare] for 2026-10-12",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:55",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-12 (Prev: 2026-10-09)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:58",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 57.25 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:58",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-12",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:59",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 46 -> 40 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:59",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:59",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-12): 市场情绪状态: [震荡/分化期]，共分析 46 只涨停标的，排雷筛选后推荐 Top 8:\n龙版传媒(605577, 79.87分), 远程股份(002692, 78.92分), 华北制药(600812, 78.06分), 新经典(603096, 76.36分), 慈文传媒(002343, 75.23分), 百洋股份(002696, 70.92分), 丽人丽妆(605136, 68.8分), 德才股份(605287, 68.57分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:59",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-12 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:59",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-12 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-12 18:30:59",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-12 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
