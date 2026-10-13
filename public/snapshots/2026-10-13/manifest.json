@@ -1,0 +1,9 @@
+{
+  "trade_date": "2026-10-13",
+  "snapshot_status": "FINAL",
+  "published_at": "2026-10-13 18:30:51",
+  "candidate_count": 8,
+  "data_sources": [
+    "akshare"
+  ]
+}
