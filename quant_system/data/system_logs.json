@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-09 15:40:53",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-09",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:40:55",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 48 limit-up stocks via [AkShare] for 2026-09-09",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:40:56",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-09 (Prev: 2026-09-08)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:40:57",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 48 limit-up stocks via [AkShare] for 2026-09-09",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:40:59",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 69.5 (偏暖积极), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:40:59",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-09",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:41:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 48 limit-up stocks via [AkShare] for 2026-09-09",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:41:00",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 48 -> 30 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:41:00",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:41:00",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-09): 市场情绪状态: [震荡/分化期]，共分析 48 只涨停标的，排雷筛选后推荐 Top 8:\n瑞尔特(002790, 79.17分), 中粮科技(000930, 78.27分), 华脉科技(603042, 75.67分), 百大集团(600865, 74.34分), 精艺股份(002295, 71.16分), 中百集团(000759, 71.08分), 精华制药(002349, 65.39分), 华康股份(605077, 63.25分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-09 15:41:00",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-09 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-09 15:41:00",
     "level": "INFO",
     "category": "ReviewAttribution",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-14 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:30:55",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:30:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 36 limit-up stocks via [AkShare] for 2026-10-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:30:58",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-15 (Prev: 2026-10-14)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:00",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 36.75 (冰点低迷), Target Position Limit: 35%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-15",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 36 -> 30 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '退潮/弱势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:01",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-15): 市场情绪状态: [退潮/弱势期]，共分析 36 只涨停标的，排雷筛选后推荐 Top 8:\n慈文传媒(002343, 80.64分), 读者传媒(603999, 75.38分), 阳光乳业(001318, 71.72分), 百洋股份(002696, 70.98分), 金禄电子(301282, 70.34分), 和泰机电(001225, 66.53分), 新宏泽(002836, 64.44分), 湖南发展(000722, 64.15分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:01",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-15 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:01",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-15 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-15 18:31:01",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-15 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
