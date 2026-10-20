@@ -1,27 +1,27 @@
 {
-  "review_date": "2026-10-19",
-  "prev_trade_date": "2026-10-16",
-  "next_trade_date": "2026-10-20",
-  "review_time": "2026-10-19 18:31:02",
+  "review_date": "2026-10-20",
+  "prev_trade_date": "2026-10-19",
+  "next_trade_date": "2026-10-21",
+  "review_time": "2026-10-20 18:30:50",
   "market_summary": {
-    "sentiment_state": "震荡/分化期",
-    "sentiment_score": 51.12,
-    "total_limit_up_count": 46,
-    "consecutive_limit_up_count": 10,
-    "max_consecutive_boards": 3,
-    "total_limit_down_count": 25,
+    "sentiment_state": "主升/强势期",
+    "sentiment_score": 86.25,
+    "total_limit_up_count": 54,
+    "consecutive_limit_up_count": 9,
+    "max_consecutive_boards": 4,
+    "total_limit_down_count": 6,
     "broken_up_count": 0,
-    "advance_ratio": 42.15,
-    "up_count": 2202,
-    "down_count": 2861,
-    "top4_hit_rate": "2026-10-19 盘后优选 8 只优质标的 (全市场共 46 只涨停，筛选通过率 17.4%)",
+    "advance_ratio": 65.72,
+    "up_count": 3433,
+    "down_count": 1662,
+    "top4_hit_rate": "2026-10-20 盘后优选 8 只优质标的 (全市场共 54 只涨停，筛选通过率 14.8%)",
     "total_portfolio_floating_pnl": null,
     "total_portfolio_floating_pnl_pct": null,
-    "target_position_ratio": 0.65
+    "target_position_ratio": 1.0
   },
   "prev_day_candidates_review": {
-    "prev_trade_date": "2026-10-16",
-    "review_trade_date": "2026-10-19",
+    "prev_trade_date": "2026-10-19",
+    "review_trade_date": "2026-10-20",
     "total_reviewed": 8,
     "success_consecutive_board_count": 0,
     "win_count": 0,
@@ -30,11 +30,113 @@
     "avg_pnl_pct": null,
     "items": [
       {
-        "code": "603999",
-        "name": "读者传媒",
-        "sector": "出版",
-        "prev_day_quant_score": 80.39,
+        "code": "003029",
+        "name": "吉大正元",
+        "sector": "软件开发",
+        "prev_day_quant_score": 93.46,
         "prev_day_rank": 1,
+        "prev_day_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 100.0,
+            "weight": 0.35,
+            "weighted_score": 35.0,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "震荡/分化期",
+            "sentiment_adjustment": 12.0,
+            "is_spatial_leader": true
+          },
+          "seal_strength": {
+            "score": 92.73,
+            "weight": 0.15,
+            "weighted_score": 13.91,
+            "seal_ratio": 1.1502,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 83.2,
+            "weight": 0.25,
+            "weighted_score": 20.8,
+            "turnover_rate": 4.11,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "软件开发",
+            "sector_zt_count": 2,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 3,
+        "prev_day_close_price": 24.19,
+        "buy_price": null,
+        "buy_reason": "2026-10-19 TOP1 候选 (量化93.46分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 26.61,
+        "today_change_pct": 10.0,
+        "today_consecutive_boards": 4,
+        "today_rank_in_candidates": 5,
+        "today_seal_ratio_pct": 9.92,
+        "today_turnover_rate": 24.16,
+        "today_broken_count": 4,
+        "today_first_seal_time": "09:25:00",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 100.0,
+            "weight": 0.35,
+            "weighted_score": 35.0,
+            "consecutive_boards": 4,
+            "base_board_score": 84.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 18.0,
+            "is_spatial_leader": true
+          },
+          "seal_strength": {
+            "score": 63.68,
+            "weight": 0.15,
+            "weighted_score": 9.55,
+            "seal_ratio": 0.0992,
+            "first_seal_time": "09:25:00"
+          },
+          "chip_structure": {
+            "score": 21.61,
+            "weight": 0.25,
+            "weighted_score": 5.4,
+            "turnover_rate": 24.16,
+            "high_60d_breakout": false,
+            "broken_count": 4
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "软件开发",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "002724",
+        "name": "海洋王",
+        "sector": "照明设备",
+        "prev_day_quant_score": 78.25,
+        "prev_day_rank": 2,
         "prev_day_factor_breakdown": {
           "consecutive_board_sentiment": {
             "score": 67.0,
@@ -48,45 +150,82 @@
             "is_spatial_leader": false
           },
           "seal_strength": {
-            "score": 94.29,
+            "score": 96.36,
             "weight": 0.15,
-            "weighted_score": 14.14,
-            "seal_ratio": 0.7576,
-            "first_seal_time": "09:25:01"
+            "weighted_score": 14.45,
+            "seal_ratio": 2.1277,
+            "first_seal_time": "09:25:00"
           },
           "chip_structure": {
-            "score": 83.2,
+            "score": 66.4,
             "weight": 0.25,
-            "weighted_score": 20.8,
-            "turnover_rate": 3.06,
+            "weighted_score": 16.6,
+            "turnover_rate": 1.17,
             "high_60d_breakout": true,
             "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 95.0,
+            "weight": 0.25,
+            "weighted_score": 23.75,
+            "sector_name": "照明设备",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        },
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 8.42,
+        "buy_price": null,
+        "buy_reason": "2026-10-19 TOP2 候选 (量化78.25分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 9.26,
+        "today_change_pct": 9.98,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 4,
+        "today_seal_ratio_pct": 16.66,
+        "today_turnover_rate": 10.85,
+        "today_broken_count": 3,
+        "today_first_seal_time": "09:30:18",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 73.16,
+            "weight": 0.15,
+            "weighted_score": 10.97,
+            "seal_ratio": 0.1666,
+            "first_seal_time": "09:30:18"
+          },
+          "chip_structure": {
+            "score": 41.58,
+            "weight": 0.25,
+            "weighted_score": 10.39,
+            "turnover_rate": 10.85,
+            "high_60d_breakout": false,
+            "broken_count": 3
           },
           "sector_resonance": {
             "score": 88.0,
             "weight": 0.25,
             "weighted_score": 22.0,
-            "sector_name": "出版",
-            "sector_zt_count": 4,
+            "sector_name": "照明设备",
+            "sector_zt_count": 3,
             "has_true_resonance": true,
             "is_overcrowded": false,
             "is_solo_zone": false
           }
         },
-        "prev_day_consecutive_boards": 2,
-        "prev_day_close_price": 8.38,
-        "buy_price": null,
-        "buy_reason": "2026-10-16 TOP1 候选 (量化80.39分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
-        "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
-        "today_factor_breakdown": null,
         "pnl_amount": null,
         "pnl_pct": null,
         "outcome": "WATCHLIST_ONLY",
@@ -95,36 +234,36 @@
         "exit_logs": null
       },
       {
-        "code": "000530",
-        "name": "冰山冷热",
+        "code": "600860",
+        "name": "京城股份",
         "sector": "通用设备",
-        "prev_day_quant_score": 70.87,
-        "prev_day_rank": 2,
+        "prev_day_quant_score": 75.69,
+        "prev_day_rank": 3,
         "prev_day_factor_breakdown": {
           "consecutive_board_sentiment": {
-            "score": 84.0,
+            "score": 67.0,
             "weight": 0.35,
-            "weighted_score": 29.4,
-            "consecutive_boards": 4,
-            "base_board_score": 84.0,
+            "weighted_score": 23.45,
+            "consecutive_boards": 2,
+            "base_board_score": 64.0,
             "decay_factor": 1.0,
             "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
+            "sentiment_adjustment": 3.0,
             "is_spatial_leader": false
           },
           "seal_strength": {
-            "score": 39.14,
+            "score": 90.91,
             "weight": 0.15,
-            "weighted_score": 5.87,
-            "seal_ratio": 0.0629,
-            "first_seal_time": "10:20:51"
+            "weighted_score": 13.64,
+            "seal_ratio": 0.892,
+            "first_seal_time": "09:25:01"
           },
           "chip_structure": {
-            "score": 54.4,
+            "score": 66.4,
             "weight": 0.25,
-            "weighted_score": 13.6,
-            "turnover_rate": 33.24,
-            "high_60d_breakout": false,
+            "weighted_score": 16.6,
+            "turnover_rate": 1.55,
+            "high_60d_breakout": true,
             "broken_count": 0
           },
           "sector_resonance": {
@@ -132,26 +271,63 @@
             "weight": 0.25,
             "weighted_score": 22.0,
             "sector_name": "通用设备",
-            "sector_zt_count": 5,
+            "sector_zt_count": 3,
             "has_true_resonance": true,
             "is_overcrowded": false,
             "is_solo_zone": false
           }
         },
-        "prev_day_consecutive_boards": 4,
-        "prev_day_close_price": 7.62,
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 8.7,
         "buy_price": null,
-        "buy_reason": "2026-10-16 TOP2 候选 (量化70.87分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "buy_reason": "2026-10-19 TOP3 候选 (量化75.69分)，未进入实际建仓记录，仅用于候选表现复盘",
         "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
-        "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
-        "today_factor_breakdown": null,
+        "today_close_price": 9.57,
+        "today_change_pct": 10.0,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 3,
+        "today_seal_ratio_pct": 12.07,
+        "today_turnover_rate": 11.49,
+        "today_broken_count": 2,
+        "today_first_seal_time": "09:30:41",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 65.27,
+            "weight": 0.15,
+            "weighted_score": 9.79,
+            "seal_ratio": 0.1207,
+            "first_seal_time": "09:30:41"
+          },
+          "chip_structure": {
+            "score": 48.97,
+            "weight": 0.25,
+            "weighted_score": 12.24,
+            "turnover_rate": 11.49,
+            "high_60d_breakout": false,
+            "broken_count": 2
+          },
+          "sector_resonance": {
+            "score": 88.0,
+            "weight": 0.25,
+            "weighted_score": 22.0,
+            "sector_name": "通用设备",
+            "sector_zt_count": 6,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
         "pnl_amount": null,
         "pnl_pct": null,
         "outcome": "WATCHLIST_ONLY",
@@ -163,60 +339,9 @@
         "code": "603278",
         "name": "大业股份",
         "sector": "通用设备",
-        "prev_day_quant_score": 70.36,
-        "prev_day_rank": 3,
+        "prev_day_quant_score": 70.08,
+        "prev_day_rank": 4,
         "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 42.0,
-            "weight": 0.35,
-            "weighted_score": 14.7,
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 85.71,
-            "weight": 0.15,
-            "weighted_score": 12.86,
-            "seal_ratio": 0.4231,
-            "first_seal_time": "09:37:36"
-          },
-          "chip_structure": {
-            "score": 83.2,
-            "weight": 0.25,
-            "weighted_score": 20.8,
-            "turnover_rate": 4.75,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "通用设备",
-            "sector_zt_count": 5,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 9.91,
-        "buy_price": null,
-        "buy_reason": "2026-10-16 TOP3 候选 (量化70.36分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": 10.9,
-        "today_change_pct": 9.99,
-        "today_consecutive_boards": 2,
-        "today_rank_in_candidates": 4,
-        "today_seal_ratio_pct": 12.73,
-        "today_turnover_rate": 14.04,
-        "today_broken_count": 0,
-        "today_first_seal_time": "13:36:17",
-        "today_factor_breakdown": {
           "consecutive_board_sentiment": {
             "score": 67.0,
             "weight": 0.35,
@@ -254,6 +379,57 @@
             "is_solo_zone": false
           }
         },
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 10.9,
+        "buy_price": null,
+        "buy_reason": "2026-10-19 TOP4 候选 (量化70.08分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "from_portfolio_buy": false,
+        "today_close_price": 11.99,
+        "today_change_pct": 10.0,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 1,
+        "today_seal_ratio_pct": 225.16,
+        "today_turnover_rate": 2.47,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:25:02",
+        "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 96.84,
+            "weight": 0.15,
+            "weighted_score": 14.53,
+            "seal_ratio": 2.2516,
+            "first_seal_time": "09:25:02"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.25,
+            "weighted_score": 16.6,
+            "turnover_rate": 2.47,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 88.0,
+            "weight": 0.25,
+            "weighted_score": 22.0,
+            "sector_name": "通用设备",
+            "sector_zt_count": 6,
+            "has_true_resonance": true,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
         "pnl_amount": null,
         "pnl_pct": null,
         "outcome": "WATCHLIST_ONLY",
@@ -265,60 +441,9 @@
         "code": "002889",
         "name": "东方嘉盛",
         "sector": "物流",
-        "prev_day_quant_score": 68.59,
-        "prev_day_rank": 4,
+        "prev_day_quant_score": 70.03,
+        "prev_day_rank": 5,
         "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 67.0,
-            "weight": 0.35,
-            "weighted_score": 23.45,
-            "consecutive_boards": 2,
-            "base_board_score": 64.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 3.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 98.57,
-            "weight": 0.15,
-            "weighted_score": 14.79,
-            "seal_ratio": 1.2784,
-            "first_seal_time": "09:25:00"
-          },
-          "chip_structure": {
-            "score": 66.4,
-            "weight": 0.25,
-            "weighted_score": 16.6,
-            "turnover_rate": 2.17,
-            "high_60d_breakout": true,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 55.0,
-            "weight": 0.25,
-            "weighted_score": 13.75,
-            "sector_name": "物流",
-            "sector_zt_count": 1,
-            "has_true_resonance": false,
-            "is_overcrowded": false,
-            "is_solo_zone": true
-          }
-        },
-        "prev_day_consecutive_boards": 2,
-        "prev_day_close_price": 14.31,
-        "buy_price": null,
-        "buy_reason": "2026-10-16 TOP4 候选 (量化68.59分)，未进入实际建仓记录，仅用于候选表现复盘",
-        "from_portfolio_buy": false,
-        "today_close_price": 15.74,
-        "today_change_pct": 9.99,
-        "today_consecutive_boards": 3,
-        "today_rank_in_candidates": 5,
-        "today_seal_ratio_pct": 4.27,
-        "today_turnover_rate": 20.48,
-        "today_broken_count": 1,
-        "today_first_seal_time": "10:37:33",
-        "today_factor_breakdown": {
           "consecutive_board_sentiment": {
             "score": 100.0,
             "weight": 0.35,
@@ -356,61 +481,10 @@
             "is_solo_zone": true
           }
         },
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "601999",
-        "name": "出版传媒",
-        "sector": "出版",
-        "prev_day_quant_score": 66.71,
-        "prev_day_rank": 5,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 42.0,
-            "weight": 0.35,
-            "weighted_score": 14.7,
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 81.43,
-            "weight": 0.15,
-            "weighted_score": 12.21,
-            "seal_ratio": 0.2864,
-            "first_seal_time": "09:30:01"
-          },
-          "chip_structure": {
-            "score": 71.2,
-            "weight": 0.25,
-            "weighted_score": 17.8,
-            "turnover_rate": 4.09,
-            "high_60d_breakout": false,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 88.0,
-            "weight": 0.25,
-            "weighted_score": 22.0,
-            "sector_name": "出版",
-            "sector_zt_count": 4,
-            "has_true_resonance": true,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 8.25,
+        "prev_day_consecutive_boards": 3,
+        "prev_day_close_price": 15.74,
         "buy_price": null,
-        "buy_reason": "2026-10-16 TOP5 候选 (量化66.71分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "buy_reason": "2026-10-19 TOP5 候选 (量化70.03分)，未进入实际建仓记录，仅用于候选表现复盘",
         "from_portfolio_buy": false,
         "today_close_price": null,
         "today_change_pct": null,
@@ -429,63 +503,114 @@
         "exit_logs": null
       },
       {
-        "code": "000576",
-        "name": "甘化科工",
-        "sector": "地面兵装",
-        "prev_day_quant_score": 61.55,
+        "code": "600178",
+        "name": "东安动力",
+        "sector": "汽车零部",
+        "prev_day_quant_score": 65.11,
         "prev_day_rank": 6,
         "prev_day_factor_breakdown": {
           "consecutive_board_sentiment": {
-            "score": 42.0,
+            "score": 67.0,
             "weight": 0.35,
-            "weighted_score": 14.7,
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
+            "weighted_score": 23.45,
+            "consecutive_boards": 2,
+            "base_board_score": 64.0,
             "decay_factor": 1.0,
             "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
+            "sentiment_adjustment": 3.0,
             "is_spatial_leader": false
           },
           "seal_strength": {
-            "score": 82.0,
+            "score": 89.09,
             "weight": 0.15,
-            "weighted_score": 12.3,
-            "seal_ratio": 0.5615,
-            "first_seal_time": "09:49:12"
+            "weighted_score": 13.36,
+            "seal_ratio": 0.723,
+            "first_seal_time": "09:30:02"
           },
           "chip_structure": {
             "score": 83.2,
             "weight": 0.25,
             "weighted_score": 20.8,
-            "turnover_rate": 3.73,
+            "turnover_rate": 3.36,
             "high_60d_breakout": true,
             "broken_count": 0
           },
           "sector_resonance": {
-            "score": 55.0,
+            "score": 30.0,
             "weight": 0.25,
-            "weighted_score": 13.75,
-            "sector_name": "地面兵装",
-            "sector_zt_count": 2,
-            "has_true_resonance": false,
-            "is_overcrowded": false,
-            "is_solo_zone": true
+            "weighted_score": 7.5,
+            "sector_name": "汽车零部",
+            "sector_zt_count": 10,
+            "has_true_resonance": true,
+            "is_overcrowded": true,
+            "is_solo_zone": false
           }
         },
-        "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 8.77,
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 11.28,
         "buy_price": null,
-        "buy_reason": "2026-10-16 TOP6 候选 (量化61.55分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "buy_reason": "2026-10-19 TOP6 候选 (量化65.11分)，未进入实际建仓记录，仅用于候选表现复盘",
         "from_portfolio_buy": false,
-        "today_close_price": 9.65,
-        "today_change_pct": 10.03,
-        "today_consecutive_boards": 2,
-        "today_rank_in_candidates": 7,
-        "today_seal_ratio_pct": 5.77,
-        "today_turnover_rate": 13.42,
-        "today_broken_count": 1,
-        "today_first_seal_time": "09:30:09",
+        "today_close_price": 12.41,
+        "today_change_pct": 10.02,
+        "today_consecutive_boards": 3,
+        "today_rank_in_candidates": 2,
+        "today_seal_ratio_pct": 292.07,
+        "today_turnover_rate": 1.62,
+        "today_broken_count": 0,
+        "today_first_seal_time": "09:25:01",
         "today_factor_breakdown": {
+          "consecutive_board_sentiment": {
+            "score": 90.0,
+            "weight": 0.35,
+            "weighted_score": 31.5,
+            "consecutive_boards": 3,
+            "base_board_score": 90.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
+          },
+          "seal_strength": {
+            "score": 98.42,
+            "weight": 0.15,
+            "weighted_score": 14.76,
+            "seal_ratio": 2.9207,
+            "first_seal_time": "09:25:01"
+          },
+          "chip_structure": {
+            "score": 66.4,
+            "weight": 0.25,
+            "weighted_score": 16.6,
+            "turnover_rate": 1.62,
+            "high_60d_breakout": true,
+            "broken_count": 0
+          },
+          "sector_resonance": {
+            "score": 58.0,
+            "weight": 0.25,
+            "weighted_score": 14.5,
+            "sector_name": "汽车零部",
+            "sector_zt_count": 3,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": false
+          }
+        },
+        "pnl_amount": null,
+        "pnl_pct": null,
+        "outcome": "WATCHLIST_ONLY",
+        "outcome_cn": "未建仓候选 / 仅作复盘",
+        "still_holding": false,
+        "exit_logs": null
+      },
+      {
+        "code": "000576",
+        "name": "甘化科工",
+        "sector": "地面兵装",
+        "prev_day_quant_score": 64.3,
+        "prev_day_rank": 7,
+        "prev_day_factor_breakdown": {
           "consecutive_board_sentiment": {
             "score": 67.0,
             "weight": 0.35,
@@ -523,61 +648,10 @@
             "is_solo_zone": true
           }
         },
-        "pnl_amount": null,
-        "pnl_pct": null,
-        "outcome": "WATCHLIST_ONLY",
-        "outcome_cn": "未建仓候选 / 仅作复盘",
-        "still_holding": false,
-        "exit_logs": null
-      },
-      {
-        "code": "002949",
-        "name": "华阳国际",
-        "sector": "工程咨询",
-        "prev_day_quant_score": 60.38,
-        "prev_day_rank": 7,
-        "prev_day_factor_breakdown": {
-          "consecutive_board_sentiment": {
-            "score": 42.0,
-            "weight": 0.35,
-            "weighted_score": 14.7,
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          },
-          "seal_strength": {
-            "score": 74.86,
-            "weight": 0.15,
-            "weighted_score": 11.23,
-            "seal_ratio": 0.3033,
-            "first_seal_time": "09:49:42"
-          },
-          "chip_structure": {
-            "score": 82.81,
-            "weight": 0.25,
-            "weighted_score": 20.7,
-            "turnover_rate": 7.09,
-            "high_60d_breakout": false,
-            "broken_count": 0
-          },
-          "sector_resonance": {
-            "score": 55.0,
-            "weight": 0.25,
-            "weighted_score": 13.75,
-            "sector_name": "工程咨询",
-            "sector_zt_count": 1,
-            "has_true_resonance": false,
-            "is_overcrowded": false,
-            "is_solo_zone": true
-          }
-        },
-        "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 14.14,
+        "prev_day_consecutive_boards": 2,
+        "prev_day_close_price": 9.65,
         "buy_price": null,
-        "buy_reason": "2026-10-16 TOP7 候选 (量化60.38分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "buy_reason": "2026-10-19 TOP7 候选 (量化64.3分)，未进入实际建仓记录，仅用于候选表现复盘",
         "from_portfolio_buy": false,
         "today_close_price": null,
         "today_change_pct": null,
@@ -596,10 +670,10 @@
         "exit_logs": null
       },
       {
-        "code": "002869",
-        "name": "金溢科技",
-        "sector": "计算机设",
-        "prev_day_quant_score": 59.82,
+        "code": "002164",
+        "name": "宁波东力",
+        "sector": "通用设备",
+        "prev_day_quant_score": 62.73,
         "prev_day_rank": 8,
         "prev_day_factor_breakdown": {
           "consecutive_board_sentiment": {
@@ -614,44 +688,44 @@
             "is_spatial_leader": false
           },
           "seal_strength": {
-            "score": 72.0,
+            "score": 43.63,
             "weight": 0.15,
-            "weighted_score": 10.8,
-            "seal_ratio": 0.2836,
-            "first_seal_time": "10:29:57"
+            "weighted_score": 6.54,
+            "seal_ratio": 0.1346,
+            "first_seal_time": "13:35:06"
           },
           "chip_structure": {
-            "score": 82.29,
+            "score": 77.94,
             "weight": 0.25,
-            "weighted_score": 20.57,
-            "turnover_rate": 6.55,
+            "weighted_score": 19.48,
+            "turnover_rate": 10.48,
             "high_60d_breakout": false,
             "broken_count": 0
           },
           "sector_resonance": {
-            "score": 55.0,
+            "score": 88.0,
             "weight": 0.25,
-            "weighted_score": 13.75,
-            "sector_name": "计算机设",
-            "sector_zt_count": 1,
-            "has_true_resonance": false,
+            "weighted_score": 22.0,
+            "sector_name": "通用设备",
+            "sector_zt_count": 3,
+            "has_true_resonance": true,
             "is_overcrowded": false,
-            "is_solo_zone": true
+            "is_solo_zone": false
           }
         },
         "prev_day_consecutive_boards": 1,
-        "prev_day_close_price": 20.58,
+        "prev_day_close_price": 14.69,
         "buy_price": null,
-        "buy_reason": "2026-10-16 TOP8 候选 (量化59.82分)，未进入实际建仓记录，仅用于候选表现复盘",
+        "buy_reason": "2026-10-19 TOP8 候选 (量化62.73分)，未进入实际建仓记录，仅用于候选表现复盘",
         "from_portfolio_buy": false,
-        "today_close_price": null,
-        "today_change_pct": null,
-        "today_consecutive_boards": null,
+        "today_close_price": 16.16,
+        "today_change_pct": 10.01,
+        "today_consecutive_boards": 2,
         "today_rank_in_candidates": null,
-        "today_seal_ratio_pct": null,
-        "today_turnover_rate": null,
-        "today_broken_count": null,
-        "today_first_seal_time": null,
+        "today_seal_ratio_pct": 5.23,
+        "today_turnover_rate": 12.99,
+        "today_broken_count": 3,
+        "today_first_seal_time": "09:34:45",
         "today_factor_breakdown": null,
         "pnl_amount": null,
         "pnl_pct": null,
@@ -663,466 +737,513 @@
     ]
   },
   "closed_positions_attribution": {
-    "attribution_date": "2026-10-19",
+    "attribution_date": "2026-10-20",
     "total_exits": 0,
     "loss_exit_count": 0,
     "items": []
   },
   "consecutive_board_success_analysis": {
-    "total_success": 5,
+    "total_success": 7,
     "items": [
       {
-        "code": "002889",
-        "name": "东方嘉盛",
-        "sector": "物流",
-        "prev_day_consecutive_boards": 2,
-        "today_consecutive_boards": 3,
-        "board_advancement": "2 → 3 连板",
-        "today_quant_score": 70.03,
+        "code": "003029",
+        "name": "吉大正元",
+        "sector": "软件开发",
+        "prev_day_consecutive_boards": 3,
+        "today_consecutive_boards": 4,
+        "board_advancement": "3 → 4 连板",
+        "today_quant_score": 73.7,
         "today_rank": 5,
-        "today_price": 15.74,
-        "today_change_pct": 9.99,
-        "today_amount": 776661936.0,
-        "today_turnover_rate": 20.48,
-        "today_seal_ratio_pct": 4.27,
-        "today_first_seal_time": "10:37:33",
-        "today_last_seal_time": "13:26:03",
-        "today_broken_count": 1,
+        "today_price": 26.61,
+        "today_change_pct": 10.0,
+        "today_amount": 1124024240.0,
+        "today_turnover_rate": 24.16,
+        "today_seal_ratio_pct": 9.92,
+        "today_first_seal_time": "09:25:00",
+        "today_last_seal_time": "09:57:30",
+        "today_broken_count": 4,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
           "consecutive_board_sentiment": 100.0,
-          "seal_strength": 0.0,
-          "chip_structure": 45.14,
+          "seal_strength": 63.68,
+          "chip_structure": 21.61,
           "sector_resonance": 95.0
         },
         "factor_details_today": {
           "is_spatial_leader": true,
-          "sentiment_adjustment": 12.0,
-          "sentiment_state": "震荡/分化期",
-          "seal_ratio": 0.0427,
-          "first_seal_time": "10:37:33",
-          "turnover_rate": 20.48,
-          "high_60d_breakout": false,
-          "broken_count": 1,
-          "sector_name": "物流",
-          "sector_zt_count": 1,
-          "has_true_resonance": false
-        },
-        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 70.03，排第 5 名）"
-      },
-      {
-        "code": "002724",
-        "name": "海洋王",
-        "sector": "照明设备",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 78.25,
-        "today_rank": 2,
-        "today_price": 8.42,
-        "today_change_pct": 10.07,
-        "today_amount": 55986576.0,
-        "today_turnover_rate": 1.17,
-        "today_seal_ratio_pct": 212.77,
-        "today_first_seal_time": "09:25:00",
-        "today_last_seal_time": "09:25:00",
-        "today_broken_count": 0,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 96.36,
-          "chip_structure": 66.4,
-          "sector_resonance": 95.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 3.0,
-          "sentiment_state": "震荡/分化期",
-          "seal_ratio": 2.1277,
+          "sentiment_adjustment": 18.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 0.0992,
           "first_seal_time": "09:25:00",
-          "turnover_rate": 1.17,
-          "high_60d_breakout": true,
-          "broken_count": 0,
-          "sector_name": "照明设备",
+          "turnover_rate": 24.16,
+          "high_60d_breakout": false,
+          "broken_count": 4,
+          "sector_name": "软件开发",
           "sector_zt_count": 1,
           "has_true_resonance": false
         },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 78.25，排第 2 名）"
-      },
-      {
-        "code": "600860",
-        "name": "京城股份",
-        "sector": "通用设备",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 75.69,
-        "today_rank": 3,
-        "today_price": 8.7,
-        "today_change_pct": 9.99,
-        "today_amount": 60002169.0,
-        "today_turnover_rate": 1.55,
-        "today_seal_ratio_pct": 89.2,
-        "today_first_seal_time": "09:25:01",
-        "today_last_seal_time": "09:25:01",
-        "today_broken_count": 0,
-        "today_institution_ratio_pct": null,
-        "factor_scores_today": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 90.91,
-          "chip_structure": 66.4,
-          "sector_resonance": 88.0
-        },
-        "factor_details_today": {
-          "is_spatial_leader": false,
-          "sentiment_adjustment": 3.0,
-          "sentiment_state": "震荡/分化期",
-          "seal_ratio": 0.892,
-          "first_seal_time": "09:25:01",
-          "turnover_rate": 1.55,
-          "high_60d_breakout": true,
-          "broken_count": 0,
-          "sector_name": "通用设备",
-          "sector_zt_count": 3,
-          "has_true_resonance": true
-        },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 75.69，排第 3 名）"
+        "verdict": "T-1 3 连板 → T 日 4 连板成功晋级（今日量化得分 73.7，排第 5 名）"
       },
       {
         "code": "603278",
         "name": "大业股份",
         "sector": "通用设备",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 70.08,
-        "today_rank": 4,
-        "today_price": 10.9,
-        "today_change_pct": 9.99,
-        "today_amount": 488667520.0,
-        "today_turnover_rate": 14.04,
-        "today_seal_ratio_pct": 12.73,
-        "today_first_seal_time": "13:36:17",
-        "today_last_seal_time": "13:36:17",
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 84.63,
+        "today_rank": 1,
+        "today_price": 11.99,
+        "today_change_pct": 10.0,
+        "today_amount": 101347729.0,
+        "today_turnover_rate": 2.47,
+        "today_seal_ratio_pct": 225.16,
+        "today_first_seal_time": "09:25:02",
+        "today_last_seal_time": "09:25:02",
         "today_broken_count": 0,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 40.0,
-          "chip_structure": 74.52,
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 96.84,
+          "chip_structure": 66.4,
           "sector_resonance": 88.0
         },
         "factor_details_today": {
           "is_spatial_leader": false,
-          "sentiment_adjustment": 3.0,
-          "sentiment_state": "震荡/分化期",
-          "seal_ratio": 0.1273,
-          "first_seal_time": "13:36:17",
-          "turnover_rate": 14.04,
-          "high_60d_breakout": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 2.2516,
+          "first_seal_time": "09:25:02",
+          "turnover_rate": 2.47,
+          "high_60d_breakout": true,
           "broken_count": 0,
           "sector_name": "通用设备",
-          "sector_zt_count": 3,
+          "sector_zt_count": 6,
           "has_true_resonance": true
         },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 70.08，排第 4 名）"
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 84.63，排第 1 名）"
       },
       {
-        "code": "000576",
-        "name": "甘化科工",
-        "sector": "地面兵装",
-        "prev_day_consecutive_boards": 1,
-        "today_consecutive_boards": 2,
-        "board_advancement": "1 → 2 连板",
-        "today_quant_score": 64.3,
-        "today_rank": 7,
-        "today_price": 9.65,
-        "today_change_pct": 10.03,
-        "today_amount": 555184704.0,
-        "today_turnover_rate": 13.42,
-        "today_seal_ratio_pct": 5.77,
-        "today_first_seal_time": "09:30:09",
-        "today_last_seal_time": "09:50:57",
-        "today_broken_count": 1,
+        "code": "600178",
+        "name": "东安动力",
+        "sector": "汽车零部",
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 77.36,
+        "today_rank": 2,
+        "today_price": 12.41,
+        "today_change_pct": 10.02,
+        "today_amount": 94031737.0,
+        "today_turnover_rate": 1.62,
+        "today_seal_ratio_pct": 292.07,
+        "today_first_seal_time": "09:25:01",
+        "today_last_seal_time": "09:25:01",
+        "today_broken_count": 0,
         "today_institution_ratio_pct": null,
         "factor_scores_today": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 15.450000000000003,
-          "chip_structure": 59.12,
-          "sector_resonance": 95.0
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 98.42,
+          "chip_structure": 66.4,
+          "sector_resonance": 58.0
         },
         "factor_details_today": {
           "is_spatial_leader": false,
-          "sentiment_adjustment": 3.0,
-          "sentiment_state": "震荡/分化期",
-          "seal_ratio": 0.0577,
-          "first_seal_time": "09:30:09",
-          "turnover_rate": 13.42,
-          "high_60d_breakout": false,
-          "broken_count": 1,
-          "sector_name": "地面兵装",
-          "sector_zt_count": 1,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 2.9207,
+          "first_seal_time": "09:25:01",
+          "turnover_rate": 1.62,
+          "high_60d_breakout": true,
+          "broken_count": 0,
+          "sector_name": "汽车零部",
+          "sector_zt_count": 3,
           "has_true_resonance": false
         },
-        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 64.3，排第 7 名）"
-      }
-    ]
-  },
-  "next_day_prediction": {
-    "prediction_for_trade_date": "T+1（下一交易日）",
-    "prevailing_sentiment_state": "震荡/分化期",
-    "prevailing_sentiment_score": 51.12,
-    "market_level_prediction": "情绪处于震荡/分化区，T+1 预期结构化行情，封板结构健康 + 板块共振的标的更容易延续。",
-    "item_predictions": [
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 77.36，排第 2 名）"
+      },
       {
-        "code": "003029",
-        "name": "吉大正元",
-        "sector": "软件开发",
-        "rank": 1,
-        "today_quant_score": 93.46,
+        "code": "600860",
+        "name": "京城股份",
+        "sector": "通用设备",
+        "prev_day_consecutive_boards": 2,
         "today_consecutive_boards": 3,
-        "today_close_price": 24.19,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 75.53,
+        "today_rank": 3,
+        "today_price": 9.57,
         "today_change_pct": 10.0,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 70,
-        "key_drivers": [
-          "T 日 3 连板",
-          "封板强度 92.7 分（强）",
-          "筹码结构 83.2 分",
-          "板块 2 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 100.0,
-          "seal_strength": 92.73,
-          "chip_structure": 83.2,
-          "sector_resonance": 95.0
+        "today_amount": 482250064.0,
+        "today_turnover_rate": 11.49,
+        "today_seal_ratio_pct": 12.07,
+        "today_first_seal_time": "09:30:41",
+        "today_last_seal_time": "09:44:44",
+        "today_broken_count": 2,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 65.27,
+          "chip_structure": 48.97,
+          "sector_resonance": 88.0
         },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 0.1207,
+          "first_seal_time": "09:30:41",
+          "turnover_rate": 11.49,
+          "high_60d_breakout": false,
+          "broken_count": 2,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
+          "has_true_resonance": true
         },
-        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "吉大正元 T+1 预测【谨慎看涨】 (置信度 70%)——关键因子: T 日 3 连板；封板强度 92.7 分（强）；筹码结构 83.2 分；板块 2 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 75.53，排第 3 名）"
       },
       {
         "code": "002724",
         "name": "海洋王",
         "sector": "照明设备",
-        "rank": 2,
-        "today_quant_score": 78.25,
+        "prev_day_consecutive_boards": 2,
+        "today_consecutive_boards": 3,
+        "board_advancement": "2 → 3 连板",
+        "today_quant_score": 74.87,
+        "today_rank": 4,
+        "today_price": 9.26,
+        "today_change_pct": 9.98,
+        "today_amount": 561549280.0,
+        "today_turnover_rate": 10.85,
+        "today_seal_ratio_pct": 16.66,
+        "today_first_seal_time": "09:30:18",
+        "today_last_seal_time": "09:38:45",
+        "today_broken_count": 3,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 73.16,
+          "chip_structure": 41.58,
+          "sector_resonance": 88.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 0.1666,
+          "first_seal_time": "09:30:18",
+          "turnover_rate": 10.85,
+          "high_60d_breakout": false,
+          "broken_count": 3,
+          "sector_name": "照明设备",
+          "sector_zt_count": 3,
+          "has_true_resonance": true
+        },
+        "verdict": "T-1 2 连板 → T 日 3 连板成功晋级（今日量化得分 74.87，排第 4 名）"
+      },
+      {
+        "code": "605488",
+        "name": "福莱新材",
+        "sector": "塑料",
+        "prev_day_consecutive_boards": 1,
         "today_consecutive_boards": 2,
-        "today_close_price": 8.42,
-        "today_change_pct": 10.07,
-        "direction": "震荡中性",
-        "confidence_level": "LOW",
-        "confidence_pct": 45,
+        "board_advancement": "1 → 2 连板",
+        "today_quant_score": 66.56,
+        "today_rank": 6,
+        "today_price": 30.99,
+        "today_change_pct": 10.01,
+        "today_amount": 147520127.0,
+        "today_turnover_rate": 1.61,
+        "today_seal_ratio_pct": 45.74,
+        "today_first_seal_time": "09:30:11",
+        "today_last_seal_time": "09:30:11",
+        "today_broken_count": 0,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 64.0,
+          "seal_strength": 92.1,
+          "chip_structure": 66.4,
+          "sector_resonance": 55.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 0.4574,
+          "first_seal_time": "09:30:11",
+          "turnover_rate": 1.61,
+          "high_60d_breakout": true,
+          "broken_count": 0,
+          "sector_name": "塑料",
+          "sector_zt_count": 1,
+          "has_true_resonance": false
+        },
+        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 66.56，排第 6 名）"
+      },
+      {
+        "code": "001323",
+        "name": "慕思股份",
+        "sector": "家居用品",
+        "prev_day_consecutive_boards": 1,
+        "today_consecutive_boards": 2,
+        "board_advancement": "1 → 2 连板",
+        "today_quant_score": 63.09,
+        "today_rank": 11,
+        "today_price": 22.23,
+        "today_change_pct": 10.0,
+        "today_amount": 129054552.0,
+        "today_turnover_rate": 1.87,
+        "today_seal_ratio_pct": 33.84,
+        "today_first_seal_time": "09:30:03",
+        "today_last_seal_time": "09:30:03",
+        "today_broken_count": 0,
+        "today_institution_ratio_pct": null,
+        "factor_scores_today": {
+          "consecutive_board_sentiment": 64.0,
+          "seal_strength": 88.95,
+          "chip_structure": 54.4,
+          "sector_resonance": 55.0
+        },
+        "factor_details_today": {
+          "is_spatial_leader": false,
+          "sentiment_adjustment": 0.0,
+          "sentiment_state": "主升/强势期",
+          "seal_ratio": 0.3384,
+          "first_seal_time": "09:30:03",
+          "turnover_rate": 1.87,
+          "high_60d_breakout": false,
+          "broken_count": 0,
+          "sector_name": "家居用品",
+          "sector_zt_count": 1,
+          "has_true_resonance": false
+        },
+        "verdict": "T-1 1 连板 → T 日 2 连板成功晋级（今日量化得分 63.09，排第 11 名）"
+      }
+    ]
+  },
+  "next_day_prediction": {
+    "prediction_for_trade_date": "T+1（下一交易日）",
+    "prevailing_sentiment_state": "主升/强势期",
+    "prevailing_sentiment_score": 86.25,
+    "market_level_prediction": "情绪进入主升/强势区，T+1 开盘整体预期偏强，关注高连板龙头（≥4 板）的连板延续性。",
+    "item_predictions": [
+      {
+        "code": "603278",
+        "name": "大业股份",
+        "sector": "通用设备",
+        "rank": 1,
+        "today_quant_score": 84.63,
+        "today_consecutive_boards": 3,
+        "today_close_price": 11.99,
+        "today_change_pct": 10.0,
+        "direction": "偏强看涨",
+        "confidence_level": "HIGH",
+        "confidence_pct": 90,
         "key_drivers": [
-          "T 日 2 连板",
-          "封板强度 96.4 分（强）",
+          "T 日 3 连板",
+          "封板强度 96.8 分（强）",
           "筹码结构 66.4 分",
-          "板块 1 家涨停共振"
+          "板块 6 家涨停共振"
         ],
         "today_factor_scores": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 96.36,
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 96.84,
           "chip_structure": 66.4,
-          "sector_resonance": 95.0
+          "sector_resonance": 88.0
         },
         "risk_flags": {
           "broken_count": null,
           "high_turnover": null,
           "low_seal_ratio": null
         },
-        "operation_guide": "信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。",
-        "prediction_summary": "海洋王 T+1 预测【震荡中性】 (置信度 45%)——关键因子: T 日 2 连板；封板强度 96.4 分（强）；筹码结构 66.4 分；板块 1 家涨停共振。操作建议: 信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。"
+        "operation_guide": "T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。",
+        "prediction_summary": "大业股份 T+1 预测【偏强看涨】 (置信度 90%)——关键因子: T 日 3 连板；封板强度 96.8 分（强）；筹码结构 66.4 分；板块 6 家涨停共振。操作建议: T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。"
+      },
+      {
+        "code": "600178",
+        "name": "东安动力",
+        "sector": "汽车零部",
+        "rank": 2,
+        "today_quant_score": 77.36,
+        "today_consecutive_boards": 3,
+        "today_close_price": 12.41,
+        "today_change_pct": 10.02,
+        "direction": "偏强看涨",
+        "confidence_level": "HIGH",
+        "confidence_pct": 85,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 98.4 分（强）",
+          "筹码结构 66.4 分",
+          "板块 3 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 98.42,
+          "chip_structure": 66.4,
+          "sector_resonance": 58.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。",
+        "prediction_summary": "东安动力 T+1 预测【偏强看涨】 (置信度 85%)——关键因子: T 日 3 连板；封板强度 98.4 分（强）；筹码结构 66.4 分；板块 3 家涨停共振。操作建议: T+1 若竞价高开 ≤3% 且承接有力（09:25 封单≥昨日封单 50%），可视为超预期强连板持有；若竞价低开或盘中开板需盯紧移动止盈。"
       },
       {
         "code": "600860",
         "name": "京城股份",
         "sector": "通用设备",
         "rank": 3,
-        "today_quant_score": 75.69,
-        "today_consecutive_boards": 2,
-        "today_close_price": 8.7,
-        "today_change_pct": 9.99,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 65,
-        "key_drivers": [
-          "T 日 2 连板",
-          "封板强度 90.9 分（强）",
-          "筹码结构 66.4 分",
-          "板块 3 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 90.91,
-          "chip_structure": 66.4,
-          "sector_resonance": 88.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
-        },
-        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "京城股份 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 2 连板；封板强度 90.9 分（强）；筹码结构 66.4 分；板块 3 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
-      },
-      {
-        "code": "603278",
-        "name": "大业股份",
-        "sector": "通用设备",
-        "rank": 4,
-        "today_quant_score": 70.08,
-        "today_consecutive_boards": 2,
-        "today_close_price": 10.9,
-        "today_change_pct": 9.99,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 62,
-        "key_drivers": [
-          "T 日 2 连板",
-          "封板强度 40.0 分（弱）",
-          "筹码结构 74.5 分",
-          "板块 3 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 40.0,
-          "chip_structure": 74.52,
-          "sector_resonance": 88.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
-        },
-        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "大业股份 T+1 预测【谨慎看涨】 (置信度 62%)——关键因子: T 日 2 连板；封板强度 40.0 分（弱）；筹码结构 74.5 分；板块 3 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
-      },
-      {
-        "code": "002889",
-        "name": "东方嘉盛",
-        "sector": "物流",
-        "rank": 5,
-        "today_quant_score": 70.03,
+        "today_quant_score": 75.53,
         "today_consecutive_boards": 3,
-        "today_close_price": 15.74,
-        "today_change_pct": 9.99,
-        "direction": "偏弱观望",
+        "today_close_price": 9.57,
+        "today_change_pct": 10.0,
+        "direction": "谨慎看涨",
         "confidence_level": "MEDIUM",
-        "confidence_pct": 35,
+        "confidence_pct": 64,
         "key_drivers": [
           "T 日 3 连板",
-          "封板强度 0.0 分（弱）",
-          "筹码结构 45.1 分",
+          "封板强度 65.3 分（中）",
+          "筹码结构 49.0 分",
+          "板块 6 家涨停共振",
+          "T 日炸板 2 次（风险）"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 65.27,
+          "chip_structure": 48.97,
+          "sector_resonance": 88.0
+        },
+        "risk_flags": {
+          "broken_count": 2,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "京城股份 T+1 预测【谨慎看涨】 (置信度 64%)——关键因子: T 日 3 连板；封板强度 65.3 分（中）；筹码结构 49.0 分；板块 6 家涨停共振；T 日炸板 2 次（风险）。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "002724",
+        "name": "海洋王",
+        "sector": "照明设备",
+        "rank": 4,
+        "today_quant_score": 74.87,
+        "today_consecutive_boards": 3,
+        "today_close_price": 9.26,
+        "today_change_pct": 9.98,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 69,
+        "key_drivers": [
+          "T 日 3 连板",
+          "封板强度 73.2 分（强）",
+          "筹码结构 41.6 分",
+          "板块 3 家涨停共振",
+          "T 日炸板 3 次（风险）"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 90.0,
+          "seal_strength": 73.16,
+          "chip_structure": 41.58,
+          "sector_resonance": 88.0
+        },
+        "risk_flags": {
+          "broken_count": 3,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "海洋王 T+1 预测【谨慎看涨】 (置信度 69%)——关键因子: T 日 3 连板；封板强度 73.2 分（强）；筹码结构 41.6 分；板块 3 家涨停共振；T 日炸板 3 次（风险）。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "003029",
+        "name": "吉大正元",
+        "sector": "软件开发",
+        "rank": 5,
+        "today_quant_score": 73.7,
+        "today_consecutive_boards": 4,
+        "today_close_price": 26.61,
+        "today_change_pct": 10.0,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 56,
+        "key_drivers": [
+          "T 日 4 连板",
+          "封板强度 63.7 分（中）",
+          "筹码结构 21.6 分",
           "板块 1 家涨停共振",
-          "T 日炸板 1 次（风险）",
-          "换手率 20.48%（偏高）"
+          "T 日炸板 4 次（风险）",
+          "换手率 24.16%（偏高）"
         ],
         "today_factor_scores": {
           "consecutive_board_sentiment": 100.0,
-          "seal_strength": 0.0,
-          "chip_structure": 45.14,
+          "seal_strength": 63.68,
+          "chip_structure": 21.61,
           "sector_resonance": 95.0
         },
         "risk_flags": {
-          "broken_count": 1,
-          "high_turnover": 20.48,
-          "low_seal_ratio": 0.0427
-        },
-        "operation_guide": "情绪偏弱或因子薄弱，不建议 T+1 开盘追入；若已有持仓则以开盘后 30 分钟不翻红为离场信号。",
-        "prediction_summary": "东方嘉盛 T+1 预测【偏弱观望】 (置信度 35%)——关键因子: T 日 3 连板；封板强度 0.0 分（弱）；筹码结构 45.1 分；板块 1 家涨停共振；T 日炸板 1 次（风险）；换手率 20.48%（偏高）。操作建议: 情绪偏弱或因子薄弱，不建议 T+1 开盘追入；若已有持仓则以开盘后 30 分钟不翻红为离场信号。"
-      },
-      {
-        "code": "600178",
-        "name": "东安动力",
-        "sector": "汽车零部",
-        "rank": 6,
-        "today_quant_score": 65.11,
-        "today_consecutive_boards": 2,
-        "today_close_price": 11.28,
-        "today_change_pct": 10.05,
-        "direction": "谨慎看涨",
-        "confidence_level": "MEDIUM",
-        "confidence_pct": 65,
-        "key_drivers": [
-          "T 日 2 连板",
-          "封板强度 89.1 分（强）",
-          "筹码结构 83.2 分",
-          "板块 10 家涨停共振"
-        ],
-        "today_factor_scores": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 89.09,
-          "chip_structure": 83.2,
-          "sector_resonance": 30.0
-        },
-        "risk_flags": {
-          "broken_count": null,
-          "high_turnover": null,
-          "low_seal_ratio": null
+          "broken_count": 4,
+          "high_turnover": 24.16,
+          "low_seal_ratio": 0.0992
         },
         "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "东安动力 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 2 连板；封板强度 89.1 分（强）；筹码结构 83.2 分；板块 10 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+        "prediction_summary": "吉大正元 T+1 预测【谨慎看涨】 (置信度 56%)——关键因子: T 日 4 连板；封板强度 63.7 分（中）；筹码结构 21.6 分；板块 1 家涨停共振；T 日炸板 4 次（风险）；换手率 24.16%（偏高）。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
       },
       {
-        "code": "000576",
-        "name": "甘化科工",
-        "sector": "地面兵装",
-        "rank": 7,
-        "today_quant_score": 64.3,
+        "code": "605488",
+        "name": "福莱新材",
+        "sector": "塑料",
+        "rank": 6,
+        "today_quant_score": 66.56,
         "today_consecutive_boards": 2,
-        "today_close_price": 9.65,
-        "today_change_pct": 10.03,
+        "today_close_price": 30.99,
+        "today_change_pct": 10.01,
         "direction": "震荡中性",
         "confidence_level": "LOW",
         "confidence_pct": 45,
         "key_drivers": [
           "T 日 2 连板",
-          "封板强度 15.5 分（弱）",
-          "筹码结构 59.1 分",
-          "板块 1 家涨停共振",
-          "T 日炸板 1 次（风险）"
+          "封板强度 92.1 分（强）",
+          "筹码结构 66.4 分",
+          "板块 1 家涨停共振"
         ],
         "today_factor_scores": {
-          "consecutive_board_sentiment": 67.0,
-          "seal_strength": 15.450000000000003,
-          "chip_structure": 59.12,
-          "sector_resonance": 95.0
+          "consecutive_board_sentiment": 64.0,
+          "seal_strength": 92.1,
+          "chip_structure": 66.4,
+          "sector_resonance": 55.0
         },
         "risk_flags": {
-          "broken_count": 1,
+          "broken_count": null,
           "high_turnover": null,
-          "low_seal_ratio": 0.0577
+          "low_seal_ratio": null
         },
         "operation_guide": "信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。",
-        "prediction_summary": "甘化科工 T+1 预测【震荡中性】 (置信度 45%)——关键因子: T 日 2 连板；封板强度 15.5 分（弱）；筹码结构 59.1 分；板块 1 家涨停共振；T 日炸板 1 次（风险）。操作建议: 信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。"
+        "prediction_summary": "福莱新材 T+1 预测【震荡中性】 (置信度 45%)——关键因子: T 日 2 连板；封板强度 92.1 分（强）；筹码结构 66.4 分；板块 1 家涨停共振。操作建议: 信号分歧，T+1 以持有观望为主；若连板 >3 且封板保持稳定可持有，否则逢高止盈。"
       },
       {
-        "code": "002164",
-        "name": "宁波东力",
+        "code": "300466",
+        "name": "赛摩智能",
         "sector": "通用设备",
-        "rank": 8,
-        "today_quant_score": 62.73,
+        "rank": 7,
+        "today_quant_score": 66.24,
         "today_consecutive_boards": 1,
-        "today_close_price": 14.69,
-        "today_change_pct": 10.04,
+        "today_close_price": 8.64,
+        "today_change_pct": 20.0,
         "direction": "谨慎看涨",
         "confidence_level": "MEDIUM",
-        "confidence_pct": 62,
+        "confidence_pct": 65,
         "key_drivers": [
           "T 日 1 连板",
-          "封板强度 43.6 分（弱）",
-          "筹码结构 77.9 分",
-          "板块 3 家涨停共振"
+          "封板强度 58.8 分（中）",
+          "筹码结构 82.9 分",
+          "板块 6 家涨停共振"
         ],
         "today_factor_scores": {
           "consecutive_board_sentiment": 42.0,
-          "seal_strength": 43.63,
-          "chip_structure": 77.94,
+          "seal_strength": 58.84,
+          "chip_structure": 82.87,
           "sector_resonance": 88.0
         },
         "risk_flags": {
@@ -1131,130 +1252,162 @@
           "low_seal_ratio": null
         },
         "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
-        "prediction_summary": "宁波东力 T+1 预测【谨慎看涨】 (置信度 62%)——关键因子: T 日 1 连板；封板强度 43.6 分（弱）；筹码结构 77.9 分；板块 3 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+        "prediction_summary": "赛摩智能 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 1 连板；封板强度 58.8 分（中）；筹码结构 82.9 分；板块 6 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
+      },
+      {
+        "code": "603400",
+        "name": "华之杰",
+        "sector": "通用设备",
+        "rank": 8,
+        "today_quant_score": 65.08,
+        "today_consecutive_boards": 1,
+        "today_close_price": 42.46,
+        "today_change_pct": 10.0,
+        "direction": "谨慎看涨",
+        "confidence_level": "MEDIUM",
+        "confidence_pct": 65,
+        "key_drivers": [
+          "T 日 1 连板",
+          "封板强度 61.0 分（中）",
+          "筹码结构 76.9 分",
+          "板块 6 家涨停共振"
+        ],
+        "today_factor_scores": {
+          "consecutive_board_sentiment": 42.0,
+          "seal_strength": 61.05,
+          "chip_structure": 76.91,
+          "sector_resonance": 88.0
+        },
+        "risk_flags": {
+          "broken_count": null,
+          "high_turnover": null,
+          "low_seal_ratio": null
+        },
+        "operation_guide": "T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。",
+        "prediction_summary": "华之杰 T+1 预测【谨慎看涨】 (置信度 65%)——关键因子: T 日 1 连板；封板强度 61.0 分（中）；筹码结构 76.9 分；板块 6 家涨停共振。操作建议: T+1 预期震荡分歧，以 3% 移动止盈 + 5% 硬止损双带持有；若早盘冲高 ≥5% 但快速回落开板 → 视为弱转强失败，止盈优先。"
       }
     ]
   },
   "top_candidate_evaluations": [
     {
-      "code": "003029",
-      "name": "吉大正元",
+      "code": "603278",
+      "name": "大业股份",
       "review_rank": 1,
-      "quant_score": 93.46,
+      "quant_score": 84.63,
       "consecutive_boards": 3,
-      "sector": "软件开发",
-      "price": 24.19,
+      "sector": "通用设备",
+      "price": 11.99,
       "change_pct": 10.0,
-      "amount": 174389363.0,
-      "float_market_cap": 4247353689.2200003,
-      "turnover_rate": 4.11,
-      "seal_amount": 200574989.0,
-      "seal_ratio_pct": 115.02,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "09:25:00",
+      "amount": 101347729.0,
+      "float_market_cap": 4097695110.08,
+      "turnover_rate": 2.47,
+      "seal_amount": 228198619.0,
+      "seal_ratio_pct": 225.16,
+      "first_seal_time": "09:25:02",
+      "last_seal_time": "09:25:02",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 93.46 (排名 1)",
-      "detailed_analysis": "综合量化打分 93.46 (排第 1 名)。首次封板 09:25:00。换手率 4.11%。软件开发 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 84.63 (排名 1)",
+      "detailed_analysis": "综合量化打分 84.63 (排第 1 名)。首次封板 09:25:02。换手率 2.47%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 100.0,
+          "score": 90.0,
           "weight": 0.35,
-          "weighted_score": 35.0,
+          "weighted_score": 31.5,
           "consecutive_boards": 3,
           "base_board_score": 90.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 12.0,
-          "is_spatial_leader": true
-        },
-        "seal_strength": {
-          "score": 92.73,
-          "weight": 0.15,
-          "weighted_score": 13.91,
-          "seal_ratio": 1.1502,
-          "first_seal_time": "09:25:00"
-        },
-        "chip_structure": {
-          "score": 83.2,
-          "weight": 0.25,
-          "weighted_score": 20.8,
-          "turnover_rate": 4.11,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 95.0,
-          "weight": 0.25,
-          "weighted_score": 23.75,
-          "sector_name": "软件开发",
-          "sector_zt_count": 2,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      }
-    },
-    {
-      "code": "002724",
-      "name": "海洋王",
-      "review_rank": 2,
-      "quant_score": 78.25,
-      "consecutive_boards": 2,
-      "sector": "照明设备",
-      "price": 8.42,
-      "change_pct": 10.07,
-      "amount": 55986576.0,
-      "float_market_cap": 4769747193.38,
-      "turnover_rate": 1.17,
-      "seal_amount": 119123322.0,
-      "seal_ratio_pct": 212.77,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "09:25:00",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 78.25 (排名 2)",
-      "detailed_analysis": "综合量化打分 78.25 (排第 2 名)。首次封板 09:25:00。换手率 1.17%。照明设备 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 96.36,
+          "score": 96.84,
           "weight": 0.15,
-          "weighted_score": 14.45,
-          "seal_ratio": 2.1277,
-          "first_seal_time": "09:25:00"
+          "weighted_score": 14.53,
+          "seal_ratio": 2.2516,
+          "first_seal_time": "09:25:02"
         },
         "chip_structure": {
           "score": 66.4,
           "weight": 0.25,
           "weighted_score": 16.6,
-          "turnover_rate": 1.17,
+          "turnover_rate": 2.47,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 95.0,
+          "score": 88.0,
           "weight": 0.25,
-          "weighted_score": 23.75,
-          "sector_name": "照明设备",
-          "sector_zt_count": 1,
+          "weighted_score": 22.0,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "600178",
+      "name": "东安动力",
+      "review_rank": 2,
+      "quant_score": 77.36,
+      "consecutive_boards": 3,
+      "sector": "汽车零部",
+      "price": 12.41,
+      "change_pct": 10.02,
+      "amount": 94031737.0,
+      "float_market_cap": 5788969158.01,
+      "turnover_rate": 1.62,
+      "seal_amount": 274642061.0,
+      "seal_ratio_pct": 292.07,
+      "first_seal_time": "09:25:01",
+      "last_seal_time": "09:25:01",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 77.36 (排名 2)",
+      "detailed_analysis": "综合量化打分 77.36 (排第 2 名)。首次封板 09:25:01。换手率 1.62%。汽车零部 板块内 3 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 98.42,
+          "weight": 0.15,
+          "weighted_score": 14.76,
+          "seal_ratio": 2.9207,
+          "first_seal_time": "09:25:01"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.25,
+          "weighted_score": 16.6,
+          "turnover_rate": 1.62,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.25,
+          "weighted_score": 14.5,
+          "sector_name": "汽车零部",
+          "sector_zt_count": 3,
           "has_true_resonance": false,
           "is_overcrowded": false,
-          "is_solo_zone": true
+          "is_solo_zone": false
         }
       }
     },
@@ -1262,178 +1415,178 @@
       "code": "600860",
       "name": "京城股份",
       "review_rank": 3,
-      "quant_score": 75.69,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "price": 8.7,
-      "change_pct": 9.99,
-      "amount": 60002169.0,
-      "float_market_cap": 3863154855.6,
-      "turnover_rate": 1.55,
-      "seal_amount": 53520651.0,
-      "seal_ratio_pct": 89.2,
-      "first_seal_time": "09:25:01",
-      "last_seal_time": "09:25:01",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 75.69 (排名 3)",
-      "detailed_analysis": "综合量化打分 75.69 (排第 3 名)。首次封板 09:25:01。换手率 1.55%。通用设备 板块内 3 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 90.91,
-          "weight": 0.15,
-          "weighted_score": 13.64,
-          "seal_ratio": 0.892,
-          "first_seal_time": "09:25:01"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 1.55,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "通用设备",
-          "sector_zt_count": 3,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "603278",
-      "name": "大业股份",
-      "review_rank": 4,
-      "quant_score": 70.08,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "price": 10.9,
-      "change_pct": 9.99,
-      "amount": 488667520.0,
-      "float_market_cap": 3725177372.8,
-      "turnover_rate": 14.04,
-      "seal_amount": 62221560.0,
-      "seal_ratio_pct": 12.73,
-      "first_seal_time": "13:36:17",
-      "last_seal_time": "13:36:17",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 70.08 (排名 4)",
-      "detailed_analysis": "综合量化打分 70.08 (排第 4 名)。首次封板 13:36:17。换手率 14.04%。通用设备 板块内 3 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 40.0,
-          "weight": 0.15,
-          "weighted_score": 6.0,
-          "seal_ratio": 0.1273,
-          "first_seal_time": "13:36:17"
-        },
-        "chip_structure": {
-          "score": 74.52,
-          "weight": 0.25,
-          "weighted_score": 18.63,
-          "turnover_rate": 14.04,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "通用设备",
-          "sector_zt_count": 3,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "002889",
-      "name": "东方嘉盛",
-      "review_rank": 5,
-      "quant_score": 70.03,
+      "quant_score": 75.53,
       "consecutive_boards": 3,
-      "sector": "物流",
-      "price": 15.74,
-      "change_pct": 9.99,
-      "amount": 776661936.0,
-      "float_market_cap": 3955218879.96,
-      "turnover_rate": 20.48,
-      "seal_amount": 33135596.0,
-      "seal_ratio_pct": 4.27,
-      "first_seal_time": "10:37:33",
-      "last_seal_time": "13:26:03",
-      "broken_count": 1,
+      "sector": "通用设备",
+      "price": 9.57,
+      "change_pct": 10.0,
+      "amount": 482250064.0,
+      "float_market_cap": 4249470341.1600003,
+      "turnover_rate": 11.49,
+      "seal_amount": 58212558.0,
+      "seal_ratio_pct": 12.07,
+      "first_seal_time": "09:30:41",
+      "last_seal_time": "09:44:44",
+      "broken_count": 2,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 70.03 (排名 5)",
-      "detailed_analysis": "综合量化打分 70.03 (排第 5 名)。首次封板 10:37:33。换手率 20.48%。物流 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 75.53 (排名 3)",
+      "detailed_analysis": "综合量化打分 75.53 (排第 3 名)。首次封板 09:30:41。换手率 11.49%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 65.27,
+          "weight": 0.15,
+          "weighted_score": 9.79,
+          "seal_ratio": 0.1207,
+          "first_seal_time": "09:30:41"
+        },
+        "chip_structure": {
+          "score": 48.97,
+          "weight": 0.25,
+          "weighted_score": 12.24,
+          "turnover_rate": 11.49,
+          "high_60d_breakout": false,
+          "broken_count": 2
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "review_rank": 4,
+      "quant_score": 74.87,
+      "consecutive_boards": 3,
+      "sector": "照明设备",
+      "price": 9.26,
+      "change_pct": 9.98,
+      "amount": 561549280.0,
+      "float_market_cap": 5245588956.14,
+      "turnover_rate": 10.85,
+      "seal_amount": 93565818.0,
+      "seal_ratio_pct": 16.66,
+      "first_seal_time": "09:30:18",
+      "last_seal_time": "09:38:45",
+      "broken_count": 3,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 74.87 (排名 4)",
+      "detailed_analysis": "综合量化打分 74.87 (排第 4 名)。首次封板 09:30:18。换手率 10.85%。照明设备 板块内 3 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 73.16,
+          "weight": 0.15,
+          "weighted_score": 10.97,
+          "seal_ratio": 0.1666,
+          "first_seal_time": "09:30:18"
+        },
+        "chip_structure": {
+          "score": 41.58,
+          "weight": 0.25,
+          "weighted_score": 10.39,
+          "turnover_rate": 10.85,
+          "high_60d_breakout": false,
+          "broken_count": 3
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "照明设备",
+          "sector_zt_count": 3,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "003029",
+      "name": "吉大正元",
+      "review_rank": 5,
+      "quant_score": 73.7,
+      "consecutive_boards": 4,
+      "sector": "软件开发",
+      "price": 26.61,
+      "change_pct": 10.0,
+      "amount": 1124024240.0,
+      "float_market_cap": 4672264641.18,
+      "turnover_rate": 24.16,
+      "seal_amount": 111538476.0,
+      "seal_ratio_pct": 9.92,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:57:30",
+      "broken_count": 4,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 73.7 (排名 5)",
+      "detailed_analysis": "综合量化打分 73.7 (排第 5 名)。首次封板 09:25:00。换手率 24.16%。软件开发 板块内 1 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 100.0,
           "weight": 0.35,
           "weighted_score": 35.0,
-          "consecutive_boards": 3,
-          "base_board_score": 90.0,
+          "consecutive_boards": 4,
+          "base_board_score": 84.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 12.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
         },
         "seal_strength": {
-          "score": 0.0,
+          "score": 63.68,
           "weight": 0.15,
-          "weighted_score": 0.0,
-          "seal_ratio": 0.0427,
-          "first_seal_time": "10:37:33"
+          "weighted_score": 9.55,
+          "seal_ratio": 0.0992,
+          "first_seal_time": "09:25:00"
         },
         "chip_structure": {
-          "score": 45.14,
+          "score": 21.61,
           "weight": 0.25,
-          "weighted_score": 11.29,
-          "turnover_rate": 20.48,
+          "weighted_score": 5.4,
+          "turnover_rate": 24.16,
           "high_60d_breakout": false,
-          "broken_count": 1
+          "broken_count": 4
         },
         "sector_resonance": {
           "score": 95.0,
           "weight": 0.25,
           "weighted_score": 23.75,
-          "sector_name": "物流",
+          "sector_name": "软件开发",
           "sector_zt_count": 1,
           "has_true_resonance": false,
           "is_overcrowded": false,
@@ -1442,120 +1595,59 @@
       }
     },
     {
-      "code": "600178",
-      "name": "东安动力",
+      "code": "605488",
+      "name": "福莱新材",
       "review_rank": 6,
-      "quant_score": 65.11,
+      "quant_score": 66.56,
       "consecutive_boards": 2,
-      "sector": "汽车零部",
-      "price": 11.28,
-      "change_pct": 10.05,
-      "amount": 176472126.0,
-      "float_market_cap": 5261851096.08,
-      "turnover_rate": 3.36,
-      "seal_amount": 127590336.0,
-      "seal_ratio_pct": 72.3,
-      "first_seal_time": "09:30:02",
-      "last_seal_time": "09:30:02",
+      "sector": "塑料",
+      "price": 30.99,
+      "change_pct": 10.01,
+      "amount": 147520127.0,
+      "float_market_cap": 9249853332.51,
+      "turnover_rate": 1.61,
+      "seal_amount": 67477006.0,
+      "seal_ratio_pct": 45.74,
+      "first_seal_time": "09:30:11",
+      "last_seal_time": "09:30:11",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 65.11 (排名 6)",
-      "detailed_analysis": "综合量化打分 65.11 (排第 6 名)。首次封板 09:30:02。换手率 3.36%。汽车零部 板块内 10 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 66.56 (排名 6)",
+      "detailed_analysis": "综合量化打分 66.56 (排第 6 名)。首次封板 09:30:11。换手率 1.61%。塑料 板块内 1 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 67.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 23.45,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
           "base_board_score": 64.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 89.09,
+          "score": 92.1,
           "weight": 0.15,
-          "weighted_score": 13.36,
-          "seal_ratio": 0.723,
-          "first_seal_time": "09:30:02"
+          "weighted_score": 13.81,
+          "seal_ratio": 0.4574,
+          "first_seal_time": "09:30:11"
         },
         "chip_structure": {
-          "score": 83.2,
+          "score": 66.4,
           "weight": 0.25,
-          "weighted_score": 20.8,
-          "turnover_rate": 3.36,
+          "weighted_score": 16.6,
+          "turnover_rate": 1.61,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 30.0,
+          "score": 55.0,
           "weight": 0.25,
-          "weighted_score": 7.5,
-          "sector_name": "汽车零部",
-          "sector_zt_count": 10,
-          "has_true_resonance": true,
-          "is_overcrowded": true,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "000576",
-      "name": "甘化科工",
-      "review_rank": 7,
-      "quant_score": 64.3,
-      "consecutive_boards": 2,
-      "sector": "地面兵装",
-      "price": 9.65,
-      "change_pct": 10.03,
-      "amount": 555184704.0,
-      "float_market_cap": 4186317268.65,
-      "turnover_rate": 13.42,
-      "seal_amount": 32047765.0,
-      "seal_ratio_pct": 5.77,
-      "first_seal_time": "09:30:09",
-      "last_seal_time": "09:50:57",
-      "broken_count": 1,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 64.3 (排名 7)",
-      "detailed_analysis": "综合量化打分 64.3 (排第 7 名)。首次封板 09:30:09。换手率 13.42%。地面兵装 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 15.450000000000003,
-          "weight": 0.15,
-          "weighted_score": 2.32,
-          "seal_ratio": 0.0577,
-          "first_seal_time": "09:30:09"
-        },
-        "chip_structure": {
-          "score": 59.12,
-          "weight": 0.25,
-          "weighted_score": 14.78,
-          "turnover_rate": 13.42,
-          "high_60d_breakout": false,
-          "broken_count": 1
-        },
-        "sector_resonance": {
-          "score": 95.0,
-          "weight": 0.25,
-          "weighted_score": 23.75,
-          "sector_name": "地面兵装",
+          "weighted_score": 13.75,
+          "sector_name": "塑料",
           "sector_zt_count": 1,
           "has_true_resonance": false,
           "is_overcrowded": false,
@@ -1564,27 +1656,27 @@
       }
     },
     {
-      "code": "002164",
-      "name": "宁波东力",
-      "review_rank": 8,
-      "quant_score": 62.73,
+      "code": "300466",
+      "name": "赛摩智能",
+      "review_rank": 7,
+      "quant_score": 66.24,
       "consecutive_boards": 1,
       "sector": "通用设备",
-      "price": 14.69,
-      "change_pct": 10.04,
-      "amount": 715675584.0,
-      "float_market_cap": 7047896850.67,
-      "turnover_rate": 10.48,
-      "seal_amount": 96359055.0,
-      "seal_ratio_pct": 13.46,
-      "first_seal_time": "13:35:06",
-      "last_seal_time": "13:35:06",
+      "price": 8.64,
+      "change_pct": 20.0,
+      "amount": 295925072.0,
+      "float_market_cap": 3979072736.6400003,
+      "turnover_rate": 7.84,
+      "seal_amount": 36367488.0,
+      "seal_ratio_pct": 12.29,
+      "first_seal_time": "10:06:09",
+      "last_seal_time": "10:06:09",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 62.73 (排名 8)",
-      "detailed_analysis": "综合量化打分 62.73 (排第 8 名)。首次封板 13:35:06。换手率 10.48%。通用设备 板块内 3 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 66.24 (排名 7)",
+      "detailed_analysis": "综合量化打分 66.24 (排第 7 名)。首次封板 10:06:09。换手率 7.84%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -1593,22 +1685,22 @@
           "consecutive_boards": 1,
           "base_board_score": 42.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 43.63,
+          "score": 58.84,
           "weight": 0.15,
-          "weighted_score": 6.54,
-          "seal_ratio": 0.1346,
-          "first_seal_time": "13:35:06"
+          "weighted_score": 8.83,
+          "seal_ratio": 0.1229,
+          "first_seal_time": "10:06:09"
         },
         "chip_structure": {
-          "score": 77.94,
+          "score": 82.87,
           "weight": 0.25,
-          "weighted_score": 19.48,
-          "turnover_rate": 10.48,
+          "weighted_score": 20.72,
+          "turnover_rate": 7.84,
           "high_60d_breakout": false,
           "broken_count": 0
         },
@@ -1617,7 +1709,68 @@
           "weight": 0.25,
           "weighted_score": 22.0,
           "sector_name": "通用设备",
-          "sector_zt_count": 3,
+          "sector_zt_count": 6,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "603400",
+      "name": "华之杰",
+      "review_rank": 8,
+      "quant_score": 65.08,
+      "consecutive_boards": 1,
+      "sector": "通用设备",
+      "price": 42.46,
+      "change_pct": 10.0,
+      "amount": 170566767.0,
+      "float_market_cap": 1538328984.5,
+      "turnover_rate": 11.55,
+      "seal_amount": 42514815.0,
+      "seal_ratio_pct": 24.93,
+      "first_seal_time": "13:00:18",
+      "last_seal_time": "13:00:18",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 65.08 (排名 8)",
+      "detailed_analysis": "综合量化打分 65.08 (排第 8 名)。首次封板 13:00:18。换手率 11.55%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 61.05,
+          "weight": 0.15,
+          "weighted_score": 9.16,
+          "seal_ratio": 0.2493,
+          "first_seal_time": "13:00:18"
+        },
+        "chip_structure": {
+          "score": 76.91,
+          "weight": 0.25,
+          "weighted_score": 19.23,
+          "turnover_rate": 11.55,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
           "has_true_resonance": true,
           "is_overcrowded": false,
           "is_solo_zone": false
@@ -1627,65 +1780,95 @@
   ],
   "lower_ranked_attributions": [
     {
-      "code": "603197",
-      "name": "保隆科技",
-      "sector": "汽车零部",
-      "quant_score": 62.55,
+      "code": "603626",
+      "name": "科森科技",
+      "sector": "消费电子",
+      "quant_score": 64.62,
       "rank": 9,
       "consecutive_boards": 2,
       "change_pct": 10.0,
       "factor_rejection_breakdown": {
-        "sector_resonance": {
-          "score": 30.0,
-          "weight": 0.25,
+        "seal_strength": {
+          "score": 24.2,
+          "weight": 0.15,
           "details": {
-            "sector_name": "汽车零部",
-            "sector_zt_count": 10,
-            "has_true_resonance": true,
-            "is_overcrowded": true,
-            "is_solo_zone": false
+            "seal_ratio": 0.0797,
+            "first_seal_time": "09:44:09"
           }
         }
       },
-      "why_not_in_topN": "保隆科技 综合得分 62.55 (排第 9 名)，主要扣分点：板块共振得分仅 30.0 (低于60门槛)。"
+      "why_not_in_topN": "科森科技 综合得分 64.62 (排第 9 名)，主要扣分点：封板强度得分仅 24.2 (低于60门槛)。"
     },
     {
-      "code": "600148",
-      "name": "长春一东",
-      "sector": "汽车零部",
-      "quant_score": 62.28,
+      "code": "002347",
+      "name": "泰尔股份",
+      "sector": "通用设备",
+      "quant_score": 64.56,
       "rank": 10,
-      "consecutive_boards": 2,
-      "change_pct": 10.01,
+      "consecutive_boards": 1,
+      "change_pct": 9.98,
       "factor_rejection_breakdown": {
-        "sector_resonance": {
-          "score": 30.0,
-          "weight": 0.25,
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
           "details": {
-            "sector_name": "汽车零部",
-            "sector_zt_count": 10,
-            "has_true_resonance": true,
-            "is_overcrowded": true,
-            "is_solo_zone": false
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "长春一东 综合得分 62.28 (排第 10 名)，主要扣分点：板块共振得分仅 30.0 (低于60门槛)。"
+      "why_not_in_topN": "泰尔股份 综合得分 64.56 (排第 10 名)，主要扣分点：连板阶梯得分仅 42.0 (低于60门槛)。"
     },
     {
-      "code": "600267",
-      "name": "海正药业",
-      "sector": "化学制药",
-      "quant_score": 59.23,
+      "code": "001323",
+      "name": "慕思股份",
+      "sector": "家居用品",
+      "quant_score": 63.09,
       "rank": 11,
+      "consecutive_boards": 2,
+      "change_pct": 10.0,
+      "factor_rejection_breakdown": {
+        "chip_structure": {
+          "score": 54.4,
+          "weight": 0.25,
+          "details": {
+            "turnover_rate": 1.87,
+            "high_60d_breakout": false,
+            "broken_count": 0
+          }
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "家居用品",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        }
+      },
+      "why_not_in_topN": "慕思股份 综合得分 63.09 (排第 11 名)，主要扣分点：筹码结构得分仅 54.4 (低于60门槛)；板块共振得分仅 55.0 (低于60门槛)。"
+    },
+    {
+      "code": "600661",
+      "name": "昂立教育",
+      "sector": "教育",
+      "quant_score": 62.31,
+      "rank": 12,
       "consecutive_boards": 1,
-      "change_pct": 10.04,
+      "change_pct": 10.0,
       "factor_rejection_breakdown": {
         "sector_resonance": {
           "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "化学制药",
+            "sector_name": "教育",
             "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
@@ -1699,75 +1882,32 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
+            "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "海正药业 综合得分 59.23 (排第 11 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "昂立教育 综合得分 62.31 (排第 12 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     },
     {
-      "code": "603330",
-      "name": "天洋新材",
-      "sector": "塑料",
-      "quant_score": 58.72,
-      "rank": 12,
-      "consecutive_boards": 1,
-      "change_pct": 10.04,
-      "factor_rejection_breakdown": {
-        "seal_strength": {
-          "score": 58.2,
-          "weight": 0.15,
-          "details": {
-            "seal_ratio": 0.2974,
-            "first_seal_time": "10:39:24"
-          }
-        },
-        "sector_resonance": {
-          "score": 58.0,
-          "weight": 0.25,
-          "details": {
-            "sector_name": "塑料",
-            "sector_zt_count": 4,
-            "has_true_resonance": false,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "consecutive_board_sentiment": {
-          "score": 42.0,
-          "weight": 0.35,
-          "details": {
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          }
-        }
-      },
-      "why_not_in_topN": "天洋新材 综合得分 58.72 (排第 12 名)，主要扣分点：封板强度得分仅 58.2 (低于60门槛)；板块共振得分仅 58.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
-    },
-    {
-      "code": "603693",
-      "name": "江苏新能",
-      "sector": "电力",
-      "quant_score": 56.71,
+      "code": "002835",
+      "name": "同为股份",
+      "sector": "计算机设",
+      "quant_score": 60.05,
       "rank": 13,
       "consecutive_boards": 1,
-      "change_pct": 10.0,
+      "change_pct": 10.02,
       "factor_rejection_breakdown": {
         "sector_resonance": {
-          "score": 58.0,
+          "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "电力",
-            "sector_zt_count": 3,
+            "sector_name": "计算机设",
+            "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
-            "is_solo_zone": false
+            "is_solo_zone": true
           }
         },
         "consecutive_board_sentiment": {
@@ -1777,249 +1917,249 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
+            "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "江苏新能 综合得分 56.71 (排第 13 名)，主要扣分点：板块共振得分仅 58.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "同为股份 综合得分 60.05 (排第 13 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     }
   ],
   "next_day_recommended_candidates": [
     {
-      "code": "003029",
-      "name": "吉大正元",
-      "price": 24.19,
-      "change_pct": 10.0,
-      "consecutive_boards": 3,
-      "sector": "软件开发",
-      "quant_score": 93.46,
-      "turnover_rate": 4.11,
-      "seal_ratio_pct": 115.02,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 93.46 (排第 1 名)。首次封板 09:25:00。所属板块：软件开发。",
-      "operation_guide": null
-    },
-    {
-      "code": "002724",
-      "name": "海洋王",
-      "price": 8.42,
-      "change_pct": 10.07,
-      "consecutive_boards": 2,
-      "sector": "照明设备",
-      "quant_score": 78.25,
-      "turnover_rate": 1.17,
-      "seal_ratio_pct": 212.77,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 78.25 (排第 2 名)。首次封板 09:25:00。所属板块：照明设备。",
-      "operation_guide": null
-    },
-    {
-      "code": "600860",
-      "name": "京城股份",
-      "price": 8.7,
-      "change_pct": 9.99,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "quant_score": 75.69,
-      "turnover_rate": 1.55,
-      "seal_ratio_pct": 89.2,
-      "first_seal_time": "09:25:01",
-      "recommend_reason": "综合量化得分 75.69 (排第 3 名)。首次封板 09:25:01。所属板块：通用设备。",
-      "operation_guide": null
-    },
-    {
       "code": "603278",
       "name": "大业股份",
-      "price": 10.9,
-      "change_pct": 9.99,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "quant_score": 70.08,
-      "turnover_rate": 14.04,
-      "seal_ratio_pct": 12.73,
-      "first_seal_time": "13:36:17",
-      "recommend_reason": "综合量化得分 70.08 (排第 4 名)。首次封板 13:36:17。所属板块：通用设备。",
-      "operation_guide": null
-    },
-    {
-      "code": "002889",
-      "name": "东方嘉盛",
-      "price": 15.74,
-      "change_pct": 9.99,
+      "price": 11.99,
+      "change_pct": 10.0,
       "consecutive_boards": 3,
-      "sector": "物流",
-      "quant_score": 70.03,
-      "turnover_rate": 20.48,
-      "seal_ratio_pct": 4.27,
-      "first_seal_time": "10:37:33",
-      "recommend_reason": "综合量化得分 70.03 (排第 5 名)。首次封板 10:37:33。所属板块：物流。",
+      "sector": "通用设备",
+      "quant_score": 84.63,
+      "turnover_rate": 2.47,
+      "seal_ratio_pct": 225.16,
+      "first_seal_time": "09:25:02",
+      "recommend_reason": "综合量化得分 84.63 (排第 1 名)。首次封板 09:25:02。所属板块：通用设备。",
       "operation_guide": null
     },
     {
       "code": "600178",
       "name": "东安动力",
-      "price": 11.28,
-      "change_pct": 10.05,
-      "consecutive_boards": 2,
+      "price": 12.41,
+      "change_pct": 10.02,
+      "consecutive_boards": 3,
       "sector": "汽车零部",
-      "quant_score": 65.11,
-      "turnover_rate": 3.36,
-      "seal_ratio_pct": 72.3,
-      "first_seal_time": "09:30:02",
-      "recommend_reason": "综合量化得分 65.11 (排第 6 名)。首次封板 09:30:02。所属板块：汽车零部。",
+      "quant_score": 77.36,
+      "turnover_rate": 1.62,
+      "seal_ratio_pct": 292.07,
+      "first_seal_time": "09:25:01",
+      "recommend_reason": "综合量化得分 77.36 (排第 2 名)。首次封板 09:25:01。所属板块：汽车零部。",
       "operation_guide": null
     },
     {
-      "code": "000576",
-      "name": "甘化科工",
-      "price": 9.65,
-      "change_pct": 10.03,
+      "code": "600860",
+      "name": "京城股份",
+      "price": 9.57,
+      "change_pct": 10.0,
+      "consecutive_boards": 3,
+      "sector": "通用设备",
+      "quant_score": 75.53,
+      "turnover_rate": 11.49,
+      "seal_ratio_pct": 12.07,
+      "first_seal_time": "09:30:41",
+      "recommend_reason": "综合量化得分 75.53 (排第 3 名)。首次封板 09:30:41。所属板块：通用设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "price": 9.26,
+      "change_pct": 9.98,
+      "consecutive_boards": 3,
+      "sector": "照明设备",
+      "quant_score": 74.87,
+      "turnover_rate": 10.85,
+      "seal_ratio_pct": 16.66,
+      "first_seal_time": "09:30:18",
+      "recommend_reason": "综合量化得分 74.87 (排第 4 名)。首次封板 09:30:18。所属板块：照明设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "003029",
+      "name": "吉大正元",
+      "price": 26.61,
+      "change_pct": 10.0,
+      "consecutive_boards": 4,
+      "sector": "软件开发",
+      "quant_score": 73.7,
+      "turnover_rate": 24.16,
+      "seal_ratio_pct": 9.92,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 73.7 (排第 5 名)。首次封板 09:25:00。所属板块：软件开发。",
+      "operation_guide": null
+    },
+    {
+      "code": "605488",
+      "name": "福莱新材",
+      "price": 30.99,
+      "change_pct": 10.01,
       "consecutive_boards": 2,
-      "sector": "地面兵装",
-      "quant_score": 64.3,
-      "turnover_rate": 13.42,
-      "seal_ratio_pct": 5.77,
-      "first_seal_time": "09:30:09",
-      "recommend_reason": "综合量化得分 64.3 (排第 7 名)。首次封板 09:30:09。所属板块：地面兵装。",
+      "sector": "塑料",
+      "quant_score": 66.56,
+      "turnover_rate": 1.61,
+      "seal_ratio_pct": 45.74,
+      "first_seal_time": "09:30:11",
+      "recommend_reason": "综合量化得分 66.56 (排第 6 名)。首次封板 09:30:11。所属板块：塑料。",
       "operation_guide": null
     },
     {
-      "code": "002164",
-      "name": "宁波东力",
-      "price": 14.69,
-      "change_pct": 10.04,
+      "code": "300466",
+      "name": "赛摩智能",
+      "price": 8.64,
+      "change_pct": 20.0,
       "consecutive_boards": 1,
       "sector": "通用设备",
-      "quant_score": 62.73,
-      "turnover_rate": 10.48,
-      "seal_ratio_pct": 13.46,
-      "first_seal_time": "13:35:06",
-      "recommend_reason": "综合量化得分 62.73 (排第 8 名)。首次封板 13:35:06。所属板块：通用设备。",
+      "quant_score": 66.24,
+      "turnover_rate": 7.84,
+      "seal_ratio_pct": 12.29,
+      "first_seal_time": "10:06:09",
+      "recommend_reason": "综合量化得分 66.24 (排第 7 名)。首次封板 10:06:09。所属板块：通用设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "603400",
+      "name": "华之杰",
+      "price": 42.46,
+      "change_pct": 10.0,
+      "consecutive_boards": 1,
+      "sector": "通用设备",
+      "quant_score": 65.08,
+      "turnover_rate": 11.55,
+      "seal_ratio_pct": 24.93,
+      "first_seal_time": "13:00:18",
+      "recommend_reason": "综合量化得分 65.08 (排第 8 名)。首次封板 13:00:18。所属板块：通用设备。",
       "operation_guide": null
     }
   ],
   "aug21_top4_evaluations": [
     {
-      "code": "003029",
-      "name": "吉大正元",
+      "code": "603278",
+      "name": "大业股份",
       "review_rank": 1,
-      "quant_score": 93.46,
+      "quant_score": 84.63,
       "consecutive_boards": 3,
-      "sector": "软件开发",
-      "price": 24.19,
+      "sector": "通用设备",
+      "price": 11.99,
       "change_pct": 10.0,
-      "amount": 174389363.0,
-      "float_market_cap": 4247353689.2200003,
-      "turnover_rate": 4.11,
-      "seal_amount": 200574989.0,
-      "seal_ratio_pct": 115.02,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "09:25:00",
+      "amount": 101347729.0,
+      "float_market_cap": 4097695110.08,
+      "turnover_rate": 2.47,
+      "seal_amount": 228198619.0,
+      "seal_ratio_pct": 225.16,
+      "first_seal_time": "09:25:02",
+      "last_seal_time": "09:25:02",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 93.46 (排名 1)",
-      "detailed_analysis": "综合量化打分 93.46 (排第 1 名)。首次封板 09:25:00。换手率 4.11%。软件开发 板块内 2 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 84.63 (排名 1)",
+      "detailed_analysis": "综合量化打分 84.63 (排第 1 名)。首次封板 09:25:02。换手率 2.47%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 100.0,
+          "score": 90.0,
           "weight": 0.35,
-          "weighted_score": 35.0,
+          "weighted_score": 31.5,
           "consecutive_boards": 3,
           "base_board_score": 90.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 12.0,
-          "is_spatial_leader": true
-        },
-        "seal_strength": {
-          "score": 92.73,
-          "weight": 0.15,
-          "weighted_score": 13.91,
-          "seal_ratio": 1.1502,
-          "first_seal_time": "09:25:00"
-        },
-        "chip_structure": {
-          "score": 83.2,
-          "weight": 0.25,
-          "weighted_score": 20.8,
-          "turnover_rate": 4.11,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 95.0,
-          "weight": 0.25,
-          "weighted_score": 23.75,
-          "sector_name": "软件开发",
-          "sector_zt_count": 2,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": true
-        }
-      }
-    },
-    {
-      "code": "002724",
-      "name": "海洋王",
-      "review_rank": 2,
-      "quant_score": 78.25,
-      "consecutive_boards": 2,
-      "sector": "照明设备",
-      "price": 8.42,
-      "change_pct": 10.07,
-      "amount": 55986576.0,
-      "float_market_cap": 4769747193.38,
-      "turnover_rate": 1.17,
-      "seal_amount": 119123322.0,
-      "seal_ratio_pct": 212.77,
-      "first_seal_time": "09:25:00",
-      "last_seal_time": "09:25:00",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 78.25 (排名 2)",
-      "detailed_analysis": "综合量化打分 78.25 (排第 2 名)。首次封板 09:25:00。换手率 1.17%。照明设备 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 96.36,
+          "score": 96.84,
           "weight": 0.15,
-          "weighted_score": 14.45,
-          "seal_ratio": 2.1277,
-          "first_seal_time": "09:25:00"
+          "weighted_score": 14.53,
+          "seal_ratio": 2.2516,
+          "first_seal_time": "09:25:02"
         },
         "chip_structure": {
           "score": 66.4,
           "weight": 0.25,
           "weighted_score": 16.6,
-          "turnover_rate": 1.17,
+          "turnover_rate": 2.47,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 95.0,
+          "score": 88.0,
           "weight": 0.25,
-          "weighted_score": 23.75,
-          "sector_name": "照明设备",
-          "sector_zt_count": 1,
+          "weighted_score": 22.0,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "600178",
+      "name": "东安动力",
+      "review_rank": 2,
+      "quant_score": 77.36,
+      "consecutive_boards": 3,
+      "sector": "汽车零部",
+      "price": 12.41,
+      "change_pct": 10.02,
+      "amount": 94031737.0,
+      "float_market_cap": 5788969158.01,
+      "turnover_rate": 1.62,
+      "seal_amount": 274642061.0,
+      "seal_ratio_pct": 292.07,
+      "first_seal_time": "09:25:01",
+      "last_seal_time": "09:25:01",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 77.36 (排名 2)",
+      "detailed_analysis": "综合量化打分 77.36 (排第 2 名)。首次封板 09:25:01。换手率 1.62%。汽车零部 板块内 3 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 98.42,
+          "weight": 0.15,
+          "weighted_score": 14.76,
+          "seal_ratio": 2.9207,
+          "first_seal_time": "09:25:01"
+        },
+        "chip_structure": {
+          "score": 66.4,
+          "weight": 0.25,
+          "weighted_score": 16.6,
+          "turnover_rate": 1.62,
+          "high_60d_breakout": true,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 58.0,
+          "weight": 0.25,
+          "weighted_score": 14.5,
+          "sector_name": "汽车零部",
+          "sector_zt_count": 3,
           "has_true_resonance": false,
           "is_overcrowded": false,
-          "is_solo_zone": true
+          "is_solo_zone": false
         }
       }
     },
@@ -2027,178 +2167,178 @@
       "code": "600860",
       "name": "京城股份",
       "review_rank": 3,
-      "quant_score": 75.69,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "price": 8.7,
-      "change_pct": 9.99,
-      "amount": 60002169.0,
-      "float_market_cap": 3863154855.6,
-      "turnover_rate": 1.55,
-      "seal_amount": 53520651.0,
-      "seal_ratio_pct": 89.2,
-      "first_seal_time": "09:25:01",
-      "last_seal_time": "09:25:01",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 75.69 (排名 3)",
-      "detailed_analysis": "综合量化打分 75.69 (排第 3 名)。首次封板 09:25:01。换手率 1.55%。通用设备 板块内 3 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 90.91,
-          "weight": 0.15,
-          "weighted_score": 13.64,
-          "seal_ratio": 0.892,
-          "first_seal_time": "09:25:01"
-        },
-        "chip_structure": {
-          "score": 66.4,
-          "weight": 0.25,
-          "weighted_score": 16.6,
-          "turnover_rate": 1.55,
-          "high_60d_breakout": true,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "通用设备",
-          "sector_zt_count": 3,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "603278",
-      "name": "大业股份",
-      "review_rank": 4,
-      "quant_score": 70.08,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "price": 10.9,
-      "change_pct": 9.99,
-      "amount": 488667520.0,
-      "float_market_cap": 3725177372.8,
-      "turnover_rate": 14.04,
-      "seal_amount": 62221560.0,
-      "seal_ratio_pct": 12.73,
-      "first_seal_time": "13:36:17",
-      "last_seal_time": "13:36:17",
-      "broken_count": 0,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 70.08 (排名 4)",
-      "detailed_analysis": "综合量化打分 70.08 (排第 4 名)。首次封板 13:36:17。换手率 14.04%。通用设备 板块内 3 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 40.0,
-          "weight": 0.15,
-          "weighted_score": 6.0,
-          "seal_ratio": 0.1273,
-          "first_seal_time": "13:36:17"
-        },
-        "chip_structure": {
-          "score": 74.52,
-          "weight": 0.25,
-          "weighted_score": 18.63,
-          "turnover_rate": 14.04,
-          "high_60d_breakout": false,
-          "broken_count": 0
-        },
-        "sector_resonance": {
-          "score": 88.0,
-          "weight": 0.25,
-          "weighted_score": 22.0,
-          "sector_name": "通用设备",
-          "sector_zt_count": 3,
-          "has_true_resonance": true,
-          "is_overcrowded": false,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "002889",
-      "name": "东方嘉盛",
-      "review_rank": 5,
-      "quant_score": 70.03,
+      "quant_score": 75.53,
       "consecutive_boards": 3,
-      "sector": "物流",
-      "price": 15.74,
-      "change_pct": 9.99,
-      "amount": 776661936.0,
-      "float_market_cap": 3955218879.96,
-      "turnover_rate": 20.48,
-      "seal_amount": 33135596.0,
-      "seal_ratio_pct": 4.27,
-      "first_seal_time": "10:37:33",
-      "last_seal_time": "13:26:03",
-      "broken_count": 1,
+      "sector": "通用设备",
+      "price": 9.57,
+      "change_pct": 10.0,
+      "amount": 482250064.0,
+      "float_market_cap": 4249470341.1600003,
+      "turnover_rate": 11.49,
+      "seal_amount": 58212558.0,
+      "seal_ratio_pct": 12.07,
+      "first_seal_time": "09:30:41",
+      "last_seal_time": "09:44:44",
+      "broken_count": 2,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 70.03 (排名 5)",
-      "detailed_analysis": "综合量化打分 70.03 (排第 5 名)。首次封板 10:37:33。换手率 20.48%。物流 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 75.53 (排名 3)",
+      "detailed_analysis": "综合量化打分 75.53 (排第 3 名)。首次封板 09:30:41。换手率 11.49%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 65.27,
+          "weight": 0.15,
+          "weighted_score": 9.79,
+          "seal_ratio": 0.1207,
+          "first_seal_time": "09:30:41"
+        },
+        "chip_structure": {
+          "score": 48.97,
+          "weight": 0.25,
+          "weighted_score": 12.24,
+          "turnover_rate": 11.49,
+          "high_60d_breakout": false,
+          "broken_count": 2
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "review_rank": 4,
+      "quant_score": 74.87,
+      "consecutive_boards": 3,
+      "sector": "照明设备",
+      "price": 9.26,
+      "change_pct": 9.98,
+      "amount": 561549280.0,
+      "float_market_cap": 5245588956.14,
+      "turnover_rate": 10.85,
+      "seal_amount": 93565818.0,
+      "seal_ratio_pct": 16.66,
+      "first_seal_time": "09:30:18",
+      "last_seal_time": "09:38:45",
+      "broken_count": 3,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 74.87 (排名 4)",
+      "detailed_analysis": "综合量化打分 74.87 (排第 4 名)。首次封板 09:30:18。换手率 10.85%。照明设备 板块内 3 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 90.0,
+          "weight": 0.35,
+          "weighted_score": 31.5,
+          "consecutive_boards": 3,
+          "base_board_score": 90.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 73.16,
+          "weight": 0.15,
+          "weighted_score": 10.97,
+          "seal_ratio": 0.1666,
+          "first_seal_time": "09:30:18"
+        },
+        "chip_structure": {
+          "score": 41.58,
+          "weight": 0.25,
+          "weighted_score": 10.39,
+          "turnover_rate": 10.85,
+          "high_60d_breakout": false,
+          "broken_count": 3
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "照明设备",
+          "sector_zt_count": 3,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "003029",
+      "name": "吉大正元",
+      "review_rank": 5,
+      "quant_score": 73.7,
+      "consecutive_boards": 4,
+      "sector": "软件开发",
+      "price": 26.61,
+      "change_pct": 10.0,
+      "amount": 1124024240.0,
+      "float_market_cap": 4672264641.18,
+      "turnover_rate": 24.16,
+      "seal_amount": 111538476.0,
+      "seal_ratio_pct": 9.92,
+      "first_seal_time": "09:25:00",
+      "last_seal_time": "09:57:30",
+      "broken_count": 4,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 73.7 (排名 5)",
+      "detailed_analysis": "综合量化打分 73.7 (排第 5 名)。首次封板 09:25:00。换手率 24.16%。软件开发 板块内 1 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 100.0,
           "weight": 0.35,
           "weighted_score": 35.0,
-          "consecutive_boards": 3,
-          "base_board_score": 90.0,
+          "consecutive_boards": 4,
+          "base_board_score": 84.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 12.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 18.0,
           "is_spatial_leader": true
         },
         "seal_strength": {
-          "score": 0.0,
+          "score": 63.68,
           "weight": 0.15,
-          "weighted_score": 0.0,
-          "seal_ratio": 0.0427,
-          "first_seal_time": "10:37:33"
+          "weighted_score": 9.55,
+          "seal_ratio": 0.0992,
+          "first_seal_time": "09:25:00"
         },
         "chip_structure": {
-          "score": 45.14,
+          "score": 21.61,
           "weight": 0.25,
-          "weighted_score": 11.29,
-          "turnover_rate": 20.48,
+          "weighted_score": 5.4,
+          "turnover_rate": 24.16,
           "high_60d_breakout": false,
-          "broken_count": 1
+          "broken_count": 4
         },
         "sector_resonance": {
           "score": 95.0,
           "weight": 0.25,
           "weighted_score": 23.75,
-          "sector_name": "物流",
+          "sector_name": "软件开发",
           "sector_zt_count": 1,
           "has_true_resonance": false,
           "is_overcrowded": false,
@@ -2207,120 +2347,59 @@
       }
     },
     {
-      "code": "600178",
-      "name": "东安动力",
+      "code": "605488",
+      "name": "福莱新材",
       "review_rank": 6,
-      "quant_score": 65.11,
+      "quant_score": 66.56,
       "consecutive_boards": 2,
-      "sector": "汽车零部",
-      "price": 11.28,
-      "change_pct": 10.05,
-      "amount": 176472126.0,
-      "float_market_cap": 5261851096.08,
-      "turnover_rate": 3.36,
-      "seal_amount": 127590336.0,
-      "seal_ratio_pct": 72.3,
-      "first_seal_time": "09:30:02",
-      "last_seal_time": "09:30:02",
+      "sector": "塑料",
+      "price": 30.99,
+      "change_pct": 10.01,
+      "amount": 147520127.0,
+      "float_market_cap": 9249853332.51,
+      "turnover_rate": 1.61,
+      "seal_amount": 67477006.0,
+      "seal_ratio_pct": 45.74,
+      "first_seal_time": "09:30:11",
+      "last_seal_time": "09:30:11",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 65.11 (排名 6)",
-      "detailed_analysis": "综合量化打分 65.11 (排第 6 名)。首次封板 09:30:02。换手率 3.36%。汽车零部 板块内 10 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 66.56 (排名 6)",
+      "detailed_analysis": "综合量化打分 66.56 (排第 6 名)。首次封板 09:30:11。换手率 1.61%。塑料 板块内 1 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
-          "score": 67.0,
+          "score": 64.0,
           "weight": 0.35,
-          "weighted_score": 23.45,
+          "weighted_score": 22.4,
           "consecutive_boards": 2,
           "base_board_score": 64.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 89.09,
+          "score": 92.1,
           "weight": 0.15,
-          "weighted_score": 13.36,
-          "seal_ratio": 0.723,
-          "first_seal_time": "09:30:02"
+          "weighted_score": 13.81,
+          "seal_ratio": 0.4574,
+          "first_seal_time": "09:30:11"
         },
         "chip_structure": {
-          "score": 83.2,
+          "score": 66.4,
           "weight": 0.25,
-          "weighted_score": 20.8,
-          "turnover_rate": 3.36,
+          "weighted_score": 16.6,
+          "turnover_rate": 1.61,
           "high_60d_breakout": true,
           "broken_count": 0
         },
         "sector_resonance": {
-          "score": 30.0,
+          "score": 55.0,
           "weight": 0.25,
-          "weighted_score": 7.5,
-          "sector_name": "汽车零部",
-          "sector_zt_count": 10,
-          "has_true_resonance": true,
-          "is_overcrowded": true,
-          "is_solo_zone": false
-        }
-      }
-    },
-    {
-      "code": "000576",
-      "name": "甘化科工",
-      "review_rank": 7,
-      "quant_score": 64.3,
-      "consecutive_boards": 2,
-      "sector": "地面兵装",
-      "price": 9.65,
-      "change_pct": 10.03,
-      "amount": 555184704.0,
-      "float_market_cap": 4186317268.65,
-      "turnover_rate": 13.42,
-      "seal_amount": 32047765.0,
-      "seal_ratio_pct": 5.77,
-      "first_seal_time": "09:30:09",
-      "last_seal_time": "09:50:57",
-      "broken_count": 1,
-      "institution_ratio_pct": null,
-      "data_source": "akshare",
-      "holding_status": null,
-      "evaluation_verdict": "综合量化得分 64.3 (排名 7)",
-      "detailed_analysis": "综合量化打分 64.3 (排第 7 名)。首次封板 09:30:09。换手率 13.42%。地面兵装 板块内 1 家涨停共振。情绪状态：震荡/分化期。",
-      "factor_breakdown": {
-        "consecutive_board_sentiment": {
-          "score": 67.0,
-          "weight": 0.35,
-          "weighted_score": 23.45,
-          "consecutive_boards": 2,
-          "base_board_score": 64.0,
-          "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
-          "sentiment_adjustment": 3.0,
-          "is_spatial_leader": false
-        },
-        "seal_strength": {
-          "score": 15.450000000000003,
-          "weight": 0.15,
-          "weighted_score": 2.32,
-          "seal_ratio": 0.0577,
-          "first_seal_time": "09:30:09"
-        },
-        "chip_structure": {
-          "score": 59.12,
-          "weight": 0.25,
-          "weighted_score": 14.78,
-          "turnover_rate": 13.42,
-          "high_60d_breakout": false,
-          "broken_count": 1
-        },
-        "sector_resonance": {
-          "score": 95.0,
-          "weight": 0.25,
-          "weighted_score": 23.75,
-          "sector_name": "地面兵装",
+          "weighted_score": 13.75,
+          "sector_name": "塑料",
           "sector_zt_count": 1,
           "has_true_resonance": false,
           "is_overcrowded": false,
@@ -2329,27 +2408,27 @@
       }
     },
     {
-      "code": "002164",
-      "name": "宁波东力",
-      "review_rank": 8,
-      "quant_score": 62.73,
+      "code": "300466",
+      "name": "赛摩智能",
+      "review_rank": 7,
+      "quant_score": 66.24,
       "consecutive_boards": 1,
       "sector": "通用设备",
-      "price": 14.69,
-      "change_pct": 10.04,
-      "amount": 715675584.0,
-      "float_market_cap": 7047896850.67,
-      "turnover_rate": 10.48,
-      "seal_amount": 96359055.0,
-      "seal_ratio_pct": 13.46,
-      "first_seal_time": "13:35:06",
-      "last_seal_time": "13:35:06",
+      "price": 8.64,
+      "change_pct": 20.0,
+      "amount": 295925072.0,
+      "float_market_cap": 3979072736.6400003,
+      "turnover_rate": 7.84,
+      "seal_amount": 36367488.0,
+      "seal_ratio_pct": 12.29,
+      "first_seal_time": "10:06:09",
+      "last_seal_time": "10:06:09",
       "broken_count": 0,
       "institution_ratio_pct": null,
       "data_source": "akshare",
       "holding_status": null,
-      "evaluation_verdict": "综合量化得分 62.73 (排名 8)",
-      "detailed_analysis": "综合量化打分 62.73 (排第 8 名)。首次封板 13:35:06。换手率 10.48%。通用设备 板块内 3 家涨停共振。情绪状态：震荡/分化期。",
+      "evaluation_verdict": "综合量化得分 66.24 (排名 7)",
+      "detailed_analysis": "综合量化打分 66.24 (排第 7 名)。首次封板 10:06:09。换手率 7.84%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
       "factor_breakdown": {
         "consecutive_board_sentiment": {
           "score": 42.0,
@@ -2358,22 +2437,22 @@
           "consecutive_boards": 1,
           "base_board_score": 42.0,
           "decay_factor": 1.0,
-          "sentiment_state": "震荡/分化期",
+          "sentiment_state": "主升/强势期",
           "sentiment_adjustment": 0.0,
           "is_spatial_leader": false
         },
         "seal_strength": {
-          "score": 43.63,
+          "score": 58.84,
           "weight": 0.15,
-          "weighted_score": 6.54,
-          "seal_ratio": 0.1346,
-          "first_seal_time": "13:35:06"
+          "weighted_score": 8.83,
+          "seal_ratio": 0.1229,
+          "first_seal_time": "10:06:09"
         },
         "chip_structure": {
-          "score": 77.94,
+          "score": 82.87,
           "weight": 0.25,
-          "weighted_score": 19.48,
-          "turnover_rate": 10.48,
+          "weighted_score": 20.72,
+          "turnover_rate": 7.84,
           "high_60d_breakout": false,
           "broken_count": 0
         },
@@ -2382,7 +2461,68 @@
           "weight": 0.25,
           "weighted_score": 22.0,
           "sector_name": "通用设备",
-          "sector_zt_count": 3,
+          "sector_zt_count": 6,
+          "has_true_resonance": true,
+          "is_overcrowded": false,
+          "is_solo_zone": false
+        }
+      }
+    },
+    {
+      "code": "603400",
+      "name": "华之杰",
+      "review_rank": 8,
+      "quant_score": 65.08,
+      "consecutive_boards": 1,
+      "sector": "通用设备",
+      "price": 42.46,
+      "change_pct": 10.0,
+      "amount": 170566767.0,
+      "float_market_cap": 1538328984.5,
+      "turnover_rate": 11.55,
+      "seal_amount": 42514815.0,
+      "seal_ratio_pct": 24.93,
+      "first_seal_time": "13:00:18",
+      "last_seal_time": "13:00:18",
+      "broken_count": 0,
+      "institution_ratio_pct": null,
+      "data_source": "akshare",
+      "holding_status": null,
+      "evaluation_verdict": "综合量化得分 65.08 (排名 8)",
+      "detailed_analysis": "综合量化打分 65.08 (排第 8 名)。首次封板 13:00:18。换手率 11.55%。通用设备 板块内 6 家涨停共振。情绪状态：主升/强势期。",
+      "factor_breakdown": {
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
+          "weighted_score": 14.7,
+          "consecutive_boards": 1,
+          "base_board_score": 42.0,
+          "decay_factor": 1.0,
+          "sentiment_state": "主升/强势期",
+          "sentiment_adjustment": 0.0,
+          "is_spatial_leader": false
+        },
+        "seal_strength": {
+          "score": 61.05,
+          "weight": 0.15,
+          "weighted_score": 9.16,
+          "seal_ratio": 0.2493,
+          "first_seal_time": "13:00:18"
+        },
+        "chip_structure": {
+          "score": 76.91,
+          "weight": 0.25,
+          "weighted_score": 19.23,
+          "turnover_rate": 11.55,
+          "high_60d_breakout": false,
+          "broken_count": 0
+        },
+        "sector_resonance": {
+          "score": 88.0,
+          "weight": 0.25,
+          "weighted_score": 22.0,
+          "sector_name": "通用设备",
+          "sector_zt_count": 6,
           "has_true_resonance": true,
           "is_overcrowded": false,
           "is_solo_zone": false
@@ -2392,65 +2532,95 @@
   ],
   "aug24_consecutive_board_attributions": [
     {
-      "code": "603197",
-      "name": "保隆科技",
-      "sector": "汽车零部",
-      "quant_score": 62.55,
+      "code": "603626",
+      "name": "科森科技",
+      "sector": "消费电子",
+      "quant_score": 64.62,
       "rank": 9,
       "consecutive_boards": 2,
       "change_pct": 10.0,
       "factor_rejection_breakdown": {
-        "sector_resonance": {
-          "score": 30.0,
-          "weight": 0.25,
+        "seal_strength": {
+          "score": 24.2,
+          "weight": 0.15,
           "details": {
-            "sector_name": "汽车零部",
-            "sector_zt_count": 10,
-            "has_true_resonance": true,
-            "is_overcrowded": true,
-            "is_solo_zone": false
+            "seal_ratio": 0.0797,
+            "first_seal_time": "09:44:09"
           }
         }
       },
-      "why_not_in_topN": "保隆科技 综合得分 62.55 (排第 9 名)，主要扣分点：板块共振得分仅 30.0 (低于60门槛)。"
+      "why_not_in_topN": "科森科技 综合得分 64.62 (排第 9 名)，主要扣分点：封板强度得分仅 24.2 (低于60门槛)。"
     },
     {
-      "code": "600148",
-      "name": "长春一东",
-      "sector": "汽车零部",
-      "quant_score": 62.28,
+      "code": "002347",
+      "name": "泰尔股份",
+      "sector": "通用设备",
+      "quant_score": 64.56,
       "rank": 10,
-      "consecutive_boards": 2,
-      "change_pct": 10.01,
+      "consecutive_boards": 1,
+      "change_pct": 9.98,
       "factor_rejection_breakdown": {
-        "sector_resonance": {
-          "score": 30.0,
-          "weight": 0.25,
+        "consecutive_board_sentiment": {
+          "score": 42.0,
+          "weight": 0.35,
           "details": {
-            "sector_name": "汽车零部",
-            "sector_zt_count": 10,
-            "has_true_resonance": true,
-            "is_overcrowded": true,
-            "is_solo_zone": false
+            "consecutive_boards": 1,
+            "base_board_score": 42.0,
+            "decay_factor": 1.0,
+            "sentiment_state": "主升/强势期",
+            "sentiment_adjustment": 0.0,
+            "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "长春一东 综合得分 62.28 (排第 10 名)，主要扣分点：板块共振得分仅 30.0 (低于60门槛)。"
+      "why_not_in_topN": "泰尔股份 综合得分 64.56 (排第 10 名)，主要扣分点：连板阶梯得分仅 42.0 (低于60门槛)。"
     },
     {
-      "code": "600267",
-      "name": "海正药业",
-      "sector": "化学制药",
-      "quant_score": 59.23,
+      "code": "001323",
+      "name": "慕思股份",
+      "sector": "家居用品",
+      "quant_score": 63.09,
       "rank": 11,
+      "consecutive_boards": 2,
+      "change_pct": 10.0,
+      "factor_rejection_breakdown": {
+        "chip_structure": {
+          "score": 54.4,
+          "weight": 0.25,
+          "details": {
+            "turnover_rate": 1.87,
+            "high_60d_breakout": false,
+            "broken_count": 0
+          }
+        },
+        "sector_resonance": {
+          "score": 55.0,
+          "weight": 0.25,
+          "details": {
+            "sector_name": "家居用品",
+            "sector_zt_count": 1,
+            "has_true_resonance": false,
+            "is_overcrowded": false,
+            "is_solo_zone": true
+          }
+        }
+      },
+      "why_not_in_topN": "慕思股份 综合得分 63.09 (排第 11 名)，主要扣分点：筹码结构得分仅 54.4 (低于60门槛)；板块共振得分仅 55.0 (低于60门槛)。"
+    },
+    {
+      "code": "600661",
+      "name": "昂立教育",
+      "sector": "教育",
+      "quant_score": 62.31,
+      "rank": 12,
       "consecutive_boards": 1,
-      "change_pct": 10.04,
+      "change_pct": 10.0,
       "factor_rejection_breakdown": {
         "sector_resonance": {
           "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "化学制药",
+            "sector_name": "教育",
             "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
@@ -2464,75 +2634,32 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
+            "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "海正药业 综合得分 59.23 (排第 11 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "昂立教育 综合得分 62.31 (排第 12 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     },
     {
-      "code": "603330",
-      "name": "天洋新材",
-      "sector": "塑料",
-      "quant_score": 58.72,
-      "rank": 12,
-      "consecutive_boards": 1,
-      "change_pct": 10.04,
-      "factor_rejection_breakdown": {
-        "seal_strength": {
-          "score": 58.2,
-          "weight": 0.15,
-          "details": {
-            "seal_ratio": 0.2974,
-            "first_seal_time": "10:39:24"
-          }
-        },
-        "sector_resonance": {
-          "score": 58.0,
-          "weight": 0.25,
-          "details": {
-            "sector_name": "塑料",
-            "sector_zt_count": 4,
-            "has_true_resonance": false,
-            "is_overcrowded": false,
-            "is_solo_zone": false
-          }
-        },
-        "consecutive_board_sentiment": {
-          "score": 42.0,
-          "weight": 0.35,
-          "details": {
-            "consecutive_boards": 1,
-            "base_board_score": 42.0,
-            "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
-            "sentiment_adjustment": 0.0,
-            "is_spatial_leader": false
-          }
-        }
-      },
-      "why_not_in_topN": "天洋新材 综合得分 58.72 (排第 12 名)，主要扣分点：封板强度得分仅 58.2 (低于60门槛)；板块共振得分仅 58.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
-    },
-    {
-      "code": "603693",
-      "name": "江苏新能",
-      "sector": "电力",
-      "quant_score": 56.71,
+      "code": "002835",
+      "name": "同为股份",
+      "sector": "计算机设",
+      "quant_score": 60.05,
       "rank": 13,
       "consecutive_boards": 1,
-      "change_pct": 10.0,
+      "change_pct": 10.02,
       "factor_rejection_breakdown": {
         "sector_resonance": {
-          "score": 58.0,
+          "score": 55.0,
           "weight": 0.25,
           "details": {
-            "sector_name": "电力",
-            "sector_zt_count": 3,
+            "sector_name": "计算机设",
+            "sector_zt_count": 1,
             "has_true_resonance": false,
             "is_overcrowded": false,
-            "is_solo_zone": false
+            "is_solo_zone": true
           }
         },
         "consecutive_board_sentiment": {
@@ -2542,126 +2669,126 @@
             "consecutive_boards": 1,
             "base_board_score": 42.0,
             "decay_factor": 1.0,
-            "sentiment_state": "震荡/分化期",
+            "sentiment_state": "主升/强势期",
             "sentiment_adjustment": 0.0,
             "is_spatial_leader": false
           }
         }
       },
-      "why_not_in_topN": "江苏新能 综合得分 56.71 (排第 13 名)，主要扣分点：板块共振得分仅 58.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
+      "why_not_in_topN": "同为股份 综合得分 60.05 (排第 13 名)，主要扣分点：板块共振得分仅 55.0 (低于60门槛)；连板阶梯得分仅 42.0 (低于60门槛)。"
     }
   ],
   "aug25_recommended_candidates": [
     {
-      "code": "003029",
-      "name": "吉大正元",
-      "price": 24.19,
-      "change_pct": 10.0,
-      "consecutive_boards": 3,
-      "sector": "软件开发",
-      "quant_score": 93.46,
-      "turnover_rate": 4.11,
-      "seal_ratio_pct": 115.02,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 93.46 (排第 1 名)。首次封板 09:25:00。所属板块：软件开发。",
-      "operation_guide": null
-    },
-    {
-      "code": "002724",
-      "name": "海洋王",
-      "price": 8.42,
-      "change_pct": 10.07,
-      "consecutive_boards": 2,
-      "sector": "照明设备",
-      "quant_score": 78.25,
-      "turnover_rate": 1.17,
-      "seal_ratio_pct": 212.77,
-      "first_seal_time": "09:25:00",
-      "recommend_reason": "综合量化得分 78.25 (排第 2 名)。首次封板 09:25:00。所属板块：照明设备。",
-      "operation_guide": null
-    },
-    {
-      "code": "600860",
-      "name": "京城股份",
-      "price": 8.7,
-      "change_pct": 9.99,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "quant_score": 75.69,
-      "turnover_rate": 1.55,
-      "seal_ratio_pct": 89.2,
-      "first_seal_time": "09:25:01",
-      "recommend_reason": "综合量化得分 75.69 (排第 3 名)。首次封板 09:25:01。所属板块：通用设备。",
-      "operation_guide": null
-    },
-    {
       "code": "603278",
       "name": "大业股份",
-      "price": 10.9,
-      "change_pct": 9.99,
-      "consecutive_boards": 2,
-      "sector": "通用设备",
-      "quant_score": 70.08,
-      "turnover_rate": 14.04,
-      "seal_ratio_pct": 12.73,
-      "first_seal_time": "13:36:17",
-      "recommend_reason": "综合量化得分 70.08 (排第 4 名)。首次封板 13:36:17。所属板块：通用设备。",
-      "operation_guide": null
-    },
-    {
-      "code": "002889",
-      "name": "东方嘉盛",
-      "price": 15.74,
-      "change_pct": 9.99,
+      "price": 11.99,
+      "change_pct": 10.0,
       "consecutive_boards": 3,
-      "sector": "物流",
-      "quant_score": 70.03,
-      "turnover_rate": 20.48,
-      "seal_ratio_pct": 4.27,
-      "first_seal_time": "10:37:33",
-      "recommend_reason": "综合量化得分 70.03 (排第 5 名)。首次封板 10:37:33。所属板块：物流。",
+      "sector": "通用设备",
+      "quant_score": 84.63,
+      "turnover_rate": 2.47,
+      "seal_ratio_pct": 225.16,
+      "first_seal_time": "09:25:02",
+      "recommend_reason": "综合量化得分 84.63 (排第 1 名)。首次封板 09:25:02。所属板块：通用设备。",
       "operation_guide": null
     },
     {
       "code": "600178",
       "name": "东安动力",
-      "price": 11.28,
-      "change_pct": 10.05,
-      "consecutive_boards": 2,
+      "price": 12.41,
+      "change_pct": 10.02,
+      "consecutive_boards": 3,
       "sector": "汽车零部",
-      "quant_score": 65.11,
-      "turnover_rate": 3.36,
-      "seal_ratio_pct": 72.3,
-      "first_seal_time": "09:30:02",
-      "recommend_reason": "综合量化得分 65.11 (排第 6 名)。首次封板 09:30:02。所属板块：汽车零部。",
+      "quant_score": 77.36,
+      "turnover_rate": 1.62,
+      "seal_ratio_pct": 292.07,
+      "first_seal_time": "09:25:01",
+      "recommend_reason": "综合量化得分 77.36 (排第 2 名)。首次封板 09:25:01。所属板块：汽车零部。",
       "operation_guide": null
     },
     {
-      "code": "000576",
-      "name": "甘化科工",
-      "price": 9.65,
-      "change_pct": 10.03,
+      "code": "600860",
+      "name": "京城股份",
+      "price": 9.57,
+      "change_pct": 10.0,
+      "consecutive_boards": 3,
+      "sector": "通用设备",
+      "quant_score": 75.53,
+      "turnover_rate": 11.49,
+      "seal_ratio_pct": 12.07,
+      "first_seal_time": "09:30:41",
+      "recommend_reason": "综合量化得分 75.53 (排第 3 名)。首次封板 09:30:41。所属板块：通用设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "price": 9.26,
+      "change_pct": 9.98,
+      "consecutive_boards": 3,
+      "sector": "照明设备",
+      "quant_score": 74.87,
+      "turnover_rate": 10.85,
+      "seal_ratio_pct": 16.66,
+      "first_seal_time": "09:30:18",
+      "recommend_reason": "综合量化得分 74.87 (排第 4 名)。首次封板 09:30:18。所属板块：照明设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "003029",
+      "name": "吉大正元",
+      "price": 26.61,
+      "change_pct": 10.0,
+      "consecutive_boards": 4,
+      "sector": "软件开发",
+      "quant_score": 73.7,
+      "turnover_rate": 24.16,
+      "seal_ratio_pct": 9.92,
+      "first_seal_time": "09:25:00",
+      "recommend_reason": "综合量化得分 73.7 (排第 5 名)。首次封板 09:25:00。所属板块：软件开发。",
+      "operation_guide": null
+    },
+    {
+      "code": "605488",
+      "name": "福莱新材",
+      "price": 30.99,
+      "change_pct": 10.01,
       "consecutive_boards": 2,
-      "sector": "地面兵装",
-      "quant_score": 64.3,
-      "turnover_rate": 13.42,
-      "seal_ratio_pct": 5.77,
-      "first_seal_time": "09:30:09",
-      "recommend_reason": "综合量化得分 64.3 (排第 7 名)。首次封板 09:30:09。所属板块：地面兵装。",
+      "sector": "塑料",
+      "quant_score": 66.56,
+      "turnover_rate": 1.61,
+      "seal_ratio_pct": 45.74,
+      "first_seal_time": "09:30:11",
+      "recommend_reason": "综合量化得分 66.56 (排第 6 名)。首次封板 09:30:11。所属板块：塑料。",
       "operation_guide": null
     },
     {
-      "code": "002164",
-      "name": "宁波东力",
-      "price": 14.69,
-      "change_pct": 10.04,
+      "code": "300466",
+      "name": "赛摩智能",
+      "price": 8.64,
+      "change_pct": 20.0,
       "consecutive_boards": 1,
       "sector": "通用设备",
-      "quant_score": 62.73,
-      "turnover_rate": 10.48,
-      "seal_ratio_pct": 13.46,
-      "first_seal_time": "13:35:06",
-      "recommend_reason": "综合量化得分 62.73 (排第 8 名)。首次封板 13:35:06。所属板块：通用设备。",
+      "quant_score": 66.24,
+      "turnover_rate": 7.84,
+      "seal_ratio_pct": 12.29,
+      "first_seal_time": "10:06:09",
+      "recommend_reason": "综合量化得分 66.24 (排第 7 名)。首次封板 10:06:09。所属板块：通用设备。",
+      "operation_guide": null
+    },
+    {
+      "code": "603400",
+      "name": "华之杰",
+      "price": 42.46,
+      "change_pct": 10.0,
+      "consecutive_boards": 1,
+      "sector": "通用设备",
+      "quant_score": 65.08,
+      "turnover_rate": 11.55,
+      "seal_ratio_pct": 24.93,
+      "first_seal_time": "13:00:18",
+      "recommend_reason": "综合量化得分 65.08 (排第 8 名)。首次封板 13:00:18。所属板块：通用设备。",
       "operation_guide": null
     }
   ]

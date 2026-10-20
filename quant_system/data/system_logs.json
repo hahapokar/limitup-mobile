@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-11 18:31:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-11",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:02",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 47.75 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:02",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-11",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:03",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 40 limit-up stocks via [AkShare] for 2026-09-11",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:04",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 40 -> 31 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:04",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:04",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-11): 市场情绪状态: [震荡/分化期]，共分析 40 只涨停标的，排雷筛选后推荐 Top 8:\n瑞尔特(002790, 92.91分), 闽东电力(000993, 80.91分), 中新赛克(002912, 70.87分), 杭州热电(605011, 66.71分), 凯盛新能(600876, 66.01分), 正和生态(605069, 65.81分), 冠盛股份(605088, 61.41分), 远望谷(002161, 61.37分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:04",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-11 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:04",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-11 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-11 18:31:04",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-11 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-14 18:30:54",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-14",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-14 18:30:56",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-19 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:44",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-20",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:46",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-10-20",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:46",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-20 (Prev: 2026-10-19)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:49",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 86.25 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:49",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-20",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:50",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 54 -> 39 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:50",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:50",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-20): 市场情绪状态: [主升/强势期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 8:\n大业股份(603278, 84.63分), 东安动力(600178, 77.36分), 京城股份(600860, 75.53分), 海洋王(002724, 74.87分), 吉大正元(003029, 73.7分), 福莱新材(605488, 66.56分), 赛摩智能(300466, 66.24分), 华之杰(603400, 65.08分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:50",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-20 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:50",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-20 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-20 18:30:50",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-20 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
