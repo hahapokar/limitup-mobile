@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-15 18:31:07",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-15 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-15 18:31:07",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-15 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-15 18:31:07",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-15 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:30:54",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:30:56",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 89 limit-up stocks via [AkShare] for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:30:56",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-16 (Prev: 2026-09-15)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:30:57",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 89 limit-up stocks via [AkShare] for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:30:59",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 92.5 (极度狂热), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:30:59",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:31:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 89 limit-up stocks via [AkShare] for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:31:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 89 -> 61 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-16 18:31:01",
     "level": "INFO",
     "category": "Scoring",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-22 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:30:58",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:30:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 82 limit-up stocks via [AkShare] for 2026-10-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:00",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-23 (Prev: 2026-10-22)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:02",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 91.0 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-23",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 82 -> 53 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:03",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-23): 市场情绪状态: [主升/强势期]，共分析 82 只涨停标的，排雷筛选后推荐 Top 8:\n上海九百(600838, 91.09分), 赛福天(603028, 75.83分), 正裕工业(603089, 74.31分), 南方路机(603280, 71.43分), 睿能科技(603933, 67.4分), 百大集团(600865, 64.19分), 山东威达(002026, 63.72分), 海辰药业(300584, 61.1分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:03",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-23 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:03",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-23 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-23 18:31:03",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-23 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
