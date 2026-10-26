@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-16 18:31:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:31:01",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-16): 市场情绪状态: [主升/强势期]，共分析 89 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 77.79分), 英联股份(002846, 77.17分), 华瓷股份(001216, 77.02分), 西陇科学(002584, 72.98分), 德尔未来(002631, 72.42分), 华脉科技(603042, 71.3分), 中晶科技(003026, 70.5分), 露笑科技(002617, 69.28分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:31:01",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-16 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:31:01",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-16 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-16 18:31:01",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-16 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 00:58:00",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 00:58:01",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 89 limit-up stocks via [AkShare] for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 00:58:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 89 -> 61 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 00:58:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 00:58:01",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-16): 市场情绪状态: [主升/强势期]，共分析 89 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 78.57分), 华瓷股份(001216, 76.0分), 英联股份(002846, 75.35分), 德尔未来(002631, 70.72分), 华脉科技(603042, 70.5分), 中晶科技(003026, 70.07分), 西陇科学(002584, 69.54分), 露笑科技(002617, 68.61分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:30:51",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-17",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-17 18:30:53",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-23 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:30:55",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:30:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 55 limit-up stocks via [AkShare] for 2026-10-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:30:58",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-26 (Prev: 2026-10-23)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:01",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 58.5 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-26",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 55 -> 43 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:02",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-26): 市场情绪状态: [震荡/分化期]，共分析 55 只涨停标的，排雷筛选后推荐 Top 8:\n多伦科技(603528, 86.64分), 上海九百(600838, 86.51分), 赛福天(603028, 85.1分), 正裕工业(603089, 77.5分), 大西洋(600558, 70.79分), 和泰机电(001225, 69.8分), 福莱新材(605488, 69.61分), 北矿科技(600980, 67.44分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:02",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-26 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:02",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-26 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-26 18:31:02",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-26 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
