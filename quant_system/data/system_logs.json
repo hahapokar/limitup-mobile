@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-17 18:30:53",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-09-17",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:30:54",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-17 (Prev: 2026-09-16)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:30:55",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-09-17",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:30:59",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 73.0 (偏暖积极), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:30:59",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-17",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:31:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-09-17",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:31:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 47 -> 31 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:31:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:31:01",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-17): 市场情绪状态: [主升/强势期]，共分析 47 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 75.31分), 中晶科技(003026, 73.05分), 华瓷股份(001216, 71.5分), 内蒙新华(603230, 67.45分), 锡华科技(603248, 65.75分), 新宏泽(002836, 62.45分), 共达电声(002655, 62.33分), 大连圣亚(600593, 60.87分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:31:01",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-17 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-17 18:31:01",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-17 post-market review generated from real data files",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-17 18:31:01",
     "level": "INFO",
     "category": "Iteration",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-26 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:30:58",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:00",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 41 limit-up stocks via [AkShare] for 2026-10-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:01",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-27 (Prev: 2026-10-26)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:04",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 52.25 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:04",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-27",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:05",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 41 -> 31 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:05",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:05",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-27): 市场情绪状态: [震荡/分化期]，共分析 41 只涨停标的，排雷筛选后推荐 Top 8:\n上海九百(600838, 91.7分), 多伦科技(603528, 80.66分), 赛福天(603028, 77.53分), 深赛格(000058, 68.3分), 青岛食品(001219, 66.53分), 光洋股份(002708, 66.45分), 桂发祥(002820, 63.57分), 广百股份(002187, 63.13分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:05",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-27 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:05",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-27 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-27 18:31:05",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-27 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
