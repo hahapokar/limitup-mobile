@@ -1,0 +1,11 @@
+{
+  "trade_date": "2026-10-29",
+  "up_count": 756,
+  "down_count": 4400,
+  "flat_count": 60,
+  "limit_up_count": 34,
+  "limit_down_count": 50,
+  "market_activity_pct": 14.47,
+  "advance_ratio": 14.49,
+  "data_source": "akshare_legu"
+}

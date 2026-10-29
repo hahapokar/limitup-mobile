@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-18 18:31:03",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-18 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-18 18:31:03",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-18 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-18 18:31:03",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-18 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:49:46",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "APScheduler daemon activated with 7 daily lifecycle jobs.",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:50:02",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:50:06",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-21. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:50:06",
-    "level": "WARNING",
-    "category": "Scheduler",
-    "message": "Manual review: limit-up pool fetch failed: All 4 data sources failed to fetch limit-up pool for date 2026-09-21. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:50:06",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-21 (Prev: 2026-09-18)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:50:08",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-21. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:53:43",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-21",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:53:50",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-21. Errors: ",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-21 08:53:50",
     "level": "WARNING",
     "category": "Scheduler",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-28 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:30:55",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-29",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:30:58",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 39 limit-up stocks via [AkShare] for 2026-10-29",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:30:58",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-29 (Prev: 2026-10-28)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 34.5 (冰点低迷), Target Position Limit: 35%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-29",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 39 -> 30 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '退潮/弱势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-29): 市场情绪状态: [退潮/弱势期]，共分析 39 只涨停标的，排雷筛选后推荐 Top 8:\n上海沪工(603131, 77.93分), 东贝集团(601956, 75.73分), 龙溪股份(600592, 74.14分), 青岛食品(001219, 73.94分), 实丰文化(002862, 71.25分), 联明股份(603006, 70.32分), 盛洋科技(603703, 68.13分), 福建金森(002679, 67.68分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-29 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-29 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-29 18:31:01",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-29 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
