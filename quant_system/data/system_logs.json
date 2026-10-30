@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-21 08:53:50",
-    "level": "WARNING",
-    "category": "Scheduler",
-    "message": "Manual review: limit-up pool fetch failed: All 4 data sources failed to fetch limit-up pool for date 2026-09-21. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:53:50",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-21 (Prev: 2026-09-18)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:53:52",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-21. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:54:17",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:54:21",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 89 limit-up stocks via [AkShare] for 2026-09-16",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:54:23",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 89 -> 61 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:54:23",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:54:23",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-16): 市场情绪状态: [主升/强势期]，共分析 89 只涨停标的，排雷筛选后推荐 Top 8:\n澳弘电子(605058, 78.97分), 华瓷股份(001216, 76.0分), 英联股份(002846, 75.22分), 德尔未来(002631, 71.06分), 华脉科技(603042, 70.02分), 露笑科技(002617, 68.97分), 中晶科技(003026, 68.82分), 西陇科学(002584, 68.23分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:55:14",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-18",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:55:16",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 78 limit-up stocks via [AkShare] for 2026-09-18",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 08:55:18",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 78 -> 57 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-21 08:55:18",
     "level": "INFO",
     "category": "Scoring",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-10-29 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:30:55",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-30",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:30:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 47 limit-up stocks via [AkShare] for 2026-10-30",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:30:58",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-10-30 (Prev: 2026-10-29)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:01",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 35.75 (冰点低迷), Target Position Limit: 35%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-10-30",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 47 -> 30 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '退潮/弱势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:02",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-30): 市场情绪状态: [退潮/弱势期]，共分析 47 只涨停标的，排雷筛选后推荐 Top 8:\n传智教育(003032, 77.0分), 盛洋科技(603703, 71.25分), 上海沪工(603131, 70.24分), 桂林三金(002275, 69.66分), 黑芝麻(000716, 69.28分), 永安药业(002365, 67.13分), 天鹅股份(603029, 66.2分), 欧圣电气(301187, 65.89分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:02",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-10-30 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:02",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-10-30 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-10-30 18:31:02",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-10-30 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
