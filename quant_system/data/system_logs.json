@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-21 09:02:20",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 78 limit-up stocks via [AkShare] for 2026-09-18",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:22",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 92.25 (极度狂热), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:22",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-18",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:23",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 78 limit-up stocks via [AkShare] for 2026-09-18",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:24",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 78 -> 57 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:24",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:24",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-18): 市场情绪状态: [主升/强势期]，共分析 78 只涨停标的，排雷筛选后推荐 Top 8:\n华瓷股份(001216, 85.8分), 锡华科技(603248, 76.92分), 龙头股份(600630, 73.67分), 双枪科技(001211, 73.29分), 南华生物(000504, 69.89分), 新宏泽(002836, 67.47分), 百通能源(001376, 66.43分), 福龙马(603686, 65.94分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:24",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-18 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:24",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-21 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 09:02:24",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-18 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-21 18:30:54",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-21",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-21 18:31:46",
     "level": "INFO",
     "category": "DataFetcher",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-02 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:50",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-03",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:53",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 48 limit-up stocks via [AkShare] for 2026-11-03",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:54",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-03 (Prev: 2026-11-02)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:57",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 50.0 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:57",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-03",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:58",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 48 -> 30 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:58",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:58",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-03): 市场情绪状态: [震荡/分化期]，共分析 48 只涨停标的，排雷筛选后推荐 Top 8:\n皇台酒业(000995, 86.54分), 七匹狼(002029, 78.23分), 龙版传媒(605577, 68.8分), 龙头股份(600630, 65.11分), 奥飞娱乐(002292, 63.88分), 紫竹高科(002058, 62.16分), 九牧王(601566, 61.75分), 均瑶健康(605388, 59.43分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:58",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-03 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:58",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-03 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-03 18:30:58",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-03 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
