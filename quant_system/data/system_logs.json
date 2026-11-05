@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-21 18:32:00",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-21 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:30:54",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-22",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:30:56",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-22",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:30:57",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-22 (Prev: 2026-09-21)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:30:58",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-22",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:01",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 82.75 (极度狂热), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:01",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-22",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:02",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 63 limit-up stocks via [AkShare] for 2026-09-22",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:03",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 63 -> 40 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:03",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:03",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-22): 市场情绪状态: [主升/强势期]，共分析 63 只涨停标的，排雷筛选后推荐 Top 8:\n新华文轩(601811, 84.41分), 新华传媒(600825, 76.0分), 南华生物(000504, 74.29分), 大亚圣象(000910, 74.01分), 泰慕士(001234, 71.03分), 华瓷股份(001216, 70.17分), 内蒙新华(603230, 69.58分), 奥佳华(002614, 66.6分)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-22 18:31:03",
     "level": "INFO",
     "category": "Scheduler",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-04 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:30:55",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-05",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:30:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 84 limit-up stocks via [AkShare] for 2026-11-05",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:30:57",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-05 (Prev: 2026-11-04)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:30:59",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 97.5 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:30:59",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-05",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 84 -> 50 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:31:00",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-05): 市场情绪状态: [主升/强势期]，共分析 84 只涨停标的，排雷筛选后推荐 Top 8:\n南矿集团(001360, 75.63分), 海源复材(002529, 74.73分), 引力传媒(603598, 74.71分), 永臻股份(603381, 70.6分), 顺钠股份(000533, 70.48分), 鲁阳节能(002088, 69.55分), 深中华A(000017, 67.57分), 中邮科技(688648, 64.22分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:31:00",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-05 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:31:00",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-05 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-05 18:31:00",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-05 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
