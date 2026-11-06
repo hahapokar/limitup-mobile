@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-22 18:31:03",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-22 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:03",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-22 post-market review generated from real data files",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-22 18:31:03",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-22 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:49:44",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:49:51",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-23. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:50:02",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 51 limit-up stocks via [AkShare] for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:50:10",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:50:17",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-09-23. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:51:16",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:51:18",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 51 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:51:18",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-23 21:51:30",
     "level": "WARNING",
     "category": "Sentiment",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-05 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:30:54",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-06",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:30:56",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 32 limit-up stocks via [AkShare] for 2026-11-06",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:30:57",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-06 (Prev: 2026-11-05)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:00",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 48.25 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-06",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 32 -> 23 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:01",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:01",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-06): 市场情绪状态: [震荡/分化期]，共分析 32 只涨停标的，排雷筛选后推荐 Top 8:\n永臻股份(603381, 88.85分), 闽发铝业(002578, 86.2分), 浙文影业(601599, 75.86分), 贝特利(301697, 73.19分), 南侨食品(605339, 68.39分), 日出东方(603366, 64.66分), 鲁阳节能(002088, 64.37分), 春光科技(603657, 63.75分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:01",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-06 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:01",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-06 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-06 18:31:01",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-06 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
