@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-23 21:51:30",
-    "level": "WARNING",
-    "category": "Sentiment",
-    "message": "2026-09-23 市场概览数据不完整，禁止生成可交易情绪结果。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:52:42",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:52:47",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 51 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:52:47",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:52:58",
-    "level": "WARNING",
-    "category": "Sentiment",
-    "message": "2026-09-23 市场概览数据不完整，禁止生成可交易情绪结果。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:53:55",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-23",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:53:56",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 51 -> 32 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:53:56",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-23 (Prev: 2026-09-22)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:54:11",
-    "level": "WARNING",
-    "category": "Sentiment",
-    "message": "2026-09-23 市场概览部分字段缺失(up_count, down_count, limit_down_count, advance_ratio)，对应因子用中性50分兜底。",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:54:11",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 53.0 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-23 21:54:11",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-23 21:54:11",
     "level": "INFO",
     "category": "Notifier",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-06 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:09",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-09",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:10",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 54 limit-up stocks via [AkShare] for 2026-11-09",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:11",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-09 (Prev: 2026-11-06)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:14",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 88.75 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:14",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-09",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:16",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 54 -> 33 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:16",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:16",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-09): 市场情绪状态: [主升/强势期]，共分析 54 只涨停标的，排雷筛选后推荐 Top 8:\n东方嘉盛(002889, 71.39分), 日出东方(603366, 67.47分), 润贝航科(001316, 66.97分), 闽发铝业(002578, 66.59分), 祥明智能(301226, 62.84分), 泰尔股份(002347, 62.09分), 保利联合(002037, 60.05分), 冰山冷热(000530, 59.84分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:16",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-09 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:16",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-09 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-09 18:31:16",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-09 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
