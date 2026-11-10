@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-23 21:54:11",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-23): 市场情绪状态: [震荡/分化期]，共分析 51 只涨停标的，排雷筛选后推荐 Top 8:\n泰慕士(001234, 90.76分), 大亚圣象(000910, 90.35分), 新华文轩(601811, 87.5分), 新华传媒(600825, 86.85分), 南威软件(603636, 69.04分), 天威视讯(002238, 68.22分), 奥佳华(002614, 63.38分), 瑞斯康达(603803, 62.78分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:30:57",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-24",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:00",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-09-24",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:01",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-24 (Prev: 2026-09-23)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 55.25 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-24",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 52 -> 44 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-24): 市场情绪状态: [震荡/分化期]，共分析 52 只涨停标的，排雷筛选后推荐 Top 8:\n泰慕士(001234, 84.54分), 新华传媒(600825, 83.0分), 奥佳华(002614, 80.73分), 雪龙集团(603949, 76.42分), 东方中科(002819, 71.23分), 华茂股份(000850, 68.38分), 襄阳轴承(000678, 68.12分), 中马传动(603767, 67.45分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-24 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-24 post-market review generated from real data files",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-24 18:31:04",
     "level": "INFO",
     "category": "Iteration",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-09 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:02",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-10",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:03",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 93 limit-up stocks via [AkShare] for 2026-11-10",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:04",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-10 (Prev: 2026-11-09)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:06",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 100.0 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:06",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-10",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:07",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 93 -> 69 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:07",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:07",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-10): 市场情绪状态: [主升/强势期]，共分析 93 只涨停标的，排雷筛选后推荐 Top 8:\n大东方(600327, 83.04分), 日出东方(603366, 76.85分), 泰尔股份(002347, 76.52分), 亚玛顿(002623, 75.87分), 锋龙股份(002931, 75.48分), 通力科技(301255, 71.71分), 华体科技(603679, 70.11分), 阳光照明(600261, 65.7分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:07",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-10 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:07",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-10 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-10 18:31:07",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-10 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
