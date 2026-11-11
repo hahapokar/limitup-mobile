@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-24 18:31:04",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-24 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:01",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-28",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:03",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 33 limit-up stocks via [AkShare] for 2026-09-28",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:04",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-28 (Prev: 2026-09-24)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:06",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 35.75 (冰点低迷), Target Position Limit: 35%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:06",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-28",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:07",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 33 -> 27 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:07",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '退潮/弱势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:07",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-28): 市场情绪状态: [退潮/弱势期]，共分析 33 只涨停标的，排雷筛选后推荐 Top 8:\n新华传媒(600825, 82.65分), 襄阳轴承(000678, 77.94分), 雪龙集团(603949, 71.96分), 博纳影业(001330, 67.4分), 中新赛克(002912, 66.71分), 泰尔股份(002347, 64.25分), 大业股份(603278, 64.22分), 深物业A(000011, 63.06分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:07",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-28 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-28 18:31:07",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-28 post-market review generated from real data files",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-28 18:31:07",
     "level": "INFO",
     "category": "Iteration",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-10 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:01",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-11",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:02",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 85 limit-up stocks via [AkShare] for 2026-11-11",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:03",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-11 (Prev: 2026-11-10)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 90.0 (极度狂热), Target Position Limit: 100%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-11",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 85 -> 46 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-11): 市场情绪状态: [主升/强势期]，共分析 85 只涨停标的，排雷筛选后推荐 Top 8:\n日出东方(603366, 89.95分), 亚玛顿(002623, 84.9分), 大东方(600327, 82.14分), 惠发食品(603536, 70.55分), 金辰股份(603396, 67.7分), 瀛通通讯(002861, 66.95分), 东方环宇(603706, 66.47分), 胜通能源(001331, 66.1分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-11 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-11 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-11 18:31:08",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-11 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
