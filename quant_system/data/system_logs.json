@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-29 18:30:57",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-29 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:50",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-09-30",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:52",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 52 limit-up stocks via [AkShare] for 2026-09-30",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:53",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-09-30 (Prev: 2026-09-29)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:55",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 73.75 (偏暖积极), Target Position Limit: 100%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:55",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-09-30",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:56",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 52 -> 44 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:56",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '主升/强势期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:56",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-09-30): 市场情绪状态: [主升/强势期]，共分析 52 只涨停标的，排雷筛选后推荐 Top 8:\n时代万恒(600241, 84.68分), 亚邦股份(603188, 75.6分), 紫竹高科(002058, 75.37分), 九阳股份(002242, 74.96分), 善水科技(301190, 73.8分), 襄阳轴承(000678, 73.58分), 园林股份(605303, 67.75分), 建业股份(603948, 67.04分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:56",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-09-30 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-09-30 18:30:56",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-09-30 post-market review generated from real data files",
-    "details": {}
-  },
-  {
     "timestamp": "2026-09-30 18:30:56",
     "level": "INFO",
     "category": "Iteration",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-12 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:50",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-13",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:52",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 37 limit-up stocks via [AkShare] for 2026-11-13",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:53",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-13 (Prev: 2026-11-12)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:55",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 55.75 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:55",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-13",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:56",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 37 -> 21 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:56",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:56",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-13): 市场情绪状态: [震荡/分化期]，共分析 37 只涨停标的，排雷筛选后推荐 Top 8:\n北纬科技(002148, 91.56分), 金辰股份(603396, 74.92分), 中马传动(603767, 64.77分), 福达股份(603166, 62.0分), 金逸影视(002905, 60.8分), 横店影视(603103, 60.35分), 东方中科(002819, 59.0分), 新能股份(000595, 58.08分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:56",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-13 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:56",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-13 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-13 18:30:56",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-13 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
