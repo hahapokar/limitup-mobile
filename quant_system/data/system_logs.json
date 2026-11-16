@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-09-30 18:30:56",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-09-30 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:30:57",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-08",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:30:59",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 43 limit-up stocks via [AkShare] for 2026-10-08",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:00",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-10-08 (Prev: 2026-09-30)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:02",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 58.75 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:02",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-10-08",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:03",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 43 -> 33 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:03",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:03",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-08): 市场情绪状态: [震荡/分化期]，共分析 43 只涨停标的，排雷筛选后推荐 Top 8:\n园林股份(605303, 76.57分), 九阳股份(002242, 73.62分), 时代万恒(600241, 71.48分), 紫竹高科(002058, 69.39分), 兴业股份(603928, 69.05分), 传艺科技(002866, 65.33分), 三柏硕(001300, 63.41分), 新华传媒(600825, 62.17分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:03",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-10-08 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-08 18:31:03",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-10-08 post-market review generated from real data files",
-    "details": {}
-  },
-  {
     "timestamp": "2026-10-08 18:31:03",
     "level": "INFO",
     "category": "Iteration",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-13 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:30:55",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-16",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:30:57",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 32 limit-up stocks via [AkShare] for 2026-11-16",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:30:57",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-16 (Prev: 2026-11-13)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 41.5 (震荡分化), Target Position Limit: 35%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-16",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 32 -> 22 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '退潮/弱势期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-16): 市场情绪状态: [退潮/弱势期]，共分析 32 只涨停标的，排雷筛选后推荐 Top 8:\n广百股份(002187, 81.04分), 金逸影视(002905, 71.25分), 天虹股份(002419, 63.93分), 野马电池(605378, 63.44分), 华东重机(002685, 62.77分), 顺钠股份(000533, 61.97分), 上海物贸(600822, 61.84分), 紫竹高科(002058, 61.76分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-16 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-16 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-16 18:31:00",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-16 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
