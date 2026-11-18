@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-10-09 18:31:24",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-10-09 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:52",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-12",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:53",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 46 limit-up stocks via [AkShare] for 2026-10-12",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:55",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-10-12 (Prev: 2026-10-09)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:58",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 57.25 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:58",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-10-12",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:59",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 46 -> 40 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:59",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:59",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-12): 市场情绪状态: [震荡/分化期]，共分析 46 只涨停标的，排雷筛选后推荐 Top 8:\n龙版传媒(605577, 79.87分), 远程股份(002692, 78.92分), 华北制药(600812, 78.06分), 新经典(603096, 76.36分), 慈文传媒(002343, 75.23分), 百洋股份(002696, 70.92分), 丽人丽妆(605136, 68.8分), 德才股份(605287, 68.57分)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:59",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual review: 2026-10-12 FINAL manifest 已发布",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-12 18:30:59",
-    "level": "INFO",
-    "category": "ReviewAttribution",
-    "message": "2026-10-12 post-market review generated from real data files",
-    "details": {}
-  },
-  {
     "timestamp": "2026-10-12 18:30:59",
     "level": "INFO",
     "category": "Iteration",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-17 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:30:58",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-18",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:30:59",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 41 limit-up stocks via [AkShare] for 2026-11-18",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:00",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-18 (Prev: 2026-11-17)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:02",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Market sentiment score: 51.0 (震荡分化), Target Position Limit: 65%",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:02",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-18",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 41 -> 22 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:03",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-18): 市场情绪状态: [震荡/分化期]，共分析 41 只涨停标的，排雷筛选后推荐 Top 8:\n华东重机(002685, 88.95分), 卡莱特(301391, 72.81分), 盛剑科技(603324, 68.37分), 真视通(002771, 67.51分), 武汉凡谷(002194, 62.54分), 川润股份(002272, 60.63分), 证通电子(002197, 60.37分), 创益通(300991, 59.92分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:03",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-18 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:03",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-18 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-18 18:31:03",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-18 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
