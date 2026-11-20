@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 18:30:52",
-    "level": "INFO",
-    "category": "Iteration",
-    "message": "Post-mortem / shadow-backtest slot called for 2026-10-13 — status=NOT_RUN (no real backtest runner wired up yet)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:30:53",
-    "level": "INFO",
-    "category": "Scheduler",
-    "message": "Manual trigger: Running FULL post-market data refresh for 2026-10-14",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:29",
-    "level": "ERROR",
-    "category": "DataFetcher",
-    "message": "All 4 data sources failed to fetch limit-up pool for date 2026-10-14. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:29",
-    "level": "WARNING",
-    "category": "Scheduler",
-    "message": "Manual review: limit-up pool fetch failed: All 4 data sources failed to fetch limit-up pool for date 2026-10-14. Errors: ",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:29",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Calculating market sentiment for trading date: 2026-10-14 (Prev: 2026-10-13)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:30",
-    "level": "INFO",
-    "category": "DataFetcher",
-    "message": "Successfully fetched 36 limit-up stocks via [AkShare] for 2026-10-14",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:33",
-    "level": "INFO",
-    "category": "Sentiment",
-    "message": "Market sentiment score: 47.0 (震荡分化), Target Position Limit: 65%",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:33",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Executing 4-factor quant scoring for 2026-10-14",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:33",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Pool filtered: 36 -> 29 stocks (ST, Cap, Price, Inst filters applied)",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:33",
-    "level": "INFO",
-    "category": "Scoring",
-    "message": "Linking sentiment state: '震荡/分化期' to consecutive board factor",
-    "details": {}
-  },
-  {
-    "timestamp": "2026-10-14 18:36:33",
-    "level": "INFO",
-    "category": "Notifier",
-    "message": "📢 🎯 盘后打板量化选股完成 (2026-10-14): 市场情绪状态: [震荡/分化期]，共分析 36 只涨停标的，排雷筛选后推荐 Top 8:\n慈文传媒(002343, 92.88分), 百洋股份(002696, 88.95分), 冰山冷热(000530, 72.36分), 万里股份(600847, 70.07分), 新经典(603096, 69.76分), 超声电子(000823, 69.17分), 星帅尔(002860, 68.48分), 航发科技(600391, 68.18分)",
-    "details": {}
-  },
-  {
     "timestamp": "2026-10-14 18:36:33",
     "level": "INFO",
     "category": "Scheduler",
@@ -2097,6 +2020,83 @@
     "level": "INFO",
     "category": "Iteration",
     "message": "Post-mortem / shadow-backtest slot called for 2026-11-19 — status=NOT_RUN (no real backtest runner wired up yet)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:30:57",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual trigger: Running FULL post-market data refresh for 2026-11-20",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:30:58",
+    "level": "INFO",
+    "category": "DataFetcher",
+    "message": "Successfully fetched 28 limit-up stocks via [AkShare] for 2026-11-20",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:30:59",
+    "level": "INFO",
+    "category": "Sentiment",
+    "message": "Calculating market sentiment for trading date: 2026-11-20 (Prev: 2026-11-19)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:03",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🚨 市场情绪冰点熔断预警: 当前综合情绪得分仅为 29.25 分 (低于熔断线 30.0分)，触发次日建仓熔断限制，明日目标持仓比例锁定为 0%！",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:03",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Executing 4-factor quant scoring for 2026-11-20",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:04",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Pool filtered: 28 -> 20 stocks (ST, Cap, Price, Inst filters applied)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:04",
+    "level": "INFO",
+    "category": "Scoring",
+    "message": "Linking sentiment state: '熔断状态' to consecutive board factor",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:04",
+    "level": "INFO",
+    "category": "Notifier",
+    "message": "📢 🎯 盘后打板量化选股完成 (2026-11-20): 市场情绪状态: [熔断状态]，共分析 28 只涨停标的，排雷筛选后推荐 Top 8:\n中京电子(002579, 78.47分), 真视通(002771, 73.09分), 东晶电子(002199, 71.8分), 澳弘电子(605058, 70.26分), 荣联科技(002642, 67.28分), 骏亚科技(603386, 64.0分), 万向德农(600371, 61.54分), 国光股份(002749, 60.71分)",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:04",
+    "level": "INFO",
+    "category": "Scheduler",
+    "message": "Manual review: 2026-11-20 FINAL manifest 已发布",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:04",
+    "level": "INFO",
+    "category": "ReviewAttribution",
+    "message": "2026-11-20 post-market review generated from real data files",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-11-20 18:31:04",
+    "level": "INFO",
+    "category": "Iteration",
+    "message": "Post-mortem / shadow-backtest slot called for 2026-11-20 — status=NOT_RUN (no real backtest runner wired up yet)",
     "details": {}
   }
 ]
